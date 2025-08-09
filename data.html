@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Sources - Bank Size | Methodology & References</title>
+    <meta name="description" content="Explore our data sources, methodology, and calculations. All bank asset data sourced from official financial reports and regulatory filings.">
+    <meta name="keywords" content="bank data sources, financial data methodology, bank assets calculation, data transparency">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Data Sources & Methodology - Bank Size">
+    <meta property="og:description" content="Transparent data sourcing from official financial reports. Learn how we calculate and verify banking statistics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.banksize.com/data">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.banksize.com/data">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Shared Styles -->
+    <style>
+        :root {
+            --primary: #0066FF;
+            --secondary: #FF6B35;
+            --dark: #0A0E27;
+            --darker: #050714;
+            --light: #F7F8FA;
+            --gray: #6B7280;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --error: #EF4444;
+            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+            --gradient-secondary: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            --gradient-success: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+            --gradient-dark: linear-gradient(180deg, #0A0E27 0%, #050714 100%);
+            --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--light);
+            background: var(--darker);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+        }
+
+        nav.scrolled {
+            padding: 0.75rem 0;
+            background: rgba(5, 7, 20, 0.98);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--light);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--gradient-primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link.active::after,
+        .nav-link:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--gradient-primary);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--light);
+            transition: var(--transition);
+        }
+
+        /* Page Hero */
+        .page-hero {
+            padding: 8rem 1.5rem 4rem;
+            background: var(--gradient-dark);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .page-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #0066FF 0%, #00D4FF 25%, #10B981 75%, #34D399 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-subtitle {
+            font-size: 1.25rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 4rem 1.5rem;
+            background: var(--dark);
+        }
+
+        .content-section:nth-child(even) {
+            background: var(--darker);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Data Sources Grid */
+        .sources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .source-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .source-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .source-card:hover::before {
+            left: 100%;
+        }
+
+        .source-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--success);
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+        }
+
+        .source-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-success);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .source-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .source-type {
+            font-size: 0.875rem;
+            color: var(--success);
+            margin-bottom: 1rem;
+        }
+
+        .source-description {
+            font-size: 0.875rem;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        /* Methodology Section */
+        .methodology-steps {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .step {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
+            font-size: 0.875rem;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        /* Calculations Table */
+        .calculations-table {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+
+        .calculations-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .calculations-table th {
+            background: rgba(0, 102, 255, 0.1);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .calculations-table td {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .calculations-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .calculations-table tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .formula {
+            font-family: 'Courier New', monospace;
+            background: rgba(0, 102, 255, 0.1);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+        }
+
+        /* Updates Timeline */
+        .updates-timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .updates-timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gradient-success);
+        }
+
+        .update-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+        }
+
+        .update-item::before {
+            content: '';
+            position: absolute;
+            left: -2.5rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--success);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+        }
+
+        .update-date {
+            font-size: 0.875rem;
+            color: var(--success);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .update-description {
+            font-size: 0.875rem;
+            color: var(--gray);
+        }
+
+        /* Disclaimer Box */
+        .disclaimer-box {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .disclaimer-box h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--warning);
+        }
+
+        .disclaimer-box p {
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+
+        /* Download Section */
+        .download-section {
+            background: rgba(0, 102, 255, 0.05);
+            border: 1px solid rgba(0, 102, 255, 0.2);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .download-section h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .download-section p {
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-body);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--light);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 1.5rem 2rem;
+            background: var(--darker);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100vh;
+                background: var(--darker);
+                flex-direction: column;
+                justify-content: center;
+                transition: left 0.3s ease;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+                z-index: 1001;
+            }
+
+            .menu-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .menu-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .menu-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+
+            .sources-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .step {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .calculations-table {
+                overflow-x: auto;
+            }
+
+            .calculations-table table {
+                min-width: 500px;
+            }
+
+            .download-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">💰</div>
+                <span>Bank Size</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/banks" class="nav-link">Banks</a></li>
+                <li><a href="/compare" class="nav-link">Compare</a></li>
+                <li><a href="/data" class="nav-link active">Data</a></li>
+                <li><a href="/about" class="nav-link">About</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <h1><span class="gradient-text">Data & Methodology</span></h1>
+        <p class="page-subtitle">
+            Complete transparency in our sources, calculations, and methodology
+        </p>
+    </section>
+
+    <!-- Primary Sources Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Primary Data Sources</h2>
+                <p>All bank asset data is sourced from official financial reports and regulatory filings</p>
+            </div>
+            
+            <div class="sources-grid">
+                <div class="source-card">
+                    <div class="source-icon">📊</div>
+                    <h3>S&P Global Market Intelligence</h3>
+                    <p class="source-type">Financial Database</p>
+                    <p class="source-description">
+                        Comprehensive banking data including total assets, market capitalization, and financial metrics for global banks.
+                    </p>
+                </div>
+                
+                <div class="source-card">
+                    <div class="source-icon">📈</div>
+                    <h3>Annual Reports (10-K/20-F)</h3>
+                    <p class="source-type">Regulatory Filings</p>
+                    <p class="source-description">
+                        Official annual reports filed with SEC and other regulatory bodies, providing audited financial statements.
+                    </p>
+                </div>
+                
+                <div class="source-card">
+                    <div class="source-icon">🏛️</div>
+                    <h3>Federal Reserve Data</h3>
+                    <p class="source-type">Central Bank Statistics</p>
+                    <p class="source-description">
+                        US banking sector data including deposit concentration, systemic risk metrics, and regulatory information.
+                    </p>
+                </div>
+                
+                <div class="source-card">
+                    <div class="source-icon">🌍</div>
+                    <h3>World Bank & IMF</h3>
+                    <p class="source-type">International Organizations</p>
+                    <p class="source-description">
+                        Global financial stability reports, GDP data, and international banking statistics.
+                    </p>
+                </div>
+                
+                <div class="source-card">
+                    <div class="source-icon">📰</div>
+                    <h3>Financial Publications</h3>
+                    <p class="source-type">Industry Analysis</p>
+                    <p class="source-description">
+                        Reports from Statista, Visual Capitalist, and financial research firms for context and comparisons.
+                    </p>
+                </div>
+                
+                <div class="source-card">
+                    <div class="source-icon">🔍</div>
+                    <h3>Central Bank Websites</h3>
+                    <p class="source-type">Official Sources</p>
+                    <p class="source-description">
+                        Direct data from PBOC, ECB, Bank of England, and other central banks for regional banking data.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="disclaimer-box">
+                <h3>⚠️ Important Note</h3>
+                <p>
+                    Bank asset figures are based on the most recent available data (typically Q4 2023 or Q1 2024). 
+                    Market capitalizations are updated monthly. Exchange rates for non-USD assets are calculated 
+                    using year-end rates from respective reporting periods.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Methodology</h2>
+                <p>How we ensure accuracy and consistency in our comparisons</p>
+            </div>
+            
+            <div class="methodology-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Data Collection</h4>
+                        <p>We gather data from multiple authoritative sources, prioritizing official financial reports and regulatory filings. Each data point is cross-referenced with at least two independent sources.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Standardization</h4>
+                        <p>All financial figures are converted to USD using official exchange rates from the reporting period. Assets are presented in billions or trillions for consistency.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Verification</h4>
+                        <p>Data is verified against multiple sources and checked for anomalies. Any significant discrepancies are investigated and resolved using primary sources.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Comparison Calculations</h4>
+                        <p>Comparisons use publicly available data for costs (e.g., UN World Food Programme estimates, market valuations, real estate prices) to create meaningful context.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Regular Updates</h4>
+                        <p>Bank data is updated quarterly following earnings releases. Market capitalizations are updated monthly. Comparison metrics are reviewed and updated annually.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Calculations Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Calculations Explained</h2>
+                <p>Understanding the math behind our comparisons</p>
+            </div>
+            
+            <div class="calculations-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Comparison</th>
+                            <th>Calculation Method</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Years to End World Hunger</td>
+                            <td><span class="formula">Bank Assets ÷ $45 billion/year</span></td>
+                            <td>UN World Food Programme</td>
+                        </tr>
+                        <tr>
+                            <td>NFL Teams Purchase</td>
+                            <td><span class="formula">Bank Assets ÷ $208 billion (total NFL value)</span></td>
+                            <td>Forbes NFL Valuations 2024</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone Purchases</td>
+                            <td><span class="formula">Bank Assets ÷ $800 (avg iPhone price)</span></td>
+                            <td>Apple Financial Reports</td>
+                        </tr>
+                        <tr>
+                            <td>College Educations</td>
+                            <td><span class="formula">Bank Assets ÷ $50,000 (avg 4-year cost)</span></td>
+                            <td>College Board Statistics</td>
+                        </tr>
+                        <tr>
+                            <td>Climate Action Funding</td>
+                            <td><span class="formula">Bank Assets ÷ $2.4 trillion (2030 target)</span></td>
+                            <td>UNFCCC Reports</td>
+                        </tr>
+                        <tr>
+                            <td>GDP Comparisons</td>
+                            <td><span class="formula">Bank Assets vs Country GDP (nominal)</span></td>
+                            <td>World Bank / IMF Data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="disclaimer-box">
+                <h3>📊 Comparison Context</h3>
+                <p>
+                    All comparisons are illustrative and based on current market values or estimated costs. 
+                    They represent theoretical purchasing power and are not suggestions for actual allocation of bank assets. 
+                    Real-world implementation would involve numerous additional factors and constraints.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updates Timeline -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Data Update History</h2>
+                <p>Tracking our commitment to current, accurate information</p>
+            </div>
+            
+            <div class="updates-timeline">
+                <div class="update-item">
+                    <div class="update-date">March 2024</div>
+                    <div class="update-description">Updated all bank assets based on 2023 annual reports</div>
+                </div>
+                <div class="update-item">
+                    <div class="update-date">February 2024</div>
+                    <div class="update-description">Added 5 new banks to tracking, updated market capitalizations</div>
+                </div>
+                <div class="update-item">
+                    <div class="update-date">January 2024</div>
+                    <div class="update-description">Revised methodology for currency conversions, updated comparison metrics</div>
+                </div>
+                <div class="update-item">
+                    <div class="update-date">December 2023</div>
+                    <div class="update-description">Initial data collection and verification completed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="download-section">
+                <h3>Access Our Data</h3>
+                <p>Download our complete dataset for research, journalism, or educational purposes</p>
+                <div class="download-buttons">
+                    <a href="/data/banksize-data.csv" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 2v10m0 0l-3-3m3 3l3-3M3 12v5a1 1 0 001 1h12a1 1 0 001-1v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Download CSV
+                    </a>
+                    <a href="/data/banksize-methodology.pdf" class="btn btn-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" fill="currentColor"/>
+                            <path d="M4 5a2 2 0 012-2 1 1 0 000 2H6a2 2 0 00-2 2v6a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2 1 1 0 100-2 2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2V5z" fill="currentColor"/>
+                        </svg>
+                        Full Methodology PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Bank Size. All data sourced from public financial reports. 
+            <a href="/privacy" style="color: var(--gray);">Privacy Policy</a> | 
+            <a href="/terms" style="color: var(--gray);">Terms of Use</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile menu
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+            
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            
+            // Scroll effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.getElementById('navbar');
+                if (window.pageYOffset > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            // Animate elements on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '0';
+                        entry.target.style.transform = 'translateY(20px)';
+                        
+                        setTimeout(() => {
+                            entry.target.style.transition = 'all 0.6s ease-out';
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, 100);
+                        
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.source-card, .step, .update-item').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Bank Details - Bank Size</title>
+    <meta name="description" id="pageDescription" content="Explore banking giant details and discover what they could do with their massive assets.">
+    <meta name="keywords" content="bank assets, banking scale, financial comparison">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" id="ogTitle" content="Bank Details - Bank Size">
+    <meta property="og:description" id="ogDescription" content="Discover what this banking giant could do with their assets.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" id="ogUrl" content="https://www.banksize.com/bank.html">
+    <meta property="og:image" content="https://www.banksize.com/images/bank-og.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" id="canonicalUrl" href="https://www.banksize.com/bank.html">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Shared Styles (same as other pages) -->
+    <style>
+        :root {
+            --primary: #0066FF;
+            --secondary: #FF6B35;
+            --dark: #0A0E27;
+            --darker: #050714;
+            --light: #F7F8FA;
+            --gray: #6B7280;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --error: #EF4444;
+            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+            --gradient-secondary: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            --gradient-success: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+            --gradient-dark: linear-gradient(180deg, #0A0E27 0%, #050714 100%);
+            --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--light);
+            background: var(--darker);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+        }
+
+        nav.scrolled {
+            padding: 0.75rem 0;
+            background: rgba(5, 7, 20, 0.98);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--light);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--gradient-primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--gradient-primary);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--light);
+            transition: var(--transition);
+        }
+
+        /* Bank Hero */
+        .bank-hero {
+            padding: 8rem 1.5rem 4rem;
+            background: var(--gradient-dark);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bank-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 50%, rgba(0, 102, 255, 0.1) 0%, transparent 50%);
+            animation: pulse-slow 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.1) rotate(180deg); }
+        }
+
+        .bank-hero-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bank-hero-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .bank-flag {
+            font-size: 5rem;
+            line-height: 1;
+            filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+        }
+
+        .bank-title-group h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .bank-subtitle {
+            font-size: 1.25rem;
+            color: var(--gray);
+        }
+
+        .bank-key-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .key-stat {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .key-stat:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 102, 255, 0.2);
+        }
+
+        .key-stat-value {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .key-stat-label {
+            font-size: 0.875rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .bank-description {
+            background: rgba(255, 107, 53, 0.05);
+            border: 1px solid rgba(255, 107, 53, 0.2);
+            border-radius: 16px;
+            padding: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Comparisons Section */
+        .comparisons-section {
+            padding: 4rem 1.5rem;
+            background: var(--dark);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--gray);
+        }
+
+        .comparison-categories {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .category-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--light);
+            padding: 0.75rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .category-btn.active {
+            background: var(--gradient-secondary);
+            border-color: transparent;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .category-btn:hover {
+            border-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .comparisons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .comparison-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .comparison-card::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, rgba(255, 107, 53, 0.1));
+            transition: top 0.5s ease;
+        }
+
+        .comparison-card:hover::before {
+            top: 0;
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: var(--secondary);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.3);
+        }
+
+        .comparison-icon {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .comparison-title {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .comparison-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary);
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .comparison-desc {
+            font-size: 0.875rem;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            padding: 4rem 1.5rem;
+            background: var(--darker);
+            position: relative;
+        }
+
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gradient-primary);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin: 0 2rem;
+            transition: var(--transition);
+        }
+
+        .timeline-content:hover {
+            border-color: var(--primary);
+            transform: scale(1.02);
+        }
+
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
+        }
+
+        .timeline-year {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-text {
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+
+        /* Global Impact Section */
+        .impact-section {
+            padding: 4rem 1.5rem;
+            background: var(--dark);
+        }
+
+        .impact-map {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .impact-map::before {
+            content: '🌍';
+            position: absolute;
+            font-size: 15rem;
+            opacity: 0.05;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .impact-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .impact-stat {
+            text-align: center;
+        }
+
+        .impact-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--success);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .impact-label {
+            font-size: 0.875rem;
+            color: var(--gray);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 1.5rem;
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.1) 0%, rgba(255, 107, 53, 0.1) 100%);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-content p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-body);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--light);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 1.5rem 2rem;
+            background: var(--darker);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100vh;
+                background: var(--darker);
+                flex-direction: column;
+                justify-content: center;
+                transition: left 0.3s ease;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+                z-index: 1001;
+            }
+
+            .menu-toggle.active span:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+
+            .menu-toggle.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .menu-toggle.active span:nth-child(3) {
+                transform: rotate(-45deg) translate(7px, -6px);
+            }
+
+            .bank-hero-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                flex-direction: row !important;
+            }
+
+            .timeline-dot {
+                left: 20px;
+            }
+
+            .timeline-content {
+                margin-left: 60px;
+                margin-right: 0;
+            }
+
+            .comparisons-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Loading State */
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50vh;
+            font-size: 1.5rem;
+            color: var(--gray);
+        }
+
+        /* Error State */
+        .error {
+            text-align: center;
+            padding: 4rem 1.5rem;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .error h2 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--error);
+        }
+
+        .error p {
+            font-size: 1.1rem;
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">💰</div>
+                <span>Bank Size</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="banks.html" class="nav-link">Banks</a></li>
+                <li><a href="compare.html" class="nav-link">Compare</a></li>
+                <li><a href="data.html" class="nav-link">Data</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Loading State -->
+    <div id="loadingState" class="loading">
+        Loading bank data...
+    </div>
+
+    <!-- Error State -->
+    <div id="errorState" class="error" style="display: none;">
+        <h2>Bank Not Found</h2>
+        <p>Sorry, we couldn't find the bank you're looking for.</p>
+        <a href="banks.html" class="btn btn-primary">View All Banks</a>
+    </div>
+
+    <!-- Main Content (hidden initially) -->
+    <div id="mainContent" style="display: none;">
+        <!-- Bank Hero -->
+        <section class="bank-hero">
+            <div class="bank-hero-content">
+                <div class="bank-hero-header">
+                    <div class="bank-flag" id="bankFlag">🏦</div>
+                    <div class="bank-title-group">
+                        <h1 id="bankName">Loading...</h1>
+                        <p class="bank-subtitle" id="bankSubtitle">Loading...</p>
+                    </div>
+                </div>
+                
+                <div class="bank-key-stats">
+                    <div class="key-stat">
+                        <span class="key-stat-value" id="bankAssets">$0T</span>
+                        <span class="key-stat-label">Total Assets</span>
+                    </div>
+                    <div class="key-stat">
+                        <span class="key-stat-value" id="bankRank">#0</span>
+                        <span class="key-stat-label">Global Rank</span>
+                    </div>
+                    <div class="key-stat">
+                        <span class="key-stat-value" id="bankEmployees">0K</span>
+                        <span class="key-stat-label">Employees</span>
+                    </div>
+                    <div class="key-stat">
+                        <span class="key-stat-value" id="bankCountries">0</span>
+                        <span class="key-stat-label">Countries</span>
+                    </div>
+                </div>
+                
+                <div class="bank-description" id="bankKeyFact">
+                    💡 Loading key fact...
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparisons Section -->
+        <section class="comparisons-section">
+            <div class="section-header">
+                <h2 id="comparisonTitle">What Could This Bank Do?</h2>
+                <p>Select a category to explore the mind-blowing scale of this banking giant</p>
+            </div>
+            
+            <div class="comparison-categories">
+                <button class="category-btn active" data-category="humanitarian">Humanitarian</button>
+                <button class="category-btn" data-category="corporate">Corporate</button>
+                <button class="category-btn" data-category="sports">Sports & Entertainment</button>
+                <button class="category-btn" data-category="real-estate">Real Estate</button>
+                <button class="category-btn" data-category="technology">Technology</button>
+            </div>
+            
+            <div class="comparisons-grid" id="comparisonsGrid">
+                <!-- Comparisons will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <div class="section-header">
+                <h2 id="timelineTitle">Journey to Trillions</h2>
+                <p>How this bank became larger than most national economies</p>
+            </div>
+            
+            <div class="timeline" id="timeline">
+                <!-- Timeline items will be loaded here -->
+            </div>
+        </section>
+
+        <!-- Global Impact -->
+        <section class="impact-section">
+            <div class="section-header">
+                <h2>Global Footprint</h2>
+                <p id="impactSubtitle">This bank's reach extends across the globe</p>
+            </div>
+            
+            <div class="impact-map">
+                <div class="impact-stats">
+                    <div class="impact-stat">
+                        <span class="impact-number" id="impactCountries">0</span>
+                        <span class="impact-label">Countries</span>
+                    </div>
+                    <div class="impact-stat">
+                        <span class="impact-number" id="impactBranches">0</span>
+                        <span class="impact-label">Branches</span>
+                    </div>
+                    <div class="impact-stat">
+                        <span class="impact-number" id="impactMarketCap">$0B</span>
+                        <span class="impact-label">Market Cap</span>
+                    </div>
+                    <div class="impact-stat">
+                        <span class="impact-number" id="impactRevenue">$0B</span>
+                        <span class="impact-label">Annual Revenue</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Explore More Banking Giants</h2>
+                <p>Discover how other massive banks compare and what they could achieve with their assets</p>
+                <div class="cta-buttons">
+                    <a href="#" id="compareLink" class="btn btn-primary">
+                        Compare with Another Bank
+                    </a>
+                    <a href="banks.html" class="btn btn-secondary">
+                        View All Banks
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Bank Size. Data sourced from public financial reports.</p>
+        </div>
+    </footer>
+
+    <!-- Load Bank Data Script -->
+    <script src="banks-data.js"></script>
+    
+    <!-- Page Scripts -->
+    <script>
+        // Get bank ID from URL
+        function getBankIdFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('id');
+        }
+
+        // Load bank data
+        function loadBankData() {
+            const bankId = getBankIdFromUrl();
+            
+            if (!bankId || !banksData[bankId]) {
+                // Show error state
+                document.getElementById('loadingState').style.display = 'none';
+                document.getElementById('errorState').style.display = 'flex';
+                return;
+            }
+            
+            const bank = banksData[bankId];
+            
+            // Update page metadata
+            document.getElementById('pageTitle').textContent = `${bank.name} - Bank Size | ${bankUtils.formatCurrency(bank.assets)} Banking Giant`;
+            document.getElementById('pageDescription').setAttribute('content', 
+                `${bank.name} controls ${bankUtils.formatCurrency(bank.assets)} in assets. ${bank.keyFact}`);
+            document.getElementById('ogTitle').setAttribute('content', 
+                `${bank.shortName}: The ${bankUtils.formatCurrency(bank.assets)} Banking Giant`);
+            document.getElementById('ogDescription').setAttribute('content', bank.keyFact);
+            document.getElementById('ogUrl').setAttribute('content', 
+                `https://www.banksize.com/bank.html?id=${bankId}`);
+            document.getElementById('canonicalUrl').setAttribute('href', 
+                `https://www.banksize.com/bank.html?id=${bankId}`);
+            
+            // Update hero section
+            document.getElementById('bankFlag').textContent = bank.flag;
+            document.getElementById('bankName').textContent = bank.name;
+            document.getElementById('bankSubtitle').textContent = `The ${bank.globalRank === 1 ? "World's Largest" : `World's #${bank.globalRank}`} Bank by Total Assets`;
+            document.getElementById('bankAssets').textContent = bankUtils.formatCurrency(bank.assets);
+            document.getElementById('bankRank').textContent = `#${bank.globalRank}`;
+            document.getElementById('bankEmployees').textContent = bankUtils.formatNumber(bank.employees);
+            document.getElementById('bankCountries').textContent = bank.countries;
+            document.getElementById('bankKeyFact').innerHTML = `💡 ${bank.keyFact}`;
+            
+            // Update comparison title
+            document.getElementById('comparisonTitle').textContent = `What Could ${bank.shortName} Do With ${bankUtils.formatCurrency(bank.assets)}?`;
+            
+            // Update timeline
+            document.getElementById('timelineTitle').textContent = `${bank.shortName}'s Journey to ${bankUtils.formatCurrency(bank.assets)}`;
+            loadTimeline(bank.timeline);
+            
+            // Update impact section
+            document.getElementById('impactSubtitle').textContent = `${bank.shortName}'s reach extends far beyond ${bank.country}`;
+            document.getElementById('impactCountries').textContent = bank.countries;
+            document.getElementById('impactBranches').textContent = bankUtils.formatNumber(bank.branches);
+            document.getElementById('impactMarketCap').textContent = `$${bank.marketCap}B`;
+            document.getElementById('impactRevenue').textContent = `$${bank.revenue}B`;
+            
+            // Update compare link
+            const otherBanks = bankUtils.getAllBanks().filter(b => b.id !== bankId);
+            const randomBank = otherBanks[Math.floor(Math.random() * otherBanks.length)];
+            document.getElementById('compareLink').href = `compare.html?banks=${bankId},${randomBank.id}`;
+            
+            // Load comparisons
+            loadComparisons(bank.comparisons.humanitarian);
+            
+            // Show main content
+            document.getElementById('loadingState').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }
+
+        // Load timeline
+        function loadTimeline(timeline) {
+            const timelineContainer = document.getElementById('timeline');
+            timelineContainer.innerHTML = timeline.map((item, index) => `
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-year">${item.year}</div>
+                        <p class="timeline-text">${item.event}</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            `).join('');
+        }
+
+        // Load comparisons
+        function loadComparisons(comparisons) {
+            const grid = document.getElementById('comparisonsGrid');
+            grid.innerHTML = comparisons.map(comp => `
+                <div class="comparison-card">
+                    <span class="comparison-icon">${comp.icon}</span>
+                    <h3 class="comparison-title">${comp.title}</h3>
+                    <span class="comparison-value">${comp.value}</span>
+                    <p class="comparison-desc">${comp.desc}</p>
+                </div>
+            `).join('');
+        }
+
+        // Category switching
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load bank data
+            loadBankData();
+            
+            // Category buttons
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const bankId = getBankIdFromUrl();
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (!banksData[bankId]) return;
+                    
+                    // Update active button
+                    categoryBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    // Get selected category
+                    const category = btn.dataset.category;
+                    const comparisons = banksData[bankId].comparisons[category];
+                    
+                    // Update grid with fade effect
+                    const grid = document.getElementById('comparisonsGrid');
+                    grid.style.opacity = '0';
+                    
+                    setTimeout(() => {
+                        loadComparisons(comparisons);
+                        grid.style.opacity = '1';
+                    }, 300);
+                });
+            });
+            
+            // Mobile menu
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+            
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+            
+            // Scroll effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.getElementById('navbar');
+                if (window.pageYOffset > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

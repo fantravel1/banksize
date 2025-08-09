@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Size - Visualizing the Incomprehensible Scale of Global Banking</title>
+    <meta name="description" content="Discover the shocking scale of the world's largest banks. ICBC could end world hunger for 140+ years. JPMorgan could buy every NFL team 19 times. Explore what trillion-dollar banks could do.">
+    <meta name="keywords" content="bank size comparison, banking scale visualization, ICBC assets, JPMorgan Chase size, wealth inequality, financial giants, too big to fail">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bank Size - When Numbers Become Incomprehensible">
+    <meta property="og:description" content="ICBC's $6.3 trillion could end world hunger for 140+ years. Discover the absurd scale of global banking.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.banksize.com">
+    <meta property="og:image" content="https://www.banksize.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bank Size - The Trillion Dollar Question">
+    <meta name="twitter:description" content="What if banks used their $50+ trillion to solve humanity's problems?">
+    <meta name="twitter:image" content="https://www.banksize.com/images/twitter-card.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.banksize.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS -->
+    <style>
+        :root {
+            --primary: #0066FF;
+            --secondary: #FF6B35;
+            --dark: #0A0E27;
+            --darker: #050714;
+            --light: #F7F8FA;
+            --gray: #6B7280;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --error: #EF4444;
+            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+            --gradient-secondary: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            --gradient-dark: linear-gradient(180deg, #0A0E27 0%, #050714 100%);
+            --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--light);
+            background: var(--darker);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Loading Screen */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--darker);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading-screen.fade-out {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader {
+            width: 60px;
+            height: 60px;
+            position: relative;
+        }
+
+        .loader-bar {
+            position: absolute;
+            width: 4px;
+            height: 100%;
+            background: var(--gradient-primary);
+            left: 50%;
+            transform-origin: center;
+            animation: loader-spin 1.2s linear infinite;
+        }
+
+        .loader-bar:nth-child(2) {
+            animation-delay: 0.1s;
+            opacity: 0.8;
+        }
+
+        .loader-bar:nth-child(3) {
+            animation-delay: 0.2s;
+            opacity: 0.6;
+        }
+
+        .loader-bar:nth-child(4) {
+            animation-delay: 0.3s;
+            opacity: 0.4;
+        }
+
+        @keyframes loader-spin {
+            0% { transform: translateX(-50%) rotate(0deg); }
+            100% { transform: translateX(-50%) rotate(360deg); }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            background: rgba(10, 14, 39, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+        }
+
+        nav.scrolled {
+            padding: 0.75rem 0;
+            background: rgba(5, 7, 20, 0.95);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--light);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--gradient-primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            padding: 0.5rem;
+            margin-right: -0.5rem;
+        }
+
+        .menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--light);
+            transition: var(--transition);
+        }
+
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 6rem 1.5rem 4rem;
+            background: var(--gradient-dark);
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            background-image: 
+                radial-gradient(circle at 20% 50%, var(--primary) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, var(--secondary) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, var(--primary) 0%, transparent 50%);
+            animation: hero-bg-animate 20s ease-in-out infinite;
+        }
+
+        @keyframes hero-bg-animate {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(-20px, -20px) scale(1.1); }
+            66% { transform: translate(20px, -10px) scale(0.9); }
+        }
+
+        .hero-content {
+            max-width: 1280px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-label {
+            display: inline-block;
+            background: rgba(0, 102, 255, 0.1);
+            border: 1px solid rgba(0, 102, 255, 0.3);
+            color: #00D4FF;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            animation: fade-in-up 0.6s ease-out;
+        }
+
+        h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 8vw, 5.5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: fade-in-up 0.6s ease-out 0.2s both;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #0066FF 0%, #00D4FF 25%, #FF6B35 75%, #F7931E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            color: var(--gray);
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.6;
+            animation: fade-in-up 0.6s ease-out 0.4s both;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            animation: fade-in-up 0.6s ease-out 0.6s both;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .stat-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(0, 102, 255, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fade-in-up 0.6s ease-out 0.8s both;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-family: var(--font-body);
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--light);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--gray);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Animations */
+        @keyframes fade-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Story Section */
+        .story-section {
+            padding: 6rem 1.5rem;
+            background: linear-gradient(180deg, var(--darker) 0%, var(--dark) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .story-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .story-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-label {
+            display: inline-block;
+            background: rgba(255, 107, 53, 0.1);
+            border: 1px solid rgba(255, 107, 53, 0.3);
+            color: #FF6B35;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .story-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .story-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .story-card:hover::before {
+            left: 100%;
+        }
+
+        .story-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 102, 255, 0.3);
+        }
+
+        .story-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--gradient-primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .story-card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Interactive Comparison Section */
+        .comparison-section {
+            padding: 6rem 1.5rem;
+            background: var(--dark);
+            position: relative;
+        }
+
+        .comparison-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .bank-selector {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .bank-option {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .bank-option.active {
+            background: var(--gradient-primary);
+            border-color: transparent;
+            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+        }
+
+        .bank-option:hover {
+            border-color: rgba(0, 102, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .comparison-display {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .comparison-content {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .comparison-amount {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 700;
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .comparison-description {
+            font-size: 1.25rem;
+            color: var(--light);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .comparison-context {
+            color: var(--gray);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Questions Section */
+        .questions-section {
+            padding: 6rem 1.5rem;
+            background: linear-gradient(180deg, var(--dark) 0%, var(--darker) 100%);
+            text-align: center;
+        }
+
+        .questions-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .question-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .question-card:hover {
+            border-color: rgba(255, 107, 53, 0.3);
+            transform: scale(1.02);
+        }
+
+        .question-text {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+        }
+
+        .question-stat {
+            font-size: 1.1rem;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 1.5rem 2rem;
+            background: var(--darker);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        .footer-links h4 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: var(--light);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            line-height: 2;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--light);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100vh;
+                background: var(--darker);
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                transition: left 0.3s ease;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+                z-index: 1001;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .comparison-display {
+                padding: 2rem;
+            }
+
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Focus styles */
+        a:focus,
+        button:focus {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Bank Size",
+        "description": "Visualizing the incomprehensible scale of global banking through interactive comparisons",
+        "url": "https://www.banksize.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.banksize.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-bar"></div>
+            <div class="loader-bar"></div>
+            <div class="loader-bar"></div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">💰</div>
+                <span>Bank Size</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#banks" class="nav-link">Banks</a></li>
+                <li><a href="#comparisons" class="nav-link">Comparisons</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="banks.html" class="nav-cta">Explore Banks</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-label">The Trillion Dollar Reality</div>
+            <h1>
+                When <span class="gradient-text">$6.3 Trillion</span><br>
+                Becomes Just a Number
+            </h1>
+            <p class="hero-subtitle">
+                The world's largest banks control wealth that defies comprehension. 
+                What if we could actually understand what these numbers mean?
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <span class="stat-number" data-count="140">0</span>
+                    <span class="stat-label">Years to End World Hunger</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-count="50">0</span>
+                    <span class="stat-label">Trillion in Combined Assets</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-count="44">0</span>
+                    <span class="stat-label">% of US Deposits (Top 4)</span>
+                </div>
+            </div>
+            
+            <div class="hero-cta">
+                <a href="#story" class="btn btn-primary">
+                    Discover the Scale
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#compare" class="btn btn-secondary">
+                    Interactive Comparison
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 5L12 19M12 19L5 12M12 19L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section" id="story">
+        <div class="story-container">
+            <div class="story-intro">
+                <span class="section-label">The Untold Story</span>
+                <h2>From Community Service to Global Empire</h2>
+                <p class="hero-subtitle">
+                    In 1984, the top 4 US banks controlled 15% of deposits. 
+                    Today? They control 44%. This is how we got here.
+                </p>
+            </div>
+            
+            <div class="story-grid">
+                <div class="story-card">
+                    <div class="story-icon">📈</div>
+                    <h3>The Great Consolidation</h3>
+                    <p>
+                        Since 1990, over 10,000 banks have disappeared through mergers. 
+                        What remains are financial titans larger than most countries.
+                    </p>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-icon">🏛️</div>
+                    <h3>Too Big to Fail</h3>
+                    <p>
+                        These banks receive an implicit subsidy worth $83 billion annually 
+                        from taxpayer-backed guarantees. That's $83 billion in free money.
+                    </p>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-icon">🌍</div>
+                    <h3>Global Dominance</h3>
+                    <p>
+                        ICBC's $6.3 trillion in assets exceeds the GDP of Germany, India, 
+                        and the UK combined. One bank. Three major economies.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="story-grid">
+                <div class="story-card">
+                    <div class="story-icon">💸</div>
+                    <h3>The 2008 Bailout</h3>
+                    <p>
+                        Taxpayers spent $498 billion (3.5% of GDP) rescuing banks that 
+                        had gambled with depositors' money. The executives kept their bonuses.
+                    </p>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-icon">🎯</div>
+                    <h3>Political Influence</h3>
+                    <p>
+                        From 1998-2016, the financial sector spent $7.4 billion on lobbying. 
+                        That's $1.3 million per day buying influence in Washington.
+                    </p>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-icon">⚖️</div>
+                    <h3>Wealth Concentration</h3>
+                    <p>
+                        While banks grew larger, the bottom 50% of Americans saw their 
+                        wealth share drop to just 2.6%. The system works—for some.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Comparison Section -->
+    <section class="comparison-section" id="compare">
+        <div class="comparison-container">
+            <div class="story-intro">
+                <span class="section-label">Interactive Comparison</span>
+                <h2>Choose a Bank. See the Absurdity.</h2>
+                <p class="hero-subtitle">
+                    Select any major bank below to discover what they could do with their assets.
+                </p>
+            </div>
+            
+            <div class="bank-selector">
+                <div class="bank-option active" data-bank="icbc">
+                    <span>🇨🇳</span>
+                    <span>ICBC ($6.3T)</span>
+                </div>
+                <div class="bank-option" data-bank="jpmorgan">
+                    <span>🇺🇸</span>
+                    <span>JPMorgan ($4.0T)</span>
+                </div>
+                <div class="bank-option" data-bank="bofa">
+                    <span>🇺🇸</span>
+                    <span>Bank of America ($3.3T)</span>
+                </div>
+                <div class="bank-option" data-bank="hsbc">
+                    <span>🇬🇧</span>
+                    <span>HSBC ($3.0T)</span>
+                </div>
+            </div>
+            
+            <div class="comparison-display">
+                <div class="comparison-content">
+                    <span class="comparison-amount" id="comparisonAmount">140+ Years</span>
+                    <p class="comparison-description" id="comparisonDesc">
+                        ICBC could end world hunger for over 140 years straight with their $6.3 trillion in assets.
+                    </p>
+                    <p class="comparison-context">Based on UN estimates of $45 billion needed annually</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <button class="btn btn-primary" id="randomComparison">
+                    Show Another Comparison
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions Section -->
+    <section class="questions-section" id="questions">
+        <div class="questions-container">
+            <span class="section-label">The Questions We Should Ask</span>
+            <h2>What If Things Were Different?</h2>
+            
+            <div class="question-card">
+                <p class="question-text">
+                    What if banks used just 10% of their assets for humanity?
+                </p>
+                <p class="question-stat">
+                    That's $5 trillion—enough to solve climate change, end poverty, 
+                    and fund universal healthcare globally.
+                </p>
+            </div>
+            
+            <div class="question-card">
+                <p class="question-text">
+                    What if "too big to fail" meant too big to exist?
+                </p>
+                <p class="question-stat">
+                    Breaking up the largest banks could create thousands of community banks 
+                    that actually serve local needs.
+                </p>
+            </div>
+            
+            <div class="question-card">
+                <p class="question-text">
+                    What if we measured success differently?
+                </p>
+                <p class="question-stat">
+                    Instead of quarterly profits, what if banks reported lives improved, 
+                    communities strengthened, and problems solved?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="story-section" style="text-align: center;">
+        <div class="story-container">
+            <h2>Ready to See Individual Banks?</h2>
+            <p class="hero-subtitle" style="margin-bottom: 2rem;">
+                Explore each banking giant in detail. Discover what they could trade their assets for.
+            </p>
+                            <a href="banks.html" class="btn btn-primary" id="explore">
+                Explore All Banks
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Bank Size</h3>
+                <p>
+                    Making the incomprehensible scale of global banking 
+                    understandable through visual storytelling.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="banks.html">All Banks</a></li>
+                    <li><a href="compare.html">Comparisons</a></li>
+                    <li><a href="data.html">Data Sources</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="data.html#methodology">Methodology</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#press">Press Kit</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Share</h4>
+                <ul>
+                    <li><a href="#" id="shareTwitter">Twitter</a></li>
+                    <li><a href="#" id="shareFacebook">Facebook</a></li>
+                    <li><a href="#" id="shareLinkedIn">LinkedIn</a></li>
+                    <li><a href="#" id="shareEmail">Email</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bank Size. All data sourced from public financial reports. 
+            <a href="/privacy" style="color: var(--gray);">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Remove loading screen
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loadingScreen');
+            setTimeout(() => {
+                loadingScreen.classList.add('fade-out');
+            }, 500);
+        });
+
+        // Navigation scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animated counter
+        function animateValue(element, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                element.textContent = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const endValue = parseInt(stat.getAttribute('data-count'));
+                        animateValue(stat, 0, endValue, 2000);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe hero stats
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) {
+            observer.observe(heroStats);
+        }
+
+        // Bank comparison data
+        const comparisons = {
+            icbc: [
+                {
+                    amount: "140+ Years",
+                    description: "ICBC could end world hunger for over 140 years straight with their $6.3 trillion in assets.",
+                    context: "Based on UN estimates of $45 billion needed annually"
+                },
+                {
+                    amount: "30× NFL",
+                    description: "ICBC could buy every single NFL team 30 times over and still have billions left.",
+                    context: "Total NFL franchise value: ~$208 billion"
+                },
+                {
+                    amount: "5× Earth's Population",
+                    description: "ICBC could theoretically save 44 billion people from starvation—5 times the current global population.",
+                    context: "Based on $6 billion saving 42 million from famine"
+                }
+            ],
+            jpmorgan: [
+                {
+                    amount: "89-100 Years",
+                    description: "JPMorgan Chase could solve global hunger for nearly a century with their $4 trillion.",
+                    context: "While maintaining full banking operations"
+                },
+                {
+                    amount: "Every iPhone Ever",
+                    description: "JPMorgan could buy all 1.5+ billion iPhones ever made at full retail price and have $3T left.",
+                    context: "Based on average iPhone price of $800"
+                },
+                {
+                    amount: "19× NFL Teams",
+                    description: "JPMorgan could purchase all 32 NFL teams 19 times over.",
+                    context: "More than every major sports league combined"
+                }
+            ],
+            bofa: [
+                {
+                    amount: "15× NFL",
+                    description: "Bank of America could own the entire NFL 15 times over with their $3.3 trillion.",
+                    context: "Or every major US sports team several times"
+                },
+                {
+                    amount: "Netflix + 1,500 Years",
+                    description: "Bank of America is worth Netflix plus 1,500 years of Monaco's total property sales.",
+                    context: "Netflix market cap: $502 billion"
+                },
+                {
+                    amount: "73 Years",
+                    description: "Bank of America could fund the end of world hunger for over 7 decades.",
+                    context: "Enough for multiple generations"
+                }
+            ],
+            hsbc: [
+                {
+                    amount: "66 Years",
+                    description: "HSBC's $3 trillion could eliminate global hunger for 66 consecutive years.",
+                    context: "Serving 40+ million customers while doing so"
+                },
+                {
+                    amount: "10× Luxury Market",
+                    description: "HSBC could corner the entire global luxury goods market for a full decade.",
+                    context: "Global luxury market: ~$350 billion annually"
+                },
+                {
+                    amount: "All UK Property",
+                    description: "HSBC could theoretically purchase significant portions of UK real estate.",
+                    context: "Operating in 63+ countries and territories"
+                }
+            ]
+        };
+
+        // Bank selector functionality
+        let currentBank = 'icbc';
+        let currentComparisonIndex = 0;
+
+        document.querySelectorAll('.bank-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.bank-option').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                currentBank = this.dataset.bank;
+                currentComparisonIndex = 0;
+                updateComparison();
+            });
+        });
+
+        // Update comparison display
+        function updateComparison() {
+            const comparison = comparisons[currentBank][currentComparisonIndex];
+            const amountEl = document.getElementById('comparisonAmount');
+            const descEl = document.getElementById('comparisonDesc');
+            const contextEl = document.querySelector('.comparison-context');
+            
+            // Fade out
+            amountEl.style.opacity = '0';
+            descEl.style.opacity = '0';
+            
+            setTimeout(() => {
+                amountEl.textContent = comparison.amount;
+                descEl.textContent = comparison.description;
+                contextEl.textContent = comparison.context;
+                
+                // Fade in
+                amountEl.style.opacity = '1';
+                descEl.style.opacity = '1';
+            }, 300);
+        }
+
+        // Random comparison button
+        document.getElementById('randomComparison').addEventListener('click', () => {
+            const bankComparisons = comparisons[currentBank];
+            currentComparisonIndex = (currentComparisonIndex + 1) % bankComparisons.length;
+            updateComparison();
+        });
+
+        // Social sharing
+        const shareUrl = encodeURIComponent('https://www.banksize.com');
+        const shareText = encodeURIComponent('ICBC could end world hunger for 140+ years. Discover the absurd scale of global banking:');
+        
+        document.getElementById('shareTwitter').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.open(`https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}`, '_blank');
+        });
+        
+        document.getElementById('shareFacebook').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank');
+        });
+        
+        document.getElementById('shareLinkedIn').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`, '_blank');
+        });
+        
+        document.getElementById('shareEmail').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.location.href = `mailto:?subject=The Absurd Scale of Global Banking&body=${shareText}%20${shareUrl}`;
+        });
+
+        // Add fade-in animation to elements as they come into view
+        const fadeElements = document.querySelectorAll('.story-card, .question-card');
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(20px)';
+                    
+                    setTimeout(() => {
+                        entry.target.style.transition = 'all 0.6s ease-out';
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, 100);
+                    
+                    fadeObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(element => {
+            fadeObserver.observe(element);
+        });
+
+        // Performance optimization: Lazy load images when added
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.dataset.src;
+            });
+        }
+
+        // Progressive Web App registration (if service worker is available)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(() => {
+                    // Service worker registration failed, app still works
+                });
+            });
+        }
+    </script>
+</body>
+</html>
