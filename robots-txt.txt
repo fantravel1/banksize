@@ -1,0 +1,43 @@
+# Robots.txt for www.banksize.com
+# This file tells search engine crawlers which pages they can access
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Specific crawlers
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 0
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+# Block bad bots (common spam/scraper bots)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://www.banksize.com/sitemap.xml
+
+# Crawl-delay for other bots (in seconds)
+User-agent: *
+Crawl-delay: 1
