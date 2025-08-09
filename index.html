@@ -768,6 +768,51 @@
                 display: flex;
                 z-index: 1001;
             }
+            .hero {
+                min-height: auto; /* Remove fixed height */
+                padding: 5rem 1rem 3rem; /* Reduce padding */
+            }
+            
+            .hero-content {
+                padding: 0; /* Remove any extra padding */
+                width: 100%; /* Ensure full width */
+                max-width: 100%; /* Prevent overflow */
+            }
+            
+            h1 {
+                font-size: clamp(1.75rem, 6vw, 2.5rem); /* Smaller font sizes */
+                word-wrap: break-word; /* Allow text wrapping */
+                overflow-wrap: break-word; /* Modern text wrapping */
+            }
+            
+            .hero-subtitle {
+                font-size: 0.95rem; /* Smaller subtitle */
+                padding: 0 0.5rem; /* Less padding */
+                max-width: 90%; /* Prevent edge touching */
+                margin: 0 auto 2rem; /* Center with margins */
+            }
+            
+            .hero-stats {
+                grid-template-columns: 1fr; /* Single column */
+                gap: 1rem;
+                max-width: 100%;
+                padding: 0 0.5rem; /* Add small padding */
+            }
+            
+            .stat-card {
+                min-width: 0; /* Allow shrinking */
+                padding: 1rem;
+            }
+            
+            .stat-number {
+                font-size: 1.75rem; /* Smaller numbers */
+            }
+            
+            /* Prevent horizontal scroll on entire page */
+            body, html {
+                overflow-x: hidden;
+                max-width: 100%;
+            }
 
             .hero-cta {
                 flex-direction: column;
@@ -904,7 +949,7 @@
             <div class="hero-stats">
                 <div class="stat-card">
                     <span class="stat-number" data-count="140">0</span>
-                    <span class="stat-label">Years to End World Hunger</span>
+                    <span class="stat-label">Years of World Hunger</span>
                 </div>
                 <div class="stat-card">
                     <span class="stat-number" data-count="50">0</span>
