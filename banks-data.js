@@ -2207,8 +2207,146 @@ const banksData = {
         { icon: '🤖', title: 'Robot Workforce', value: '1.4 Million', desc: 'Could deploy 1.4 million service robots' }
       ]
     }
-  }
+  },
 
+  sberbank: {
+    id: 'sberbank',
+    name: 'Sberbank of Russia',
+    shortName: 'Sberbank',
+    country: 'Russia',
+    flag: '🇷🇺',
+    founded: 1841,
+    headquarters: 'Moscow, Russia',
+    assets: 620,
+    marketCap: 15,
+    revenue: 35,
+    netIncome: 2.5,
+    employees: 250000,
+    branches: 14000,
+    countries: 18,
+    globalRank: 60,
+    description: "Eastern Europe's largest bank, serving 100 million retail customers across 11 time zones despite sanctions.",
+    keyFact: "Sberbank processes 40% of all payments in Russia and could heat every Russian home for free forever.",
+    ceoQuote: "More than a bank - the circulatory system of Russia's economy.",
+    timeline: [
+      { year: 1841, event: "Founded by Tsar Nicholas I as Russia's first savings bank" },
+      { year: 1991, event: "Survives Soviet collapse, transforms from state savings monopoly" },
+      { year: 2020, event: "Rebrands as 'Sber' ecosystem beyond banking" },
+      { year: 2024, event: "Operates under sanctions but maintains domestic dominance" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🔥', title: 'Free Heating', value: 'All Russia Forever', desc: 'Could heat every Russian home for free forever' },
+        { icon: '🏥', title: 'Healthcare', value: '12 Years', desc: 'Could fund Russian healthcare for 12 years' },
+        { icon: '🎓', title: 'Education', value: '124M Students', desc: 'Could provide free university to 124 million students' },
+        { icon: '🚂', title: 'Trans-Siberian', value: '62 Railways', desc: 'Could build 62 Trans-Siberian Railways' },
+        { icon: '🏘️', title: 'Soviet Housing', value: 'Replace All', desc: 'Could replace every Soviet-era apartment block' },
+        { icon: '❄️', title: 'Arctic Cities', value: '620 Cities', desc: 'Could build 620 heated Arctic cities' }
+      ],
+      corporate: [
+        { icon: '⛽', title: 'Gazprom', value: '8× Over', desc: 'Could buy gas giant Gazprom 8 times' },
+        { icon: '🛢️', title: 'Rosneft', value: '10× Over', desc: 'Could purchase Rosneft 10 times' },
+        { icon: '💎', title: 'Alrosa Diamonds', value: '62× Over', desc: 'Could buy diamond monopoly 62 times' },
+        { icon: '🏭', title: 'Norilsk Nickel', value: '15× Over', desc: 'Could acquire mining giant 15 times' },
+        { icon: '🚁', title: 'Russian Helicopters', value: '124× Over', desc: 'Could buy helicopter maker 124 times' },
+        { icon: '🥃', title: 'Vodka Industry', value: '100× Over', desc: 'Could buy every vodka distillery 100 times' }
+      ],
+      sports: [
+        { icon: '🏒', title: 'KHL Empire', value: '310× Over', desc: 'Could fund KHL hockey for 310 years' },
+        { icon: '⚽', title: 'Russian Premier', value: '620× Over', desc: 'Could own Russian football for 620 years' },
+        { icon: '🏋️', title: 'Olympic Training', value: '6,200 Centers', desc: 'Could build 6,200 Olympic training centers' },
+        { icon: '⛸️', title: 'Ice Palaces', value: '62,000', desc: 'Could build 62,000 ice skating palaces' },
+        { icon: '🎿', title: 'Ski Resorts', value: '3,100', desc: 'Could build 3,100 world-class ski resorts' },
+        { icon: '♟️', title: 'Chess Academies', value: '62,000', desc: 'Could fund 62,000 chess academies' }
+      ],
+      'real-estate': [
+        { icon: '🏰', title: 'Kremlin Replicas', value: '6,200', desc: 'Could build 6,200 Kremlin replicas' },
+        { icon: '🏙️', title: 'Moscow City', value: '10× Over', desc: 'Could buy Moscow City district 10 times' },
+        { icon: '🏖️', title: 'Black Sea Coast', value: 'Entire Shore', desc: 'Could buy entire Black Sea coastline' },
+        { icon: '🏛️', title: 'St. Basil\'s', value: '6,200 Copies', desc: 'Could build 6,200 St. Basil\'s Cathedrals' },
+        { icon: '🏘️', title: 'Dachas', value: 'Every Russian', desc: 'Could give every Russian family a dacha' },
+        { icon: '🌉', title: 'Arctic Bridges', value: '1,240 Bridges', desc: 'Could connect Arctic with 1,240 bridges' }
+      ],
+      technology: [
+        { icon: '🚀', title: 'Space Program', value: '124 Years', desc: 'Could fund Russian space program for 124 years' },
+        { icon: '🛰️', title: 'GLONASS', value: '20× Over', desc: 'Could rebuild GLONASS system 20 times' },
+        { icon: '⚛️', title: 'Nuclear Plants', value: '62 Plants', desc: 'Could build 62 nuclear power plants' },
+        { icon: '🤖', title: 'Tech Cities', value: '62 Skolkovos', desc: 'Could build 62 Skolkovo innovation centers' },
+        { icon: '🌐', title: 'Runet', value: 'Independent Internet', desc: 'Could build completely independent internet' },
+        { icon: '❄️', title: 'Permafrost Tech', value: 'Preserve Forever', desc: 'Could develop tech to preserve permafrost' }
+      ]
+    }
+  },
+  
+  fab: {
+    id: 'fab',
+    name: 'First Abu Dhabi Bank',
+    shortName: 'FAB',
+    country: 'United Arab Emirates',
+    flag: '🇦🇪',
+    founded: 2017,
+    headquarters: 'Abu Dhabi, UAE',
+    assets: 320,
+    marketCap: 53,
+    revenue: 9,
+    netIncome: 4.2,
+    employees: 12000,
+    branches: 650,
+    countries: 19,
+    globalRank: 85,
+    description: "The UAE's largest bank and Middle East's leading financial institution, born from a mega-merger.",
+    keyFact: "FAB could build 32 more Burj Khalifas or air-condition the entire Arabian desert using current technology.",
+    ceoQuote: "Growing stronger together - from the UAE to the world.",
+    timeline: [
+      { year: 1968, event: "First National Bank of Abu Dhabi founded" },
+      { year: 2017, event: "Merges with National Bank of Abu Dhabi to create FAB" },
+      { year: 2019, event: "Becomes Middle East's largest bank by assets" },
+      { year: 2024, event: "Manages $320 billion while funding UAE's global ambitions" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🏜️', title: 'Desert Cooling', value: 'Entire Arabia', desc: 'Could air-condition the entire Arabian desert' },
+        { icon: '💧', title: 'Water Security', value: 'GCC 100 Years', desc: 'Could provide water to Gulf states for a century' },
+        { icon: '🎓', title: 'Education City', value: '64 Cities', desc: 'Could build 64 education cities like Qatar\'s' },
+        { icon: '🏥', title: 'Medical Tourism', value: '320 Hospitals', desc: 'Could build 320 world-class medical centers' },
+        { icon: '🌴', title: 'Green Desert', value: '320k km²', desc: 'Could green 320,000 km² of desert' },
+        { icon: '☀️', title: 'Solar Arabia', value: '160 GW', desc: 'Could power entire Arabian Peninsula with solar' }
+      ],
+      corporate: [
+        { icon: '✈️', title: 'Emirates + Etihad', value: 'Both 3× Over', desc: 'Could buy both UAE airlines 3 times each' },
+        { icon: '🏗️', title: 'Emaar Properties', value: '5× Over', desc: 'Could purchase Dubai developer 5 times' },
+        { icon: '🛢️', title: 'ADNOC Stake', value: 'Significant', desc: 'Could buy major stake in oil giant ADNOC' },
+        { icon: '🏖️', title: 'Jumeirah Group', value: '64× Over', desc: 'Could buy luxury hotel chain 64 times' },
+        { icon: '🚗', title: 'Every Ferrari', value: 'Ever Made 2×', desc: 'Could buy every Ferrari ever made twice' },
+        { icon: '💎', title: 'Gold Souks', value: 'All Gold', desc: 'Could buy all gold in Dubai Gold Souk' }
+      ],
+      sports: [
+        { icon: '🏇', title: 'Dubai World Cup', value: '3,200 Races', desc: 'Could fund world\'s richest horse race for 3,200 years' },
+        { icon: '🏎️', title: 'F1 Tracks', value: '320 Circuits', desc: 'Could build 320 Formula 1 grade circuits' },
+        { icon: '⚽', title: 'UAE League', value: '640× Over', desc: 'Could fund UAE Pro League for 640 years' },
+        { icon: '🏌️', title: 'Golf Paradise', value: '3,200 Courses', desc: 'Could build 3,200 championship golf courses' },
+        { icon: '🎾', title: 'Tennis Cities', value: '320 Complexes', desc: 'Could build 320 tennis city complexes' },
+        { icon: '🏟️', title: 'Stadium Cities', value: '64 Complexes', desc: 'Could build 64 sports city megaprojects' }
+      ],
+      'real-estate': [
+        { icon: '🏗️', title: 'Burj Khalifas', value: '32 More', desc: 'Could build 32 more Burj Khalifas' },
+        { icon: '🏝️', title: 'Palm Islands', value: '64 Islands', desc: 'Could create 64 Dubai-style palm islands' },
+        { icon: '🏙️', title: 'Dubai Marina', value: '16× Over', desc: 'Could buy Dubai Marina district 16 times' },
+        { icon: '🏰', title: 'Desert Palaces', value: '32,000', desc: 'Could build 32,000 luxury desert palaces' },
+        { icon: '🌊', title: 'Floating Cities', value: '32 Cities', desc: 'Could build 32 floating cities' },
+        { icon: '✈️', title: 'Airports', value: '64 Airports', desc: 'Could build 64 Dubai-sized airports' }
+      ],
+      technology: [
+        { icon: '🚀', title: 'Mars Mission', value: '1,600 Years', desc: 'Could fund UAE Mars mission for 1,600 years' },
+        { icon: '🏙️', title: 'Smart Cities', value: '32 Cities', desc: 'Could build 32 AI-powered smart cities' },
+        { icon: '🚁', title: 'Flying Cars', value: '3.2M Cars', desc: 'Could deploy 3.2 million flying cars' },
+        { icon: '🌐', title: 'Hyperloop', value: 'Connect GCC', desc: 'Could build hyperloop connecting all Gulf capitals' },
+        { icon: '💎', title: 'Blockchain Gold', value: 'Digitize Trade', desc: 'Could digitize entire gold trade on blockchain' },
+        { icon: '🤖', title: 'Robot Police', value: '320,000', desc: 'Could deploy 320,000 robot police officers' }
+      ]
+    }
+  }
+  
   
 };
 
