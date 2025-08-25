@@ -1172,6 +1172,213 @@ const banksData = {
               { icon: '🚇', title: 'Metro Systems', value: '28 Cities', desc: 'Could build metros in 28 Canadian cities' }
           ]
       }
+  },
+
+  'td-bank': {
+      id: 'td-bank',
+      name: 'Toronto-Dominion Bank',
+      shortName: 'TD Bank',
+      country: 'Canada',
+      flag: '🇨🇦',
+      founded: 1855,
+      headquarters: 'Toronto, Canada',
+      assets: 1300,
+      marketCap: 150,
+      revenue: 48,
+      netIncome: 14,
+      employees: 95000,
+      branches: 2200,
+      countries: 15,
+      globalRank: 18,
+      description: "Canada's second-largest bank with major US retail presence.",
+      keyFact: "TD has more branches in the US than in Canada, making it America's most Canadian bank.",
+      ceoQuote: "Ready for you - building the better bank.",
+      timeline: [
+          { year: 1855, event: "Dominion Bank founded by grain millers and merchants" },
+          { year: 1955, event: "Merges with Toronto Bank to form TD Bank" },
+          { year: 2005, event: "Acquires 51% of Banknorth, entering US market aggressively" },
+          { year: 2024, event: "Operates over 1,100 US branches from Maine to Florida" }
+      ],
+      comparisons: {
+          humanitarian: [
+              { icon: '🌍', title: 'End World Hunger', value: '29 Years', desc: 'Could end hunger for nearly 3 decades' },
+              { icon: '🏥', title: 'Healthcare', value: 'Canada 5 Years', desc: 'Could fund Canadian healthcare for 5 years' },
+              { icon: '🎓', title: 'Student Support', value: '26M Students', desc: 'Could fund education for 26 million students' },
+              { icon: '🏘️', title: 'Affordable Housing', value: '2.6M Homes', desc: 'Could build 2.6 million homes' },
+              { icon: '🌲', title: 'Great Lakes', value: 'Clean Forever', desc: 'Could fund Great Lakes cleanup permanently' },
+              { icon: '🚇', title: 'Transit', value: '26 Systems', desc: 'Could build transit in 26 North American cities' }
+          ],
+          corporate: [
+              { icon: '🏪', title: 'Shopify', value: '15× Over', desc: 'Could buy Shopify 15 times' },
+              { icon: '🍔', title: 'Restaurant Brands', value: '40× Over', desc: 'Could buy Tim Hortons/Burger King parent 40 times' },
+              { icon: '📡', title: 'Rogers', value: '35× Over', desc: 'Could purchase Rogers Communications 35 times' },
+              { icon: '🏗️', title: 'Brookfield', value: '18× Over', desc: 'Could buy Brookfield Asset Management 18 times' },
+              { icon: '🎮', title: 'BlackBerry', value: '325× Over', desc: 'Could purchase BlackBerry 325 times' },
+              { icon: '⛏️', title: 'Barrick Gold', value: '45× Over', desc: 'Could buy Barrick Gold 45 times' }
+          ],
+          sports: [
+              { icon: '🏒', title: 'NHL Teams', value: '6× Over', desc: 'Could buy entire NHL 6 times' },
+              { icon: '🏀', title: 'Raptors', value: '325× Over', desc: 'Could buy Toronto Raptors 325 times' },
+              { icon: '⚾', title: 'MLB Teams', value: '14× Over', desc: 'Could purchase all MLB teams 14 times' },
+              { icon: '🏈', title: 'Bills', value: '200× Over', desc: 'Could buy Buffalo Bills 200 times' },
+              { icon: '⚽', title: 'MLS', value: '65× Over', desc: 'Could own MLS 65 times over' },
+              { icon: '🥍', title: 'Lacrosse', value: 'Global League', desc: 'Could create worldwide lacrosse league' }
+          ],
+          'real-estate': [
+              { icon: '🏙️', title: 'Toronto Financial', value: 'PATH System', desc: 'Could buy Toronto\'s underground city' },
+              { icon: '🗽', title: 'Manhattan', value: 'Several Blocks', desc: 'Could buy several Manhattan blocks' },
+              { icon: '🌊', title: 'Cottage Country', value: 'All Muskoka', desc: 'Could purchase entire Muskoka region' },
+              { icon: '🏢', title: 'Office Towers', value: '2,600', desc: 'Could build 2,600 office towers' },
+              { icon: '🌉', title: 'Border Crossings', value: '260 Bridges', desc: 'Could build 260 border bridges' },
+              { icon: '🏘️', title: 'Suburbs', value: '13 Cities', desc: 'Could build 13 suburban cities' }
+          ],
+          technology: [
+              { icon: '💳', title: 'Payment Network', value: 'North America', desc: 'Could build continental payment system' },
+              { icon: '🏦', title: 'Branch Tech', value: 'Ultra Modern', desc: 'Could create most advanced branch network' },
+              { icon: '📱', title: 'Mobile First', value: '130M Users', desc: 'Could provide premium banking to 130 million' },
+              { icon: '🤖', title: 'AI Advisors', value: '1.3 Million', desc: 'Could deploy 1.3 million AI advisors' },
+              { icon: '🔐', title: 'Fraud Protection', value: '260 Years', desc: 'Could fund fraud protection for 260 years' },
+              { icon: '☁️', title: 'Cloud Banking', value: 'Transform NA', desc: 'Could modernize all North American banking' }
+          ]
+      }
+  },
+  
+  'mizuho': {
+      id: 'mizuho',
+      name: 'Mizuho Financial Group',
+      shortName: 'Mizuho',
+      country: 'Japan',
+      flag: '🇯🇵',
+      founded: 2003,
+      headquarters: 'Tokyo, Japan',
+      assets: 2100,
+      marketCap: 45,
+      revenue: 35,
+      netIncome: 8,
+      employees: 60000,
+      branches: 800,
+      countries: 40,
+      globalRank: 19,
+      description: "Japan's third megabank formed from the merger of three major banks.",
+      keyFact: "Mizuho's name means 'abundant rice' in Japanese, symbolizing prosperity and harvest.",
+      ceoQuote: "One Mizuho: Building the future with finance.",
+      timeline: [
+          { year: 1873, event: "Yasuda Bank founded, one of Mizuho's predecessors" },
+          { year: 2000, event: "Three major banks announce merger to form Mizuho" },
+          { year: 2003, event: "Mizuho Financial Group officially established" },
+          { year: 2024, event: "Manages $2.1 trillion serving 34 million customers" }
+      ],
+      comparisons: {
+          humanitarian: [
+              { icon: '🌍', title: 'End World Hunger', value: '47 Years', desc: 'Could solve hunger for nearly 5 decades' },
+              { icon: '🌊', title: 'Tsunami Defense', value: 'Complete System', desc: 'Could build comprehensive tsunami protection' },
+              { icon: '🎓', title: 'Education', value: '42M Students', desc: 'Could educate 42 million students globally' },
+              { icon: '🏥', title: 'Healthcare Japan', value: '5 Years', desc: 'Could fund Japan\'s healthcare for 5 years' },
+              { icon: '🍱', title: 'Food Security', value: 'Japan Forever', desc: 'Could ensure Japan\'s food security permanently' },
+              { icon: '🚅', title: 'Shinkansen', value: '42,000 km', desc: 'Could build 42,000 km of bullet train tracks' }
+          ],
+          corporate: [
+              { icon: '🚗', title: 'Honda', value: '45× Over', desc: 'Could buy Honda 45 times' },
+              { icon: '📱', title: 'SoftBank', value: '35× Over', desc: 'Could purchase SoftBank 35 times' },
+              { icon: '🎮', title: 'Square Enix', value: '350× Over', desc: 'Could buy Square Enix 350 times' },
+              { icon: '🍜', title: 'Food Industry', value: 'All Chains', desc: 'Could own every Japanese restaurant chain' },
+              { icon: '🏪', title: '7-Eleven Japan', value: '70× Over', desc: 'Could buy 7-Eleven Japan 70 times' },
+              { icon: '📺', title: 'Panasonic', value: '100× Over', desc: 'Could purchase Panasonic 100 times' }
+          ],
+          sports: [
+              { icon: '⚾', title: 'NPB', value: '70× Over', desc: 'Could buy Japanese baseball 70 times' },
+              { icon: '🥋', title: 'Martial Arts', value: 'Global Network', desc: 'Could build worldwide dojo network' },
+              { icon: '🏃', title: 'Olympics', value: '140 Games', desc: 'Could fund 140 Olympic Games' },
+              { icon: '⚽', title: 'J-League', value: '105× Over', desc: 'Could purchase J-League 105 times' },
+              { icon: '🏊', title: 'Pools', value: '210,000', desc: 'Could build 210,000 Olympic pools' },
+              { icon: '🎯', title: 'Training Centers', value: '21,000', desc: 'Could build 21,000 sports facilities' }
+          ],
+          'real-estate': [
+              { icon: '🗼', title: 'Tokyo Towers', value: '4,200', desc: 'Could build 4,200 Tokyo Tower replicas' },
+              { icon: '🏯', title: 'Castles', value: 'Restore All', desc: 'Could restore every Japanese castle' },
+              { icon: '🌸', title: 'Parks', value: '210,000', desc: 'Could create 210,000 cherry blossom parks' },
+              { icon: '♨️', title: 'Onsen', value: '42,000', desc: 'Could build 42,000 hot spring resorts' },
+              { icon: '🏙️', title: 'Shibuya', value: 'Entire District', desc: 'Could buy all of Shibuya district' },
+              { icon: '🗾', title: 'Islands', value: '2,100', desc: 'Could purchase 2,100 small islands' }
+          ],
+          technology: [
+              { icon: '🤖', title: 'Robots', value: '21 Million', desc: 'Could build 21 million service robots' },
+              { icon: '🚄', title: 'Maglev', value: '4,200 Lines', desc: 'Could build 4,200 maglev train lines' },
+              { icon: '💹', title: 'Trading Systems', value: 'Revolutionary', desc: 'Could create next-gen trading platform' },
+              { icon: '🌐', title: '6G Network', value: 'All Japan', desc: 'Could build 6G for entire Japan' },
+              { icon: '🔋', title: 'Battery Tech', value: '210 Years R&D', desc: 'Could fund battery research for 210 years' },
+              { icon: '🛸', title: 'Space Finance', value: '210 Missions', desc: 'Could fund 210 space missions' }
+          ]
+      }
+  },
+  
+  'ing': {
+      id: 'ing',
+      name: 'ING Group',
+      shortName: 'ING',
+      country: 'Netherlands',
+      flag: '🇳🇱',
+      founded: 1991,
+      headquarters: 'Amsterdam, Netherlands',
+      assets: 1100,
+      marketCap: 50,
+      revenue: 22,
+      netIncome: 7,
+      employees: 60000,
+      branches: 1000,
+      countries: 40,
+      globalRank: 20,
+      description: "A Dutch multinational banking and financial services corporation.",
+      keyFact: "ING's orange lion logo has become synonymous with digital banking innovation across Europe.",
+      ceoQuote: "Empowering people to stay a step ahead in life and in business.",
+      timeline: [
+          { year: 1991, event: "Merger of NMB Postbank and Nationale-Nederlanden creates ING" },
+          { year: 1997, event: "Launches ING Direct, pioneering online-only banking" },
+          { year: 2009, event: "Repays Dutch government bailout ahead of schedule" },
+          { year: 2024, event: "Serves 40 million customers as digital banking leader" }
+      ],
+      comparisons: {
+          humanitarian: [
+              { icon: '🌍', title: 'End World Hunger', value: '24 Years', desc: 'Could end hunger for over 2 decades' },
+              { icon: '🌷', title: 'Dutch Healthcare', value: '3 Years', desc: 'Could fund Netherlands healthcare for 3 years' },
+              { icon: '🚲', title: 'Bike Infrastructure', value: 'Global Network', desc: 'Could build bike lanes worldwide' },
+              { icon: '💧', title: 'Water Management', value: 'Protect World', desc: 'Could build global flood protection' },
+              { icon: '🌱', title: 'Sustainability', value: '110 Years', desc: 'Could fund green transition for 110 years' },
+              { icon: '🎓', title: 'Education', value: '22M Students', desc: 'Could educate 22 million students' }
+          ],
+          corporate: [
+              { icon: '🍺', title: 'Heineken', value: '20× Over', desc: 'Could buy Heineken 20 times' },
+              { icon: '💡', title: 'Philips', value: '55× Over', desc: 'Could purchase Philips 55 times' },
+              { icon: '🛢️', title: 'Shell', value: '4× Over', desc: 'Could buy Royal Dutch Shell 4 times' },
+              { icon: '✈️', title: 'KLM', value: '110× Over', desc: 'Could buy KLM 110 times' },
+              { icon: '🏪', title: 'Ahold Delhaize', value: '35× Over', desc: 'Could buy supermarket giant 35 times' },
+              { icon: '🚢', title: 'Port of Rotterdam', value: 'Control', desc: 'Could control Europe\'s largest port' }
+          ],
+          sports: [
+              { icon: '⚽', title: 'Eredivisie', value: '55× Over', desc: 'Could buy Dutch league 55 times' },
+              { icon: '🏑', title: 'Field Hockey', value: 'Global Dominance', desc: 'Could dominate world field hockey' },
+              { icon: '⛸️', title: 'Speed Skating', value: '11,000 Rinks', desc: 'Could build 11,000 ice rinks' },
+              { icon: '🚴', title: 'Cycling', value: 'Tour Forever', desc: 'Could sponsor cycling forever' },
+              { icon: '🏊', title: 'Swimming', value: '110,000 Pools', desc: 'Could build 110,000 pools' },
+              { icon: '⛵', title: 'Sailing', value: 'Every Yacht', desc: 'Could buy every yacht in Netherlands' }
+          ],
+          'real-estate': [
+              { icon: '🌷', title: 'Amsterdam', value: 'Canal Ring', desc: 'Could buy Amsterdam\'s canal ring' },
+              { icon: '🏡', title: 'Dutch Homes', value: '1.1M Houses', desc: 'Could buy 1.1 million Dutch homes' },
+              { icon: '🌬️', title: 'Windmills', value: 'Every One', desc: 'Could buy every windmill in Netherlands' },
+              { icon: '🧀', title: 'Cheese Markets', value: 'All Historic', desc: 'Could own all cheese market buildings' },
+              { icon: '🌊', title: 'Polders', value: 'Create New', desc: 'Could create new land from sea' },
+              { icon: '🏢', title: 'Office Space', value: '2,200 Towers', desc: 'Could build 2,200 office towers' }
+          ],
+          technology: [
+              { icon: '💳', title: 'Digital Banking', value: 'Transform EU', desc: 'Could digitize all European banking' },
+              { icon: '🔐', title: 'Cybersecurity', value: '220 Years', desc: 'Could fund security for 220 years' },
+              { icon: '📱', title: 'Mobile First', value: '1.1B Users', desc: 'Could give mobile banking to 1.1 billion' },
+              { icon: '🌐', title: 'Open Banking', value: 'EU Platform', desc: 'Could create unified EU banking platform' },
+              { icon: '🤖', title: 'AI Banking', value: '110 Years R&D', desc: 'Could fund AI research for 110 years' },
+              { icon: '☁️', title: 'Cloud Infrastructure', value: 'All Europe', desc: 'Could build cloud banking for Europe' }
+          ]
+      }
   }
 };
 
