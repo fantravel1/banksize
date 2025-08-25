@@ -1379,7 +1379,216 @@ const banksData = {
               { icon: '☁️', title: 'Cloud Infrastructure', value: 'All Europe', desc: 'Could build cloud banking for Europe' }
           ]
       }
+  },
+
+  sbi: {
+    id: 'sbi',
+    name: 'State Bank of India',
+    shortName: 'SBI',
+    country: 'India',
+    flag: '🇮🇳',
+    founded: 1806,
+    headquarters: 'Mumbai, India',
+    assets: 900, // ~₹74.9 trillion = ~$900 billion
+    marketCap: 90, // ~₹7.6 trillion = ~$90 billion  
+    revenue: 70, // ~₹5.9 trillion revenue
+    netIncome: 10, // ~₹82,550 crore profit
+    employees: 232000,
+    branches: 22405,
+    countries: 36,
+    globalRank: 47,
+    description: "India's largest bank and the oldest commercial bank in the Indian subcontinent, serving 500 million customers.",
+    keyFact: "SBI serves 500 million customers - more than the entire population of the United States and Canada combined.",
+    ceoQuote: "Banking is necessary, banks are not - we're transforming SBI into a digital powerhouse for New India.",
+    timeline: [
+      { year: 1806, event: "Bank of Calcutta founded, becoming first bank in India" },
+      { year: 1955, event: "Imperial Bank of India becomes State Bank of India" },
+      { year: 2017, event: "Merges with 5 associate banks, becoming one of world's 50 largest" },
+      { year: 2024, event: "Serves 500 million customers with ₹75 trillion in assets" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🌍', title: 'End World Hunger', value: '20 Years', desc: 'Could solve global hunger for 2 decades across all continents' },
+        { icon: '🏥', title: 'Healthcare India', value: 'Free Forever', desc: 'Could provide free healthcare to all 1.4 billion Indians permanently' },
+        { icon: '🎓', title: 'Education', value: '180M Students', desc: 'Could fund complete education for every child in India for a generation' },
+        { icon: '🚰', title: 'Clean Water', value: 'All Villages', desc: 'Could bring clean drinking water to every Indian village' },
+        { icon: '🌾', title: 'Farmer Support', value: '90M Farmers', desc: 'Could modernize equipment for every farmer in India' },
+        { icon: '🏘️', title: 'Housing', value: '18M Homes', desc: 'Could build homes for 72 million Indians' }
+      ],
+      corporate: [
+        { icon: '🏏', title: 'IPL Teams', value: 'All Teams 10×', desc: 'Could buy entire Indian Premier League 10 times over' },
+        { icon: '✈️', title: 'Air India', value: '90× Over', desc: 'Could purchase Air India 90 times' },
+        { icon: '🚗', title: 'Tata Motors', value: '25× Over', desc: 'Could buy Tata Motors 25 times' },
+        { icon: '📱', title: 'Indian Tech', value: 'All Unicorns', desc: 'Could acquire every Indian unicorn startup' },
+        { icon: '🏪', title: 'Reliance Retail', value: '6× Over', desc: 'Could buy Reliance Retail 6 times' },
+        { icon: '🍛', title: 'Food Delivery', value: 'Zomato+Swiggy', desc: 'Could own entire Indian food delivery market' }
+      ],
+      sports: [
+        { icon: '🏏', title: 'Cricket Empire', value: 'BCCI 180×', desc: 'Could buy Indian cricket board 180 times' },
+        { icon: '🏑', title: 'Hockey Revival', value: '9,000 Academies', desc: 'Could build 9,000 world-class hockey academies' },
+        { icon: '🥇', title: 'Olympic Training', value: '1,800 Centers', desc: 'Could build Olympic training centers in every district' },
+        { icon: '⚽', title: 'Football Leagues', value: 'ISL 450×', desc: 'Could buy Indian Super League 450 times' },
+        { icon: '🏸', title: 'Badminton', value: 'Global Dominance', desc: 'Could create world\'s largest badminton infrastructure' },
+        { icon: '🎯', title: 'Sports Cities', value: '90 Cities', desc: 'Could build 90 complete sports cities' }
+      ],
+      'real-estate': [
+        { icon: '🏙️', title: 'Mumbai BKC', value: 'Entire District', desc: 'Could buy all of Bandra Kurla Complex' },
+        { icon: '🏛️', title: 'Heritage Sites', value: 'Restore All', desc: 'Could restore every heritage site in India' },
+        { icon: '🌴', title: 'Goa', value: 'Half the State', desc: 'Could purchase half of Goa\'s real estate' },
+        { icon: '🏔️', title: 'Hill Stations', value: 'All Premium', desc: 'Could buy every premium hill station property' },
+        { icon: '🏢', title: 'Tech Parks', value: '900 Parks', desc: 'Could build 900 IT parks across India' },
+        { icon: '🛍️', title: 'Malls', value: '1,800 Malls', desc: 'Could build 1,800 mega shopping malls' }
+      ],
+      technology: [
+        { icon: '💳', title: 'Digital India', value: 'Complete Vision', desc: 'Could digitize entire Indian economy' },
+        { icon: '📱', title: 'UPI Revolution', value: 'Global Expansion', desc: 'Could take UPI payments system worldwide' },
+        { icon: '🛰️', title: 'Satellites', value: '900 Satellites', desc: 'Could launch India\'s own satellite constellation' },
+        { icon: '🤖', title: 'AI Research', value: '180 Years', desc: 'Could fund Indian AI research for 180 years' },
+        { icon: '🌐', title: 'Rural Internet', value: 'Every Village', desc: 'Could bring 5G to every Indian village' },
+        { icon: '🔐', title: 'Cyber Defense', value: 'National Grid', desc: 'Could build impenetrable national cyber defense' }
+      ]
+    }
+  },
+
+  cba: {
+    id: 'cba',
+    name: 'Commonwealth Bank of Australia',
+    shortName: 'CBA',
+    country: 'Australia',
+    flag: '🇦🇺',
+    founded: 1911,
+    headquarters: 'Sydney, Australia',
+    assets: 850, // A$1.35 trillion = ~$850 billion USD
+    marketCap: 190, // A$290 billion = ~$190 billion USD
+    revenue: 30, // Based on reported financials
+    netIncome: 7, // A$11 billion = ~$7 billion USD
+    employees: 52000,
+    branches: 1000,
+    countries: 12,
+    globalRank: 45,
+    description: "Australia's largest bank by market cap and the leading financial institution in the Southern Hemisphere.",
+    keyFact: "CBA is worth more than the entire GDP of New Zealand, and could buy every house in Tasmania twice over.",
+    ceoQuote: "Building tomorrow's bank today - simpler, safer, and better for all Australians.",
+    timeline: [
+      { year: 1911, event: "Established by the Commonwealth Bank Act as Australia's first national bank" },
+      { year: 1991, event: "Begins privatization under Keating government" },
+      { year: 2006, event: "Becomes first Australian bank to reach $100 billion market cap" },
+      { year: 2025, event: "Surpasses BHP as Australia's most valuable company at A$290 billion" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🌍', title: 'End World Hunger', value: '19 Years', desc: 'Could solve global hunger for nearly two decades' },
+        { icon: '🏥', title: 'Medicare Forever', value: 'All Australia', desc: 'Could fund Australia\'s healthcare system permanently' },
+        { icon: '🎓', title: 'Free University', value: 'Every Aussie', desc: 'Could make university free for all Australians forever' },
+        { icon: '🔥', title: 'Bushfire Defense', value: '8,500 Years', desc: 'Could fund bushfire prevention for 8,500 years' },
+        { icon: '🐨', title: 'Wildlife Protection', value: 'Save All Species', desc: 'Could protect every endangered Australian species' },
+        { icon: '🏘️', title: 'Housing Crisis', value: '1.7M Homes', desc: 'Could build affordable homes for 6.8 million Australians' }
+      ],
+      corporate: [
+        { icon: '🛒', title: 'Woolworths Group', value: '13× Over', desc: 'Could buy Woolworths 13 times over' },
+        { icon: '✈️', title: 'Qantas Airways', value: '85× Over', desc: 'Could purchase Qantas 85 times' },
+        { icon: '📱', title: 'Telstra', value: '10× Over', desc: 'Could buy Telstra 10 times' },
+        { icon: '⛏️', title: 'Fortescue', value: '12× Over', desc: 'Could acquire mining giant Fortescue 12 times' },
+        { icon: '🏗️', title: 'Lendlease', value: '170× Over', desc: 'Could buy Lendlease 170 times' },
+        { icon: '🎮', title: 'Aristocrat Leisure', value: '25× Over', desc: 'Could own pokies maker Aristocrat 25 times' }
+      ],
+      sports: [
+        { icon: '🏈', title: 'AFL League', value: '85× Over', desc: 'Could buy entire AFL 85 times over' },
+        { icon: '🏏', title: 'Cricket Australia', value: '850× Over', desc: 'Could fund Cricket Australia for 850 years' },
+        { icon: '🏉', title: 'NRL Empire', value: '170× Over', desc: 'Could purchase NRL 170 times' },
+        { icon: '🏊', title: 'Olympic Pools', value: '85,000', desc: 'Could build 85,000 Olympic swimming pools' },
+        { icon: '🎾', title: 'Tennis Centers', value: '42,500', desc: 'Could build 42,500 world-class tennis centers' },
+        { icon: '🏇', title: 'Melbourne Cup', value: '28,000 Races', desc: 'Could fund Melbourne Cup for 28,000 years' }
+      ],
+      'real-estate': [
+        { icon: '🌆', title: 'Sydney CBD', value: '30% of City', desc: 'Could buy 30% of Sydney\'s CBD' },
+        { icon: '🏖️', title: 'Gold Coast', value: 'Entire Coastline', desc: 'Could purchase entire Gold Coast property' },
+        { icon: '🍷', title: 'Barossa Valley', value: 'All Wineries', desc: 'Could buy every winery in Australia' },
+        { icon: '🏝️', title: 'Private Islands', value: '8,500 Islands', desc: 'Could buy 8,500 tropical islands' },
+        { icon: '🌉', title: 'Sydney Harbour', value: 'Waterfront', desc: 'Could buy all Sydney Harbour waterfront' },
+        { icon: '🏔️', title: 'Ski Resorts', value: 'Every Resort 5×', desc: 'Could buy every Australian ski resort 5 times' }
+      ],
+      technology: [
+        { icon: '💳', title: 'Digital Banking', value: 'Pacific Leader', desc: 'Could digitize banking for entire Pacific region' },
+        { icon: '🛰️', title: 'Satellites', value: '850 Satellites', desc: 'Could launch Australia\'s own GPS system' },
+        { icon: '🤖', title: 'AI Research', value: '170 Years', desc: 'Could fund CSIRO AI research for 170 years' },
+        { icon: '🌐', title: 'NBN Upgrade', value: 'Fiber Everyone', desc: 'Could give fiber internet to every Australian' },
+        { icon: '🔋', title: 'Solar Farms', value: '425 GW', desc: 'Could power Australia entirely with solar' },
+        { icon: '🚄', title: 'High Speed Rail', value: 'Full Network', desc: 'Could build Melbourne-Sydney-Brisbane bullet train' }
+      ]
+    }
+  },
+
+  'standard-bank': {
+    id: 'standard-bank',
+    name: 'Standard Bank Group',
+    shortName: 'Standard Bank',
+    country: 'South Africa',
+    flag: '🇿🇦',
+    founded: 1862,
+    headquarters: 'Johannesburg, South Africa',
+    assets: 190, // R3.4 trillion = ~$190 billion USD
+    marketCap: 21, // R372 billion = ~$21 billion USD
+    revenue: 8, // Based on financial reports
+    netIncome: 1.3, // R23.8 billion = ~$1.3 billion USD
+    employees: 50000,
+    branches: 1180,
+    countries: 20,
+    globalRank: 160,
+    description: "Africa's largest bank by assets, with a 162-year legacy of driving African growth and prosperity.",
+    keyFact: "Standard Bank serves more people than the entire population of Australia across 20 African countries.",
+    ceoQuote: "Africa is our home, we drive her growth.",
+    timeline: [
+      { year: 1862, event: "Founded as Standard Bank of British South Africa in Port Elizabeth" },
+      { year: 1969, event: "Merges with Chartered Bank to briefly form Standard Chartered" },
+      { year: 1987, event: "Demerges from Standard Chartered to focus on Africa" },
+      { year: 2025, event: "Leads African banking with R3.4 trillion in assets across 20 countries" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🌍', title: 'End Hunger Africa', value: '10 Years', desc: 'Could end hunger across entire African continent for a decade' },
+        { icon: '💧', title: 'Water Access', value: '380M People', desc: 'Could provide clean water to 380 million Africans' },
+        { icon: '🎓', title: 'Education', value: '38M Students', desc: 'Could fund complete education for 38 million African children' },
+        { icon: '🏥', title: 'Healthcare', value: '1,900 Hospitals', desc: 'Could build 1,900 fully-equipped hospitals across Africa' },
+        { icon: '☀️', title: 'Solar Power', value: '95 GW', desc: 'Could electrify rural Africa with 95 GW solar capacity' },
+        { icon: '🏘️', title: 'Township Upgrade', value: 'All SA Townships', desc: 'Could modernize every South African township' }
+      ],
+      corporate: [
+        { icon: '💎', title: 'De Beers', value: '3× Over', desc: 'Could buy diamond giant De Beers 3 times' },
+        { icon: '🛒', title: 'Shoprite', value: '5× Over', desc: 'Could purchase Africa\'s largest retailer 5 times' },
+        { icon: '📱', title: 'MTN Group', value: '4× Over', desc: 'Could buy telecom giant MTN 4 times' },
+        { icon: '🍺', title: 'SABMiller Legacy', value: 'Rebuild Empire', desc: 'Could rebuild entire SABMiller brewing empire' },
+        { icon: '✈️', title: 'SAA + Kenya Airways', value: 'Both + More', desc: 'Could buy multiple African airlines' },
+        { icon: '⛏️', title: 'Gold Fields', value: '2× Over', desc: 'Could acquire Gold Fields twice' }
+      ],
+      sports: [
+        { icon: '🏉', title: 'Springboks', value: '950 Years', desc: 'Could fund South African rugby for 950 years' },
+        { icon: '⚽', title: 'PSL', value: '190× Over', desc: 'Could buy Premier Soccer League 190 times' },
+        { icon: '🏏', title: 'Cricket SA', value: '380× Over', desc: 'Could fund Cricket South Africa for 380 years' },
+        { icon: '🏃', title: 'Comrades Marathon', value: '19,000 Races', desc: 'Could sponsor Comrades for 19,000 years' },
+        { icon: '🥊', title: 'Boxing Academies', value: '3,800', desc: 'Could build 3,800 world-class boxing academies' },
+        { icon: '🏊', title: 'Swimming Pools', value: '38,000', desc: 'Could build 38,000 Olympic pools across Africa' }
+      ],
+      'real-estate': [
+        { icon: '🌆', title: 'Sandton CBD', value: 'Entire District', desc: 'Could buy all of Africa\'s richest square mile' },
+        { icon: '🏖️', title: 'Cape Town Waterfront', value: '5× Over', desc: 'Could buy V&A Waterfront 5 times' },
+        { icon: '🦁', title: 'Game Reserves', value: '190 Krugers', desc: 'Could create 190 Kruger-sized parks' },
+        { icon: '🍷', title: 'Wine Farms', value: 'All Stellenbosch', desc: 'Could buy every wine farm in Western Cape' },
+        { icon: '🏢', title: 'Johannesburg', value: '20% of City', desc: 'Could purchase 20% of Johannesburg' },
+        { icon: '🏝️', title: 'Mauritius Property', value: 'Half the Island', desc: 'Could buy half of Mauritius real estate' }
+      ],
+      technology: [
+        { icon: '📱', title: 'Mobile Money', value: 'All Africa', desc: 'Could create continent-wide mobile banking' },
+        { icon: '🛰️', title: 'African Satellites', value: '190 Satellites', desc: 'Could launch Africa\'s satellite network' },
+        { icon: '🌐', title: 'Fiber Network', value: 'Connect Africa', desc: 'Could connect every African city with fiber' },
+        { icon: '💳', title: 'Digital ID', value: '1B Africans', desc: 'Could give digital identity to 1 billion Africans' },
+        { icon: '🤖', title: 'Tech Hubs', value: '1,900 Centers', desc: 'Could build 1,900 innovation centers' },
+        { icon: '⚡', title: 'Load Shedding', value: 'End Forever', desc: 'Could end South Africa\'s power crisis permanently' }
+      ]
+    }
   }
+
+  
 };
 
 // Utility functions for the website
