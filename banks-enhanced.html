@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Banks - Bank Size | Explore the World's Largest Financial Institutions</title>
+    <meta name="description" content="Explore the world's largest banks by assets. From ICBC's $6.3 trillion to regional giants, discover what each bank could do with their wealth.">
+    <meta name="keywords" content="largest banks, bank assets, ICBC, JPMorgan Chase, Bank of America, global banking, bank rankings">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="The World's Largest Banks - Bank Size">
+    <meta property="og:description" content="Explore 25+ banking giants that control over $50 trillion in combined assets.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.banksize.com/banks">
+    <meta property="og:image" content="https://www.banksize.com/images/banks-og.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.banksize.com/banks">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="banks.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">💰</div>
+                <span>Bank Size</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="banks.html" class="nav-link active">Banks</a></li>
+                <li><a href="compare.html" class="nav-link">Compare</a></li>
+                <li><a href="data.html" class="nav-link">Data</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="hero-animation"></div>
+        <h1><span class="gradient-text">The Banking Giants</span></h1>
+        <p class="page-subtitle">
+            25 institutions control over <span class="highlight">$50 trillion</span> in assets
+        </p>
+        
+        <!-- Quick Stats -->
+        <div class="quick-stats">
+            <div class="quick-stat">
+                <span class="stat-icon">🌍</span>
+                <span class="stat-value" data-count="2800">0</span>
+                <span class="stat-label">Years of ending hunger</span>
+            </div>
+            <div class="quick-stat">
+                <span class="stat-icon">🏈</span>
+                <span class="stat-value" data-count="240">0</span>
+                <span class="stat-label">Times buy all NFL teams</span>
+            </div>
+            <div class="quick-stat">
+                <span class="stat-icon">📱</span>
+                <span class="stat-value" data-count="63">0</span>
+                <span class="stat-label">Billion iPhones</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="filters-container">
+            <!-- Sort Options -->
+            <div class="sort-wrapper">
+                <label>Sort by:</label>
+                <select class="sort-select" id="sortSelect">
+                    <option value="assets-desc">Assets (High to Low)</option>
+                    <option value="assets-asc">Assets (Low to High)</option>
+                    <option value="market-cap">Market Cap</option>
+                    <option value="employees">Employees</option>
+                    <option value="countries">Global Reach</option>
+                </select>
+            </div>
+
+            <!-- Filter Pills -->
+            <div class="filter-pills">
+                <button class="filter-pill active" data-filter="all">
+                    <span class="pill-icon">🌐</span>
+                    All Banks
+                    <span class="pill-count">25</span>
+                </button>
+                <button class="filter-pill" data-filter="trillion">
+                    <span class="pill-icon">💎</span>
+                    $1T+ Club
+                    <span class="pill-count">12</span>
+                </button>
+                <button class="filter-pill" data-filter="us">
+                    <span class="pill-icon">🇺🇸</span>
+                    US Banks
+                    <span class="pill-count">4</span>
+                </button>
+                <button class="filter-pill" data-filter="china">
+                    <span class="pill-icon">🇨🇳</span>
+                    Chinese
+                    <span class="pill-count">4</span>
+                </button>
+                <button class="filter-pill" data-filter="europe">
+                    <span class="pill-icon">🇪🇺</span>
+                    European
+                    <span class="pill-count">5</span>
+                </button>
+                <button class="filter-pill" data-filter="asia">
+                    <span class="pill-icon">🌏</span>
+                    Asian
+                    <span class="pill-count">8</span>
+                </button>
+            </div>
+
+            <!-- Search -->
+            <div class="search-wrapper">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search banks, countries...">
+                <svg class="search-icon" viewBox="0 0 24 24">
+                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Bar -->
+    <section class="summary-bar">
+        <div class="summary-container">
+            <div class="summary-item">
+                <h3>Currently Viewing</h3>
+                <p><span id="viewingCount">25</span> banks with <span id="viewingAssets">$50.3T</span> in combined assets</p>
+            </div>
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="cards" title="Card View">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <rect x="2" y="2" width="6" height="6" rx="1"/>
+                        <rect x="12" y="2" width="6" height="6" rx="1"/>
+                        <rect x="2" y="12" width="6" height="6" rx="1"/>
+                        <rect x="12" y="12" width="6" height="6" rx="1"/>
+                    </svg>
+                </button>
+                <button class="view-btn" data-view="compact" title="Compact View">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <rect x="2" y="3" width="16" height="2" rx="1"/>
+                        <rect x="2" y="9" width="16" height="2" rx="1"/>
+                        <rect x="2" y="15" width="16" height="2" rx="1"/>
+                    </svg>
+                </button>
+                <button class="view-btn" data-view="visual" title="Visual View">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                        <path d="M10 2v8l5.196 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banks Container -->
+    <section class="banks-section">
+        <div class="banks-container" id="banksContainer">
+            <!-- Banks will be dynamically loaded here -->
+            <div class="loading-state">
+                <div class="loading-animation">
+                    <div class="loading-bar"></div>
+                    <div class="loading-bar"></div>
+                    <div class="loading-bar"></div>
+                </div>
+                <p>Loading banking giants...</p>
+            </div>
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState" style="display: none;">
+            <div class="empty-icon">🔍</div>
+            <h3>No banks found</h3>
+            <p>Try adjusting your filters or search terms</p>
+            <button class="btn btn-primary" onclick="resetFilters()">Clear Filters</button>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section class="insights-section">
+        <div class="insights-container">
+            <h2>Mind-Blowing Facts</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-icon">🏛️</div>
+                    <h3>Too Big to Fail</h3>
+                    <p>The top 4 US banks receive <strong>$83 billion</strong> in annual implicit subsidies from taxpayers</p>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-icon">📈</div>
+                    <h3>Concentration</h3>
+                    <p>Just 38 banks worldwide control over <strong>$1 trillion</strong> each in assets</p>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-icon">🌍</div>
+                    <h3>Global Power</h3>
+                    <p>Top 25 banks assets equal <strong>double the US GDP</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Compare These Giants</h2>
+            <p>See what happens when you combine the power of multiple banks</p>
+            <a href="compare.html" class="btn btn-primary">
+                Start Comparing
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Bank Size. All data sourced from public financial reports.</p>
+        </div>
+    </footer>
+
+    <!-- Load Bank Data -->
+    <script src="banks-data.js"></script>
+    
+    <!-- Page Scripts -->
+    <script src="banks.js"></script>
+</body>
+</html>
