@@ -1586,6 +1586,420 @@ const banksData = {
         { icon: '⚡', title: 'Load Shedding', value: 'End Forever', desc: 'Could end South Africa\'s power crisis permanently' }
       ]
     }
+  },
+
+  'saudi-national-bank': {
+    id: 'saudi-national-bank',
+    name: 'Saudi National Bank',
+    shortName: 'SNB',
+    country: 'Saudi Arabia',
+    flag: '🇸🇦',
+    founded: 1953,
+    headquarters: 'Riyadh, Saudi Arabia',
+    assets: 310, // SAR 1.17 trillion = ~$310 billion USD
+    marketCap: 56, // ~$56 billion USD
+    revenue: 10, // ~$10 billion USD
+    netIncome: 3.3, // SAR 12.2 billion H1 2025
+    employees: 14000,
+    branches: 500,
+    countries: 8,
+    globalRank: 95,
+    description: "The Middle East's banking powerhouse, formed from the largest merger in regional history between NCB and Samba.",
+    keyFact: "SNB lost $1 billion overnight when Credit Suisse collapsed in 2023, yet still posted record profits the same year.",
+    ceoQuote: "Building bridges between opportunities - from the Kingdom to the world.",
+    timeline: [
+      { year: 1953, event: "Founded as National Commercial Bank, Saudi Arabia's first bank" },
+      { year: 2021, event: "Merges with Samba Financial Group in $15 billion deal" },
+      { year: 2023, event: "Survives Credit Suisse collapse despite 10% stake writeoff" },
+      { year: 2025, event: "Leads Islamic banking globally with SAR 1.17 trillion in assets" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🕌', title: 'Hajj Forever', value: 'All Pilgrims Free', desc: 'Could fund free Hajj for every Muslim forever' },
+        { icon: '💧', title: 'Desert Greening', value: '310k km²', desc: 'Could turn 310,000 km² of desert into farmland' },
+        { icon: '🏥', title: 'Healthcare', value: 'GCC Forever', desc: 'Could fund healthcare for entire Gulf region permanently' },
+        { icon: '🎓', title: 'Education', value: '62M Students', desc: 'Could educate 62 million students through university' },
+        { icon: '☀️', title: 'Solar Cities', value: '310 Cities', desc: 'Could build 310 carbon-neutral cities in the desert' },
+        { icon: '🏘️', title: 'NEOM Project', value: '1.2× Over', desc: 'Could fund entire NEOM megacity project' }
+      ],
+      corporate: [
+        { icon: '🛢️', title: 'Saudi Aramco', value: 'Significant Stake', desc: 'Could buy meaningful stake in world\'s most valuable company' },
+        { icon: '✈️', title: 'Saudi Airlines', value: '31× Over', desc: 'Could purchase Saudia 31 times' },
+        { icon: '🏪', title: 'Retail Empire', value: 'All GCC Retail', desc: 'Could buy every major retailer in Gulf states' },
+        { icon: '⚡', title: 'ACWA Power', value: '10× Over', desc: 'Could buy renewable giant ACWA 10 times' },
+        { icon: '🏗️', title: 'Saudi Binladin', value: '15× Over', desc: 'Could acquire construction giant 15 times' },
+        { icon: '📱', title: 'STC', value: '5× Over', desc: 'Could buy Saudi Telecom 5 times' }
+      ],
+      sports: [
+        { icon: '⚽', title: 'Saudi Pro League', value: '310× Over', desc: 'Could fund Saudi Pro League for 310 years' },
+        { icon: '🏇', title: 'Saudi Cup', value: '15,500 Races', desc: 'Could fund world\'s richest horse race for millennia' },
+        { icon: '🏎️', title: 'F1 Tracks', value: '310 Circuits', desc: 'Could build 310 Formula 1 grade circuits' },
+        { icon: '⛳', title: 'LIV Golf', value: '62 Years', desc: 'Could fund LIV Golf tour for 62 years' },
+        { icon: '🥊', title: 'Boxing Events', value: '3,100 Mega-fights', desc: 'Could host 3,100 heavyweight championship fights' },
+        { icon: '🏟️', title: 'Stadium Cities', value: '31 Complexes', desc: 'Could build 31 mega sports city complexes' }
+      ],
+      'real-estate': [
+        { icon: '🕌', title: 'Mecca Expansion', value: '6× Over', desc: 'Could fund Grand Mosque expansion 6 times' },
+        { icon: '🏙️', title: 'Riyadh Downtown', value: 'Entire CBD', desc: 'Could buy all of central Riyadh' },
+        { icon: '🏖️', title: 'Red Sea Project', value: '10× Over', desc: 'Could fund Red Sea tourism project 10 times' },
+        { icon: '🏰', title: 'Luxury Resorts', value: '3,100', desc: 'Could build 3,100 ultra-luxury desert resorts' },
+        { icon: '🌴', title: 'Palm Islands', value: '62 Islands', desc: 'Could create 62 Dubai-style palm islands' },
+        { icon: '🏢', title: 'Kingdom Tower', value: '310× Over', desc: 'Could build 310 Kingdom Towers' }
+      ],
+      technology: [
+        { icon: '🤖', title: 'AI City', value: 'Complete NEOM AI', desc: 'Could build world\'s most advanced AI city' },
+        { icon: '☀️', title: 'Solar Power', value: '155 GW', desc: 'Could power entire Middle East with solar' },
+        { icon: '💧', title: 'Desalination', value: 'Regional Supply', desc: 'Could provide fresh water to entire Gulf region' },
+        { icon: '🚄', title: 'Hyperloop', value: 'GCC Network', desc: 'Could connect all Gulf capitals with hyperloop' },
+        { icon: '🛰️', title: 'Space Program', value: '31 Years', desc: 'Could fund Saudi space program for 31 years' },
+        { icon: '🌐', title: '6G Network', value: 'Middle East', desc: 'Could build 6G for entire Middle East' }
+      ]
+    }
+  },
+
+  dbs: {
+    id: 'dbs',
+    name: 'DBS Bank',
+    shortName: 'DBS',
+    country: 'Singapore',
+    flag: '🇸🇬',
+    founded: 1968,
+    headquarters: 'Marina Bay, Singapore',
+    assets: 550, // S$739 billion = ~$550 billion USD
+    marketCap: 105, // S$141 billion = ~$105 billion USD
+    revenue: 17, // S$22.3 billion
+    netIncome: 8.5, // S$11.4 billion
+    employees: 35000,
+    branches: 280,
+    countries: 18,
+    globalRank: 65,
+    description: "Southeast Asia's largest bank and the world's best digital bank, driving Asian prosperity.",
+    keyFact: "DBS was the first Singapore company to hit $100 billion market cap, worth more than Singapore Airlines, Singtel and Keppel combined.",
+    ceoQuote: "Making banking joyful - Live more, Bank less.",
+    timeline: [
+      { year: 1968, event: "Founded by Singapore government to finance industrialization" },
+      { year: 1998, event: "Acquires POSB, gaining 4 million customers overnight" },
+      { year: 2016, event: "Named World's Best Digital Bank by Euromoney" },
+      { year: 2025, event: "First Singapore firm to exceed $100 billion market cap" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🌍', title: 'End Hunger Asia', value: '12 Years', desc: 'Could end hunger across all of Asia for 12 years' },
+        { icon: '🏥', title: 'Healthcare ASEAN', value: '5 Years', desc: 'Could fund healthcare for all ASEAN nations for 5 years' },
+        { icon: '🎓', title: 'Digital Education', value: '110M Students', desc: 'Could provide tablets and internet to 110 million Asian students' },
+        { icon: '🏘️', title: 'Smart Cities', value: '55 Cities', desc: 'Could build 55 smart sustainable cities' },
+        { icon: '🌊', title: 'Ocean Cleanup', value: 'All Asian Seas', desc: 'Could clean all plastic from Asian waters' },
+        { icon: '🚇', title: 'Metro Systems', value: '110 Cities', desc: 'Could build metros in 110 Southeast Asian cities' }
+      ],
+      corporate: [
+        { icon: '✈️', title: 'Singapore Airlines', value: '35× Over', desc: 'Could buy SIA 35 times over' },
+        { icon: '📱', title: 'Singtel', value: '10× Over', desc: 'Could purchase Singtel 10 times' },
+        { icon: '🏗️', title: 'CapitaLand', value: '18× Over', desc: 'Could buy property giant 18 times' },
+        { icon: '🛢️', title: 'Keppel Corp', value: '55× Over', desc: 'Could acquire Keppel 55 times' },
+        { icon: '🎮', title: 'Sea Limited', value: '11× Over', desc: 'Could buy gaming giant Sea 11 times' },
+        { icon: '🚢', title: 'PSA Ports', value: '27× Over', desc: 'Could own global port operator 27 times' }
+      ],
+      sports: [
+        { icon: '🏎️', title: 'F1 Singapore GP', value: '550 Races', desc: 'Could host Singapore Grand Prix for 550 years' },
+        { icon: '⚽', title: 'S-League', value: '5,500× Over', desc: 'Could fund Singapore Premier League for 5,500 years' },
+        { icon: '🏊', title: 'Aquatic Centers', value: '55,000', desc: 'Could build 55,000 Olympic-standard pools' },
+        { icon: '🏃', title: 'Sports Hubs', value: '550 Complexes', desc: 'Could build 550 world-class sports complexes' },
+        { icon: '🏸', title: 'Badminton Empire', value: 'Global Dominance', desc: 'Could dominate world badminton forever' },
+        { icon: '🥋', title: 'Martial Arts', value: '110k Dojos', desc: 'Could build 110,000 training centers' }
+      ],
+      'real-estate': [
+        { icon: '🌆', title: 'Marina Bay', value: 'Entire District', desc: 'Could buy all of Marina Bay' },
+        { icon: '🏝️', title: 'Sentosa Island', value: '55× Over', desc: 'Could buy Sentosa 55 times' },
+        { icon: '🏢', title: 'CBD Towers', value: '110 Towers', desc: 'Could build 110 supertall towers' },
+        { icon: '🌴', title: 'Tropical Resorts', value: '5,500', desc: 'Could build 5,500 luxury island resorts' },
+        { icon: '🏘️', title: 'HDB Towns', value: '110 Towns', desc: 'Could build 110 new satellite towns' },
+        { icon: '✈️', title: 'Changi Expansion', value: '55× Over', desc: 'Could fund Changi expansion 55 times' }
+      ],
+      technology: [
+        { icon: '🤖', title: 'AI Nation', value: 'Complete Vision', desc: 'Could make Singapore world\'s first AI nation' },
+        { icon: '💳', title: 'Digital Banking', value: 'All ASEAN', desc: 'Could digitize banking for 650 million people' },
+        { icon: '🌐', title: 'Smart Nation', value: '5× Over', desc: 'Could fund Smart Nation initiative 5 times' },
+        { icon: '🔒', title: 'Cybersecurity', value: 'Regional Hub', desc: 'Could secure all ASEAN digital infrastructure' },
+        { icon: '🛰️', title: 'Satellites', value: '550 Satellites', desc: 'Could launch ASEAN satellite network' },
+        { icon: '⚡', title: 'Quantum Tech', value: '110 Years R&D', desc: 'Could fund quantum computing for 110 years' }
+      ]
+    }
+  },
+
+  'itau-unibanco': {
+    id: 'itau-unibanco',
+    name: 'Itaú Unibanco',
+    shortName: 'Itaú',
+    country: 'Brazil',
+    flag: '🇧🇷',
+    founded: 1924,
+    headquarters: 'São Paulo, Brazil',
+    assets: 530, // ~$530 billion USD
+    marketCap: 65, // ~$65 billion USD  
+    revenue: 45, // Based on financial reports
+    netIncome: 8, // Based on reported profits
+    employees: 100000,
+    branches: 4800,
+    countries: 19,
+    globalRank: 75,
+    description: "Latin America's largest private bank, powering Brazilian dreams and regional prosperity.",
+    keyFact: "Itaú serves 1 in 4 Brazilians and could fund Carnival in Rio forever with just one year's profits.",
+    ceoQuote: "Transforming lives through the power to transform - Feito para você.",
+    timeline: [
+      { year: 1924, event: "Founded as Casa Bancária Moreira Salles in Minas Gerais" },
+      { year: 1964, event: "Becomes Banco Itaú during Brazil's economic miracle" },
+      { year: 2008, event: "Merges with Unibanco creating Latin America's largest bank" },
+      { year: 2025, event: "Dominates Brazilian banking with R$2.9 trillion in assets" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🌍', title: 'End Hunger Brazil', value: 'Forever', desc: 'Could end hunger in Brazil permanently' },
+        { icon: '🏥', title: 'SUS Healthcare', value: '5 Years', desc: 'Could fund Brazil\'s public healthcare for 5 years' },
+        { icon: '🎓', title: 'Free University', value: '106M Students', desc: 'Could educate every young Brazilian through college' },
+        { icon: '🏘️', title: 'Favela Upgrade', value: 'All Favelas', desc: 'Could modernize every favela in Brazil' },
+        { icon: '🌳', title: 'Amazon Protection', value: '106 Years', desc: 'Could protect Amazon rainforest for over a century' },
+        { icon: '💧', title: 'Water Access', value: 'All Brazil', desc: 'Could bring clean water to every Brazilian' }
+      ],
+      corporate: [
+        { icon: '✈️', title: 'Embraer', value: '10× Over', desc: 'Could buy aircraft maker Embraer 10 times' },
+        { icon: '🛢️', title: 'Petrobras', value: 'Major Stake', desc: 'Could buy significant stake in oil giant Petrobras' },
+        { icon: '🥩', title: 'JBS', value: '5× Over', desc: 'Could purchase meat giant JBS 5 times' },
+        { icon: '⛏️', title: 'Vale', value: '2× Over', desc: 'Could buy mining giant Vale twice' },
+        { icon: '🍺', title: 'Ambev', value: '3× Over', desc: 'Could own brewing empire Ambev 3 times' },
+        { icon: '🏪', title: 'Magazine Luiza', value: '53× Over', desc: 'Could buy retailer Magalu 53 times' }
+      ],
+      sports: [
+        { icon: '⚽', title: 'Brasileirão', value: '530× Over', desc: 'Could fund Brazilian league for 530 years' },
+        { icon: '🏆', title: 'Copa América', value: '1,060 Cups', desc: 'Could host Copa América 1,060 times' },
+        { icon: '🎪', title: 'Carnival', value: 'Forever Free', desc: 'Could make Rio Carnival free forever' },
+        { icon: '🏎️', title: 'Interlagos', value: '530 Tracks', desc: 'Could build 530 F1-grade circuits' },
+        { icon: '🏐', title: 'Beach Volleyball', value: 'Global Empire', desc: 'Could dominate beach volleyball worldwide' },
+        { icon: '🥊', title: 'MMA Centers', value: '53,000', desc: 'Could build 53,000 MMA training centers' }
+      ],
+      'real-estate': [
+        { icon: '🌆', title: 'São Paulo CBD', value: 'Paulista Avenue', desc: 'Could buy entire Avenida Paulista' },
+        { icon: '🏖️', title: 'Copacabana', value: 'Entire Beach', desc: 'Could purchase all Copacabana beachfront' },
+        { icon: '🏝️', title: 'Fernando de Noronha', value: '106× Over', desc: 'Could buy paradise island 106 times' },
+        { icon: '🌴', title: 'Beach Resorts', value: '10,600', desc: 'Could build 10,600 luxury beach resorts' },
+        { icon: '🏢', title: 'Business Centers', value: '530 Towers', desc: 'Could build 530 corporate towers' },
+        { icon: '🏘️', title: 'Affordable Housing', value: '5.3M Homes', desc: 'Could house 21 million Brazilians' }
+      ],
+      technology: [
+        { icon: '💳', title: 'PIX Dominance', value: 'Forever Free', desc: 'Could make PIX payments free forever' },
+        { icon: '📱', title: 'Digital Inclusion', value: 'All Brazil', desc: 'Could give smartphones to every Brazilian' },
+        { icon: '🛰️', title: 'Amazon Monitoring', value: '530 Satellites', desc: 'Could launch complete Amazon monitoring system' },
+        { icon: '🌐', title: 'Internet Access', value: 'Every Village', desc: 'Could connect every remote village to internet' },
+        { icon: '🤖', title: 'Tech Hubs', value: '1,060 Centers', desc: 'Could build 1,060 innovation centers' },
+        { icon: '⚡', title: 'Solar Amazon', value: '265 GW', desc: 'Could power Brazil with Amazonian solar' }
+      ]
+    }
+  },
+
+  'kb-financial': {
+    id: 'kb-financial',
+    name: 'KB Financial Group',
+    shortName: 'KB',
+    country: 'South Korea',
+    flag: '🇰🇷',
+    founded: 1963,
+    headquarters: 'Seoul, South Korea',
+    assets: 400, // ~540 trillion KRW = ~$400 billion USD
+    marketCap: 29, // ~$29 billion USD
+    revenue: 14, // Based on financial reports
+    netIncome: 2.5, // ~3.4 trillion KRW
+    employees: 25000,
+    branches: 1100,
+    countries: 12,
+    globalRank: 120,
+    description: "Korea's leading financial group, powering the miracle on the Han River into the digital age.",
+    keyFact: "KB could buy every K-pop entertainment company and still have billions left to fund BTS concerts forever.",
+    ceoQuote: "From Korea to the world - your lifetime financial partner.",
+    timeline: [
+      { year: 1963, event: "Founded as Kookmin Bank to support Korea's economic development" },
+      { year: 2008, event: "Transforms into KB Financial Group holding structure" },
+      { year: 2015, event: "Acquires LIG Insurance and Hyundai Securities" },
+      { year: 2025, event: "Breaks into Korea's top 5 companies by market cap" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🌍', title: 'Korean Reunification', value: '8× Fund', desc: 'Could fund estimated reunification costs 8 times' },
+        { icon: '🏥', title: 'Healthcare', value: '4 Years', desc: 'Could fund Korea\'s universal healthcare for 4 years' },
+        { icon: '🎓', title: 'Education', value: '80M Students', desc: 'Could provide free university to 80 million students' },
+        { icon: '🏘️', title: 'Housing Crisis', value: '800k Homes', desc: 'Could solve Seoul\'s housing crisis completely' },
+        { icon: '🌳', title: 'Reforestation', value: 'All Korea 5×', desc: 'Could reforest entire Korean peninsula 5 times' },
+        { icon: '💻', title: 'Digital Divide', value: 'Connect Asia', desc: 'Could bring high-speed internet to all of Asia' }
+      ],
+      corporate: [
+        { icon: '🚗', title: 'Hyundai Motor', value: '14× Over', desc: 'Could buy Hyundai Motor 14 times' },
+        { icon: '📱', title: 'Samsung Elec', value: 'Small Stake', desc: 'Could buy meaningful stake in tech giant' },
+        { icon: '🎮', title: 'Gaming Empire', value: 'All Companies', desc: 'Could own Nexon, NCsoft, and all Korean gaming' },
+        { icon: '🎬', title: 'Entertainment', value: 'SM + YG + JYP', desc: 'Could buy all major K-pop agencies' },
+        { icon: '✈️', title: 'Korean Air', value: '40× Over', desc: 'Could purchase Korean Air 40 times' },
+        { icon: '🏪', title: 'E-Mart', value: '80× Over', desc: 'Could buy retail giant E-Mart 80 times' }
+      ],
+      sports: [
+        { icon: '⚽', title: 'K-League', value: '400× Over', desc: 'Could fund K-League for 400 years' },
+        { icon: '⚾', title: 'KBO League', value: '800× Over', desc: 'Could own Korean baseball for 800 years' },
+        { icon: '🏌️', title: 'LPGA Dominance', value: 'Forever Fund', desc: 'Could fund Korean golf dominance forever' },
+        { icon: '🥋', title: 'Taekwondo', value: 'Global Empire', desc: 'Could build taekwondo centers worldwide' },
+        { icon: '🎯', title: 'Archery Centers', value: '40,000', desc: 'Could build 40,000 Olympic archery centers' },
+        { icon: '🎮', title: 'E-Sports', value: '4,000 Years', desc: 'Could fund Korean e-sports for 4,000 years' }
+      ],
+      'real-estate': [
+        { icon: '🏙️', title: 'Gangnam District', value: '20% of Area', desc: 'Could buy 20% of Seoul\'s Gangnam' },
+        { icon: '🏝️', title: 'Jeju Island', value: 'Half the Island', desc: 'Could purchase half of Jeju Island' },
+        { icon: '🏢', title: 'Lotte Tower', value: '80× Over', desc: 'Could build 80 Lotte World Towers' },
+        { icon: '🏘️', title: 'New Cities', value: '8 Sejongs', desc: 'Could build 8 cities like Sejong' },
+        { icon: '🌉', title: 'Han Bridges', value: '400 Bridges', desc: 'Could build 400 bridges across Han River' },
+        { icon: '🎪', title: 'Theme Parks', value: '80 Parks', desc: 'Could build 80 Lotte World-sized parks' }
+      ],
+      technology: [
+        { icon: '🚄', title: 'KTX Network', value: 'Double Coverage', desc: 'Could double Korea\'s bullet train network' },
+        { icon: '🤖', title: 'Robot Factories', value: '4,000', desc: 'Could build 4,000 robot factories' },
+        { icon: '💻', title: '6G Research', value: '80 Years', desc: 'Could fund 6G development for 80 years' },
+        { icon: '🛰️', title: 'Space Program', value: '40 Years', desc: 'Could fund Korean space program for 40 years' },
+        { icon: '🔋', title: 'Battery Plants', value: '80 Gigafactories', desc: 'Could build 80 battery gigafactories' },
+        { icon: '🌐', title: 'Metaverse', value: 'Korean Matrix', desc: 'Could build complete Korean metaverse' }
+      ]
+    }
+  },
+
+  'national-bank-egypt': {
+    id: 'national-bank-egypt',
+    name: 'National Bank of Egypt',
+    shortName: 'NBE',
+    country: 'Egypt',
+    flag: '🇪🇬',
+    founded: 1898,
+    headquarters: 'Cairo, Egypt',
+    assets: 155, // ~$155 billion USD
+    marketCap: 12, // Estimated based on regional comparisons
+    revenue: 6, // Based on financial reports
+    netIncome: 0.9, // ~$877 million profit
+    employees: 20000,
+    branches: 540,
+    countries: 8,
+    globalRank: 180,
+    description: "Egypt's oldest and largest bank, financing the land of pharaohs for over 125 years.",
+    keyFact: "NBE is older than the discovery of King Tut's tomb and has financed every major Egyptian project since 1898.",
+    ceoQuote: "Building Egypt's future on the foundations of our ancient glory.",
+    timeline: [
+      { year: 1898, event: "Founded by British and Egyptian investors during colonial era" },
+      { year: 1960, event: "Nationalized by Nasser, becomes state-owned bank" },
+      { year: 1975, event: "Co-founds Commercial International Bank (CIB)" },
+      { year: 2024, event: "Leads Egyptian banking with 25% market share" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🌍', title: 'Nile Development', value: 'Complete Project', desc: 'Could fund entire Nile conservation project' },
+        { icon: '🏥', title: 'Healthcare', value: '31 Years', desc: 'Could fund Egypt\'s healthcare for 31 years' },
+        { icon: '🎓', title: 'Education', value: '31M Students', desc: 'Could educate 31 million Egyptian students' },
+        { icon: '🏘️', title: 'New Capital', value: '5× Over', desc: 'Could fund New Administrative Capital 5 times' },
+        { icon: '☀️', title: 'Solar Sahara', value: '77 GW', desc: 'Could turn Sahara into solar powerhouse' },
+        { icon: '💧', title: 'Desalination', value: 'Water Security', desc: 'Could solve Egypt\'s water crisis permanently' }
+      ],
+      corporate: [
+        { icon: '📱', title: 'Telecom Egypt', value: '31× Over', desc: 'Could buy Telecom Egypt 31 times' },
+        { icon: '🏗️', title: 'Orascom', value: '15× Over', desc: 'Could purchase Orascom Construction 15 times' },
+        { icon: '✈️', title: 'EgyptAir', value: '77× Over', desc: 'Could buy national airline 77 times' },
+        { icon: '🏨', title: 'Tourism Sector', value: 'All Hotels', desc: 'Could own Egypt\'s entire tourism industry' },
+        { icon: '🛢️', title: 'Energy Sector', value: 'Major Stakes', desc: 'Could buy stakes in all energy companies' },
+        { icon: '🏪', title: 'Retail Chains', value: 'Complete Control', desc: 'Could own every major retail chain' }
+      ],
+      sports: [
+        { icon: '⚽', title: 'Egyptian League', value: '155× Over', desc: 'Could fund Egyptian Premier League forever' },
+        { icon: '🏛️', title: 'Pharaohs Team', value: '1,550 Years', desc: 'Could fund national team for millennia' },
+        { icon: '🏊', title: 'Olympic Pools', value: '15,500', desc: 'Could build 15,500 Olympic pools' },
+        { icon: '🎾', title: 'Tennis Centers', value: '7,750', desc: 'Could build 7,750 world-class tennis centers' },
+        { icon: '🏇', title: 'Horse Racing', value: 'Revival', desc: 'Could revive Egypt\'s equestrian heritage' },
+        { icon: '🏆', title: 'African Games', value: '77 Events', desc: 'Could host African Games 77 times' }
+      ],
+      'real-estate': [
+        { icon: '🏛️', title: 'Historic Cairo', value: 'Full Restoration', desc: 'Could restore all of historic Cairo' },
+        { icon: '🏖️', title: 'Red Sea Coast', value: 'Major Development', desc: 'Could develop entire Red Sea coastline' },
+        { icon: '🌴', title: 'New Cities', value: '15 Cities', desc: 'Could build 15 new desert cities' },
+        { icon: '🏰', title: 'Heritage Sites', value: 'Preserve All', desc: 'Could preserve every ancient site' },
+        { icon: '🏢', title: 'Cairo Towers', value: '310 Towers', desc: 'Could build 310 Cairo Tower replicas' },
+        { icon: '🌉', title: 'Nile Bridges', value: '155 Bridges', desc: 'Could build 155 bridges across Nile' }
+      ],
+      technology: [
+        { icon: '🛰️', title: 'Space Program', value: 'Launch Egypt', desc: 'Could create Egyptian space agency' },
+        { icon: '💻', title: 'Tech Cities', value: '31 Hubs', desc: 'Could build 31 technology cities' },
+        { icon: '🌐', title: 'Digital Egypt', value: 'Complete Vision', desc: 'Could digitize entire Egyptian economy' },
+        { icon: '🤖', title: 'AI Research', value: '155 Years', desc: 'Could fund AI research for 155 years' },
+        { icon: '🚄', title: 'High Speed Rail', value: 'Full Network', desc: 'Could connect all Egypt with bullet trains' },
+        { icon: '⚡', title: 'Smart Grid', value: 'National Coverage', desc: 'Could modernize Egypt\'s entire power grid' }
+      ]
+    }
+  },
+
+  'banco-do-brasil': {
+    id: 'banco-do-brasil',
+    name: 'Banco do Brasil',
+    shortName: 'BB',
+    country: 'Brazil',
+    flag: '🇧🇷',
+    founded: 1808,
+    headquarters: 'Brasília, Brazil',
+    assets: 420, // Based on financial reports
+    marketCap: 21, // ~$21 billion USD
+    revenue: 30, // ~$30 billion USD
+    netIncome: 3, // Based on reported profits
+    employees: 85000,
+    branches: 4900,
+    countries: 24,
+    globalRank: 130,
+    description: "Brazil's oldest bank and the first bank in all of Latin America, founded by Portuguese royalty fleeing Napoleon.",
+    keyFact: "Banco do Brasil is older than Brazil's independence and has more branches than McDonald's has restaurants in Brazil.",
+    ceoQuote: "O banco de todos os brasileiros - serving Brazil for over two centuries.",
+    timeline: [
+      { year: 1808, event: "Founded by King João VI after fleeing Napoleon to Brazil" },
+      { year: 1905, event: "Survives multiple crises, becomes Brazil's central bank" },
+      { year: 1986, event: "Loses central bank functions, focuses on commercial banking" },
+      { year: 2024, event: "Remains Brazil's second-largest bank with government control" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🌍', title: 'Amazon Forever', value: '84 Years', desc: 'Could protect Amazon rainforest for 84 years' },
+        { icon: '🏥', title: 'SUS Upgrade', value: '2 Years', desc: 'Could modernize Brazil\'s public healthcare' },
+        { icon: '🎓', title: 'Free College', value: '84M Students', desc: 'Could educate 84 million Brazilians' },
+        { icon: '🏘️', title: 'Favela Housing', value: '840k Homes', desc: 'Could build decent housing for all favelas' },
+        { icon: '🌾', title: 'Family Farms', value: '4.2M Farms', desc: 'Could modernize 4.2 million small farms' },
+        { icon: '💧', title: 'Water Access', value: 'All Northeast', desc: 'Could solve Northeast water crisis forever' }
+      ],
+      corporate: [
+        { icon: '⛏️', title: 'Vale Stake', value: 'Major Share', desc: 'Could buy significant stake in Vale' },
+        { icon: '🛒', title: 'Carrefour Brazil', value: '21× Over', desc: 'Could buy Carrefour Brazil 21 times' },
+        { icon: '✈️', title: 'Azul Airlines', value: '42× Over', desc: 'Could purchase Azul 42 times' },
+        { icon: '🍖', title: 'BRF', value: '14× Over', desc: 'Could buy food giant BRF 14 times' },
+        { icon: '⚡', title: 'Eletrobras', value: 'Control Stake', desc: 'Could regain control of Eletrobras' },
+        { icon: '📱', title: 'TIM Brasil', value: '8× Over', desc: 'Could buy telecom TIM Brasil 8 times' }
+      ],
+      sports: [
+        { icon: '⚽', title: 'All Stadiums', value: 'Buy + Rebuild', desc: 'Could buy and rebuild every Brazilian stadium' },
+        { icon: '🏆', title: 'World Cups', value: '21 Hosts', desc: 'Could host 21 World Cups in Brazil' },
+        { icon: '🏐', title: 'Volleyball Empire', value: '4,200 Centers', desc: 'Could build 4,200 volleyball centers' },
+        { icon: '🏖️', title: 'Beach Sports', value: 'Every Beach', desc: 'Could build facilities on every beach' },
+        { icon: '🥋', title: 'Jiu-Jitsu', value: '42,000 Dojos', desc: 'Could build 42,000 BJJ academies' },
+        { icon: '🏎️', title: 'F1 Tracks', value: '84 Circuits', desc: 'Could build 84 Formula 1 tracks' }
+      ],
+      'real-estate': [
+        { icon: '🌆', title: 'São Paulo CBD', value: 'Faria Lima', desc: 'Could buy Avenida Faria Lima district' },
+        { icon: '🏖️', title: 'Beach Property', value: 'Santos to Rio', desc: 'Could buy coastline from Santos to Rio' },
+        { icon: '🌳', title: 'Pantanal', value: '10% Protected', desc: 'Could protect 10% of Pantanal wetlands' },
+        { icon: '🏢', title: 'Corporate Towers', value: '420 Towers', desc: 'Could build 420 corporate towers' },
+        { icon: '🎪', title: 'Samba Cities', value: '42 Complexes', desc: 'Could build 42 carnival complexes' },
+        { icon: '🏰', title: 'Historic Towns', value: 'Restore All', desc: 'Could restore every colonial town' }
+      ],
+      technology: [
+        { icon: '💳', title: 'PIX Evolution', value: 'PIX 2.0', desc: 'Could create next-gen payment system' },
+        { icon: '🛰️', title: 'Amazon Satellites', value: '420 Satellites', desc: 'Could monitor entire Amazon from space' },
+        { icon: '🌐', title: 'Rural Internet', value: 'Every Village', desc: 'Could connect every Brazilian village' },
+        { icon: '🤖', title: 'AgTech Revolution', value: '84 Years R&D', desc: 'Could fund agricultural tech for 84 years' },
+        { icon: '⚡', title: 'Solar Brazil', value: '210 GW', desc: 'Could make Brazil solar powered' },
+        { icon: '🚊', title: 'Metro Systems', value: '42 Cities', desc: 'Could build metros in 42 cities' }
+      ]
+    }
   }
 
   
