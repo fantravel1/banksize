@@ -827,6 +827,351 @@ const banksData = {
         { icon: '🏭', title: 'Smart Factories', value: '22,000', desc: 'Could build 22,000 smart factories' }
       ]
     }
+  },
+  
+  'deutsche-bank': {
+      id: 'deutsche-bank',
+      name: 'Deutsche Bank AG',
+      shortName: 'Deutsche Bank',
+      country: 'Germany',
+      flag: '🇩🇪',
+      founded: 1870,
+      headquarters: 'Frankfurt, Germany',
+      assets: 1400,
+      marketCap: 25,
+      revenue: 28,
+      netIncome: 5,
+      employees: 87000,
+      branches: 1900,
+      countries: 58,
+      globalRank: 15,
+      description: "Germany's largest bank and a major global investment bank.",
+      keyFact: "Deutsche Bank has survived 154 years including two world wars, hyperinflation, and multiple financial crises.",
+      ceoQuote: "Transforming for sustainable profitability.",
+      timeline: [
+          { year: 1870, event: "Founded in Berlin to finance foreign trade and promote German commerce" },
+          { year: 1914, event: "Becomes Germany's largest bank before World War I" },
+          { year: 1999, event: "Acquires Bankers Trust for $10 billion, becoming global investment powerhouse" },
+          { year: 2024, event: "Manages $1.4 trillion after years of restructuring and regulatory challenges" }
+      ],
+      comparisons: {
+          humanitarian: [
+              { icon: '🌍', title: 'End World Hunger', value: '31 Years', desc: 'Could eliminate global hunger for over 3 decades' },
+              { icon: '🏥', title: 'EU Healthcare', value: '2 Years', desc: 'Could fund Germany\'s entire healthcare system for 2 years' },
+              { icon: '🎓', title: 'Free Education', value: '28M Students', desc: 'Could provide free university education to 28 million students' },
+              { icon: '🌳', title: 'Reforestation', value: '70B Trees', desc: 'Could plant 70 billion trees across Europe' },
+              { icon: '🚇', title: 'Metro Systems', value: '280 Cities', desc: 'Could build metro systems in 280 European cities' },
+              { icon: '☀️', title: 'Solar Power', value: '700 GW', desc: 'Could install 700 gigawatts of solar capacity' }
+          ],
+          corporate: [
+              { icon: '🚗', title: 'Buy BMW', value: '20× Over', desc: 'Could purchase BMW 20 times over' },
+              { icon: '✈️', title: 'Lufthansa', value: '140× Over', desc: 'Could buy Lufthansa 140 times' },
+              { icon: '🏭', title: 'German Industry', value: 'Major Stakes', desc: 'Could own significant portions of DAX 30 companies' },
+              { icon: '💊', title: 'Bayer', value: '25× Over', desc: 'Could purchase Bayer 25 times' },
+              { icon: '🏪', title: 'Metro AG', value: '100× Over', desc: 'Could buy Metro AG retail giant 100 times' },
+              { icon: '⚡', title: 'E.ON', value: '35× Over', desc: 'Could acquire energy giant E.ON 35 times' }
+          ],
+          sports: [
+              { icon: '⚽', title: 'Bundesliga', value: '20× Over', desc: 'Could buy entire Bundesliga 20 times' },
+              { icon: '🏎️', title: 'Formula 1', value: '14 Times', desc: 'Could purchase Formula 1 fourteen times' },
+              { icon: '🏆', title: 'Champions League', value: '280 Seasons', desc: 'Could fund Champions League for 280 seasons' },
+              { icon: '🎿', title: 'Winter Olympics', value: '93 Games', desc: 'Could fund 93 Winter Olympic Games' },
+              { icon: '🏊', title: 'Aquatic Centers', value: '140,000', desc: 'Could build 140,000 Olympic pools' },
+              { icon: '🚴', title: 'Cycling Tours', value: '7,000', desc: 'Could sponsor 7,000 Tour de France events' }
+          ],
+          'real-estate': [
+              { icon: '🏙️', title: 'Frankfurt CBD', value: 'Entire District', desc: 'Could buy Frankfurt\'s entire financial district' },
+              { icon: '🏰', title: 'German Castles', value: 'Every One', desc: 'Could purchase every castle in Germany' },
+              { icon: '🏔️', title: 'Alpine Resorts', value: '1,400', desc: 'Could buy 1,400 Alpine ski resorts' },
+              { icon: '🏢', title: 'Office Towers', value: '2,800', desc: 'Could build 2,800 skyscrapers' },
+              { icon: '🏘️', title: 'Housing', value: '2.8M Homes', desc: 'Could build 2.8 million homes' },
+              { icon: '🌉', title: 'Infrastructure', value: '1,400 Bridges', desc: 'Could build 1,400 major bridges' }
+          ],
+          technology: [
+              { icon: '🤖', title: 'Industry 4.0', value: 'Transform EU', desc: 'Could digitize all European manufacturing' },
+              { icon: '🚄', title: 'Hyperloop', value: '28,000 km', desc: 'Could build 28,000 km of hyperloop' },
+              { icon: '💾', title: 'Data Centers', value: '1,400', desc: 'Could build 1,400 massive data centers' },
+              { icon: '🔋', title: 'Battery Plants', value: '140 Gigafactories', desc: 'Could build 140 Tesla-scale battery plants' },
+              { icon: '5️⃣', title: '5G Network', value: 'All Europe', desc: 'Could build 5G for entire Europe' },
+              { icon: '🧬', title: 'Biotech Labs', value: '14,000', desc: 'Could fund 14,000 research laboratories' }
+          ]
+      }
+  },
+  
+  'santander': {
+      id: 'santander',
+      name: 'Banco Santander S.A.',
+      shortName: 'Santander',
+      country: 'Spain',
+      flag: '🇪🇸',
+      founded: 1857,
+      headquarters: 'Madrid, Spain',
+      assets: 1800,
+      marketCap: 60,
+      revenue: 52,
+      netIncome: 12,
+      employees: 210000,
+      branches: 9200,
+      countries: 10,
+      globalRank: 13,
+      description: "Europe's largest bank by market cap and a major force in Latin America.",
+      keyFact: "Santander serves 168 million customers across Europe and the Americas, more than half of Brazil's population.",
+      ceoQuote: "Building a more responsible bank.",
+      timeline: [
+          { year: 1857, event: "Founded in Santander, northern Spain, to facilitate trade" },
+          { year: 1999, event: "Merges with BCH to become Spain's largest bank" },
+          { year: 2007, event: "Acquires ABN AMRO's Brazilian operations, becoming Latin America leader" },
+          { year: 2024, event: "Operates as truly global bank with $1.8 trillion in assets" }
+      ],
+      comparisons: {
+          humanitarian: [
+              { icon: '🌍', title: 'End World Hunger', value: '40 Years', desc: 'Could solve world hunger for 4 decades' },
+              { icon: '🏥', title: 'Healthcare Iberia', value: '9 Years', desc: 'Could fund Spain and Portugal healthcare for 9 years' },
+              { icon: '🎓', title: 'Latin Education', value: '36M Students', desc: 'Could educate 36 million Latin American students' },
+              { icon: '💧', title: 'Water Access', value: '1.8B People', desc: 'Could provide clean water to 1.8 billion people' },
+              { icon: '🏘️', title: 'Social Housing', value: '3.6M Homes', desc: 'Could build 3.6 million affordable homes' },
+              { icon: '🌿', title: 'Amazon Protection', value: '180 Years', desc: 'Could fund Amazon rainforest protection for 180 years' }
+          ],
+          corporate: [
+              { icon: '🏪', title: 'Inditex', value: '20× Over', desc: 'Could buy Zara parent company 20 times' },
+              { icon: '📱', title: 'Telefónica', value: '40× Over', desc: 'Could purchase Telefónica 40 times' },
+              { icon: '✈️', title: 'IAG', value: '60× Over', desc: 'Could buy British Airways parent 60 times' },
+              { icon: '🏗️', title: 'ACS Group', value: '50× Over', desc: 'Could acquire construction giant 50 times' },
+              { icon: '⚡', title: 'Iberdrola', value: '18× Over', desc: 'Could buy renewable giant Iberdrola 18 times' },
+              { icon: '🛢️', title: 'Repsol', value: '45× Over', desc: 'Could purchase Repsol 45 times' }
+          ],
+          sports: [
+              { icon: '⚽', title: 'La Liga', value: '18× Over', desc: 'Could buy entire La Liga 18 times' },
+              { icon: '🏆', title: 'Real Madrid', value: '300× Over', desc: 'Could purchase Real Madrid 300 times' },
+              { icon: '🐂', title: 'Bullfighting', value: 'Every Arena', desc: 'Could buy every bullring in Spain and Latin America' },
+              { icon: '🏖️', title: 'Beach Clubs', value: '180,000', desc: 'Could build 180,000 beach clubs' },
+              { icon: '🎾', title: 'Tennis Centers', value: '90,000', desc: 'Could build 90,000 tennis facilities' },
+              { icon: '🏇', title: 'Polo Clubs', value: '18,000', desc: 'Could create 18,000 polo clubs' }
+          ],
+          'real-estate': [
+              { icon: '🏖️', title: 'Ibiza', value: 'Entire Island', desc: 'Could buy all property on Ibiza' },
+              { icon: '🌴', title: 'Costa del Sol', value: 'Complete Coast', desc: 'Could purchase entire Costa del Sol' },
+              { icon: '🏙️', title: 'Madrid Center', value: 'Major Portion', desc: 'Could buy central Madrid' },
+              { icon: '🏰', title: 'Spanish Castles', value: 'All 2,500', desc: 'Could buy every castle in Spain' },
+              { icon: '🍷', title: 'Rioja Region', value: 'All Vineyards', desc: 'Could purchase entire wine regions' },
+              { icon: '🏢', title: 'Latin Towers', value: '3,600', desc: 'Could build 3,600 skyscrapers in Latin America' }
+          ],
+          technology: [
+              { icon: '🌐', title: 'Digital Banking', value: 'All LatAm', desc: 'Could digitize all Latin American banking' },
+              { icon: '📱', title: 'Mobile Payments', value: '1.8B Users', desc: 'Could provide mobile banking to 1.8 billion' },
+              { icon: '🛰️', title: 'Satellites', value: '1,800', desc: 'Could launch 1,800 communication satellites' },
+              { icon: '💳', title: 'ATM Network', value: '1.8 Million', desc: 'Could install 1.8 million ATMs' },
+              { icon: '🔐', title: 'Cybersecurity', value: '360 Years', desc: 'Could fund banking security for 360 years' },
+              { icon: '⚡', title: 'Fiber Optic', value: 'All Spain', desc: 'Could wire all of Spain with fiber' }
+          ]
+      }
+  },
+  
+  'ubs': {
+      id: 'ubs',
+      name: 'UBS Group AG',
+      shortName: 'UBS',
+      country: 'Switzerland',
+      flag: '🇨🇭',
+      founded: 1862,
+      headquarters: 'Zurich, Switzerland',
+      assets: 1700,
+      marketCap: 100,
+      revenue: 40,
+      netIncome: 15,
+      employees: 115000,
+      branches: 1000,
+      countries: 50,
+      globalRank: 14,
+      description: "Switzerland's banking giant, now including Credit Suisse after historic 2023 merger.",
+      keyFact: "UBS manages over $5.5 trillion in invested assets, more than Switzerland's GDP by 7 times.",
+      ceoQuote: "Reimagining investing. Connecting people for a better world.",
+      timeline: [
+          { year: 1862, event: "Bank in Winterthur founded, UBS predecessor" },
+          { year: 1998, event: "Union Bank of Switzerland merges with Swiss Bank Corporation" },
+          { year: 2023, event: "Acquires Credit Suisse in historic $3.2 billion rescue deal" },
+          { year: 2024, event: "Becomes undisputed Swiss banking champion with $1.7 trillion assets" }
+      ],
+      comparisons: {
+          humanitarian: [
+              { icon: '🌍', title: 'End World Hunger', value: '38 Years', desc: 'Could end global hunger for nearly 4 decades' },
+              { icon: '🏔️', title: 'Climate Protection', value: 'Alps Forever', desc: 'Could fund Alpine conservation indefinitely' },
+              { icon: '🎓', title: 'Education', value: '34M Students', desc: 'Could provide free education to 34 million' },
+              { icon: '🏥', title: 'Swiss Healthcare', value: '20 Years', desc: 'Could fund Switzerland\'s healthcare for 20 years' },
+              { icon: '🚂', title: 'Rail Networks', value: '1,700 Systems', desc: 'Could build 1,700 mountain rail systems' },
+              { icon: '❄️', title: 'Glacier Protection', value: 'All Alps', desc: 'Could protect every Alpine glacier' }
+          ],
+          corporate: [
+              { icon: '🍫', title: 'Nestlé', value: '5× Over', desc: 'Could buy Nestlé 5 times over' },
+              { icon: '💊', title: 'Novartis', value: '8× Over', desc: 'Could purchase Novartis 8 times' },
+              { icon: '⌚', title: 'Rolex', value: '34× Over', desc: 'Could buy Rolex 34 times (if public)' },
+              { icon: '🏭', title: 'ABB', value: '25× Over', desc: 'Could acquire ABB 25 times' },
+              { icon: '🧀', title: 'Swiss Food', value: 'Entire Industry', desc: 'Could own all Swiss food companies' },
+              { icon: '💎', title: 'Luxury Goods', value: '5 Years Global', desc: 'Could buy global luxury market for 5 years' }
+          ],
+          sports: [
+              { icon: '⛷️', title: 'Ski Resorts', value: 'Every Resort', desc: 'Could buy every ski resort globally' },
+              { icon: '⚽', title: 'FIFA', value: '170× Budget', desc: 'Could fund FIFA for 170 years' },
+              { icon: '🏔️', title: 'Climbing Centers', value: '170,000', desc: 'Could build 170,000 climbing facilities' },
+              { icon: '🏒', title: 'Ice Hockey', value: 'Global League', desc: 'Could create worldwide hockey league' },
+              { icon: '🎿', title: 'Winter Sports', value: 'All Infrastructure', desc: 'Could own all winter sports facilities' },
+              { icon: '🚵', title: 'Mountain Biking', value: '1.7M Trails', desc: 'Could build 1.7 million bike trails' }
+          ],
+          'real-estate': [
+              { icon: '🏔️', title: 'Swiss Alps', value: 'Significant', desc: 'Could buy significant Alpine property' },
+              { icon: '🏙️', title: 'Zurich', value: 'Banking District', desc: 'Could own Zurich\'s financial center' },
+              { icon: '🏰', title: 'Châteaux', value: 'Every One', desc: 'Could buy every Swiss castle and château' },
+              { icon: '🌊', title: 'Lake Geneva', value: 'Entire Shore', desc: 'Could purchase Lake Geneva shoreline' },
+              { icon: '🏢', title: 'Banking Towers', value: '3,400', desc: 'Could build 3,400 bank towers' },
+              { icon: '🎿', title: 'Ski Chalets', value: '850,000', desc: 'Could build 850,000 luxury chalets' }
+          ],
+          technology: [
+              { icon: '🔐', title: 'Bank Vaults', value: '170,000', desc: 'Could build 170,000 high-tech vaults' },
+              { icon: '💰', title: 'Crypto Infrastructure', value: 'Global System', desc: 'Could build worldwide crypto banking' },
+              { icon: '🖥️', title: 'Quantum Finance', value: '1,700 Systems', desc: 'Could deploy 1,700 quantum computers' },
+              { icon: '🌐', title: 'Private Banking', value: 'Ultimate Network', desc: 'Could create ultimate wealth management network' },
+              { icon: '📡', title: 'Satellite Banking', value: '8,500', desc: 'Could launch 8,500 banking satellites' },
+              { icon: '🤖', title: 'Wealth AI', value: '340 Years R&D', desc: 'Could fund wealth management AI for 340 years' }
+          ]
+      }
+  },
+  
+  'barclays': {
+      id: 'barclays',
+      name: 'Barclays plc',
+      shortName: 'Barclays',
+      country: 'United Kingdom',
+      flag: '🇬🇧',
+      founded: 1690,
+      headquarters: 'London, UK',
+      assets: 1900,
+      marketCap: 45,
+      revenue: 30,
+      netIncome: 7,
+      employees: 92000,
+      branches: 1500,
+      countries: 40,
+      globalRank: 16,
+      description: "A British universal bank with over 330 years of history.",
+      keyFact: "Barclays is older than the Bank of England and has operated through 50+ recessions and 15 monarchs.",
+      ceoQuote: "We measure success not just by commercial results, but also by how we act.",
+      timeline: [
+          { year: 1690, event: "John Freame and Thomas Gould start banking in Lombard Street" },
+          { year: 1896, event: "Multiple banks join to form Barclay and Company Limited" },
+          { year: 1986, event: "Becomes first foreign bank on Tokyo and New York stock exchanges" },
+          { year: 2024, event: "Continues as major global bank despite post-2008 restructuring" }
+      ],
+      comparisons: {
+          humanitarian: [
+              { icon: '🌍', title: 'End World Hunger', value: '42 Years', desc: 'Could solve hunger for over 4 decades' },
+              { icon: '🏥', title: 'NHS Funding', value: '10 Years', desc: 'Could fund UK\'s NHS for a decade' },
+              { icon: '🎓', title: 'Student Debt', value: 'All UK', desc: 'Could erase all UK student debt' },
+              { icon: '🏘️', title: 'Council Housing', value: '3.8M Homes', desc: 'Could build 3.8 million council homes' },
+              { icon: '🚇', title: 'Transport', value: '38 Cities', desc: 'Could build underground systems in 38 cities' },
+              { icon: '🌳', title: 'Green Britain', value: 'Complete', desc: 'Could make UK carbon neutral' }
+          ],
+          corporate: [
+              { icon: '🛒', title: 'Tesco', value: '50× Over', desc: 'Could buy Tesco 50 times' },
+              { icon: '✈️', title: 'British Airways', value: '25× Over', desc: 'Could purchase IAG/BA 25 times' },
+              { icon: '📱', title: 'Vodafone', value: '35× Over', desc: 'Could buy Vodafone 35 times' },
+              { icon: '🍺', title: 'Diageo', value: '20× Over', desc: 'Could purchase drinks giant 20 times' },
+              { icon: '💊', title: 'GSK', value: '15× Over', desc: 'Could buy GlaxoSmithKline 15 times' },
+              { icon: '🏪', title: 'Marks & Spencer', value: '190× Over', desc: 'Could buy M&S 190 times' }
+          ],
+          sports: [
+              { icon: '⚽', title: 'Premier League', value: '4× Over', desc: 'Could buy entire Premier League 4 times' },
+              { icon: '🏏', title: 'Cricket', value: 'Global Control', desc: 'Could own world cricket' },
+              { icon: '🏉', title: 'Rugby Union', value: 'All Leagues', desc: 'Could purchase all rugby leagues' },
+              { icon: '🎾', title: 'Wimbledon', value: '1,900 Times', desc: 'Could buy Wimbledon 1,900 times' },
+              { icon: '🏇', title: 'Racing', value: 'Every Track', desc: 'Could own all UK horse racing' },
+              { icon: '⛳', title: 'Golf Courses', value: '95,000', desc: 'Could build 95,000 golf courses' }
+          ],
+          'real-estate': [
+              { icon: '🏰', title: 'London Property', value: 'The City', desc: 'Could buy London\'s Square Mile' },
+              { icon: '👑', title: 'Crown Estate', value: '10× Over', desc: 'Could buy Crown Estate 10 times' },
+              { icon: '🏘️', title: 'UK Towns', value: '190 Towns', desc: 'Could purchase 190 entire towns' },
+              { icon: '🌉', title: 'Thames Crossings', value: 'All + 100 More', desc: 'Could build 100 new Thames bridges' },
+              { icon: '🏛️', title: 'Historic Buildings', value: 'Preserve All', desc: 'Could preserve all UK heritage sites' },
+              { icon: '🏢', title: 'Canary Wharf', value: '3× Over', desc: 'Could buy Canary Wharf 3 times' }
+          ],
+          technology: [
+              { icon: '💷', title: 'Digital Pound', value: 'Complete System', desc: 'Could create UK digital currency' },
+              { icon: '🏦', title: 'Open Banking', value: 'Transform UK', desc: 'Could revolutionize UK banking' },
+              { icon: '🔒', title: 'Security', value: '380 Years', desc: 'Could fund UK cybersecurity for 380 years' },
+              { icon: '📱', title: 'Mobile Banking', value: 'Every Briton', desc: 'Could give premium banking to all UK' },
+              { icon: '🌐', title: 'Fintech Hub', value: '1,900 Centers', desc: 'Could build 1,900 fintech centers' },
+              { icon: '🤖', title: 'AI Banking', value: '190 Years', desc: 'Could fund AI banking research for 190 years' }
+          ]
+      }
+  },
+  
+  'rbc': {
+      id: 'rbc',
+      name: 'Royal Bank of Canada',
+      shortName: 'RBC',
+      country: 'Canada',
+      flag: '🇨🇦',
+      founded: 1869,
+      headquarters: 'Toronto, Canada',
+      assets: 1400,
+      marketCap: 180,
+      revenue: 50,
+      netIncome: 15,
+      employees: 93000,
+      branches: 1200,
+      countries: 36,
+      globalRank: 17,
+      description: "Canada's largest bank and one of North America's leading financial institutions.",
+      keyFact: "RBC serves 17 million clients and could buy every Tim Hortons location 700 times over.",
+      ceoQuote: "Helping clients thrive and communities prosper.",
+      timeline: [
+          { year: 1869, event: "Founded as Merchants Bank of Halifax during Canadian Confederation" },
+          { year: 1901, event: "Changes name to Royal Bank of Canada" },
+          { year: 1962, event: "First Canadian bank with computer-based banking system" },
+          { year: 2024, event: "Dominates Canadian banking with $1.4 trillion in assets" }
+      ],
+      comparisons: {
+          humanitarian: [
+              { icon: '🌍', title: 'End World Hunger', value: '31 Years', desc: 'Could solve hunger for over 3 decades' },
+              { icon: '🏥', title: 'Healthcare Canada', value: '6 Years', desc: 'Could fund Canadian healthcare for 6 years' },
+              { icon: '🎓', title: 'Free University', value: 'All Canadians', desc: 'Could make university free for all Canadians forever' },
+              { icon: '❄️', title: 'Arctic Protection', value: 'Permanent', desc: 'Could fund Arctic conservation permanently' },
+              { icon: '🌲', title: 'Forest Protection', value: '140 Years', desc: 'Could protect Canadian forests for 140 years' },
+              { icon: '🏘️', title: 'Indigenous Housing', value: 'Complete', desc: 'Could solve Indigenous housing crisis completely' }
+          ],
+          corporate: [
+              { icon: '🛢️', title: 'Suncor', value: '35× Over', desc: 'Could buy Suncor Energy 35 times' },
+              { icon: '🚂', title: 'CN Rail', value: '12× Over', desc: 'Could purchase CN Railway 12 times' },
+              { icon: '🛒', title: 'Loblaw', value: '28× Over', desc: 'Could buy Loblaw Companies 28 times' },
+              { icon: '☕', title: 'Tim Hortons', value: '70× Over', desc: 'Could buy Tim Hortons 70 times' },
+              { icon: '🏪', title: 'Canadian Tire', value: '100× Over', desc: 'Could purchase Canadian Tire 100 times' },
+              { icon: '✈️', title: 'Air Canada', value: '140× Over', desc: 'Could buy Air Canada 140 times' }
+          ],
+          sports: [
+              { icon: '🏒', title: 'NHL', value: '7× Over', desc: 'Could buy entire NHL 7 times' },
+              { icon: '🍁', title: 'Maple Leafs', value: '700× Over', desc: 'Could buy Toronto Maple Leafs 700 times' },
+              { icon: '⚾', title: 'Blue Jays', value: '875× Over', desc: 'Could purchase Blue Jays 875 times' },
+              { icon: '🏈', title: 'CFL', value: '140× Over', desc: 'Could own Canadian Football League 140 times' },
+              { icon: '🥌', title: 'Curling Rinks', value: '140,000', desc: 'Could build 140,000 curling rinks' },
+              { icon: '⛷️', title: 'Ski Resorts', value: '2,800', desc: 'Could buy 2,800 ski resorts' }
+          ],
+          'real-estate': [
+              { icon: '🏙️', title: 'Toronto Downtown', value: 'Significant', desc: 'Could buy major portion of downtown Toronto' },
+              { icon: '🌊', title: 'Vancouver', value: 'Waterfront', desc: 'Could purchase Vancouver\'s waterfront' },
+              { icon: '🏔️', title: 'Banff', value: 'Entire Town', desc: 'Could buy all of Banff (if allowed)' },
+              { icon: '🏘️', title: 'Suburban Homes', value: '1.4M', desc: 'Could buy 1.4 million Canadian homes' },
+              { icon: '🌉', title: 'Infrastructure', value: '280 Bridges', desc: 'Could build 280 major bridges' },
+              { icon: '🏢', title: 'CN Tower', value: '2,800× Over', desc: 'Could build 2,800 CN Towers' }
+          ],
+          technology: [
+              { icon: '💰', title: 'Digital Loonie', value: 'National System', desc: 'Could create Canadian digital currency' },
+              { icon: '🌐', title: 'Rural Internet', value: 'All Canada', desc: 'Could bring broadband to all rural Canada' },
+              { icon: '🛰️', title: 'Arctic Satellites', value: '1,400', desc: 'Could launch 1,400 Arctic monitoring satellites' },
+              { icon: '🤖', title: 'AI Research', value: '280 Years', desc: 'Could fund Canadian AI research for 280 years' },
+              { icon: '🔋', title: 'Clean Energy', value: '700 GW', desc: 'Could build 700 GW renewable capacity' },
+              { icon: '🚇', title: 'Metro Systems', value: '28 Cities', desc: 'Could build metros in 28 Canadian cities' }
+          ]
+      }
   }
 };
 
