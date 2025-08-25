@@ -2000,6 +2000,213 @@ const banksData = {
         { icon: '🚊', title: 'Metro Systems', value: '42 Cities', desc: 'Could build metros in 42 cities' }
       ]
     }
+  },
+
+  nordea: {
+    id: 'nordea',
+    name: 'Nordea Bank Abp',
+    shortName: 'Nordea',
+    country: 'Finland',
+    flag: '🇫🇮',
+    founded: 2000,
+    headquarters: 'Helsinki, Finland',
+    assets: 750,
+    marketCap: 42,
+    revenue: 11,
+    netIncome: 5.2,
+    employees: 29000,
+    branches: 1400,
+    countries: 20,
+    globalRank: 50,
+    description: "The Nordic region's largest financial services group, serving 11 million customers across Northern Europe.",
+    keyFact: "Nordea could fund the entire Nordic welfare model for 3 years, or buy IKEA, Spotify, H&M and Volvo combined.",
+    ceoQuote: "Enabling dreams and aspirations for a greater good.",
+    timeline: [
+      { year: 1820, event: "Oldest predecessor Sparekassen for Kjøbenhavn og Omegn founded" },
+      { year: 2000, event: "Merger of Merita, Nordbanken, Unibank and Christiania creates Nordea" },
+      { year: 2018, event: "Moves headquarters from Stockholm to Helsinki" },
+      { year: 2024, event: "Dominates Nordic banking with €750 billion in assets" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '🌍', title: 'Nordic Welfare', value: '3 Years', desc: 'Could fund entire Nordic welfare state for 3 years' },
+        { icon: '🏥', title: 'Free Healthcare', value: 'Forever Nordic', desc: 'Could provide free healthcare to Nordics forever' },
+        { icon: '🎓', title: 'Education', value: '150M Students', desc: 'Could fund free university for 150 million students' },
+        { icon: '❄️', title: 'Arctic Protection', value: 'Complete', desc: 'Could protect entire Arctic ecosystem permanently' },
+        { icon: '🏘️', title: 'Housing First', value: '3.75M Homes', desc: 'Could solve homelessness globally with housing' },
+        { icon: '🌲', title: 'Forest Protection', value: 'All Boreal', desc: 'Could protect all boreal forests forever' }
+      ],
+      corporate: [
+        { icon: '🏬', title: 'IKEA', value: '15× Over', desc: 'Could buy IKEA 15 times over' },
+        { icon: '👕', title: 'H&M', value: '50× Over', desc: 'Could purchase H&M 50 times' },
+        { icon: '🎵', title: 'Spotify', value: '12× Over', desc: 'Could buy Spotify 12 times' },
+        { icon: '🚗', title: 'Volvo', value: '30× Over', desc: 'Could acquire Volvo 30 times' },
+        { icon: '📱', title: 'Ericsson', value: '25× Over', desc: 'Could buy Ericsson 25 times' },
+        { icon: '🎮', title: 'Gaming Giants', value: 'All Nordic', desc: 'Could own Rovio, King, and all Nordic gaming' }
+      ],
+      sports: [
+        { icon: '⛷️', title: 'Winter Olympics', value: '50 Games', desc: 'Could fund 50 Winter Olympics' },
+        { icon: '🏒', title: 'Hockey Leagues', value: 'Global Empire', desc: 'Could own every hockey league worldwide' },
+        { icon: '⚽', title: 'Nordic Leagues', value: '375× Over', desc: 'Could buy all Nordic football leagues 375 times' },
+        { icon: '🎿', title: 'Ski Resorts', value: 'Every Resort', desc: 'Could own every ski resort globally' },
+        { icon: '🚣', title: 'Viking Ships', value: '7.5M Ships', desc: 'Could build 7.5 million Viking longships' },
+        { icon: '🏊', title: 'Heated Pools', value: '750,000', desc: 'Could build 750,000 heated Olympic pools' }
+      ],
+      'real-estate': [
+        { icon: '🏙️', title: 'Stockholm', value: 'Entire City', desc: 'Could buy all of Stockholm' },
+        { icon: '❄️', title: 'Ice Hotels', value: '75,000', desc: 'Could build 75,000 ice hotels' },
+        { icon: '🏰', title: 'Nordic Castles', value: 'Every One 10×', desc: 'Could buy every Nordic castle 10 times' },
+        { icon: '🌡️', title: 'Heated Streets', value: 'All Cities', desc: 'Could install heated sidewalks in every Nordic city' },
+        { icon: '🏘️', title: 'Eco-Villages', value: '15,000', desc: 'Could build 15,000 sustainable communities' },
+        { icon: '🌉', title: 'Øresund Bridges', value: '300 Bridges', desc: 'Could build 300 Øresund-scale bridges' }
+      ],
+      technology: [
+        { icon: '🏆', title: 'Nobel Prizes', value: '15,000 Years', desc: 'Could fund Nobel Prizes for 15,000 years' },
+        { icon: '🔋', title: 'Tesla Factories', value: '150 Plants', desc: 'Could build 150 gigafactories' },
+        { icon: '🌐', title: 'Digital Nations', value: 'All Nordic', desc: 'Could digitize every Nordic government service' },
+        { icon: '♨️', title: 'Geothermal', value: 'Heat Europe', desc: 'Could provide geothermal heating to all Europe' },
+        { icon: '🛰️', title: 'Arctic Satellites', value: '750 Satellites', desc: 'Could monitor entire Arctic with satellites' },
+        { icon: '🧬', title: 'Biotech Research', value: '150 Years', desc: 'Could fund Nordic biotech for 150 years' }
+      ]
+    }
+  },
+  
+  bri: {
+    id: 'bri',
+    name: 'Bank Rakyat Indonesia',
+    shortName: 'BRI',
+    country: 'Indonesia',
+    flag: '🇮🇩',
+    founded: 1895,
+    headquarters: 'Jakarta, Indonesia',
+    assets: 120,
+    marketCap: 50,
+    revenue: 12,
+    netIncome: 2.8,
+    employees: 125000,
+    branches: 10000,
+    countries: 8,
+    globalRank: 140,
+    description: "The world's most profitable microfinance institution, serving 120 million customers across 17,000 Indonesian islands.",
+    keyFact: "BRI has more branches than Starbucks has stores globally and reaches villages that Google Maps hasn't found yet.",
+    ceoQuote: "From village to nation - empowering Indonesia's dreams.",
+    timeline: [
+      { year: 1895, event: "Founded as De Poerwokertosche Hulp en Spaarbank der Inlandsche Hoofden" },
+      { year: 1946, event: "Becomes Bank Rakyat Indonesia after independence" },
+      { year: 1984, event: "Pioneers village unit (BRI Unit Desa) microfinance model" },
+      { year: 2024, event: "World's most profitable microfinance bank with 120 million customers" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '💰', title: 'Microloans', value: '2.4B People', desc: 'Could give microloans to 2.4 billion people' },
+        { icon: '🏪', title: 'Village Markets', value: 'Every Village', desc: 'Could build traditional markets in all Indonesian villages' },
+        { icon: '🎓', title: 'Island Schools', value: '240,000', desc: 'Could build schools on every inhabited island' },
+        { icon: '🚤', title: 'Floating Schools', value: '120,000', desc: 'Could build 120,000 floating schools for remote areas' },
+        { icon: '🏥', title: 'Health Clinics', value: '60,000', desc: 'Could build health clinics in every subdistrict' },
+        { icon: '🌾', title: 'Farmer Support', value: '24M Farmers', desc: 'Could modernize 24 million small farms' }
+      ],
+      corporate: [
+        { icon: '🏦', title: 'Bank Mandiri', value: '2× Over', desc: 'Could buy largest competitor twice' },
+        { icon: '✈️', title: 'Garuda Indonesia', value: '40× Over', desc: 'Could purchase national airline 40 times' },
+        { icon: '🏪', title: 'Indomaret', value: '6× Over', desc: 'Could buy convenience store giant 6 times' },
+        { icon: '🏍️', title: 'Gojek', value: '8× Over', desc: 'Could acquire super-app Gojek 8 times' },
+        { icon: '📱', title: 'Telkomsel', value: '3× Over', desc: 'Could buy telecom leader 3 times' },
+        { icon: '🍜', title: 'Indofood', value: '15× Over', desc: 'Could own instant noodle empire 15 times' }
+      ],
+      sports: [
+        { icon: '🏸', title: 'Badminton Empire', value: 'Global Dominance', desc: 'Could ensure Indonesian badminton dominance forever' },
+        { icon: '⚽', title: 'Liga 1', value: '600× Over', desc: 'Could fund Indonesian league for 600 years' },
+        { icon: '🥋', title: 'Pencak Silat', value: '120,000 Centers', desc: 'Could build 120,000 martial arts centers' },
+        { icon: '🏃', title: 'Sports Villages', value: '12,000', desc: 'Could build sports facilities in 12,000 villages' },
+        { icon: '🎭', title: 'Cultural Centers', value: '24,000', desc: 'Could preserve traditional arts with 24,000 centers' },
+        { icon: '🎪', title: 'Gamelan Schools', value: 'Every School', desc: 'Could give gamelan orchestras to every school' }
+      ],
+      'real-estate': [
+        { icon: '🏝️', title: 'Private Islands', value: '1,200 Islands', desc: 'Could buy 1,200 Indonesian islands' },
+        { icon: '🏛️', title: 'Borobudur Scale', value: '1,000 Temples', desc: 'Could build 1,000 Borobudur-sized temples' },
+        { icon: '🌴', title: 'Bali Property', value: 'Half the Island', desc: 'Could purchase half of Bali' },
+        { icon: '🏘️', title: 'Transmigration', value: '2.4M Homes', desc: 'Could build homes for 10 million people' },
+        { icon: '🌉', title: 'Island Bridges', value: '600 Bridges', desc: 'Could connect 600 island pairs' },
+        { icon: '🏖️', title: 'Beach Resorts', value: '6,000', desc: 'Could build 6,000 eco-resorts' }
+      ],
+      technology: [
+        { icon: '📱', title: 'Digital Villages', value: 'All Connected', desc: 'Could bring internet to every Indonesian village' },
+        { icon: '🛰️', title: 'Satellite Network', value: '120 Satellites', desc: 'Could launch complete archipelago coverage' },
+        { icon: '🚁', title: 'Drone Delivery', value: '120,000 Drones', desc: 'Could connect remote islands with drones' },
+        { icon: '☀️', title: 'Solar Islands', value: '60 GW', desc: 'Could power Indonesia with island solar' },
+        { icon: '🌊', title: 'Tsunami Warning', value: 'Complete System', desc: 'Could build comprehensive warning network' },
+        { icon: '🤖', title: 'AgTech', value: '24 Years R&D', desc: 'Could revolutionize Indonesian farming' }
+      ]
+    }
+  },
+  
+  nbk: {
+    id: 'nbk',
+    name: 'National Bank of Kuwait',
+    shortName: 'NBK',
+    country: 'Kuwait',
+    flag: '🇰🇼',
+    founded: 1952,
+    headquarters: 'Kuwait City, Kuwait',
+    assets: 140,
+    marketCap: 18,
+    revenue: 4.5,
+    netIncome: 1.8,
+    employees: 7000,
+    branches: 170,
+    countries: 14,
+    globalRank: 150,
+    description: "The Gulf's first indigenous bank, surviving invasion, oil crashes, and regional turmoil for over 70 years.",
+    keyFact: "NBK remained open during the 1990 Iraqi invasion, operating from a London hotel room to keep Kuwait's finances alive.",
+    ceoQuote: "Stability and trust through every storm - Kuwait's financial fortress.",
+    timeline: [
+      { year: 1952, event: "Founded as first national bank by Kuwaiti merchants" },
+      { year: 1990, event: "Survives Iraqi invasion, operates from London in exile" },
+      { year: 2008, event: "Weathers global crisis without government support" },
+      { year: 2024, event: "Maintains position as Kuwait's largest bank" }
+    ],
+    comparisons: {
+      humanitarian: [
+        { icon: '❄️', title: 'Air Conditioning', value: 'Entire Country', desc: 'Could air-condition all of Kuwait permanently' },
+        { icon: '💧', title: 'Desalination', value: 'GCC Forever', desc: 'Could provide fresh water to Gulf states forever' },
+        { icon: '🎓', title: 'Education Fund', value: '28M Students', desc: 'Could fund university for 28 million students' },
+        { icon: '🏥', title: 'Medical Cities', value: '140 Cities', desc: 'Could build 140 world-class medical cities' },
+        { icon: '🏘️', title: 'Housing', value: 'All Kuwaitis', desc: 'Could provide luxury homes to every Kuwaiti' },
+        { icon: '🌴', title: 'Green Kuwait', value: 'Desert to Oasis', desc: 'Could transform Kuwait into green oasis' }
+      ],
+      corporate: [
+        { icon: '✈️', title: 'Kuwait Airways', value: '70× Over', desc: 'Could buy national airline 70 times' },
+        { icon: '📱', title: 'Zain', value: '10× Over', desc: 'Could purchase telecom giant Zain 10 times' },
+        { icon: '🛢️', title: 'KPC Stake', value: 'Significant', desc: 'Could buy major stake in Kuwait Petroleum' },
+        { icon: '🏪', title: 'The Sultan Center', value: '140× Over', desc: 'Could buy retail chain 140 times' },
+        { icon: '🏗️', title: 'Construction', value: 'All Firms', desc: 'Could own entire construction sector' },
+        { icon: '🚗', title: 'Luxury Cars', value: 'Every Car', desc: 'Could buy every luxury car in Middle East' }
+      ],
+      sports: [
+        { icon: '⚽', title: 'Kuwait League', value: '1,400 Years', desc: 'Could fund Kuwait Premier League for millennia' },
+        { icon: '🏇', title: 'Camel Racing', value: 'Global Empire', desc: 'Could create worldwide camel racing league' },
+        { icon: '🏊', title: 'Indoor Beaches', value: '1,400', desc: 'Could build 1,400 indoor beach resorts' },
+        { icon: '⛷️', title: 'Indoor Ski', value: 'Every GCC City', desc: 'Could build indoor slopes in every Gulf city' },
+        { icon: '🏎️', title: 'F1 Tracks', value: '140 Circuits', desc: 'Could build 140 Formula 1 tracks' },
+        { icon: '⛵', title: 'Marina Cities', value: '140 Complexes', desc: 'Could build 140 mega marina complexes' }
+      ],
+      'real-estate': [
+        { icon: '🏙️', title: 'Kuwait City', value: 'Entire Downtown', desc: 'Could buy all of Kuwait City center' },
+        { icon: '🌊', title: 'Floating Cities', value: '14 Cities', desc: 'Could build 14 floating cities for climate change' },
+        { icon: '🏰', title: 'Desert Palaces', value: '14,000', desc: 'Could build 14,000 luxury desert palaces' },
+        { icon: '🏢', title: 'Kuwait Towers', value: '2,800 Sets', desc: 'Could build 2,800 sets of Kuwait Towers' },
+        { icon: '🏖️', title: 'Beach Development', value: 'Entire Coast', desc: 'Could develop Kuwait\'s entire coastline' },
+        { icon: '🌴', title: 'Oasis Cities', value: '28 Cities', desc: 'Could create 28 oasis cities in desert' }
+      ],
+      technology: [
+        { icon: '☀️', title: 'Solar Kuwait', value: 'Energy Forever', desc: 'Could power Kuwait with solar forever' },
+        { icon: '🏗️', title: 'Cooling Tech', value: 'Cool the Gulf', desc: 'Could develop tech to cool entire Gulf region' },
+        { icon: '💧', title: 'Water Tech', value: '1,400 Plants', desc: 'Could build 1,400 desalination plants' },
+        { icon: '🛰️', title: 'Space Program', value: '140 Years', desc: 'Could fund Kuwait space program for 140 years' },
+        { icon: '🌐', title: '6G Network', value: 'All GCC', desc: 'Could build 6G for entire Gulf region' },
+        { icon: '🤖', title: 'Robot Workforce', value: '1.4 Million', desc: 'Could deploy 1.4 million service robots' }
+      ]
+    }
   }
 
   
