@@ -126,6 +126,163 @@
             min-height: 44px;
             min-width: 44px;
         }
+
+        /* AD: Coinbase Ad */
+        .sponsored-banner {
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.08) 0%, rgba(247, 147, 30, 0.08) 100%);
+            border: 1px solid rgba(255, 107, 53, 0.15);
+            border-radius: 12px;
+            padding: 1.25rem 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .sponsored-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--gradient-secondary);
+            opacity: 0.8;
+        }
+        
+        .sponsored-banner:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.12);
+            border-color: rgba(255, 107, 53, 0.25);
+        }
+        
+        .banner-content {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .sponsored-badge {
+            background: rgba(255, 107, 53, 0.15);
+            color: var(--secondary);
+            padding: 0.375rem 0.875rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            white-space: nowrap;
+        }
+        
+        .banner-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+            text-decoration: none;
+            color: var(--light);
+            transition: all 0.3s ease;
+        }
+        
+        .banner-text {
+            font-family: var(--font-body);
+            font-size: 1.125rem;
+            font-weight: 500;
+            color: var(--light);
+        }
+        
+        .banner-cta {
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+        }
+        
+        .banner-link:hover .banner-cta {
+            transform: translateX(4px);
+        }
+        
+        /* Add subtle animation on load */
+        @keyframes bannerSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .sponsored-banner {
+            animation: bannerSlideIn 0.6s ease-out;
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .sponsored-banner {
+                padding: 1rem 1.25rem;
+                margin: 1.5rem 0;
+            }
+            
+            .banner-content {
+                flex-direction: column;
+                gap: 0.75rem;
+                text-align: center;
+            }
+            
+            .banner-link {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .banner-text {
+                font-size: 1rem;
+            }
+            
+            .banner-cta {
+                font-size: 0.875rem;
+            }
+        }
+        
+        /* Optional: Sticky footer version */
+        .sponsored-banner.sticky {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 800px;
+            width: calc(100% - 40px);
+            z-index: 100;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Optional: Dismissible version */
+        .sponsored-banner.dismissible {
+            padding-right: 3rem;
+        }
+        
+        .banner-close {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--gray);
+            cursor: pointer;
+            padding: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .banner-close:hover {
+            color: var(--light);
+            transform: translateY(-50%) rotate(90deg);
+        }
     </style>
     
     <!-- Load non-critical CSS asynchronously -->
@@ -229,6 +386,25 @@
             </svg>
         </div>
     </section>
+
+    <!-- ADD: Coinbase Ad -->
+    <div class="sponsored-banner dismissible" id="coinbaseBanner">
+        <div class="banner-content">
+            <span class="sponsored-badge">Sponsored</span>
+            <a rel="sponsored" href="https://coinbase-consumer.sjv.io/c/5061961/3215564/9251" 
+               target="_blank" class="banner-link">
+                <span class="banner-text">💰 Earn up to 150€ in BTC with Coinbase</span>
+                <span class="banner-cta">Learn More →</span>
+            </a>
+        </div>
+        <button class="banner-close" onclick="document.getElementById('coinbaseBanner').remove()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        <img height="0" width="0" src="https://imp.pxf.io/i/5061961/3215564/9251" 
+             style="position:absolute;visibility:hidden;" border="0" alt="">
+    </div>
 
     <!-- Story Section -->
     <section class="story-section" id="story">
