@@ -665,6 +665,38 @@
             body {
                 font-size: 16px; /* Prevents zoom on iOS */
             }
+
+            /* Mobile breadcrumb optimization */
+            .breadcrumb-list {
+                padding: 0 1rem;
+                font-size: 0.8125rem;
+            }
+
+            /* Mobile chart optimizations */
+            .chart-section {
+                padding: 1.5rem 1rem;
+            }
+
+            .chart-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .chart-controls {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .chart-wrapper {
+                padding: 1rem;
+                max-height: 400px;
+            }
+
+            .btn-sm {
+                padding: 0.625rem 1rem;
+                font-size: 0.8125rem;
+            }
         }
 
         /* Loading Animation */
@@ -1277,7 +1309,7 @@
                     options: {
                         responsive: true,
                         maintainAspectRatio: true,
-                        aspectRatio: 2,
+                        aspectRatio: window.innerWidth < 768 ? 1.2 : 2,
                         plugins: {
                             legend: {
                                 display: false
@@ -1288,8 +1320,14 @@
                                 bodyColor: '#F7F8FA',
                                 borderColor: 'rgba(0, 102, 255, 0.5)',
                                 borderWidth: 1,
-                                padding: 12,
+                                padding: window.innerWidth < 768 ? 8 : 12,
                                 displayColors: false,
+                                bodyFont: {
+                                    size: window.innerWidth < 768 ? 12 : 14
+                                },
+                                titleFont: {
+                                    size: window.innerWidth < 768 ? 13 : 15
+                                },
                                 callbacks: {
                                     label: function(context) {
                                         return `$${context.parsed.y}T in assets`;
@@ -1302,6 +1340,9 @@
                                 beginAtZero: true,
                                 ticks: {
                                     color: '#6B7280',
+                                    font: {
+                                        size: window.innerWidth < 768 ? 11 : 12
+                                    },
                                     callback: function(value) {
                                         return '$' + value + 'T';
                                     }
@@ -1312,7 +1353,10 @@
                             },
                             x: {
                                 ticks: {
-                                    color: '#6B7280'
+                                    color: '#6B7280',
+                                    font: {
+                                        size: window.innerWidth < 768 ? 11 : 12
+                                    }
                                 },
                                 grid: {
                                     display: false
