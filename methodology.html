@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology - Bank Size | How We Calculate Banking Comparisons</title>
+    <meta name="description" content="Transparent methodology for bank size comparisons. Learn how we calculate and source all data about banking assets and global comparisons.">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="canonical" href="https://www.banksize.com/methodology">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Bank Size Methodology: How We Calculate and Source Our Data",
+        "description": "Transparent explanation of data sources and calculation methods for banking comparisons",
+        "author": {
+            "@type": "Organization",
+            "name": "Bank Size"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Bank Size",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.banksize.com/favicon.png"
+            }
+        },
+        "datePublished": "2024-12-01"
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary: #0066FF;
+            --secondary: #FF6B35;
+            --dark: #0A0E27;
+            --darker: #050714;
+            --light: #F7F8FA;
+            --gray: #6B7280;
+            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); color: var(--light); background: var(--darker); line-height: 1.6; }
+        
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 0; background: rgba(10, 14, 39, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        .nav-container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--light); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
+        .logo-icon { font-size: 1.75rem; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-link { color: var(--light); text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+        .nav-link:hover { color: var(--primary); }
+        
+        .hero-section { padding: 8rem 1.5rem 4rem; background: var(--dark); text-align: center; }
+        .hero-section h1 { font-family: var(--font-display); font-size: 3rem; font-weight: 700; margin-bottom: 1rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-section p { font-size: 1.25rem; color: var(--gray); max-width: 700px; margin: 0 auto; }
+        
+        .content-section { max-width: 900px; margin: 0 auto; padding: 4rem 1.5rem; }
+        .content-section h2 { font-family: var(--font-display); font-size: 2rem; color: var(--light); margin: 3rem 0 1.5rem; }
+        .content-section h3 { font-family: var(--font-display); font-size: 1.5rem; color: var(--light); margin: 2rem 0 1rem; }
+        .content-section p { color: var(--gray); margin-bottom: 1.5rem; line-height: 1.8; }
+        .content-section ul, .content-section ol { color: var(--gray); margin: 1rem 0 1.5rem 2rem; line-height: 1.8; }
+        .content-section li { margin-bottom: 0.5rem; }
+        .content-section strong { color: var(--light); }
+        .content-section a { color: var(--primary); text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+        
+        .source-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; margin: 1rem 0; }
+        .source-card h4 { font-family: var(--font-display); color: var(--primary); margin-bottom: 0.5rem; }
+        .source-card p { margin-bottom: 0.5rem; }
+        
+        footer { background: var(--dark); padding: 3rem 1.5rem 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 4rem; }
+        .footer-container { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .footer-brand h3 { font-family: var(--font-display); color: var(--light); margin-bottom: 1rem; }
+        .footer-brand p { color: var(--gray); }
+        .footer-links h4 { color: var(--light); margin-bottom: 1rem; }
+        .footer-links ul { list-style: none; }
+        .footer-links a { color: var(--gray); text-decoration: none; display: block; padding: 0.5rem 0; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--primary); }
+        .footer-bottom { max-width: 1280px; margin: 2rem auto 0; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); text-align: center; color: var(--gray); font-size: 0.875rem; }
+        
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero-section h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">💰</div>
+                <span>Bank Size</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="banks.html" class="nav-link">Banks</a></li>
+                <li><a href="compare.html" class="nav-link">Compare</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <h1>Methodology</h1>
+        <p>How we calculate and source our banking comparisons</p>
+    </section>
+
+    <div class="content-section">
+        <h2>Our Approach to Transparency</h2>
+        <p>All data and comparisons on Bank Size are sourced from publicly available information. We believe in complete transparency about our methods and sources.</p>
+
+        <h2>Data Sources</h2>
+        
+        <div class="source-card">
+            <h4>Bank Asset Data</h4>
+            <p><strong>Primary Sources:</strong></p>
+            <ul>
+                <li>Annual reports and 10-K filings from individual banks</li>
+                <li>Federal Reserve statistical releases</li>
+                <li>S&P Global Market Intelligence</li>
+                <li>Bank for International Settlements (BIS) statistics</li>
+                <li>Individual regulatory filings (FDIC, OCC, national regulators)</li>
+            </ul>
+            <p><strong>Update Frequency:</strong> Quarterly, based on latest public filings</p>
+        </div>
+
+        <div class="source-card">
+            <h4>Economic & Social Data</h4>
+            <p><strong>Sources:</strong></p>
+            <ul>
+                <li>United Nations Food and Agriculture Organization (FAO)</li>
+                <li>World Bank national accounts data</li>
+                <li>International Monetary Fund (IMF) statistics</li>
+                <li>National statistical agencies</li>
+            </ul>
+        </div>
+
+        <div class="source-card">
+            <h4>Comparison Data Points</h4>
+            <p><strong>Sources:</strong></p>
+            <ul>
+                <li>Sports franchise valuations: Forbes, official league data</li>
+                <li>Corporate valuations: Public market data, SEC filings</li>
+                <li>Historical data: Federal Reserve archives, academic research</li>
+            </ul>
+        </div>
+
+        <h2>Calculation Methods</h2>
+
+        <h3>World Hunger Comparisons</h3>
+        <p>We use the <strong>UN FAO estimate of $45 billion per year</strong> needed to end world hunger. This is a conservative estimate based on:</p>
+        <ul>
+            <li>Food security programs</li>
+            <li>Agricultural development</li>
+            <li>Infrastructure for food distribution</li>
+            <li>Emergency food aid</li>
+        </ul>
+        <p><strong>Formula:</strong> Bank Assets ÷ $45 billion = Years of funding</p>
+        <p><strong>Example:</strong> ICBC ($6.3T) ÷ $45B = 140 years</p>
+
+        <h3>GDP Comparisons</h3>
+        <p>We compare bank assets to country GDP using <strong>World Bank and IMF data</strong> for nominal GDP (current US dollars).</p>
+        <p><strong>Note:</strong> We acknowledge that GDP (annual economic output) and bank assets (cumulative holdings) are different metrics. These comparisons serve to visualize scale, not to suggest equivalence.</p>
+
+        <h3>Historical Consolidation Data</h3>
+        <p>Banking consolidation statistics sourced from:</p>
+        <ul>
+            <li>FDIC Historical Statistics on Banking</li>
+            <li>Federal Reserve historical data</li>
+            <li>Academic research papers on banking consolidation</li>
+        </ul>
+
+        <h2>Important Clarifications</h2>
+
+        <h3>What Bank Assets Actually Are</h3>
+        <p>Bank assets are <strong>not liquid cash</strong>. They include:</p>
+        <ul>
+            <li>Loans made to customers and businesses</li>
+            <li>Securities and investments</li>
+            <li>Real estate and physical property</li>
+            <li>Cash and cash equivalents</li>
+            <li>Interbank deposits</li>
+        </ul>
+        <p>Our comparisons use total assets to visualize the incomprehensible scale of banking power, not to suggest banks could literally "spend" this money.</p>
+
+        <h3>The Purpose of Comparisons</h3>
+        <p>When we say "ICBC could end world hunger for 140 years," we're not suggesting this is possible or practical. We're using comparisons to:</p>
+        <ul>
+            <li>Make incomprehensibly large numbers understandable</li>
+            <li>Visualize the concentration of financial power</li>
+            <li>Spark conversations about wealth distribution</li>
+            <li>Provide context for policy discussions</li>
+        </ul>
+
+        <h2>Data Limitations & Disclaimers</h2>
+
+        <h3>Exchange Rates</h3>
+        <p>All international bank assets are converted to US dollars using current exchange rates. Currency fluctuations can affect comparisons.</p>
+
+        <h3>Reporting Standards</h3>
+        <p>Different countries use different accounting standards (GAAP vs IFRS). We note these differences where material.</p>
+
+        <h3>Time Periods</h3>
+        <p>Unless otherwise noted, all data represents the most recent publicly available quarter or annual report.</p>
+
+        <h2>Updates & Corrections</h2>
+        <p>We review and update our data quarterly. If you notice any errors or have questions about our methodology, please <a href="about.html#contact">contact us</a>.</p>
+
+        <p><strong>Last Updated:</strong> November 2025</p>
+
+        <h2>Academic & Research Integrity</h2>
+        <p>While Bank Size is an educational visualization project, we adhere to principles of:</p>
+        <ul>
+            <li><strong>Accuracy:</strong> All data from verified public sources</li>
+            <li><strong>Transparency:</strong> Full disclosure of methods and assumptions</li>
+            <li><strong>Context:</strong> Clear explanation of what comparisons mean and don't mean</li>
+            <li><strong>Citations:</strong> Source attribution for all claims</li>
+        </ul>
+
+        <h2>Further Reading</h2>
+        <p>For detailed research on banking consolidation and its effects, visit our <a href="research.html">Research section</a>.</p>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Bank Size</h3>
+                <p>Making the incomprehensible scale of global banking understandable through visual storytelling.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="banks.html">All Banks</a></li>
+                    <li><a href="compare.html">Comparisons</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="methodology.html">Methodology</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bank Size. All data sourced from public financial reports.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "Bank Size - Visualizing Global Banking Scale",
+  "short_name": "Bank Size",
+  "description": "Interactive visualization of the incomprehensible scale of global banking",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050714",
+  "theme_color": "#0066FF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "education", "news"],
+  "shortcuts": [
+    {
+      "name": "Compare Banks",
+      "short_name": "Compare",
+      "description": "Compare banking giants side by side",
+      "url": "/compare.html",
+      "icons": []
+    },
+    {
+      "name": "Quiz",
+      "short_name": "Quiz",
+      "description": "Test your banking knowledge",
+      "url": "/quiz.html",
+      "icons": []
+    }
+  ]
+}
