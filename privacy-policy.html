@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0066FF">
     <title>Privacy Policy - Bank Size | How We Protect Your Data</title>
     <meta name="description" content="Bank Size privacy policy. Learn how we collect, use, and protect your personal information when you use our banking comparison website.">
     <meta name="keywords" content="privacy policy, data protection, GDPR, CCPA, bank size privacy, user data">
@@ -243,6 +245,45 @@
             }
         }
     </style>
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: rgba(10, 14, 39, 0.5);
+            padding: 1rem 0;
+            margin-top: 5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .breadcrumb-list {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+        .breadcrumb-item a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb-item a:hover {
+            color: var(--primary);
+        }
+        .breadcrumb-item:not(:last-child)::after {
+            content: '›';
+            margin-left: 0.5rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+        .breadcrumb-item[aria-current="page"] {
+            color: var(--light);
+        }
 </head>
 <body>
     <!-- Navigation -->
@@ -260,6 +301,14 @@
                 <li><a href="/about.html" class="nav-link">About</a></li>
             </ul>
         </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item" aria-current="page">Privacy Policy</li>
+        </ol>
     </nav>
 
     <!-- Main Content -->
