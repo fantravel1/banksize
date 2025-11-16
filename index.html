@@ -306,6 +306,88 @@
         }
     }
     </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bank Size",
+        "url": "https://www.banksize.com",
+        "logo": "https://www.banksize.com/favicon.png",
+        "description": "Making the incomprehensible scale of global banking understandable through visual storytelling and interactive comparisons",
+        "sameAs": [
+            "https://twitter.com/banksize",
+            "https://facebook.com/banksize"
+        ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How large is ICBC?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ICBC (Industrial and Commercial Bank of China) has $6.3 trillion in assets, making it the world's largest bank. To put this in perspective, ICBC could end world hunger for over 140 years with its assets, based on UN estimates of $45 billion needed annually."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much wealth do the top 4 US banks control?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The top 4 US banks control 44% of all US deposits, a dramatic increase from just 15% in 1984. This consolidation represents one of the most significant shifts in American banking history."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What could the world's largest banks do with their assets?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The world's largest banks collectively control over $50 trillion in assets. This wealth could solve global hunger, address climate change, fund universal healthcare globally, and still have trillions remaining. For example, ICBC alone could buy every NFL team 30 times over, or save 5 times Earth's population from starvation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does 'too big to fail' mean?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Too big to fail refers to banks so large and interconnected that their failure would devastate the economy. These banks receive an implicit subsidy worth $83 billion annually from taxpayer-backed guarantees, essentially getting free money from the government."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many banks have disappeared since 1990?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Over 10,000 banks have disappeared through mergers and consolidation since 1990. This massive consolidation has created financial titans larger than most countries' economies."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.banksize.com/"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Loading Screen -->
@@ -562,6 +644,94 @@
                     Instead of quarterly profits, what if banks reported lives improved, 
                     communities strengthened, and problems solved?
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="story-section" id="faq">
+        <div class="story-container">
+            <div class="story-intro">
+                <span class="section-label">Frequently Asked Questions</span>
+                <h2>Common Questions About Bank Size</h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>How large is ICBC?</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="faq-icon">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ICBC (Industrial and Commercial Bank of China) has $6.3 trillion in assets, making it the world's largest bank. To put this in perspective, ICBC could end world hunger for over 140 years with its assets, based on UN estimates of $45 billion needed annually.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>How much wealth do the top 4 US banks control?</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="faq-icon">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The top 4 US banks control 44% of all US deposits, a dramatic increase from just 15% in 1984. This consolidation represents one of the most significant shifts in American banking history.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>What could the world's largest banks do with their assets?</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="faq-icon">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The world's largest banks collectively control over $50 trillion in assets. This wealth could solve global hunger, address climate change, fund universal healthcare globally, and still have trillions remaining. For example, ICBC alone could buy every NFL team 30 times over, or save 5 times Earth's population from starvation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>What does "too big to fail" mean?</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="faq-icon">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>"Too big to fail" refers to banks so large and interconnected that their failure would devastate the economy. These banks receive an implicit subsidy worth $83 billion annually from taxpayer-backed guarantees, essentially getting free money from the government.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>How many banks have disappeared since 1990?</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="faq-icon">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Over 10,000 banks have disappeared through mergers and consolidation since 1990. This massive consolidation has created financial titans larger than most countries' economies.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <h3>Are these comparisons accurate?</h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="faq-icon">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All data is sourced from public financial reports, UN estimates, and reputable sources. While assets cannot be directly "spent" like cash, these comparisons help visualize the incomprehensible scale of banking wealth. <a href="methodology.html">View our methodology</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="faq.html" class="btn btn-secondary">View All FAQs</a>
             </div>
         </div>
     </section>
@@ -900,6 +1070,136 @@
                 });
             });
         }
+
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+                // Close all other FAQs
+                document.querySelectorAll('.faq-question').forEach(otherButton => {
+                    if (otherButton !== button) {
+                        otherButton.setAttribute('aria-expanded', 'false');
+                        otherButton.parentElement.classList.remove('active');
+                        otherButton.parentElement.querySelector('.faq-answer').style.maxHeight = null;
+                    }
+                });
+
+                // Toggle current FAQ
+                button.setAttribute('aria-expanded', !isExpanded);
+                faqItem.classList.toggle('active');
+
+                if (!isExpanded) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                } else {
+                    answer.style.maxHeight = null;
+                }
+            });
+        });
     </script>
+
+    <style>
+        /* FAQ Styles */
+        .faq-container {
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(0, 102, 255, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .faq-item.active {
+            border-color: var(--primary);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--light);
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question h3 {
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin: 0;
+            color: var(--light);
+        }
+
+        .faq-question:hover h3 {
+            color: var(--primary);
+        }
+
+        .faq-icon {
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--gray);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+            color: var(--primary);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer p {
+            padding: 0 1.5rem 1.5rem;
+            margin: 0;
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
+        .faq-answer a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .faq-answer a:hover {
+            color: #00D4FF;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .faq-question {
+                padding: 1.25rem;
+            }
+
+            .faq-question h3 {
+                font-size: 1rem;
+            }
+
+            .faq-answer p {
+                padding: 0 1.25rem 1.25rem;
+            }
+        }
+    </style>
 </body>
 </html>
