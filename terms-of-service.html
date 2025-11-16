@@ -259,6 +259,45 @@
             }
         }
     </style>
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: rgba(10, 14, 39, 0.5);
+            padding: 1rem 0;
+            margin-top: 5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .breadcrumb-list {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+        .breadcrumb-item a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb-item a:hover {
+            color: var(--primary);
+        }
+        .breadcrumb-item:not(:last-child)::after {
+            content: '›';
+            margin-left: 0.5rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+        .breadcrumb-item[aria-current="page"] {
+            color: var(--light);
+        }
 </head>
 <body>
     <!-- Navigation -->
@@ -276,6 +315,14 @@
                 <li><a href="/about.html" class="nav-link">About</a></li>
             </ul>
         </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item" aria-current="page">Terms of Service</li>
+        </ol>
     </nav>
 
     <!-- Main Content -->

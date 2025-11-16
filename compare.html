@@ -22,7 +22,10 @@
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
     <!-- Shared Styles -->
     <style>
         :root {
@@ -678,6 +681,98 @@
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
+
+        /* Chart Section */
+        .chart-section {
+            margin-top: 3rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+        }
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .chart-header h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--light);
+        }
+
+        .chart-controls {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-sm {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .chart-wrapper {
+            background: rgba(10, 14, 39, 0.5);
+            border-radius: 12px;
+            padding: 2rem;
+            max-height: 500px;
+        }
+
+        .saved-notice {
+            margin-top: 1rem;
+            padding: 0.75rem 1rem;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 8px;
+            color: var(--success);
+            text-align: center;
+            font-size: 0.875rem;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: rgba(10, 14, 39, 0.5);
+            padding: 1rem 0;
+            margin-top: 5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .breadcrumb-list {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+        .breadcrumb-item a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .breadcrumb-item a:hover {
+            color: var(--primary);
+        }
+        .breadcrumb-item:not(:last-child)::after {
+            content: '›';
+            margin-left: 0.5rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+        .breadcrumb-item[aria-current="page"] {
+            color: var(--light);
+        }
     </style>
 </head>
 <body>
@@ -701,6 +796,14 @@
                 <span></span>
             </div>
         </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item" aria-current="page">Compare</li>
+        </ol>
     </nav>
 
     <!-- Page Hero -->
@@ -812,6 +915,37 @@
                 <div class="empty-state-icon">🏦</div>
                 <h3>Select Banks to Compare</h3>
                 <p>Choose at least one bank from the dropdowns above to start comparing.</p>
+            </div>
+
+            <!-- Chart Visualization -->
+            <div class="chart-section" id="chartSection" style="display: none;">
+                <div class="chart-header">
+                    <h3>Visual Comparison</h3>
+                    <div class="chart-controls">
+                        <button class="btn btn-secondary btn-sm" id="saveComparison" title="Save this comparison">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/>
+                                <polyline points="17 21 17 13 7 13 7 21"/>
+                                <polyline points="7 3 7 8 15 8"/>
+                            </svg>
+                            Save
+                        </button>
+                        <button class="btn btn-secondary btn-sm" id="exportChart" title="Export as image">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                            Export
+                        </button>
+                    </div>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="comparisonChart"></canvas>
+                </div>
+                <div class="saved-notice" id="savedNotice" style="display: none;">
+                    ✓ Comparison saved! It will be loaded automatically next time.
+                </div>
             </div>
         </div>
     </section>
@@ -1105,6 +1239,165 @@
                     navbar.classList.remove('scrolled');
                 }
             });
+
+            // Chart.js visualization
+            let comparisonChart = null;
+
+            function createComparisonChart(banks) {
+                const ctx = document.getElementById('comparisonChart');
+                if (!ctx) return;
+
+                // Destroy existing chart
+                if (comparisonChart) {
+                    comparisonChart.destroy();
+                }
+
+                const chartData = {
+                    labels: banks.map(b => b.shortName),
+                    datasets: [{
+                        label: 'Total Assets (Trillions USD)',
+                        data: banks.map(b => (b.assets / 1000000000000).toFixed(2)),
+                        backgroundColor: [
+                            'rgba(0, 102, 255, 0.8)',
+                            'rgba(255, 107, 53, 0.8)',
+                            'rgba(0, 212, 255, 0.8)'
+                        ],
+                        borderColor: [
+                            'rgba(0, 102, 255, 1)',
+                            'rgba(255, 107, 53, 1)',
+                            'rgba(0, 212, 255, 1)'
+                        ],
+                        borderWidth: 2
+                    }]
+                };
+
+                comparisonChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: chartData,
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        aspectRatio: 2,
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(10, 14, 39, 0.95)',
+                                titleColor: '#F7F8FA',
+                                bodyColor: '#F7F8FA',
+                                borderColor: 'rgba(0, 102, 255, 0.5)',
+                                borderWidth: 1,
+                                padding: 12,
+                                displayColors: false,
+                                callbacks: {
+                                    label: function(context) {
+                                        return `$${context.parsed.y}T in assets`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    color: '#6B7280',
+                                    callback: function(value) {
+                                        return '$' + value + 'T';
+                                    }
+                                },
+                                grid: {
+                                    color: 'rgba(255, 255, 255, 0.05)'
+                                }
+                            },
+                            x: {
+                                ticks: {
+                                    color: '#6B7280'
+                                },
+                                grid: {
+                                    display: false
+                                }
+                            }
+                        }
+                    }
+                });
+
+                // Show chart section
+                document.getElementById('chartSection').style.display = 'block';
+            }
+
+            // Modify showComparison to include chart
+            const originalShowComparison = showComparison;
+            showComparison = function() {
+                originalShowComparison();
+                const banks = getSelectedBanks();
+                if (banks.length > 0) {
+                    createComparisonChart(banks);
+                }
+            };
+
+            // localStorage save/load
+            function saveComparison() {
+                const selectedBanks = ['bank1', 'bank2', 'bank3'].map(id =>
+                    document.getElementById(id).value
+                ).filter(v => v);
+
+                localStorage.setItem('savedComparison', JSON.stringify(selectedBanks));
+
+                // Show save notice
+                const notice = document.getElementById('savedNotice');
+                notice.style.display = 'block';
+                setTimeout(() => {
+                    notice.style.display = 'none';
+                }, 3000);
+            }
+
+            function loadSavedComparison() {
+                const saved = localStorage.getItem('savedComparison');
+                if (saved) {
+                    try {
+                        const bankIds = JSON.parse(saved);
+                        bankIds.forEach((bankId, index) => {
+                            if (index < 3) {
+                                const selectId = `bank${index + 1}`;
+                                document.getElementById(selectId).value = bankId;
+                                updateBankInfo(selectId, `info${index + 1}`, `selector${index + 1}`);
+                            }
+                        });
+                    } catch (e) {
+                        console.error('Error loading saved comparison:', e);
+                    }
+                }
+            }
+
+            // Export chart as image
+            function exportChart() {
+                if (!comparisonChart) return;
+
+                const url = comparisonChart.toBase64Image();
+                const link = document.createElement('a');
+                link.download = 'bank-comparison.png';
+                link.href = url;
+                link.click();
+            }
+
+            // Add event listeners for new features
+            document.getElementById('saveComparison').addEventListener('click', saveComparison);
+            document.getElementById('exportChart').addEventListener('click', exportChart);
+
+            // Load saved comparison on page load
+            loadSavedComparison();
+
+            // Hide chart when reset
+            const originalResetSelection = resetSelection;
+            resetSelection = function() {
+                originalResetSelection();
+                document.getElementById('chartSection').style.display = 'none';
+                if (comparisonChart) {
+                    comparisonChart.destroy();
+                    comparisonChart = null;
+                }
+            };
         });
     </script>
 </body>
