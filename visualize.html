@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale Visualizer - Bank Size | See The Incomprehensible Scale</title>
+    <meta name="description" content="Mind-blowing visualizations of banking wealth. Watch money accumulate in real-time, see extreme comparisons, and understand the true scale.">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <style>
+        :root {
+            --primary: #0066FF;
+            --secondary: #FF6B35;
+            --success: #10B981;
+            --dark: #0A0E27;
+            --darker: #050714;
+            --light: #F7F8FA;
+            --gray: #6B7280;
+            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+            --gradient-secondary: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); color: var(--light); background: var(--darker); line-height: 1.6; }
+
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 0; background: rgba(10, 14, 39, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+        .nav-container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--light); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
+        .logo-icon { font-size: 1.75rem; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-link { color: var(--light); text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+        .nav-link:hover { color: var(--primary); }
+
+        .hero-section { padding: 8rem 1.5rem 4rem; background: var(--dark); text-align: center; }
+        .hero-section h1 { font-family: var(--font-display); font-size: 3.5rem; font-weight: 700; margin-bottom: 1rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-section p { font-size: 1.5rem; color: var(--gray); max-width: 800px; margin: 0 auto; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 1.5rem; }
+
+        .section { margin-bottom: 6rem; }
+        .section h2 { font-family: var(--font-display); font-size: 2.5rem; text-align: center; margin-bottom: 1rem; color: var(--light); }
+        .section-subtitle { text-align: center; color: var(--gray); font-size: 1.25rem; margin-bottom: 3rem; }
+
+        /* Money Counter */
+        .money-counter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+        .counter-card { background: linear-gradient(135deg, rgba(0, 102, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%); border: 2px solid var(--primary); border-radius: 16px; padding: 2rem; text-align: center; position: relative; overflow: hidden; }
+        .counter-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gradient-primary); animation: pulse 2s ease-in-out infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+        .counter-label { font-size: 1.125rem; color: var(--gray); margin-bottom: 1rem; }
+        .counter-value { font-family: var(--font-display); font-size: 3rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; font-variant-numeric: tabular-nums; }
+        .counter-description { font-size: 0.875rem; color: var(--gray); }
+
+        /* Comparison Cards */
+        .comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .comparison-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; }
+        .comparison-card:hover { transform: translateY(-5px); border-color: var(--secondary); background: rgba(255, 107, 53, 0.05); }
+        .comparison-icon { font-size: 3rem; margin-bottom: 1rem; }
+        .comparison-card h3 { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 1rem; color: var(--light); }
+        .comparison-number { font-size: 2.5rem; font-weight: 700; background: var(--gradient-secondary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
+        .comparison-text { color: var(--gray); line-height: 1.8; }
+
+        /* Calculator */
+        .calculator { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 3rem; max-width: 700px; margin: 0 auto; }
+        .calculator h3 { font-family: var(--font-display); font-size: 2rem; margin-bottom: 2rem; text-align: center; color: var(--light); }
+        .calc-input-group { margin-bottom: 2rem; }
+        .calc-input-group label { display: block; margin-bottom: 0.5rem; color: var(--gray); font-weight: 500; }
+        .calc-input { width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: var(--light); font-size: 1.125rem; font-family: var(--font-body); }
+        .calc-input:focus { outline: none; border-color: var(--primary); }
+        .calc-result { background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(52, 211, 153, 0.05) 100%); border: 2px solid var(--success); border-radius: 12px; padding: 2rem; text-align: center; margin-top: 2rem; }
+        .calc-result-value { font-family: var(--font-display); font-size: 3rem; font-weight: 700; color: var(--success); margin-bottom: 0.5rem; }
+        .calc-result-text { color: var(--gray); font-size: 1.125rem; }
+
+        /* Chart Container */
+        .chart-container { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 2rem; margin-bottom: 3rem; }
+        .chart-container canvas { max-height: 400px; }
+
+        /* Extreme Stats */
+        .extreme-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .stat-box { background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(247, 147, 30, 0.05) 100%); border: 1px solid rgba(255, 107, 53, 0.3); border-radius: 12px; padding: 1.5rem; text-align: center; }
+        .stat-box-number { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--secondary); margin-bottom: 0.5rem; }
+        .stat-box-label { color: var(--gray); font-size: 0.95rem; }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero-section h1 { font-size: 2rem; }
+            .hero-section p { font-size: 1.125rem; }
+            .counter-value { font-size: 2rem; }
+            .comparison-grid { grid-template-columns: 1fr; }
+            .money-counter-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">💰</div>
+                <span>Bank Size</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="banks.html" class="nav-link">Banks</a></li>
+                <li><a href="compare.html" class="nav-link">Compare</a></li>
+                <li><a href="visualize.html" class="nav-link">Visualize</a></li>
+                <li><a href="quiz.html" class="nav-link">Quiz</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <h1>The Incomprehensible Scale</h1>
+        <p>Watch billions accumulate. See the absurdity in real-time.</p>
+    </section>
+
+    <div class="container">
+        <!-- Real-Time Money Counters -->
+        <div class="section">
+            <h2>💸 Money Accumulation in Real-Time</h2>
+            <p class="section-subtitle">Based on average annual profits, watch how fast these banks make money</p>
+
+            <div class="money-counter-grid">
+                <div class="counter-card">
+                    <div class="counter-label">JPMorgan Chase Profit</div>
+                    <div class="counter-value" id="jpmorganCounter">$0</div>
+                    <div class="counter-description">Per second since you loaded this page</div>
+                </div>
+
+                <div class="counter-card">
+                    <div class="counter-label">Bank of America Profit</div>
+                    <div class="counter-value" id="bofaCounter">$0</div>
+                    <div class="counter-description">Per second since you loaded this page</div>
+                </div>
+
+                <div class="counter-card">
+                    <div class="counter-label">All Banks Combined</div>
+                    <div class="counter-value" id="totalCounter">$0</div>
+                    <div class="counter-description">Top 10 banks per second</div>
+                </div>
+            </div>
+
+            <div class="extreme-stats">
+                <div class="stat-box">
+                    <div class="stat-box-number">$1,583</div>
+                    <div class="stat-box-label">JPMorgan makes this per SECOND</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-box-number">137 years</div>
+                    <div class="stat-box-label">For average person to earn JPM's 1-second profit</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-box-number">$95,000</div>
+                    <div class="stat-box-label">JPMorgan profit per MINUTE</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-box-number">$5.7M</div>
+                    <div class="stat-box-label">JPMorgan profit per HOUR</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Extreme Comparisons -->
+        <div class="section">
+            <h2>🤯 Mind-Blowing Comparisons</h2>
+            <p class="section-subtitle">These numbers are so large they break our comprehension</p>
+
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <div class="comparison-icon">🏟️</div>
+                    <h3>ICBC vs. Sports</h3>
+                    <div class="comparison-number">217×</div>
+                    <p class="comparison-text">ICBC could buy EVERY sports franchise in the world (NFL, NBA, MLB, soccer clubs, Formula 1 teams - everything) <strong>217 times over</strong> and still have money left.</p>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-icon">🍔</div>
+                    <h3>JPMorgan vs. McDonald's</h3>
+                    <div class="comparison-number">1.4 Trillion</div>
+                    <p class="comparison-text">JPMorgan could buy every single Big Mac sold globally for the next <strong>463 years</strong>. That's 1.4 trillion Big Macs.</p>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-icon">🚗</div>
+                    <h3>Bank of America vs. Cars</h3>
+                    <div class="comparison-number">94 Million</div>
+                    <p class="comparison-text">BofA could buy 94 million brand new $35,000 cars. That's <strong>one car for every person in Germany</strong>.</p>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-icon">🏠</div>
+                    <h3>ICBC vs. Housing</h3>
+                    <div class="comparison-number">18 Million</div>
+                    <p class="comparison-text">ICBC could buy 18 million homes at $350k each. That's enough to house <strong>every homeless person on Earth 360 times over</strong>.</p>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-icon">🎓</div>
+                    <h3>JPMorgan vs. Education</h3>
+                    <div class="comparison-number">133 Million</div>
+                    <p class="comparison-text">JPMorgan could pay for <strong>133 million students</strong> to attend a 4-year public university. That's every college student in America for 67 years.</p>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="comparison-icon">🌍</div>
+                    <h3>Top 10 Banks vs. Earth</h3>
+                    <div class="comparison-number">$6,375</div>
+                    <p class="comparison-text">If divided equally among all 8 billion people on Earth, every person would get <strong>$6,375</strong>. That's life-changing money for billions.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Time to Spend Calculator -->
+        <div class="section">
+            <h2>⏰ How Long Would It Take to Spend This?</h2>
+            <p class="section-subtitle">Spoiler: You wouldn't finish in multiple lifetimes</p>
+
+            <div class="calculator">
+                <h3>Enter Daily Spending Amount</h3>
+                <div class="calc-input-group">
+                    <label for="dailySpend">How much would you spend per day?</label>
+                    <input type="number" id="dailySpend" class="calc-input" value="10000" placeholder="Enter amount">
+                </div>
+
+                <div class="calc-input-group">
+                    <label for="bankSelect">Choose a bank:</label>
+                    <select id="bankSelect" class="calc-input">
+                        <option value="6300000000000">ICBC ($6.3 Trillion)</option>
+                        <option value="4000000000000">JPMorgan Chase ($4.0 Trillion)</option>
+                        <option value="3300000000000">Bank of America ($3.3 Trillion)</option>
+                        <option value="3000000000000">HSBC ($3.0 Trillion)</option>
+                    </select>
+                </div>
+
+                <div class="calc-result" id="calcResult">
+                    <div class="calc-result-value" id="resultYears">0 years</div>
+                    <div class="calc-result-text" id="resultContext"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visual Chart Comparisons -->
+        <div class="section">
+            <h2>📊 Visual Scale Comparison</h2>
+            <p class="section-subtitle">See the difference between millions, billions, and trillions</p>
+
+            <div class="chart-container">
+                <canvas id="scaleChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="bankComparisonChart"></canvas>
+            </div>
+        </div>
+
+        <!-- If You Made This Much -->
+        <div class="section">
+            <h2>💰 Salary vs Bank Profits</h2>
+            <p class="section-subtitle">How long would you need to work?</p>
+
+            <div class="extreme-stats">
+                <div class="stat-box">
+                    <div class="stat-box-number">1,903 years</div>
+                    <div class="stat-box-label">Working 24/7 at $15/hr to equal JPM's 1-second profit</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-box-number">317 million years</div>
+                    <div class="stat-box-label">At $100k/year salary to earn ICBC's assets</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-box-number">$821,918</div>
+                    <div class="stat-box-label">What you'd need to earn PER SECOND to match ICBC in 40 years</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-box-number">126,000</div>
+                    <div class="stat-box-label">Lifetimes of work (80 years each, $50k/year) to equal ICBC</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Real-time money counters
+        let seconds = 0;
+        const profitPerSecond = {
+            jpmorgan: 1583, // $50B annual profit / 31.5M seconds
+            bofa: 953,      // $30B annual profit / 31.5M seconds
+            total: 7936     // Combined top 10 banks ~$250B / 31.5M seconds
+        };
+
+        function updateCounters() {
+            seconds++;
+
+            const jpm = (profitPerSecond.jpmorgan * seconds).toLocaleString('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                maximumFractionDigits: 0
+            });
+            const bofa = (profitPerSecond.bofa * seconds).toLocaleString('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                maximumFractionDigits: 0
+            });
+            const total = (profitPerSecond.total * seconds).toLocaleString('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                maximumFractionDigits: 0
+            });
+
+            document.getElementById('jpmorganCounter').textContent = jpm;
+            document.getElementById('bofaCounter').textContent = bofa;
+            document.getElementById('totalCounter').textContent = total;
+        }
+
+        setInterval(updateCounters, 1000);
+
+        // Calculator
+        function calculateSpendingTime() {
+            const dailySpend = parseFloat(document.getElementById('dailySpend').value);
+            const bankAssets = parseFloat(document.getElementById('bankSelect').value);
+
+            if (dailySpend > 0) {
+                const days = bankAssets / dailySpend;
+                const years = days / 365;
+
+                document.getElementById('resultYears').textContent =
+                    years.toLocaleString('en-US', { maximumFractionDigits: 0 }) + ' years';
+
+                let context = '';
+                if (years > 1000000) {
+                    context = `That's ${(years / 1000000).toFixed(1)} MILLION years. Humanity has only existed for ~300,000 years.`;
+                } else if (years > 10000) {
+                    context = `That's longer than all of recorded human history combined.`;
+                } else if (years > 1000) {
+                    context = `That's longer than many civilizations have existed.`;
+                } else {
+                    context = `That's ${Math.floor(years / 80)} average human lifetimes.`;
+                }
+
+                document.getElementById('resultContext').textContent = context;
+            }
+        }
+
+        document.getElementById('dailySpend').addEventListener('input', calculateSpendingTime);
+        document.getElementById('bankSelect').addEventListener('change', calculateSpendingTime);
+        calculateSpendingTime(); // Initial calculation
+
+        // Scale Comparison Chart
+        const scaleCtx = document.getElementById('scaleChart').getContext('2d');
+        new Chart(scaleCtx, {
+            type: 'bar',
+            data: {
+                labels: ['$1 Million', '$1 Billion', '$1 Trillion', 'ICBC Assets'],
+                datasets: [{
+                    label: 'Scale Comparison',
+                    data: [1, 1000, 1000000, 6300000],
+                    backgroundColor: [
+                        'rgba(16, 185, 129, 0.5)',
+                        'rgba(0, 102, 255, 0.5)',
+                        'rgba(255, 107, 53, 0.5)',
+                        'rgba(239, 68, 68, 0.5)'
+                    ],
+                    borderColor: [
+                        'rgba(16, 185, 129, 1)',
+                        'rgba(0, 102, 255, 1)',
+                        'rgba(255, 107, 53, 1)',
+                        'rgba(239, 68, 68, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: 'Understanding Millions vs Billions vs Trillions',
+                        color: '#F7F8FA',
+                        font: { size: 18, family: 'Space Grotesk' }
+                    }
+                },
+                scales: {
+                    y: {
+                        type: 'logarithmic',
+                        ticks: { color: '#6B7280' },
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        title: {
+                            display: true,
+                            text: 'Value in Millions (Log Scale)',
+                            color: '#6B7280'
+                        }
+                    },
+                    x: {
+                        ticks: { color: '#6B7280' },
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Bank Comparison Chart
+        const bankCtx = document.getElementById('bankComparisonChart').getContext('2d');
+        new Chart(bankCtx, {
+            type: 'bar',
+            data: {
+                labels: ['ICBC', 'JPMorgan', 'Bank of America', 'HSBC', 'Wells Fargo', 'Germany GDP', 'India GDP', 'UK GDP'],
+                datasets: [{
+                    label: 'Assets/GDP (Trillions $)',
+                    data: [6.3, 4.0, 3.3, 3.0, 1.95, 4.5, 3.7, 3.3],
+                    backgroundColor: [
+                        'rgba(239, 68, 68, 0.6)',
+                        'rgba(255, 107, 53, 0.6)',
+                        'rgba(255, 107, 53, 0.6)',
+                        'rgba(255, 107, 53, 0.6)',
+                        'rgba(255, 107, 53, 0.6)',
+                        'rgba(0, 102, 255, 0.4)',
+                        'rgba(0, 102, 255, 0.4)',
+                        'rgba(0, 102, 255, 0.4)'
+                    ],
+                    borderColor: [
+                        'rgba(239, 68, 68, 1)',
+                        'rgba(255, 107, 53, 1)',
+                        'rgba(255, 107, 53, 1)',
+                        'rgba(255, 107, 53, 1)',
+                        'rgba(255, 107, 53, 1)',
+                        'rgba(0, 102, 255, 1)',
+                        'rgba(0, 102, 255, 1)',
+                        'rgba(0, 102, 255, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: 'Banks vs Country Economies',
+                        color: '#F7F8FA',
+                        font: { size: 18, family: 'Space Grotesk' }
+                    }
+                },
+                scales: {
+                    y: {
+                        ticks: { color: '#6B7280' },
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        title: {
+                            display: true,
+                            text: 'Trillions of Dollars',
+                            color: '#6B7280'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: '#6B7280',
+                            maxRotation: 45,
+                            minRotation: 45
+                        },
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
