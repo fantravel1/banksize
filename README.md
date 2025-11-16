@@ -72,7 +72,7 @@ banksize.com/
 ├── index.html (Interactive homepage)
 ├── banks.html (All banks listing)
 ├── compare.html (Comparison tool)
-├── data.html (Methodology & sources)
+├── research.html (Methodology & sources)
 ├── about.html (Mission & team)
 ├── bank.html?id=* (Individual bank profiles)
 ├── privacy-policy.html
