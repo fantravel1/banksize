@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#0066FF">
-    <title id="pageTitle">Bank Details - Bank Size</title>
-    <meta name="description" id="pageDescription" content="Explore banking giant details and discover what they could do with their massive assets.">
-    <meta name="keywords" content="bank assets, banking scale, financial comparison">
+    <title id="pageTitle">Bank Details - Bank Size | How Big is This Bank?</title>
+    <meta name="description" id="pageDescription" content="Explore banking giant details including total assets, global ranking, and discover what they could do with their massive wealth.">
+    <meta name="keywords" id="pageKeywords" content="bank size, bank assets, banking scale, financial comparison, how big is bank, bank ranking">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏦</text></svg>">
     
     <!-- Open Graph Meta Tags -->
@@ -19,7 +19,53 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" id="canonicalUrl" href="https://www.banksize.com/bank.html">
-    
+
+    <!-- Dynamic Schema.org structured data (populated by JavaScript) -->
+    <script type="application/ld+json" id="bankSchema">
+    {
+        "@context": "https://schema.org",
+        "@type": "BankOrCreditUnion",
+        "name": "Bank Name",
+        "description": "Bank description",
+        "url": "https://www.banksize.com/bank.html"
+    }
+    </script>
+
+    <script type="application/ld+json" id="faqSchema">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": []
+    }
+    </script>
+
+    <script type="application/ld+json" id="breadcrumbSchema">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.banksize.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Banks",
+                "item": "https://www.banksize.com/banks.html"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Bank Name",
+                "item": "https://www.banksize.com/bank.html"
+            }
+        ]
+    }
+    </script>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
@@ -674,6 +720,100 @@
             }
         }
 
+        /* FAQ Styles */
+        .faq-container {
+            margin-top: 2rem;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(0, 102, 255, 0.3);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            background: none;
+            border: none;
+            color: var(--light);
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: 600;
+            font-family: var(--font-body);
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer p {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--gray);
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* Related Bank Card */
+        .related-bank-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--light);
+            transition: all 0.3s;
+            display: block;
+        }
+
+        .related-bank-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+        }
+
+        .related-bank-card .flag {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .related-bank-card h4 {
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .related-bank-card .assets {
+            color: var(--secondary);
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+
+        .related-bank-card .rank {
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+
         /* Loading State */
         .loading {
             display: flex;
@@ -777,10 +917,10 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="banks.html" class="nav-link">Banks</a></li>
+                <li><a href="rankings.html" class="nav-link">Rankings</a></li>
                 <li><a href="compare.html" class="nav-link">Compare</a></li>
-                <li><a href="visualize.html" class="nav-link">Visualize</a></li>
+                <li><a href="statistics.html" class="nav-link">Statistics</a></li>
                 <li><a href="research.html" class="nav-link">Research</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
             </ul>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
@@ -910,6 +1050,34 @@
             </div>
         </section>
 
+        <!-- FAQ Section -->
+        <section class="faq-section" style="padding: 4rem 1.5rem; background: var(--dark);">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="section-header">
+                    <h2 id="faqTitle">Frequently Asked Questions</h2>
+                    <p>Common questions about this banking giant</p>
+                </div>
+
+                <div class="faq-container" id="bankFaqContainer">
+                    <!-- FAQ items populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Banks Section -->
+        <section class="related-section" style="padding: 4rem 1.5rem; background: var(--darker);">
+            <div style="max-width: 1280px; margin: 0 auto;">
+                <div class="section-header">
+                    <h2>Compare With Other Banks</h2>
+                    <p>See how this bank stacks up against other global banking giants</p>
+                </div>
+
+                <div id="relatedBanks" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                    <!-- Related banks populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
         <!-- CTA Section -->
         <section class="cta-section">
             <div class="cta-content">
@@ -919,8 +1087,8 @@
                     <a href="#" id="compareLink" class="btn btn-primary">
                         Compare with Another Bank
                     </a>
-                    <a href="banks.html" class="btn btn-secondary">
-                        View All Banks
+                    <a href="rankings.html" class="btn btn-secondary">
+                        View Bank Rankings
                     </a>
                 </div>
             </div>
@@ -945,30 +1113,170 @@
             return urlParams.get('id');
         }
 
+        // Generate bank-specific FAQs
+        function generateBankFAQs(bank) {
+            const hungerYears = Math.floor(bank.assets / 45);
+            return [
+                {
+                    question: `How big is ${bank.shortName}?`,
+                    answer: `${bank.name} has approximately ${bankUtils.formatCurrency(bank.assets)} in total assets, making it the #${bank.globalRank} largest bank in the world. ${bank.keyFact}`
+                },
+                {
+                    question: `What is ${bank.shortName}'s ranking among world banks?`,
+                    answer: `${bank.shortName} ranks #${bank.globalRank} globally by total assets. The bank operates in ${bank.countries} countries and employs approximately ${bankUtils.formatNumber(bank.employees)} people worldwide.`
+                },
+                {
+                    question: `How much money does ${bank.shortName} have?`,
+                    answer: `${bank.shortName} controls ${bankUtils.formatCurrency(bank.assets)} in total assets. To put this in perspective, this amount could fund the end of world hunger for approximately ${hungerYears} years (based on UN estimates of $45 billion needed annually).`
+                },
+                {
+                    question: `When was ${bank.shortName} founded?`,
+                    answer: `${bank.name} was founded in ${bank.founded} and is headquartered in ${bank.headquarters}. Today it operates ${bankUtils.formatNumber(bank.branches)} branches across ${bank.countries} countries.`
+                },
+                {
+                    question: `What could ${bank.shortName} buy with its assets?`,
+                    answer: `With ${bankUtils.formatCurrency(bank.assets)} in assets, ${bank.shortName} could theoretically purchase major corporations multiple times over, fund humanitarian efforts for decades, or buy thousands of sports franchises. Explore our detailed comparisons to see the full scale.`
+                }
+            ];
+        }
+
+        // Update structured data schemas
+        function updateStructuredData(bank, bankId) {
+            // Bank schema
+            const bankSchema = {
+                "@context": "https://schema.org",
+                "@type": "BankOrCreditUnion",
+                "name": bank.name,
+                "alternateName": bank.shortName,
+                "description": bank.description,
+                "url": `https://www.banksize.com/bank.html?id=${bankId}`,
+                "foundingDate": bank.founded.toString(),
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": bank.headquarters
+                },
+                "numberOfEmployees": {
+                    "@type": "QuantitativeValue",
+                    "value": bank.employees
+                }
+            };
+            document.getElementById('bankSchema').textContent = JSON.stringify(bankSchema);
+
+            // FAQ schema
+            const faqs = generateBankFAQs(bank);
+            const faqSchema = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": faqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
+                    }
+                }))
+            };
+            document.getElementById('faqSchema').textContent = JSON.stringify(faqSchema);
+
+            // Breadcrumb schema
+            const breadcrumbSchema = {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.banksize.com/" },
+                    { "@type": "ListItem", "position": 2, "name": "Banks", "item": "https://www.banksize.com/banks.html" },
+                    { "@type": "ListItem", "position": 3, "name": bank.shortName, "item": `https://www.banksize.com/bank.html?id=${bankId}` }
+                ]
+            };
+            document.getElementById('breadcrumbSchema').textContent = JSON.stringify(breadcrumbSchema);
+        }
+
+        // Render FAQ section
+        function renderFAQs(bank) {
+            const faqs = generateBankFAQs(bank);
+            const container = document.getElementById('bankFaqContainer');
+
+            container.innerHTML = faqs.map(faq => `
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>${faq.question}</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>${faq.answer}</p>
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('faqTitle').textContent = `Frequently Asked Questions About ${bank.shortName}`;
+
+            // Add click handlers
+            container.querySelectorAll('.faq-question').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const item = btn.parentElement;
+                    const answer = item.querySelector('.faq-answer');
+                    const isActive = item.classList.contains('active');
+
+                    container.querySelectorAll('.faq-item').forEach(i => {
+                        i.classList.remove('active');
+                        i.querySelector('.faq-answer').style.maxHeight = null;
+                    });
+
+                    if (!isActive) {
+                        item.classList.add('active');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    }
+                });
+            });
+        }
+
+        // Render related banks
+        function renderRelatedBanks(currentBankId) {
+            const allBanks = bankUtils.getAllBanks().filter(b => b.id !== currentBankId);
+            const relatedBanks = allBanks.sort((a, b) => b.assets - a.assets).slice(0, 4);
+            const container = document.getElementById('relatedBanks');
+
+            container.innerHTML = relatedBanks.map(bank => `
+                <a href="bank.html?id=${bank.id}" class="related-bank-card">
+                    <div class="flag">${bank.flag}</div>
+                    <h4>${bank.shortName}</h4>
+                    <div class="assets">${bankUtils.formatCurrency(bank.assets)}</div>
+                    <div class="rank">Global Rank #${bank.globalRank}</div>
+                </a>
+            `).join('');
+        }
+
         // Load bank data
         function loadBankData() {
             const bankId = getBankIdFromUrl();
-            
+
             if (!bankId || !banksData[bankId]) {
                 // Show error state
                 document.getElementById('loadingState').style.display = 'none';
                 document.getElementById('errorState').style.display = 'flex';
                 return;
             }
-            
+
             const bank = banksData[bankId];
-            
-            // Update page metadata
-            document.getElementById('pageTitle').textContent = `${bank.name} - Bank Size | ${bankUtils.formatCurrency(bank.assets)} Banking Giant`;
-            document.getElementById('pageDescription').setAttribute('content', 
-                `${bank.name} controls ${bankUtils.formatCurrency(bank.assets)} in assets. ${bank.keyFact}`);
-            document.getElementById('ogTitle').setAttribute('content', 
-                `${bank.shortName}: The ${bankUtils.formatCurrency(bank.assets)} Banking Giant`);
+
+            // Update page metadata - SEO optimized titles targeting search queries
+            document.getElementById('pageTitle').textContent = `${bank.shortName} Bank Size: How Big is ${bank.name}? | ${bankUtils.formatCurrency(bank.assets)} in Assets`;
+            document.getElementById('pageDescription').setAttribute('content',
+                `How big is ${bank.shortName}? ${bank.name} has ${bankUtils.formatCurrency(bank.assets)} in total assets, ranking #${bank.globalRank} globally. ${bank.keyFact}`);
+            document.getElementById('pageKeywords').setAttribute('content',
+                `${bank.shortName.toLowerCase()} bank size, how big is ${bank.shortName.toLowerCase()}, ${bank.shortName.toLowerCase()} ranking, ${bank.shortName.toLowerCase()} assets, ${bank.shortName.toLowerCase()} total assets, ${bank.name.toLowerCase()} size`);
+            document.getElementById('ogTitle').setAttribute('content',
+                `How Big is ${bank.shortName}? | ${bankUtils.formatCurrency(bank.assets)} Banking Giant`);
             document.getElementById('ogDescription').setAttribute('content', bank.keyFact);
-            document.getElementById('ogUrl').setAttribute('content', 
+            document.getElementById('ogUrl').setAttribute('content',
                 `https://www.banksize.com/bank.html?id=${bankId}`);
-            document.getElementById('canonicalUrl').setAttribute('href', 
+            document.getElementById('canonicalUrl').setAttribute('href',
                 `https://www.banksize.com/bank.html?id=${bankId}`);
+
+            // Update structured data
+            updateStructuredData(bank, bankId);
             
             // Update hero section
             document.getElementById('bankFlag').textContent = bank.flag;
@@ -1001,7 +1309,14 @@
             
             // Load comparisons
             loadComparisons(bank.comparisons.humanitarian);
-            
+
+            // Render FAQs and related banks
+            renderFAQs(bank);
+            renderRelatedBanks(bankId);
+
+            // Update breadcrumb
+            document.getElementById('bankNameBreadcrumb').textContent = bank.shortName;
+
             // Show main content
             document.getElementById('loadingState').style.display = 'none';
             document.getElementById('mainContent').style.display = 'block';
