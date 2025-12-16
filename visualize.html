@@ -11,6 +11,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much money do banks make per second?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "JPMorgan Chase makes approximately $1,583 per second based on their annual profit of about $50 billion. That's $95,000 per minute or $5.7 million per hour. It would take the average person 137 years to earn what JPMorgan makes in just one second."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How big is ICBC compared to countries?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ICBC, the world's largest bank, holds $6.3 trillion in assets. This is larger than the GDP of most countries including Germany ($4.5T), India ($3.7T), and the UK ($3.3T). Only the US and China have larger GDPs than ICBC's assets."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between millions, billions, and trillions?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A million seconds is about 12 days. A billion seconds is about 32 years. A trillion seconds is about 32,000 years. ICBC's $6.3 trillion in assets would take 6.3 million years to count at one dollar per second."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long would it take to spend a bank's assets?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Spending $10,000 per day, it would take over 1.7 million years to spend ICBC's $6.3 trillion in assets. Even spending $1 million per day, it would take over 17,000 years - longer than recorded human history."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What could banks buy with their assets?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ICBC could buy every sports franchise in the world 217 times over. JPMorgan could buy 1.4 trillion Big Macs (enough for 463 years of global McDonald's sales). Bank of America could buy 94 million cars - one for every person in Germany."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- HowTo Schema for Calculator -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Calculate Bank Spending Time",
+        "description": "Use our calculator to see how long it would take to spend a major bank's assets at your chosen daily rate.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Enter Daily Spending Amount",
+                "text": "Enter how much money you would spend per day. Try different amounts from $1,000 to $1,000,000."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Select a Bank",
+                "text": "Choose from major banks including ICBC ($6.3T), JPMorgan ($4.0T), Bank of America ($3.3T), or HSBC ($3.0T)."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "View Results",
+                "text": "The calculator instantly shows how many years it would take to spend the bank's assets and provides historical context."
+            }
+        ]
+    }
+    </script>
+
     <style>
         :root {
             --primary: #0066FF;
@@ -345,6 +422,36 @@
                 <div class="stat-box">
                     <div class="stat-box-number">126,000</div>
                     <div class="stat-box-label">Lifetimes of work (80 years each, $50k/year) to equal ICBC</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="section">
+            <h2>❓ Frequently Asked Questions</h2>
+            <p class="section-subtitle">Understanding the scale of global banking</p>
+
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <h3>How much do banks make per second?</h3>
+                    <p class="comparison-text">JPMorgan Chase makes approximately <strong>$1,583 per second</strong>. That's $95,000 per minute or $5.7 million per hour. It would take the average person 137 years to earn what JPMorgan makes in one second.</p>
+                </div>
+
+                <div class="comparison-card">
+                    <h3>How big is ICBC compared to countries?</h3>
+                    <p class="comparison-text">ICBC holds <strong>$6.3 trillion in assets</strong> - larger than Germany's GDP ($4.5T), India's GDP ($3.7T), and UK's GDP ($3.3T). Only the US and China have larger economies.
+                    <br><a href="articles/how-big-are-banks.html" style="color: var(--primary); margin-top: 0.5rem; display: inline-block;">→ Go deeper: How Did Banks Get So Big?</a></p>
+                </div>
+
+                <div class="comparison-card">
+                    <h3>Millions vs Billions vs Trillions?</h3>
+                    <p class="comparison-text">A million seconds = 12 days. A billion seconds = 32 years. A trillion seconds = <strong>32,000 years</strong>. ICBC's assets would take 6.3 million years to count at $1/second.
+                    <br><a href="articles/understanding-bank-scale.html" style="color: var(--primary); margin-top: 0.5rem; display: inline-block;">→ Go deeper: Understanding Banking Scale</a></p>
+                </div>
+
+                <div class="comparison-card">
+                    <h3>How long to spend these assets?</h3>
+                    <p class="comparison-text">Spending $10,000/day, it would take <strong>1.7 million years</strong> to spend ICBC's assets. Even at $1M/day, it's 17,000 years - longer than recorded human history.</p>
                 </div>
             </div>
         </div>
