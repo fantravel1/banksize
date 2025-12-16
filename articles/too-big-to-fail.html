@@ -149,6 +149,35 @@
         .related-card h3 { font-size: 1rem; color: var(--light); margin-bottom: 0.5rem; }
         .related-card p { font-size: 0.875rem; color: var(--gray); margin: 0; }
 
+        /* Expert Quotes */
+        .expert-quote { background: rgba(0, 102, 255, 0.05); border-left: 4px solid var(--primary); padding: 1.5rem 2rem; margin: 2rem 0; border-radius: 0 12px 12px 0; position: relative; }
+        .expert-quote blockquote { font-size: 1.125rem; font-style: italic; color: rgba(247, 248, 250, 0.95); margin-bottom: 1rem; line-height: 1.7; }
+        .expert-quote blockquote::before { content: '"'; font-size: 3rem; color: var(--primary); opacity: 0.3; position: absolute; top: 0.5rem; left: 0.75rem; font-family: Georgia, serif; }
+        .expert-quote .attribution { font-size: 0.875rem; color: var(--gray); }
+        .expert-quote .attribution strong { color: var(--light); }
+
+        /* Video Section */
+        .video-section { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 2rem; margin: 3rem 0; }
+        .video-section h3 { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .video-card { background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; overflow: hidden; transition: all 0.3s; }
+        .video-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+        .video-thumbnail { width: 100%; aspect-ratio: 16/9; background: var(--dark); display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+        .video-info { padding: 1rem; }
+        .video-info h4 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--light); }
+        .video-info p { font-size: 0.8125rem; color: var(--gray); margin-bottom: 0.75rem; }
+        .video-info a { color: var(--primary); font-size: 0.875rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.25rem; }
+        .video-info a:hover { text-decoration: underline; }
+
+        /* Sources Section */
+        .sources-section { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; margin-top: 3rem; }
+        .sources-section h3 { font-size: 1rem; margin-bottom: 1rem; color: var(--light); }
+        .sources-section ul { list-style: none; padding: 0; margin: 0; }
+        .sources-section li { font-size: 0.8125rem; color: var(--gray); margin-bottom: 0.5rem; padding-left: 1rem; position: relative; }
+        .sources-section li::before { content: '→'; position: absolute; left: 0; color: var(--primary); }
+        .sources-section a { color: var(--primary); text-decoration: none; }
+        .sources-section a:hover { text-decoration: underline; }
+
         footer { background: var(--dark); padding: 3rem 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 4rem; text-align: center; color: var(--gray); }
 
         @media (max-width: 768px) {
@@ -208,6 +237,18 @@
                 government will step in to prevent their failure. This is called <strong>moral hazard</strong>.
             </p>
 
+            <div class="expert-quote">
+                <blockquote>
+                    Too big to fail, and by that I mean the presumption of bailouts... results in a complete
+                    perversion of capitalism. It creates incentives for these large institutions to pile on risk.
+                    It's a very simple 'Heads I win, tails the taxpayer bails me out.'
+                </blockquote>
+                <div class="attribution">
+                    <strong>Neil Barofsky</strong>, Former Special Inspector General of TARP (2008-2011)
+                    <br><a href="https://www.pbs.org/wgbh/frontline/article/neil-barofsky-on-the-broken-promises-of-the-bank-bailouts/" target="_blank">PBS Frontline Interview →</a>
+                </div>
+            </div>
+
             <div class="stat-highlight">
                 <div class="number">$498B</div>
                 <div class="label">Cost of the 2008 bank bailout (3.5% of GDP)</div>
@@ -233,6 +274,19 @@
                 <div class="callout-title">Did You Know?</div>
                 <p>No major bank executive went to prison for the 2008 crisis. Meanwhile, 8.7 million Americans
                 lost their jobs and millions lost their homes to foreclosure.</p>
+            </div>
+
+            <div class="expert-quote">
+                <blockquote>
+                    In late 2008 we were dealing with a crisis and lacked complete information. But throughout 2009,
+                    even after the financial system stabilized, we continued generous bailout policies instead of
+                    imposing discipline on profligate financial institutions by firing their managers and forcing
+                    them to sell their bad assets.
+                </blockquote>
+                <div class="attribution">
+                    <strong>Sheila Bair</strong>, Former Chair of the FDIC (2006-2011)
+                    <br>From her book <em>Bull by the Horns</em> (2012)
+                </div>
             </div>
 
             <h2>Banks Are Even Bigger Now</h2>
@@ -278,6 +332,30 @@
                     </tr>
                 </tbody>
             </table>
+
+            <div class="expert-quote">
+                <blockquote>
+                    The problem of too big to fail is even bigger than before 2008. The underlying incentives
+                    and rules have not changed, or not enough. We now have a financial system that is completely
+                    based on moral hazard.
+                </blockquote>
+                <div class="attribution">
+                    <strong>Simon Johnson</strong>, MIT Professor of Economics, Former IMF Chief Economist
+                    <br><a href="https://www.ineteconomics.org/perspectives/blog/simon-johnson-the-problem-of-too-big-to-fail-is-even-bigger-than-before-2008" target="_blank">Institute for New Economic Thinking →</a>
+                </div>
+            </div>
+
+            <div class="expert-quote">
+                <blockquote>
+                    I'm really concerned that 'too big to fail' has become 'too big for trial.' The biggest banks
+                    are substantially bigger than they were in 2008. In fact, the five biggest banks now control
+                    more than half the nation's total banking assets.
+                </blockquote>
+                <div class="attribution">
+                    <strong>Senator Elizabeth Warren</strong>, U.S. Senate Banking Committee
+                    <br><a href="https://www.warren.senate.gov/newsroom/press-releases/senator-warren-urges-action-to-end-too-big-to-fail" target="_blank">Senate Press Release →</a>
+                </div>
+            </div>
 
             <h2>Global Systemically Important Banks (G-SIBs)</h2>
             <p>
@@ -328,6 +406,61 @@
                 Banks are now required to maintain "living wills"—plans for how they could be safely wound down
                 in a crisis. However, critics argue these plans are largely theoretical.
             </p>
+
+            <!-- Documentary Section -->
+            <div class="video-section">
+                <h3>📺 Essential Viewing</h3>
+                <p style="color: var(--gray); margin-bottom: 1.5rem;">These acclaimed films and documentaries provide deeper insight into the 2008 financial crisis and the "too big to fail" problem.</p>
+                <div class="video-grid">
+                    <div class="video-card">
+                        <div class="video-thumbnail">🎬</div>
+                        <div class="video-info">
+                            <h4>Inside Job (2010)</h4>
+                            <p>Academy Award-winning documentary narrated by Matt Damon. Called "the strongest film explanation of the global financial crisis" by The New York Times.</p>
+                            <a href="https://www.imdb.com/title/tt1645089/" target="_blank">View on IMDB →</a>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">🎬</div>
+                        <div class="video-info">
+                            <h4>Too Big to Fail (2011)</h4>
+                            <p>HBO film based on Andrew Ross Sorkin's book. Paul Giamatti won a SAG Award for his portrayal of Ben Bernanke.</p>
+                            <a href="https://www.imdb.com/title/tt1742683/" target="_blank">View on IMDB →</a>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">🎬</div>
+                        <div class="video-info">
+                            <h4>Money, Power and Wall Street</h4>
+                            <p>Four-hour PBS Frontline investigation into how the financial industry set the stage for the 2008 crisis.</p>
+                            <a href="https://www.pbs.org/wgbh/frontline/documentary/money-power-wall-street/" target="_blank">Watch Free on PBS →</a>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">🎬</div>
+                        <div class="video-info">
+                            <h4>The Big Short (2015)</h4>
+                            <p>Acclaimed film starring Christian Bale and Steve Carell. 91.4% accurate to real events according to Information is Beautiful.</p>
+                            <a href="https://www.imdb.com/title/tt1596363/" target="_blank">View on IMDB →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sources Section -->
+            <div class="sources-section">
+                <h3>Sources & Further Reading</h3>
+                <ul>
+                    <li><a href="https://www.pbs.org/wgbh/frontline/article/neil-barofsky-on-the-broken-promises-of-the-bank-bailouts/" target="_blank">Neil Barofsky on the "Broken Promises" of the Bank Bailouts</a> - PBS Frontline</li>
+                    <li><a href="https://www.ineteconomics.org/perspectives/blog/simon-johnson-the-problem-of-too-big-to-fail-is-even-bigger-than-before-2008" target="_blank">The Problem of Too Big to Fail Is Even Bigger Than Before 2008</a> - Institute for New Economic Thinking</li>
+                    <li><a href="https://fortune.com/2012/09/20/sheila-bair-and-the-bailout-bank-titans/" target="_blank">Sheila Bair and the Bailout Bank Titans</a> - Fortune Magazine</li>
+                    <li><a href="https://www.warren.senate.gov/newsroom/press-releases/senator-warren-urges-action-to-end-too-big-to-fail" target="_blank">Senator Warren Urges Action to End Too Big to Fail</a> - U.S. Senate</li>
+                    <li><a href="https://www.wbur.org/onpoint/2018/10/01/2008-financial-crisis-fdic-sheila-bair" target="_blank">Would The U.S. Be Able To Endure Another Financial Crisis?</a> - WBUR On Point</li>
+                    <li><em>Bailout: An Inside Account of How Washington Abandoned Main Street</em> by Neil Barofsky (2012)</li>
+                    <li><em>Bull by the Horns: Fighting to Save Main Street from Wall Street</em> by Sheila Bair (2012)</li>
+                    <li><em>13 Bankers: The Wall Street Takeover</em> by Simon Johnson & James Kwak (2010)</li>
+                </ul>
+            </div>
 
             <section class="faq-section">
                 <h2>Frequently Asked Questions</h2>
