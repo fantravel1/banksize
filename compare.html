@@ -19,6 +19,85 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.banksize.com/compare">
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I compare banks on BankSize?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Select up to 3 banks from the dropdown menus, then click 'Compare Banks' to see their combined assets, employees, and what they could achieve together. You can also export the comparison chart as an image or save your comparison for later."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What metrics are used to compare banks?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We compare banks using total assets, market capitalization, number of employees, country of origin, and year founded. We also show real-world comparisons like how many years of world hunger could be eliminated or how many homes could be purchased."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Which banks can I compare?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can compare any of the 34 largest banks in the world, including ICBC, JPMorgan Chase, Bank of America, HSBC, Wells Fargo, and major banks from China, Europe, Japan, and other regions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What could the combined assets of major banks accomplish?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Combined assets of major banks could fund extraordinary achievements: ending world hunger for decades, buying every NFL team multiple times over, funding millions of college educations, or housing every homeless person on Earth many times over."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- HowTo Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Compare Banks Using BankSize",
+        "description": "Learn how to compare the world's largest banks side by side using our interactive comparison tool.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Select First Bank",
+                "text": "Click the first dropdown menu and choose a bank from the list. You'll see the bank's total assets, market cap, and employee count."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Select Second Bank",
+                "text": "Click the second dropdown and select another bank to compare. You can optionally add a third bank for more comprehensive comparisons."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Click Compare",
+                "text": "Press the 'Compare Banks' button to generate the comparison. You'll see combined metrics and real-world comparisons."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Review Insights",
+                "text": "Scroll down to see key insights about your selected banks, including geographic spread, historical context, and workforce size."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Save or Share",
+                "text": "Use the save button to remember your comparison, export the chart as an image, or share on social media."
+            }
+        ]
+    }
+    </script>
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -978,6 +1057,50 @@
                 </div>
                 <div class="saved-notice" id="savedNotice" style="display: none;">
                     ✓ Comparison saved! It will be loaded automatically next time.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="compare-section" style="padding-top: 0;">
+        <div class="compare-container">
+            <div class="insights-section">
+                <div class="insights-header">
+                    <div class="insights-icon">❓</div>
+                    <h3>Frequently Asked Questions</h3>
+                </div>
+                <div class="faq-list">
+                    <div class="insight-item">
+                        <div class="insight-bullet">Q</div>
+                        <div class="insight-text">
+                            <strong>How do I compare banks on BankSize?</strong><br>
+                            Select up to 3 banks from the dropdown menus, then click 'Compare Banks' to see their combined assets, employees, and what they could achieve together.
+                        </div>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-bullet">Q</div>
+                        <div class="insight-text">
+                            <strong>What metrics are used to compare banks?</strong><br>
+                            We compare banks using total assets, market capitalization, number of employees, country of origin, and year founded. We also show real-world comparisons like years to end world hunger.
+                        </div>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-bullet">Q</div>
+                        <div class="insight-text">
+                            <strong>Which banks can I compare?</strong><br>
+                            You can compare any of the 34 largest banks in the world, including ICBC, JPMorgan Chase, Bank of America, HSBC, and major banks from China, Europe, Japan, and other regions.
+                            <br><a href="banks.html" style="color: var(--primary); text-decoration: none;">→ View all banks</a>
+                        </div>
+                    </div>
+                    <div class="insight-item">
+                        <div class="insight-bullet">Q</div>
+                        <div class="insight-text">
+                            <strong>What could the combined assets accomplish?</strong><br>
+                            Combined assets could fund extraordinary achievements: ending world hunger for decades, buying every NFL team multiple times, or housing every homeless person on Earth.
+                            <br><a href="articles/how-big-are-banks.html" style="color: var(--primary); text-decoration: none;">→ Go deeper: How Did Banks Get So Big?</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

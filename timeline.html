@@ -76,7 +76,6 @@
             .timeline-content { width: calc(100% - 60px); margin-left: 60px !important; text-align: left !important; }
             .timeline-dot { left: 20px; }
         }
-    </style>
 
         /* Breadcrumb */
         .breadcrumb {
@@ -117,6 +116,51 @@
             color: var(--light);
         }
 
+        /* FAQ Section */
+        .faq-section {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+        }
+        .faq-section h2 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--light);
+        }
+        .faq-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        .faq-card:hover {
+            border-color: var(--primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .faq-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            color: var(--light);
+            margin-bottom: 0.75rem;
+        }
+        .faq-card p {
+            color: var(--gray);
+            line-height: 1.7;
+        }
+        .faq-card a {
+            color: var(--primary);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+        .faq-card a:hover {
+            text-decoration: underline;
+        }
+
         /* Mobile breadcrumb optimization */
         @media (max-width: 768px) {
             .breadcrumb {
@@ -134,6 +178,49 @@
                 margin-left: 0.375rem;
             }
         }
+    </style>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What was the Glass-Steagall Act?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Glass-Steagall Act of 1933 separated commercial and investment banking to prevent conflicts of interest and reduce systemic risk. It established a stable banking system for 66 years, preventing major bank failures and protecting depositors. It was repealed in 1999."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many banks have disappeared since the 1990s?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Over 10,000 banks have disappeared through consolidation since the 1990s. Most were community banks that merged with or were acquired by larger regional and national banks. The number of US banks has dropped from over 14,000 in 1984 to about 4,200 today."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does 'too big to fail' mean?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Too big to fail refers to financial institutions so large and interconnected that their failure would cause catastrophic damage to the entire economy. During the 2008 financial crisis, taxpayers spent $498 billion (3.5% of GDP) bailing out these banks to prevent economic collapse."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How concentrated is banking today?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The top 4 US banks now control 44% of all deposits, compared to just 15% in 1984. Banking has become highly concentrated with just a handful of megabanks dominating the industry. ICBC alone holds $6.3 trillion in assets, more than most countries' GDPs."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <nav>
@@ -240,6 +327,35 @@
             </div>
         </div>
     </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-card">
+            <h3>What was the Glass-Steagall Act?</h3>
+            <p>The Glass-Steagall Act of 1933 separated commercial and investment banking to prevent conflicts of interest. It established a stable banking system for 66 years, preventing major bank failures. It was repealed in 1999, leading to rapid consolidation.</p>
+            <a href="articles/too-big-to-fail.html">→ Go deeper: Understanding Too Big to Fail</a>
+        </div>
+
+        <div class="faq-card">
+            <h3>How many banks have disappeared since the 1990s?</h3>
+            <p>Over <strong>10,000 banks</strong> have disappeared through consolidation since the 1990s. The number of US banks dropped from over 14,000 in 1984 to about 4,200 today. Most were community banks acquired by larger institutions.</p>
+            <a href="articles/bank-consolidation-history.html">→ Go deeper: The History of Bank Consolidation</a>
+        </div>
+
+        <div class="faq-card">
+            <h3>What does "too big to fail" mean?</h3>
+            <p>Too big to fail refers to financial institutions so large that their failure would cause catastrophic damage to the economy. During the 2008 crisis, taxpayers spent <strong>$498 billion (3.5% of GDP)</strong> bailing out these banks.</p>
+            <a href="articles/too-big-to-fail.html">→ Go deeper: The Too Big to Fail Problem</a>
+        </div>
+
+        <div class="faq-card">
+            <h3>How concentrated is banking today?</h3>
+            <p>The top 4 US banks now control <strong>44% of all deposits</strong>, compared to just 15% in 1984. Banking has become highly concentrated with megabanks dominating. ICBC alone holds $6.3 trillion - more than most countries' GDPs.</p>
+            <a href="statistics.html">→ View full banking statistics</a>
+        </div>
+    </section>
 
     <footer>
         <div class="footer-container">
