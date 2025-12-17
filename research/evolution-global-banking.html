@@ -25,7 +25,13 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://banksize.com/evolution-global-banking">
-    
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/main.css">
+
     <!-- Schema.org Article Markup -->
     <script type="application/ld+json">
     {
@@ -773,17 +779,12 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Header -->
-    <header>
-        <nav role="navigation" aria-label="Main navigation">
-            <a href="/" class="logo">
-                <div class="logo-icon">💰</div>
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <div class="nav-logo-icon">$</div>
                 <span>Bank Size</span>
             </a>
-            <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" role="button" tabindex="0">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
                 <li><a href="../banks.html" class="nav-link">Banks</a></li>
@@ -792,8 +793,13 @@
                 <li><a href="../statistics.html" class="nav-link">Statistics</a></li>
                 <li><a href="../research.html" class="nav-link active">Research</a></li>
             </ul>
-        </nav>
-    </header>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
     
     <!-- Hero Section -->
     <section class="hero">
@@ -1439,15 +1445,39 @@
     </main>
     
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Bank Size. All data sourced from public reports and academic research.</p>
-        <p><a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Use</a> | <a href="/sources">Sources & Methodology</a></p>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Bank Size</h3>
+                <p>Comprehensive banking data and research from public sources and academic studies.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../banks.html">Banks</a></li>
+                    <li><a href="../rankings.html">Rankings</a></li>
+                    <li><a href="../research.html">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="../privacy.html">Privacy Policy</a></li>
+                    <li><a href="../terms.html">Terms of Use</a></li>
+                    <li><a href="../sources.html">Sources</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bank Size. All data sourced from public reports and academic research.</p>
+        </div>
     </footer>
     
     <!-- JavaScript for mobile menu and smooth scrolling -->
     <script>
         // Mobile menu toggle
-        const menuToggle = document.getElementById('menuToggle');
+        const menuToggle = document.getElementById('navToggle');
         const navLinks = document.getElementById('navLinks');
         
         menuToggle.addEventListener('click', () => {
