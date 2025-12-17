@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#0066FF">
+    <meta name="theme-color" content="#2563eb">
     <title>404 - Page Not Found | Bank Size</title>
     <meta name="description" content="Oops! This page seems to have been liquidated. Let's get you back to exploring banking giants.">
     <meta name="robots" content="noindex, follow">
@@ -12,76 +12,16 @@
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="/css/main.css">
+
     <style>
-        :root {
-            --primary: #0066FF;
-            --secondary: #FF6B35;
-            --dark: #0A0E27;
-            --darker: #050714;
-            --light: #F7F8FA;
-            --gray: #6B7280;
-            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
-            --gradient-secondary: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
-            --gradient-dark: linear-gradient(180deg, #0A0E27 0%, #050714 100%);
-            --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* Page-specific styles */
         body {
-            font-family: var(--font-body);
-            color: var(--light);
-            background: var(--darker);
-            line-height: 1.6;
+            background: var(--gray-900);
+            color: var(--gray-100);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-        }
-
-        /* Navigation */
-        nav {
-            padding: 1.5rem 0;
-            background: rgba(10, 14, 39, 0.95);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .nav-container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--light);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .logo-icon {
-            width: 32px;
-            height: 32px;
-            background: var(--gradient-primary);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
         }
 
         /* Error Content */
@@ -90,7 +30,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 2rem;
+            padding: var(--space-8);
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -108,13 +48,13 @@
             font-size: clamp(6rem, 20vw, 12rem);
             font-weight: 700;
             line-height: 1;
-            margin-bottom: 2rem;
+            margin-bottom: var(--space-8);
             position: relative;
         }
 
         .digit-4 {
             display: inline-block;
-            background: var(--gradient-primary);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -123,7 +63,7 @@
 
         .digit-0 {
             display: inline-block;
-            background: var(--gradient-secondary);
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -132,7 +72,7 @@
 
         .digit-4-2 {
             display: inline-block;
-            background: var(--gradient-primary);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -157,72 +97,35 @@
         .error-title {
             font-family: var(--font-display);
             font-size: clamp(1.5rem, 4vw, 2.5rem);
-            margin-bottom: 1rem;
+            margin-bottom: var(--space-4);
+            color: var(--gray-100);
         }
 
         .error-message {
-            font-size: 1.1rem;
-            color: var(--gray);
-            margin-bottom: 2rem;
+            font-size: var(--text-lg);
+            color: var(--gray-400);
+            margin-bottom: var(--space-8);
             line-height: 1.6;
         }
 
         .error-stat {
-            background: rgba(255, 107, 53, 0.1);
-            border: 1px solid rgba(255, 107, 53, 0.2);
-            border-radius: 12px;
-            padding: 1rem;
-            margin-bottom: 3rem;
-            font-size: 0.875rem;
+            background: rgba(249, 115, 22, 0.1);
+            border: 1px solid rgba(249, 115, 22, 0.3);
+            border-radius: var(--radius-xl);
+            padding: var(--space-4);
+            margin-bottom: var(--space-12);
+            font-size: var(--text-sm);
         }
 
         .error-stat strong {
-            color: var(--secondary);
+            color: var(--accent);
         }
 
         .error-actions {
             display: flex;
-            gap: 1rem;
+            gap: var(--space-4);
             justify-content: center;
             flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.875rem 1.75rem;
-            border-radius: 2rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: var(--transition);
-            cursor: pointer;
-            border: none;
-            font-family: var(--font-body);
-            font-size: 0.875rem;
-        }
-
-        .btn-primary {
-            background: var(--gradient-primary);
-            color: white;
-            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--light);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
         }
 
         /* Background decoration */
@@ -233,7 +136,7 @@
             transform: translate(-50%, -50%);
             width: 150%;
             height: 150%;
-            opacity: 0.05;
+            opacity: 0.03;
             pointer-events: none;
         }
 
@@ -256,7 +159,7 @@
         .bg-decoration::after {
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, var(--secondary) 0%, transparent 70%);
+            background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
             bottom: -200px;
             right: -200px;
             animation: float 15s ease-in-out infinite reverse;
@@ -270,46 +173,52 @@
 
         /* Popular pages */
         .popular-pages {
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: var(--space-16);
+            padding-top: var(--space-8);
+            border-top: 1px solid var(--gray-700);
         }
 
         .popular-pages h3 {
-            font-size: 0.875rem;
+            font-size: var(--text-sm);
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            color: var(--gray);
-            margin-bottom: 1rem;
+            color: var(--gray-400);
+            margin-bottom: var(--space-4);
         }
 
         .page-links {
             display: flex;
-            gap: 1rem;
+            gap: var(--space-4);
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .page-link {
-            color: var(--primary);
+            color: var(--primary-light);
             text-decoration: none;
-            font-size: 0.875rem;
-            transition: var(--transition);
+            font-size: var(--text-sm);
+            transition: color var(--transition-fast);
         }
 
         .page-link:hover {
-            color: var(--secondary);
-            transform: translateX(4px);
+            color: var(--accent);
         }
 
-        /* Footer */
-        footer {
-            padding: 2rem 1.5rem;
-            background: var(--darker);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-            color: var(--gray);
-            font-size: 0.875rem;
+        .breadcrumb {
+            background: var(--gray-800);
+            border-bottom: 1px solid var(--gray-700);
+        }
+
+        .breadcrumb-item {
+            color: var(--gray-400);
+        }
+
+        .breadcrumb-item a {
+            color: var(--gray-400);
+        }
+
+        .breadcrumb-item[aria-current="page"] {
+            color: var(--gray-100);
         }
 
         /* Responsive */
@@ -329,54 +238,28 @@
             }
         }
     </style>
-
-        /* Breadcrumb */
-        .breadcrumb {
-            background: rgba(10, 14, 39, 0.5);
-            padding: 1rem 0;
-            margin-top: 5rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .breadcrumb-list {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-            display: flex;
-            gap: 0.5rem;
-            list-style: none;
-            align-items: center;
-        }
-        .breadcrumb-item {
-            display: flex;
-            align-items: center;
-            color: var(--gray);
-            font-size: 0.875rem;
-        }
-        .breadcrumb-item a {
-            color: var(--gray);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .breadcrumb-item a:hover {
-            color: var(--primary);
-        }
-        .breadcrumb-item:not(:last-child)::after {
-            content: '›';
-            margin-left: 0.5rem;
-            color: rgba(255, 255, 255, 0.3);
-        }
-        .breadcrumb-item[aria-current="page"] {
-            color: var(--light);
-        }
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
+    <nav class="nav" id="navbar">
         <div class="nav-container">
-            <a href="/" class="logo">
-                <div class="logo-icon">💰</div>
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">$</div>
                 <span>Bank Size</span>
             </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="banks.html" class="nav-link">Banks</a></li>
+                <li><a href="rankings.html" class="nav-link">Rankings</a></li>
+                <li><a href="compare.html" class="nav-link">Compare</a></li>
+                <li><a href="statistics.html" class="nav-link">Statistics</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -434,11 +317,60 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Bank Size. Even our errors are too big to fail.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3><span style="font-size: 1.5rem;">$</span> Bank Size</h3>
+                    <p>Exploring the massive scale of global banking through interactive visualizations and comparisons.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="banks.html">All Banks</a></li>
+                        <li><a href="rankings.html">Rankings</a></li>
+                        <li><a href="compare.html">Compare</a></li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bank Size. Even our errors are too big to fail.</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy</a>
+                    <a href="terms-of-service.html">Terms</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script>
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+        }
+
         // Fun easter egg: clicking the 0 in 404 spins it faster
         document.querySelector('.digit-0').addEventListener('click', function() {
             this.style.animation = 'spin 1s linear infinite';

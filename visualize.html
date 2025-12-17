@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#0066FF">
+    <meta name="theme-color" content="#2563eb">
     <title>Scale Visualizer - Bank Size | See The Incomprehensible Scale</title>
     <meta name="description" content="Mind-blowing visualizations of banking wealth. Watch money accumulate in real-time, see extreme comparisons, and understand the true scale.">
     <link rel="icon" type="image/x-icon" href="/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
     <!-- FAQ Schema -->
@@ -89,163 +90,244 @@
     </script>
 
     <style>
-        :root {
-            --primary: #0066FF;
-            --secondary: #FF6B35;
-            --success: #10B981;
-            --dark: #0A0E27;
-            --darker: #050714;
-            --light: #F7F8FA;
-            --gray: #6B7280;
-            --gradient-primary: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
-            --gradient-secondary: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
-            --font-display: 'Space Grotesk', sans-serif;
-            --font-body: 'Inter', sans-serif;
+        /* Page-specific styles using CSS variables from main.css */
+        body {
+            background: var(--gray-900);
+            color: var(--gray-100);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: var(--font-body); color: var(--light); background: var(--darker); line-height: 1.6; }
+        .hero-section {
+            padding: calc(var(--nav-height) + var(--space-16)) 0 var(--space-16);
+            background: var(--gray-800);
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-family: var(--font-display);
+            font-size: var(--text-5xl);
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-section p {
+            font-size: var(--text-2xl);
+            color: var(--gray-400);
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 0; background: rgba(10, 14, 39, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-        .nav-container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--light); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
-        .logo-icon { font-size: 1.75rem; }
-        .nav-links { display: flex; gap: 2rem; list-style: none; }
-        .nav-link { color: var(--light); text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
-        .nav-link:hover { color: var(--primary); }
+        .container { max-width: 1200px; margin: 0 auto; padding: var(--space-16) var(--space-6); }
 
-        .hero-section { padding: 8rem 1.5rem 4rem; background: var(--dark); text-align: center; }
-        .hero-section h1 { font-family: var(--font-display); font-size: 3.5rem; font-weight: 700; margin-bottom: 1rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero-section p { font-size: 1.5rem; color: var(--gray); max-width: 800px; margin: 0 auto; }
-
-        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 1.5rem; }
-
-        .section { margin-bottom: 6rem; }
-        .section h2 { font-family: var(--font-display); font-size: 2.5rem; text-align: center; margin-bottom: 1rem; color: var(--light); }
-        .section-subtitle { text-align: center; color: var(--gray); font-size: 1.25rem; margin-bottom: 3rem; }
+        .section { margin-bottom: var(--space-24); }
+        .section h2 {
+            font-family: var(--font-display);
+            font-size: var(--text-4xl);
+            text-align: center;
+            margin-bottom: var(--space-4);
+            color: var(--white);
+        }
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray-400);
+            font-size: var(--text-xl);
+            margin-bottom: var(--space-12);
+        }
 
         /* Money Counter */
-        .money-counter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
-        .counter-card { background: linear-gradient(135deg, rgba(0, 102, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%); border: 2px solid var(--primary); border-radius: 16px; padding: 2rem; text-align: center; position: relative; overflow: hidden; }
-        .counter-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gradient-primary); animation: pulse 2s ease-in-out infinite; }
+        .money-counter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8); margin-bottom: var(--space-12); }
+        .counter-card {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%);
+            border: 2px solid var(--primary);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .counter-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            animation: pulse 2s ease-in-out infinite;
+        }
         @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
 
-        .counter-label { font-size: 1.125rem; color: var(--gray); margin-bottom: 1rem; }
-        .counter-value { font-family: var(--font-display); font-size: 3rem; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; font-variant-numeric: tabular-nums; }
-        .counter-description { font-size: 0.875rem; color: var(--gray); }
+        .counter-label { font-size: var(--text-lg); color: var(--gray-400); margin-bottom: var(--space-4); }
+        .counter-value {
+            font-family: var(--font-display);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: var(--space-2);
+            font-variant-numeric: tabular-nums;
+        }
+        .counter-description { font-size: var(--text-sm); color: var(--gray-500); }
 
         /* Comparison Cards */
-        .comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
-        .comparison-card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 2rem; transition: all 0.3s ease; }
-        .comparison-card:hover { transform: translateY(-5px); border-color: var(--secondary); background: rgba(255, 107, 53, 0.05); }
-        .comparison-icon { font-size: 3rem; margin-bottom: 1rem; }
-        .comparison-card h3 { font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 1rem; color: var(--light); }
-        .comparison-number { font-size: 2.5rem; font-weight: 700; background: var(--gradient-secondary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
-        .comparison-text { color: var(--gray); line-height: 1.8; }
+        .comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-8); }
+        .comparison-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--gray-800);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            transition: all var(--transition-base);
+        }
+        .comparison-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            background: rgba(249, 115, 22, 0.05);
+        }
+        .comparison-icon { font-size: 3rem; margin-bottom: var(--space-4); }
+        .comparison-card h3 {
+            font-family: var(--font-display);
+            font-size: var(--text-2xl);
+            margin-bottom: var(--space-4);
+            color: var(--white);
+        }
+        .comparison-number {
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: var(--space-2);
+        }
+        .comparison-text { color: var(--gray-400); line-height: 1.8; }
 
         /* Calculator */
-        .calculator { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 3rem; max-width: 700px; margin: 0 auto; }
-        .calculator h3 { font-family: var(--font-display); font-size: 2rem; margin-bottom: 2rem; text-align: center; color: var(--light); }
-        .calc-input-group { margin-bottom: 2rem; }
-        .calc-input-group label { display: block; margin-bottom: 0.5rem; color: var(--gray); font-weight: 500; }
-        .calc-input { width: 100%; padding: 1rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: var(--light); font-size: 1.125rem; font-family: var(--font-body); }
+        .calculator {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--gray-800);
+            border-radius: var(--radius-xl);
+            padding: var(--space-12);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .calculator h3 {
+            font-family: var(--font-display);
+            font-size: var(--text-3xl);
+            margin-bottom: var(--space-8);
+            text-align: center;
+            color: var(--white);
+        }
+        .calc-input-group { margin-bottom: var(--space-8); }
+        .calc-input-group label {
+            display: block;
+            margin-bottom: var(--space-2);
+            color: var(--gray-400);
+            font-weight: 500;
+        }
+        .calc-input {
+            width: 100%;
+            padding: var(--space-4);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--gray-700);
+            border-radius: var(--radius-md);
+            color: var(--white);
+            font-size: var(--text-lg);
+            font-family: var(--font-body);
+        }
         .calc-input:focus { outline: none; border-color: var(--primary); }
-        .calc-result { background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(52, 211, 153, 0.05) 100%); border: 2px solid var(--success); border-radius: 12px; padding: 2rem; text-align: center; margin-top: 2rem; }
-        .calc-result-value { font-family: var(--font-display); font-size: 3rem; font-weight: 700; color: var(--success); margin-bottom: 0.5rem; }
-        .calc-result-text { color: var(--gray); font-size: 1.125rem; }
+        .calc-result {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(52, 211, 153, 0.05) 100%);
+            border: 2px solid var(--success);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            text-align: center;
+            margin-top: var(--space-8);
+        }
+        .calc-result-value {
+            font-family: var(--font-display);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--success);
+            margin-bottom: var(--space-2);
+        }
+        .calc-result-text { color: var(--gray-400); font-size: var(--text-lg); }
 
         /* Chart Container */
-        .chart-container { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 2rem; margin-bottom: 3rem; }
+        .chart-container {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--gray-800);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            margin-bottom: var(--space-12);
+        }
         .chart-container canvas { max-height: 400px; }
 
         /* Extreme Stats */
-        .extreme-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-        .stat-box { background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(247, 147, 30, 0.05) 100%); border: 1px solid rgba(255, 107, 53, 0.3); border-radius: 12px; padding: 1.5rem; text-align: center; }
-        .stat-box-number { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--secondary); margin-bottom: 0.5rem; }
-        .stat-box-label { color: var(--gray); font-size: 0.95rem; }
-
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .hero-section h1 { font-size: 2rem; }
-            .hero-section p { font-size: 1.125rem; }
-            .counter-value { font-size: 2rem; }
-            .comparison-grid { grid-template-columns: 1fr; }
-            .money-counter-grid { grid-template-columns: 1fr; }
+        .extreme-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-6); }
+        .stat-box {
+            background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(251, 146, 60, 0.05) 100%);
+            border: 1px solid rgba(249, 115, 22, 0.3);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+            text-align: center;
         }
+        .stat-box-number {
+            font-family: var(--font-display);
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: var(--space-2);
+        }
+        .stat-box-label { color: var(--gray-400); font-size: var(--text-sm); }
 
-        /* Breadcrumb */
+        /* Breadcrumb customization for dark theme */
         .breadcrumb {
-            background: rgba(10, 14, 39, 0.5);
-            padding: 1rem 0;
-            margin-top: 5rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .breadcrumb-list {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-            display: flex;
-            gap: 0.5rem;
-            list-style: none;
-            align-items: center;
+            background: rgba(15, 23, 42, 0.5);
+            border-bottom: 1px solid var(--gray-800);
         }
         .breadcrumb-item {
-            display: flex;
-            align-items: center;
-            color: var(--gray);
-            font-size: 0.875rem;
+            color: var(--gray-400);
         }
         .breadcrumb-item a {
-            color: var(--gray);
-            text-decoration: none;
-            transition: color 0.3s;
+            color: var(--gray-400);
         }
         .breadcrumb-item a:hover {
             color: var(--primary);
         }
         .breadcrumb-item:not(:last-child)::after {
-            content: '›';
-            margin-left: 0.5rem;
-            color: rgba(255, 255, 255, 0.3);
+            color: var(--gray-700);
         }
         .breadcrumb-item[aria-current="page"] {
-            color: var(--light);
+            color: var(--gray-200);
         }
 
-        /* Mobile breadcrumb optimization */
         @media (max-width: 768px) {
-            .breadcrumb {
-                margin-top: 4.5rem;
-                padding: 0.75rem 0;
-            }
-
-            .breadcrumb-list {
-                padding: 0 1rem;
-                font-size: 0.8125rem;
-                gap: 0.375rem;
-            }
-
-            .breadcrumb-item:not(:last-child)::after {
-                margin-left: 0.375rem;
-            }
+            .hero-section h1 { font-size: var(--text-3xl); }
+            .hero-section p { font-size: var(--text-lg); }
+            .counter-value { font-size: var(--text-3xl); }
+            .comparison-grid { grid-template-columns: 1fr; }
+            .money-counter-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <nav>
+    <nav class="nav" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">💰</div>
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">$</div>
                 <span>Bank Size</span>
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="banks.html" class="nav-link">Banks</a></li>
                 <li><a href="rankings.html" class="nav-link">Rankings</a></li>
                 <li><a href="compare.html" class="nav-link">Compare</a></li>
                 <li><a href="statistics.html" class="nav-link">Statistics</a></li>
-                <li><a href="visualize.html" class="nav-link active">Visualize</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
             </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -457,7 +539,73 @@
         </div>
     </div>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>$ Bank Size</h3>
+                    <p>Making the incomprehensible scale of global banking understandable through visual storytelling.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="banks.html">All Banks</a></li>
+                        <li><a href="rankings.html">Bank Rankings</a></li>
+                        <li><a href="statistics.html">Global Statistics</a></li>
+                        <li><a href="compare.html">Compare Banks</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="articles/jpmorgan-size.html">JPMorgan Size Guide</a></li>
+                        <li><a href="articles/hsbc-bank-size.html">HSBC Size Guide</a></li>
+                        <li><a href="methodology.html">Methodology</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="glossary.html">Glossary</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="research.html">Research</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bank Size. All data sourced from public financial reports.</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script>
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
         // Real-time money counters
         let seconds = 0;
         const profitPerSecond = {
