@@ -163,6 +163,22 @@
         .related-card h3 { font-size: 1rem; color: var(--light); margin-bottom: 0.5rem; }
         .related-card p { font-size: 0.875rem; color: var(--gray); margin: 0; }
 
+        /* Expert Quotes */
+        .expert-quote { background: rgba(0, 102, 255, 0.05); border-left: 4px solid var(--primary); padding: 1.5rem 2rem; margin: 2rem 0; border-radius: 0 12px 12px 0; position: relative; }
+        .expert-quote blockquote { font-size: 1.125rem; font-style: italic; color: rgba(247, 248, 250, 0.95); margin-bottom: 1rem; line-height: 1.7; }
+        .expert-quote blockquote::before { content: '"'; font-size: 3rem; color: var(--primary); opacity: 0.3; position: absolute; top: 0.5rem; left: 0.75rem; font-family: Georgia, serif; }
+        .expert-quote .attribution { font-size: 0.875rem; color: var(--gray); }
+        .expert-quote .attribution strong { color: var(--light); }
+
+        /* Sources Section */
+        .sources-section { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; margin-top: 3rem; }
+        .sources-section h3 { font-size: 1rem; margin-bottom: 1rem; color: var(--light); }
+        .sources-section ul { list-style: none; padding: 0; margin: 0; }
+        .sources-section li { font-size: 0.8125rem; color: var(--gray); margin-bottom: 0.5rem; padding-left: 1rem; position: relative; }
+        .sources-section li::before { content: '→'; position: absolute; left: 0; color: var(--primary); }
+        .sources-section a { color: var(--primary); text-decoration: none; }
+        .sources-section a:hover { text-decoration: underline; }
+
         footer { background: var(--dark); padding: 3rem 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 4rem; text-align: center; color: var(--gray); }
 
         @media (max-width: 768px) {
@@ -351,6 +367,18 @@
                 That's over 10,000 banks that vanished—mostly absorbed by larger institutions.</p>
             </div>
 
+            <div class="expert-quote">
+                <blockquote>
+                    If the banks really are big, and if the consequences of them failing would be catastrophic,
+                    they're not going to be allowed to fail. Therefore, now they can borrow more cheaply.
+                    Capitalism without failure is like religion without sin. It simply just doesn't exist.
+                </blockquote>
+                <div class="attribution">
+                    <strong>Neil Barofsky</strong>, Former Special Inspector General of TARP
+                    <br><a href="https://www.financialsense.com/contributors/ron-hera/neil-barofsky-too-big-to-fail-financial-crisis" target="_blank">Financial Sense Interview →</a>
+                </div>
+            </div>
+
             <h2>What Does a Bank "Own" With Trillions in Assets?</h2>
             <p>
                 When we say ICBC has $6.3 trillion in "assets," what does that actually mean? Bank assets
@@ -397,6 +425,31 @@
                 corporate borrowers. Big banks serve big businesses, potentially leaving small businesses
                 underserved.
             </p>
+
+            <div class="expert-quote">
+                <blockquote>
+                    Community banks still serve as vital sources of credit for small businesses and providers
+                    of banking services to communities that might not be served by noncommunity banks. For more
+                    than 20 percent of the nation's 3,100 counties, the only banks operating in those counties
+                    are community banks.
+                </blockquote>
+                <div class="attribution">
+                    <strong>FDIC Community Banking Study</strong> (2020)
+                    <br><a href="https://www.fdic.gov/resources/community-banking/report/2020/2020-cbi-study-full.pdf" target="_blank">Read Full Report →</a>
+                </div>
+            </div>
+
+            <!-- Sources Section -->
+            <div class="sources-section">
+                <h3>Sources & Further Reading</h3>
+                <ul>
+                    <li><a href="https://www.fdic.gov/resources/community-banking/report/2020/2020-cbi-study-full.pdf" target="_blank">FDIC Community Banking Study 2020</a> - FDIC Research</li>
+                    <li><a href="https://www.financialsense.com/contributors/ron-hera/neil-barofsky-too-big-to-fail-financial-crisis" target="_blank">Neil Barofsky on Too Big to Fail</a> - Financial Sense</li>
+                    <li><a href="https://www.hks.harvard.edu/sites/default/files/centers/mrcbg/files/Final_State_and_Fate_Lux_Greene.pdf" target="_blank">The State and Fate of Community Banking</a> - Harvard Kennedy School</li>
+                    <li><a href="https://www.ineteconomics.org/perspectives/blog/simon-johnson-the-problem-of-too-big-to-fail-is-even-bigger-than-before-2008" target="_blank">Simon Johnson on Bank Size</a> - Institute for New Economic Thinking</li>
+                    <li>Bank asset data sourced from public financial reports and regulatory filings (2024)</li>
+                </ul>
+            </div>
 
             <section class="faq-section">
                 <h2>Frequently Asked Questions</h2>

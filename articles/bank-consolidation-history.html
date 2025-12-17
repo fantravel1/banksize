@@ -160,6 +160,22 @@
         .related-card h3 { font-size: 1rem; color: var(--light); margin-bottom: 0.5rem; }
         .related-card p { font-size: 0.875rem; color: var(--gray); margin: 0; }
 
+        /* Expert Quotes */
+        .expert-quote { background: rgba(0, 102, 255, 0.05); border-left: 4px solid var(--primary); padding: 1.5rem 2rem; margin: 2rem 0; border-radius: 0 12px 12px 0; position: relative; }
+        .expert-quote blockquote { font-size: 1.125rem; font-style: italic; color: rgba(247, 248, 250, 0.95); margin-bottom: 1rem; line-height: 1.7; }
+        .expert-quote blockquote::before { content: '"'; font-size: 3rem; color: var(--primary); opacity: 0.3; position: absolute; top: 0.5rem; left: 0.75rem; font-family: Georgia, serif; }
+        .expert-quote .attribution { font-size: 0.875rem; color: var(--gray); }
+        .expert-quote .attribution strong { color: var(--light); }
+
+        /* Sources Section */
+        .sources-section { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; margin-top: 3rem; }
+        .sources-section h3 { font-size: 1rem; margin-bottom: 1rem; color: var(--light); }
+        .sources-section ul { list-style: none; padding: 0; margin: 0; }
+        .sources-section li { font-size: 0.8125rem; color: var(--gray); margin-bottom: 0.5rem; padding-left: 1rem; position: relative; }
+        .sources-section li::before { content: '→'; position: absolute; left: 0; color: var(--primary); }
+        .sources-section a { color: var(--primary); text-decoration: none; }
+        .sources-section a:hover { text-decoration: underline; }
+
         footer { background: var(--dark); padding: 3rem 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 4rem; text-align: center; color: var(--gray); }
 
         @media (max-width: 768px) {
@@ -425,6 +441,30 @@
                 to make more personalized lending decisions based on relationship rather than algorithm.</p>
             </div>
 
+            <div class="expert-quote">
+                <blockquote>
+                    Since 1994, community banks' share of the U.S. lending market has fallen by approximately
+                    half – from 41 percent to 22 percent – while the top five largest banks' share has more
+                    than doubled – from 17 percent to 41 percent.
+                </blockquote>
+                <div class="attribution">
+                    <strong>FDIC Community Banking Study</strong> (2020)
+                    <br><a href="https://www.fdic.gov/resources/community-banking/report/2020/2020-cbi-study-full.pdf" target="_blank">Read Full Report →</a>
+                </div>
+            </div>
+
+            <div class="expert-quote">
+                <blockquote>
+                    When they created 'too big to fail,' they also created 'too small to succeed.' Many community
+                    banks are finding it increasingly tough to survive, in part because they must commit more of
+                    their limited resources to comply with new regulations.
+                </blockquote>
+                <div class="attribution">
+                    <strong>Community Banker</strong>, quoted in The Wall Street Journal
+                    <br><a href="https://www.dallasnews.com/business/2013/09/23/forget-too-big-to-fail-some-banks-now-too-small-to-succeed/" target="_blank">Dallas News Coverage →</a>
+                </div>
+            </div>
+
             <h2>The Consequences of Consolidation</h2>
 
             <h3>For Consumers</h3>
@@ -457,6 +497,19 @@
                 and reduces competition. The debate continues about whether to break up the largest banks
                 or accept the current structure with enhanced regulation.
             </p>
+
+            <!-- Sources Section -->
+            <div class="sources-section">
+                <h3>Sources & Further Reading</h3>
+                <ul>
+                    <li><a href="https://www.fdic.gov/resources/community-banking/report/2020/2020-cbi-study-full.pdf" target="_blank">FDIC Community Banking Study 2020</a> - FDIC Research Department</li>
+                    <li><a href="https://www.hks.harvard.edu/sites/default/files/centers/mrcbg/files/Final_State_and_Fate_Lux_Greene.pdf" target="_blank">The State and Fate of Community Banking</a> - Harvard Kennedy School</li>
+                    <li><a href="https://www.dallasnews.com/business/2013/09/23/forget-too-big-to-fail-some-banks-now-too-small-to-succeed/" target="_blank">Too Small to Succeed</a> - Dallas Morning News</li>
+                    <li><a href="https://www.pbs.org/wgbh/frontline/documentary/money-power-wall-street/" target="_blank">Money, Power and Wall Street</a> - PBS Frontline Documentary</li>
+                    <li><a href="https://www.fdic.gov/community-banking-research-program" target="_blank">Community Banking Research Program</a> - FDIC</li>
+                    <li>Historical banking data from FDIC Historical Statistics on Banking</li>
+                </ul>
+            </div>
 
             <section class="faq-section">
                 <h2>Frequently Asked Questions</h2>
