@@ -6471,6 +6471,230 @@ const banksData = {
     comparisons: null
   },
 
+  'industrial-bank-china': {
+    id: 'industrial-bank-china',
+    name: 'Industrial Bank Co., Ltd.',
+    shortName: 'Industrial Bank',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1988,
+    headquarters: 'Fuzhou, China',
+    assets: 720,
+    marketCap: 85,
+    revenue: 58,
+    netIncome: 16,
+    employees: 220000,
+    branches: 2500,
+    countries: 30,
+    globalRank: 18,
+    description: "One of China's major commercial banks with significant international presence and comprehensive financial services.",
+    keyFact: "Industrial Bank serves over 120 million customers with 2,500+ branches across 30 countries and strong digital banking capabilities.",
+    ceoQuote: "We are committed to inclusive and sustainable financial innovation.",
+    timeline: [
+      { year: 1988, event: "Industrial Bank established in Fuzhou, China" },
+      { year: 2000, event: "Becomes one of China's major banks" },
+      { year: 2010, event: "Lists on Shanghai and Hong Kong exchanges" },
+      { year: 2024, event: "Major global bank with $720B in assets across 30 countries" }
+    ],
+    comparisons: null
+  },
+
+  'bank-of-communications': {
+    id: 'bank-of-communications',
+    name: 'Bank of Communications Co., Ltd.',
+    shortName: 'Bank of Comm',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1908,
+    headquarters: 'Shanghai, China',
+    assets: 620,
+    marketCap: 72,
+    revenue: 48,
+    netIncome: 13,
+    employees: 210000,
+    branches: 2200,
+    countries: 28,
+    globalRank: 21,
+    description: "One of China's oldest banks with significant banking operations across China and internationally.",
+    keyFact: "Bank of Communications serves over 100 million customers with 2,200+ branches across 28 countries.",
+    ceoQuote: "We are building a modern financial institution for the future.",
+    timeline: [
+      { year: 1908, event: "Bank of Communications established in Shanghai" },
+      { year: 1958, event: "Becomes the Bank of Communications as a state-owned bank" },
+      { year: 2005, event: "Goes public and begins major expansion" },
+      { year: 2024, event: "Major Chinese bank with $620B in assets across 28 countries" }
+    ],
+    comparisons: null
+  },
+
+  'china-minsheng-bank': {
+    id: 'china-minsheng-bank',
+    name: 'China Minsheng Bank Corp., Ltd.',
+    shortName: 'Minsheng Bank',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1996,
+    headquarters: 'Beijing, China',
+    assets: 680,
+    marketCap: 78,
+    revenue: 52,
+    netIncome: 14,
+    employees: 200000,
+    branches: 2400,
+    countries: 32,
+    globalRank: 19,
+    description: "One of China's major commercial banks with significant international presence and comprehensive financial services.",
+    keyFact: "China Minsheng Bank serves over 130 million customers with 2,400+ branches across 32 countries.",
+    ceoQuote: "We are committed to serving the people and driving economic growth.",
+    timeline: [
+      { year: 1996, event: "China Minsheng Bank established as first non-state-owned bank" },
+      { year: 2000, event: "Becomes one of China's major banking institutions" },
+      { year: 2010, event: "Lists on stock exchanges and expands globally" },
+      { year: 2024, event: "Major Chinese bank with $680B in assets across 32 countries" }
+    ],
+    comparisons: null
+  },
+
+  'shanghai-pudong-bank': {
+    id: 'shanghai-pudong-bank',
+    name: 'Shanghai Pudong Development Bank Co., Ltd.',
+    shortName: 'SPDB',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1992,
+    headquarters: 'Shanghai, China',
+    assets: 550,
+    marketCap: 65,
+    revenue: 42,
+    netIncome: 11,
+    employees: 180000,
+    branches: 1900,
+    countries: 25,
+    globalRank: 24,
+    description: "One of China's leading regional commercial banks with significant presence across Asia and globally.",
+    keyFact: "Shanghai Pudong Development Bank serves over 100 million customers with 1,900+ branches across 25 countries.",
+    ceoQuote: "We are building a world-class financial services platform.",
+    timeline: [
+      { year: 1992, event: "Shanghai Pudong Development Bank established" },
+      { year: 2000, event: "Becomes one of China's major regional banks" },
+      { year: 2010, event: "Lists on stock exchanges and expands internationally" },
+      { year: 2024, event: "Major Chinese bank with $550B in assets across 25 countries" }
+    ],
+    comparisons: null
+  },
+
+  'china-everbright-bank': {
+    id: 'china-everbright-bank',
+    name: 'China Everbright Bank Company Limited',
+    shortName: 'Everbright Bank',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1992,
+    headquarters: 'Beijing, China',
+    assets: 420,
+    marketCap: 48,
+    revenue: 32,
+    netIncome: 8.5,
+    employees: 150000,
+    branches: 1700,
+    countries: 20,
+    globalRank: 27,
+    description: "One of China's major commercial banks with comprehensive banking and financial services across China and internationally.",
+    keyFact: "China Everbright Bank serves over 80 million customers with 1,700+ branches across 20 countries.",
+    ceoQuote: "We are committed to financial innovation and sustainable development.",
+    timeline: [
+      { year: 1992, event: "China Everbright Bank established" },
+      { year: 2000, event: "Becomes one of China's leading banks" },
+      { year: 2010, event: "Lists on stock exchanges and expands regionally" },
+      { year: 2024, event: "Major Chinese bank with $420B in assets across 20 countries" }
+    ],
+    comparisons: null
+  },
+
+  'aeon-bank': {
+    id: 'aeon-bank',
+    name: 'AEON Bank Limited',
+    shortName: 'AEON Bank',
+    country: 'Malaysia',
+    flag: '🇲🇾',
+    founded: 1987,
+    headquarters: 'Kuala Lumpur, Malaysia',
+    assets: 42,
+    marketCap: 5.5,
+    revenue: 2.2,
+    netIncome: 0.65,
+    employees: 5000,
+    branches: 250,
+    countries: 1,
+    globalRank: 83,
+    description: "Malaysia's digital-focused bank providing innovative banking and financial services to consumers across Malaysia.",
+    keyFact: "AEON Bank serves over 4 million customers with 250+ branches and focuses on digital banking innovation.",
+    ceoQuote: "We are transforming banking through digital innovation.",
+    timeline: [
+      { year: 1987, event: "AEON Bank established in Malaysia" },
+      { year: 2005, event: "Becomes one of Malaysia's innovative banks" },
+      { year: 2015, event: "Pioneering digital banking in Malaysia" },
+      { year: 2024, event: "Leading digital bank in Malaysia with $42B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'banco-latino': {
+    id: 'banco-latino',
+    name: 'Banco Latinoamericano de Exportaciones S.A.',
+    shortName: 'Bladex',
+    country: 'Panama',
+    flag: '🇵🇦',
+    founded: 1975,
+    headquarters: 'Panama City, Panama',
+    assets: 18,
+    marketCap: 1.8,
+    revenue: 0.95,
+    netIncome: 0.28,
+    employees: 1200,
+    branches: 15,
+    countries: 45,
+    globalRank: 96,
+    description: "The leading bank for trade financing in Latin America with operations across 45 countries supporting regional commerce.",
+    keyFact: "Bladex provides trade financing and export credit services to businesses across 45 countries in Latin America and beyond.",
+    ceoQuote: "We are driving trade and commerce across Latin America.",
+    timeline: [
+      { year: 1975, event: "Banco Latinoamericano de Exportaciones established" },
+      { year: 1993, event: "Lists on stock exchange and becomes major trade bank" },
+      { year: 2010, event: "Expands trade financing services across region" },
+      { year: 2024, event: "Leading Latin American trade bank with $18B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'bank-negara-indonesia': {
+    id: 'bank-negara-indonesia',
+    name: 'Bank Negara Indonesia (Persero) Tbk.',
+    shortName: 'BNI',
+    country: 'Indonesia',
+    flag: '🇮🇩',
+    founded: 1946,
+    headquarters: 'Jakarta, Indonesia',
+    assets: 195,
+    marketCap: 38,
+    revenue: 10,
+    netIncome: 2.8,
+    employees: 35000,
+    branches: 1100,
+    countries: 25,
+    globalRank: 46,
+    description: "Indonesia's second-largest bank providing comprehensive banking services across Indonesia and Southeast Asia.",
+    keyFact: "Bank Negara Indonesia serves over 35 million customers with 1,100+ branches across 25 countries.",
+    ceoQuote: "We are empowering Indonesia's economy through banking innovation.",
+    timeline: [
+      { year: 1946, event: "Bank Negara Indonesia established as Indonesia's central bank successor" },
+      { year: 1968, event: "Becomes Indonesia's major commercial bank" },
+      { year: 2010, event: "Expands significantly across Southeast Asia" },
+      { year: 2024, event: "Major Southeast Asian bank with $195B in assets across 25 countries" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
