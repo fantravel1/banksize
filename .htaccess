@@ -26,6 +26,11 @@
     AddOutputFilterByType DEFLATE text/javascript
     AddOutputFilterByType DEFLATE text/plain
     AddOutputFilterByType DEFLATE text/xml
+
+    # Add Vary header for proper cache handling
+    <IfModule mod_headers.c>
+        Header append Vary Accept-Encoding
+    </IfModule>
 </IfModule>
 
 # Enable browser caching

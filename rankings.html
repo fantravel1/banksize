@@ -23,6 +23,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="World's Largest Banks Ranked by Assets 2024">
     <meta name="twitter:description" content="ICBC: $6.3T | CCB: $5.4T | ABC: $5.6T | JPMorgan: $4.0T. See the complete bank rankings.">
+    <meta name="twitter:image" content="https://www.banksize.com/images/rankings-og.jpg">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.banksize.com/rankings.html">
@@ -53,40 +54,6 @@
         },
         "datePublished": "2024-01-01",
         "dateModified": "2025-02-11"
-    }
-    </script>
-
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is the largest bank in the world by assets?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "ICBC (Industrial and Commercial Bank of China) is the largest bank in the world by total assets, holding $6.3 trillion. The top 5 largest banks are: 1) ICBC ($6.3T), 2) Agricultural Bank of China ($5.8T), 3) China Construction Bank ($5.4T), 4) JPMorgan Chase ($4.0T), 5) Bank of America ($3.3T)."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the largest bank in the United States?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "JPMorgan Chase is the largest bank in the United States with approximately $4.0 trillion in total assets. It ranks #4 globally. The top 4 US banks are JPMorgan Chase ($4.0T), Bank of America ($3.3T), Citigroup ($2.4T), and Wells Fargo ($1.9T). Together they control 44% of all US deposits."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How many banks are in the top 10 globally?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The top 10 largest banks in the world by assets include 4 Chinese banks (ICBC, ABC, CCB, BOC), 2 American banks (JPMorgan, Bank of America), and European banks including HSBC (UK) and BNP Paribas (France). The top 10 banks collectively hold over $40 trillion in assets."
-                }
-            }
-        ]
     }
     </script>
 
@@ -222,6 +189,20 @@
                 "item": "https://www.banksize.com/rankings.html"
             }
         ]
+    }
+    </script>
+
+    <!-- Speakable Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "World's Largest Banks Rankings 2024",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".page-title", ".page-description", ".faq-answer"]
+        },
+        "url": "https://www.banksize.com/rankings.html"
     }
     </script>
 
@@ -501,6 +482,7 @@
                 <li><a href="compare.html" class="nav-link">Compare</a></li>
                 <li><a href="statistics.html" class="nav-link">Statistics</a></li>
                 <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
                 <li><a href="alternatives.html" class="nav-link" style="color: var(--crypto-green, #10b981);">Alternatives</a></li>
                 <li><a href="alternatives.html" class="nav-cta" style="background: linear-gradient(135deg, #f59e0b, #f97316);">Break Free</a></li>
             </ul>
@@ -731,36 +713,37 @@
                 <div class="footer-column">
                     <h4>Explore</h4>
                     <ul>
-                        <li><a href="banks.html">All Banks</a></li>
-                        <li><a href="rankings.html">Bank Rankings</a></li>
-                        <li><a href="statistics.html">Global Statistics</a></li>
-                        <li><a href="compare.html">Compare Banks</a></li>
+                        <li><a href="banks.html">Banks</a></li>
+                        <li><a href="rankings.html">Rankings</a></li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                        <li><a href="compare.html">Compare</a></li>
+                        <li><a href="visualize.html">Visualize</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
                     <h4>Learn</h4>
                     <ul>
-                        <li><a href="articles/jpmorgan-size.html">JPMorgan Size Guide</a></li>
-                        <li><a href="articles/hsbc-bank-size.html">HSBC Size Guide</a></li>
                         <li><a href="methodology.html">Methodology</a></li>
                         <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="glossary.html">Glossary</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
                     <h4>More</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="glossary.html">Glossary</a></li>
                         <li><a href="timeline.html">Timeline</a></li>
                         <li><a href="research.html">Research</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <li><a href="articles/how-big-are-banks.html">Articles</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Bank Size. All data sourced from public financial reports.</p>
+                <p>&copy; 2025 Bank Size. All data sourced from public financial reports.</p>
                 <div class="footer-legal">
                     <a href="privacy-policy.html">Privacy Policy</a>
                     <a href="terms-of-service.html">Terms of Service</a>
@@ -770,7 +753,7 @@
     </footer>
 
     <!-- Load Bank Data -->
-    <script src="banks-data.js"></script>
+    <script src="banks-data.js" defer></script>
     <script>
         // Get all banks sorted by assets
         function getAllBanksSorted() {

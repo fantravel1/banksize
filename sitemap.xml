@@ -3,131 +3,135 @@
     <!-- Main Pages -->
     <url>
         <loc>https://www.banksize.com/</loc>
-        <lastmod>2025-02-11</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/banks.html</loc>
-        <lastmod>2025-02-11</lastmod>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/rankings.html</loc>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/compare.html</loc>
-        <lastmod>2025-11-16</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/faq.html</loc>
-        <lastmod>2025-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/glossary.html</loc>
-        <lastmod>2025-11-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/timeline.html</loc>
-        <lastmod>2025-11-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/methodology.html</loc>
-        <lastmod>2025-11-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/quiz.html</loc>
-        <lastmod>2025-11-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/visualize.html</loc>
-        <lastmod>2025-11-16</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/research.html</loc>
-        <lastmod>2025-11-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/about.html</loc>
-        <lastmod>2025-11-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <!-- New SEO Pages -->
-    <url>
-        <loc>https://www.banksize.com/rankings.html</loc>
-        <lastmod>2025-02-11</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/statistics.html</loc>
-        <lastmod>2025-02-11</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/visualize.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/alternatives.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/research.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/faq.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/timeline.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/glossary.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/methodology.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/about.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/quiz.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
     </url>
 
     <!-- Bank Size Articles -->
     <url>
-        <loc>https://www.banksize.com/articles/hsbc-bank-size.html</loc>
-        <lastmod>2025-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/articles/jpmorgan-size.html</loc>
-        <lastmod>2024-12-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/articles/too-big-to-fail.html</loc>
-        <lastmod>2025-02-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://www.banksize.com/articles/how-big-are-banks.html</loc>
-        <lastmod>2024-12-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/articles/bank-consolidation-history.html</loc>
-        <lastmod>2024-12-15</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/articles/icbc-bank-size.html</loc>
-        <lastmod>2025-02-11</lastmod>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/articles/jpmorgan-size.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/articles/hsbc-bank-size.html</loc>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/articles/bank-of-america-size.html</loc>
-        <lastmod>2025-02-11</lastmod>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/articles/too-big-to-fail.html</loc>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/articles/bank-consolidation-history.html</loc>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/articles/understanding-bank-scale.html</loc>
-        <lastmod>2024-12-17</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -135,31 +139,31 @@
     <!-- Research Articles -->
     <url>
         <loc>https://www.banksize.com/research/banking-new-global-church.html</loc>
-        <lastmod>2025-11-16</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/research/banking-power-consolidation.html</loc>
-        <lastmod>2025-11-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.banksize.com/research/eternal-alchemy-extraction.html</loc>
-        <lastmod>2025-11-16</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/research/evolution-global-banking.html</loc>
-        <lastmod>2025-11-16</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/research/imperial-extraction-playbook.html</loc>
-        <lastmod>2025-11-16</lastmod>
+        <lastmod>2025-02-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.banksize.com/research/eternal-alchemy-extraction.html</loc>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -167,205 +171,205 @@
     <!-- Individual Bank Pages -->
     <url>
         <loc>https://www.banksize.com/bank.html?id=icbc</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=jpmorgan</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=bofa</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=abc</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=ccb</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=boc</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=hsbc</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=wells-fargo</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=mitsubishi</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=bnp-paribas</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=credit-agricole</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=sumitomo</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=deutsche-bank</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=santander</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=ubs</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=barclays</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=rbc</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=td-bank</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=mizuho</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=ing</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=sbi</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=cba</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=standard-bank</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=saudi-national-bank</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=dbs</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=itau-unibanco</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=kb-financial</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=national-bank-egypt</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=banco-do-brasil</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=nordea</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=bri</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=nbk</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=sberbank</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/bank.html?id=fab</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -373,22 +377,15 @@
     <!-- Legal Pages -->
     <url>
         <loc>https://www.banksize.com/privacy-policy.html</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
         <loc>https://www.banksize.com/terms-of-service.html</loc>
-        <lastmod>2024-12-19</lastmod>
+        <lastmod>2025-02-19</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     
-    <!-- Error Pages -->
-    <url>
-        <loc>https://www.banksize.com/404.html</loc>
-        <lastmod>2024-12-19</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.1</priority>
-    </url>
 </urlset>

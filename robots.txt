@@ -4,8 +4,9 @@
 # Allow all crawlers
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
-# Specific crawlers
+# Major search engines - no delay
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
@@ -22,6 +23,35 @@ User-agent: DuckDuckBot
 Allow: /
 Crawl-delay: 0
 
+# AI Answer Engines - Allow for AEO
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 0
+
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 0
+
+User-agent: PerplexityBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Applebot-Extended
+Allow: /
+Crawl-delay: 0
+
+User-agent: cohere-ai
+Allow: /
+Crawl-delay: 0
+
 # Block bad bots (common spam/scraper bots)
 User-agent: AhrefsBot
 Disallow: /
@@ -35,9 +65,11 @@ Disallow: /
 User-agent: MJ12bot
 Disallow: /
 
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
 # Sitemap location
 Sitemap: https://www.banksize.com/sitemap.xml
-
-# Crawl-delay for other bots (in seconds)
-User-agent: *
-Crawl-delay: 1
