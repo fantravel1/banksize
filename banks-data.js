@@ -6891,6 +6891,230 @@ const banksData = {
     comparisons: null
   },
 
+  'arab-national-bank': {
+    id: 'arab-national-bank',
+    name: 'Arab National Bank',
+    shortName: 'ANB Saudi',
+    country: 'Saudi Arabia',
+    flag: '🇸🇦',
+    founded: 1979,
+    headquarters: 'Riyadh, Saudi Arabia',
+    assets: 95,
+    marketCap: 18,
+    revenue: 5.2,
+    netIncome: 1.5,
+    employees: 12000,
+    branches: 180,
+    countries: 4,
+    globalRank: 66,
+    description: "Saudi Arabia's fourth-largest bank providing banking and financial services across the Middle East.",
+    keyFact: "Arab National Bank serves over 3 million customers with 180+ branches and operations across 4 countries.",
+    ceoQuote: "We are committed to supporting Saudi Arabia's economic vision.",
+    timeline: [
+      { year: 1979, event: "Arab National Bank established in Saudi Arabia" },
+      { year: 1995, event: "Becomes one of Saudi Arabia's major banks" },
+      { year: 2010, event: "Expands across the Middle East" },
+      { year: 2024, event: "Major Saudi bank with $95B in assets across 4 countries" }
+    ],
+    comparisons: null
+  },
+
+  'banorte-mexico': {
+    id: 'banorte-mexico',
+    name: 'Banco Mercantil del Norte, S.A. (Banorte)',
+    shortName: 'Banorte',
+    country: 'Mexico',
+    flag: '🇲🇽',
+    founded: 1872,
+    headquarters: 'Monterrey, Mexico',
+    assets: 165,
+    marketCap: 22,
+    revenue: 7.5,
+    netIncome: 1.9,
+    employees: 32000,
+    branches: 1800,
+    countries: 2,
+    globalRank: 50,
+    description: "Mexico's third-largest bank providing comprehensive banking and financial services across Mexico.",
+    keyFact: "Banorte serves over 12 million customers with 1,800+ branches across Mexico and the United States.",
+    ceoQuote: "We are driving Mexico's economic growth through banking innovation.",
+    timeline: [
+      { year: 1872, event: "Banco Mercantil del Norte established in Mexico" },
+      { year: 1995, event: "Becomes one of Mexico's largest banks" },
+      { year: 2010, event: "Expands into investment banking" },
+      { year: 2024, event: "Major Mexican bank with $165B in assets across Mexico and US" }
+    ],
+    comparisons: null
+  },
+
+  'scotiabank': {
+    id: 'scotiabank',
+    name: 'Scotiabank (The Bank of Nova Scotia)',
+    shortName: 'Scotiabank',
+    country: 'Canada',
+    flag: '🇨🇦',
+    founded: 1832,
+    headquarters: 'Toronto, Canada',
+    assets: 315,
+    marketCap: 52,
+    revenue: 13,
+    netIncome: 3.5,
+    employees: 42000,
+    branches: 800,
+    countries: 17,
+    globalRank: 35,
+    description: "Canada's third-largest bank with significant presence in Latin America and Caribbean regions.",
+    keyFact: "Scotiabank serves over 20 million customers across 17 countries with extensive Latin American operations.",
+    ceoQuote: "We are helping customers, employees, and communities prosper.",
+    timeline: [
+      { year: 1832, event: "Bank of Nova Scotia established in Canada" },
+      { year: 1985, event: "Becomes Scotiabank and major Canadian bank" },
+      { year: 2010, event: "Expands significantly into Latin America" },
+      { year: 2024, event: "Major North American bank with $315B in assets across 17 countries" }
+    ],
+    comparisons: null
+  },
+
+  'toronto-dominion': {
+    id: 'toronto-dominion',
+    name: 'The Toronto-Dominion Bank',
+    shortName: 'TD Bank',
+    country: 'Canada',
+    flag: '🇨🇦',
+    founded: 1855,
+    headquarters: 'Toronto, Canada',
+    assets: 450,
+    marketCap: 68,
+    revenue: 18,
+    netIncome: 4.8,
+    employees: 93000,
+    branches: 1300,
+    countries: 5,
+    globalRank: 26,
+    description: "Canada's second-largest bank with significant operations across Canada and the United States.",
+    keyFact: "TD Bank serves over 26 million customers across Canada and the US with 1,300+ branches.",
+    ceoQuote: "We are committed to financial well-being and customer success.",
+    timeline: [
+      { year: 1855, event: "Dominion Bank established in Canada" },
+      { year: 1955, event: "Merges with Toronto-Dominion Bank to form TD" },
+      { year: 2000, event: "Expands significantly into United States" },
+      { year: 2024, event: "Major North American bank with $450B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'canadian-imperial': {
+    id: 'canadian-imperial',
+    name: 'Canadian Imperial Bank of Commerce',
+    shortName: 'CIBC',
+    country: 'Canada',
+    flag: '🇨🇦',
+    founded: 1961,
+    headquarters: 'Toronto, Canada',
+    assets: 330,
+    marketCap: 48,
+    revenue: 14,
+    netIncome: 3.8,
+    employees: 45000,
+    branches: 600,
+    countries: 3,
+    globalRank: 36,
+    description: "Canada's fourth-largest bank providing banking and investment services across Canada, US, and Mexico.",
+    keyFact: "CIBC serves over 12 million customers across Canada and the US with significant investment banking capabilities.",
+    ceoQuote: "We are committed to helping our clients succeed.",
+    timeline: [
+      { year: 1961, event: "Canadian Imperial Bank of Commerce formed through merger" },
+      { year: 1985, event: "Becomes one of Canada's major banks" },
+      { year: 2010, event: "Expands investment banking services" },
+      { year: 2024, event: "Major Canadian bank with $330B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'first-caribbean': {
+    id: 'first-caribbean',
+    name: 'CIBC First Caribbean International Bank',
+    shortName: 'FirstCaribbean',
+    country: 'Barbados',
+    flag: '🇧🇧',
+    founded: 2002,
+    headquarters: 'Bridgetown, Barbados',
+    assets: 28,
+    marketCap: 2.8,
+    revenue: 1.5,
+    netIncome: 0.42,
+    employees: 4500,
+    branches: 180,
+    countries: 17,
+    globalRank: 89,
+    description: "The Caribbean's leading regional bank with significant presence across the Caribbean and Central America.",
+    keyFact: "FirstCaribbean serves over 2 million customers across 17 Caribbean and Central American countries.",
+    ceoQuote: "We are committed to the prosperity of the Caribbean region.",
+    timeline: [
+      { year: 2002, event: "CIBC First Caribbean International Bank established" },
+      { year: 2008, event: "Becomes the Caribbean's largest regional bank" },
+      { year: 2015, event: "Continues expansion across Caribbean" },
+      { year: 2024, event: "Leading Caribbean bank with $28B in assets across 17 countries" }
+    ],
+    comparisons: null
+  },
+
+  'alpha-bank': {
+    id: 'alpha-bank',
+    name: 'Alpha Bank A.E.',
+    shortName: 'Alpha',
+    country: 'Greece',
+    flag: '🇬🇷',
+    founded: 1926,
+    headquarters: 'Athens, Greece',
+    assets: 110,
+    marketCap: 8,
+    revenue: 4.5,
+    netIncome: 1.1,
+    employees: 18000,
+    branches: 450,
+    countries: 12,
+    globalRank: 64,
+    description: "Greece's second-largest bank with operations across Greece and Southeast Europe.",
+    keyFact: "Alpha Bank serves over 3 million customers across 12 countries with strong presence in the Balkans.",
+    ceoQuote: "We are committed to supporting economic recovery and growth.",
+    timeline: [
+      { year: 1926, event: "Alpha Bank established in Greece" },
+      { year: 1990, event: "Becomes Greece's second-largest bank" },
+      { year: 2010, event: "Expands into Southeast Europe" },
+      { year: 2024, event: "Major Greek bank with $110B in assets across 12 countries" }
+    ],
+    comparisons: null
+  },
+
+  'bank-of-georgia': {
+    id: 'bank-of-georgia',
+    name: 'Bank of Georgia Group Limited',
+    shortName: 'Bank of Georgia',
+    country: 'Georgia',
+    flag: '🇬🇪',
+    founded: 1994,
+    headquarters: 'Tbilisi, Georgia',
+    assets: 22,
+    marketCap: 4.2,
+    revenue: 1.3,
+    netIncome: 0.38,
+    employees: 4000,
+    branches: 280,
+    countries: 2,
+    globalRank: 92,
+    description: "Georgia's largest bank providing banking and financial services across the Caucasus region.",
+    keyFact: "Bank of Georgia serves over 1.5 million customers with 280+ branches across Georgia and the region.",
+    ceoQuote: "We are building a modern banking system for the Caucasus.",
+    timeline: [
+      { year: 1994, event: "Bank of Georgia established" },
+      { year: 2006, event: "Becomes Georgia's largest bank" },
+      { year: 2015, event: "Expands regional operations" },
+      { year: 2024, event: "Leading Caucasus bank with $22B in assets" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
