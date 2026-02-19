@@ -5771,6 +5771,230 @@ const banksData = {
     comparisons: null
   },
 
+  'axis-bank': {
+    id: 'axis-bank',
+    name: 'Axis Bank Limited',
+    shortName: 'Axis Bank',
+    country: 'India',
+    flag: '🇮🇳',
+    founded: 1994,
+    headquarters: 'Mumbai, India',
+    assets: 220,
+    marketCap: 48,
+    revenue: 12,
+    netIncome: 3.2,
+    employees: 65000,
+    branches: 1600,
+    countries: 8,
+    globalRank: 38,
+    description: "India's third-largest private sector bank providing retail, commercial, and investment banking services across India and internationally.",
+    keyFact: "Axis Bank serves over 40 million customers with 1,600+ branches and strong digital banking capabilities across multiple countries.",
+    ceoQuote: "We are committed to creating a better tomorrow through innovative financial solutions.",
+    timeline: [
+      { year: 1994, event: "Axis Bank established as Axis Bank Limited" },
+      { year: 2007, event: "Goes public and becomes major player in Indian banking" },
+      { year: 2015, event: "Becomes India's third-largest private bank" },
+      { year: 2024, event: "Leading Indian private bank with $220B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'hdfc-bank': {
+    id: 'hdfc-bank',
+    name: 'HDFC Bank Limited',
+    shortName: 'HDFC Bank',
+    country: 'India',
+    flag: '🇮🇳',
+    founded: 1994,
+    headquarters: 'Mumbai, India',
+    assets: 280,
+    marketCap: 65,
+    revenue: 14,
+    netIncome: 4.2,
+    employees: 75000,
+    branches: 1500,
+    countries: 10,
+    globalRank: 31,
+    description: "India's second-largest private sector bank, providing comprehensive retail, commercial, and investment banking services across India and internationally.",
+    keyFact: "HDFC Bank serves over 60 million customers and operates across 10 countries with strong digital banking and wealth management capabilities.",
+    ceoQuote: "We are committed to providing the best customer experience in banking.",
+    timeline: [
+      { year: 1994, event: "HDFC Bank established with backing from Housing Development Finance Corporation" },
+      { year: 2000, event: "Goes public and begins major expansion" },
+      { year: 2010, event: "Becomes one of India's largest banks by market cap" },
+      { year: 2024, event: "Major Indian bank with $280B in assets across 10 countries" }
+    ],
+    comparisons: null
+  },
+
+  'cimb-bank': {
+    id: 'cimb-bank',
+    name: 'CIMB Group Holdings Berhad',
+    shortName: 'CIMB',
+    country: 'Malaysia',
+    flag: '🇲🇾',
+    founded: 1987,
+    headquarters: 'Kuala Lumpur, Malaysia',
+    assets: 310,
+    marketCap: 35,
+    revenue: 11,
+    netIncome: 2.8,
+    employees: 40000,
+    branches: 1200,
+    countries: 18,
+    globalRank: 30,
+    description: "Malaysia's leading bank and one of Southeast Asia's largest financial institutions with significant presence across Asia.",
+    keyFact: "CIMB operates in 18 countries with 1,200+ branches and serves millions of customers with comprehensive banking and investment services.",
+    ceoQuote: "We are committed to being the leading ASEAN bank.",
+    timeline: [
+      { year: 1987, event: "CIMB established through merger of banking operations" },
+      { year: 2003, event: "Merges with commerce bank to form CIMB Group" },
+      { year: 2010, event: "Becomes Malaysia's leading bank by assets" },
+      { year: 2024, event: "Major Southeast Asian bank with $310B in assets across 18 countries" }
+    ],
+    comparisons: null
+  },
+
+  'maybank': {
+    id: 'maybank',
+    name: 'Malayan Banking Berhad',
+    shortName: 'Maybank',
+    country: 'Malaysia',
+    flag: '🇲🇾',
+    founded: 1960,
+    headquarters: 'Kuala Lumpur, Malaysia',
+    assets: 380,
+    marketCap: 48,
+    revenue: 13,
+    netIncome: 3.5,
+    employees: 45000,
+    branches: 1400,
+    countries: 20,
+    globalRank: 29,
+    description: "Malaysia's largest bank and one of Asia's leading financial institutions with extensive regional and global operations.",
+    keyFact: "Maybank serves over 50 million customers across 20 countries with 1,400+ branches and strong investment banking capabilities.",
+    ceoQuote: "We are advancing human progress through financial innovation.",
+    timeline: [
+      { year: 1960, event: "Malayan Banking Berhad established as Malaysia's premier bank" },
+      { year: 1992, event: "Goes public and begins major expansion" },
+      { year: 2010, event: "Becomes one of Asia's top 10 banks" },
+      { year: 2024, event: "Leading Malaysian bank with $380B in assets across 20 countries" }
+    ],
+    comparisons: null
+  },
+
+  'public-bank': {
+    id: 'public-bank',
+    name: 'Public Bank Berhad',
+    shortName: 'Public Bank',
+    country: 'Malaysia',
+    flag: '🇲🇾',
+    founded: 1966,
+    headquarters: 'Kuala Lumpur, Malaysia',
+    assets: 225,
+    marketCap: 35,
+    revenue: 8.5,
+    netIncome: 2.5,
+    employees: 28000,
+    branches: 280,
+    countries: 11,
+    globalRank: 39,
+    description: "Malaysia's third-largest bank providing banking and financial services to millions of customers across Southeast Asia.",
+    keyFact: "Public Bank serves over 7 million customers with strong focus on retail banking and digital services across 11 countries.",
+    ceoQuote: "We are committed to being the most trusted bank in Malaysia.",
+    timeline: [
+      { year: 1966, event: "Public Bank established in Malaysia" },
+      { year: 1989, event: "Goes public and begins expansion" },
+      { year: 2000, event: "Becomes one of Malaysia's top 3 banks" },
+      { year: 2024, event: "Major Malaysian bank with $225B in assets across 11 countries" }
+    ],
+    comparisons: null
+  },
+
+  'bank-of-tokyo': {
+    id: 'bank-of-tokyo',
+    name: 'Bank of Tokyo-Mitsubishi UFJ, Ltd.',
+    shortName: 'BTMU',
+    country: 'Japan',
+    flag: '🇯🇵',
+    founded: 2005,
+    headquarters: 'Tokyo, Japan',
+    assets: 2900,
+    marketCap: 185,
+    revenue: 120,
+    netIncome: 22,
+    employees: 320000,
+    branches: 4500,
+    countries: 60,
+    globalRank: 2,
+    description: "The world's largest bank by assets as part of Mitsubishi UFJ Financial Group, operating globally with extensive financial services.",
+    keyFact: "MUFG is the world's largest bank by assets with operations in 60 countries and serving millions of customers with comprehensive banking services.",
+    ceoQuote: "We are committed to creating value and supporting the global economy.",
+    timeline: [
+      { year: 2005, event: "Bank of Tokyo-Mitsubishi and UFJ Bank merge to form BTMU" },
+      { year: 2010, event: "Becomes part of Mitsubishi UFJ Financial Group, world's largest bank" },
+      { year: 2015, event: "Continues expansion in global capital markets" },
+      { year: 2024, event: "World's second-largest bank with $2.9T in assets" }
+    ],
+    comparisons: null
+  },
+
+  'bank-of-kyoto': {
+    id: 'bank-of-kyoto',
+    name: 'Bank of Kyoto, Ltd.',
+    shortName: 'Bank of Kyoto',
+    country: 'Japan',
+    flag: '🇯🇵',
+    founded: 1951,
+    headquarters: 'Kyoto, Japan',
+    assets: 75,
+    marketCap: 6,
+    revenue: 3.5,
+    netIncome: 0.8,
+    employees: 8000,
+    branches: 180,
+    countries: 1,
+    globalRank: 70,
+    description: "A major regional bank in Japan serving the Kyoto region and surrounding areas with comprehensive banking services.",
+    keyFact: "Bank of Kyoto serves over 500,000 customers in the Kyoto region with 180 branches and strong community banking presence.",
+    ceoQuote: "We are dedicated to supporting the prosperity of the Kyoto region.",
+    timeline: [
+      { year: 1951, event: "Bank of Kyoto established to serve the Kyoto region" },
+      { year: 1973, event: "Becomes one of Japan's major regional banks" },
+      { year: 2000, event: "Modernizes systems and expands digital services" },
+      { year: 2024, event: "Leading regional Japanese bank with $75B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'metabank': {
+    id: 'metabank',
+    name: 'Banco Metropolitano, S.A.',
+    shortName: 'Metabank',
+    country: 'Dominican Republic',
+    flag: '🇩🇴',
+    founded: 1998,
+    headquarters: 'Santo Domingo, Dominican Republic',
+    assets: 32,
+    marketCap: 3.2,
+    revenue: 1.8,
+    netIncome: 0.45,
+    employees: 4000,
+    branches: 120,
+    countries: 1,
+    globalRank: 88,
+    description: "A major bank in the Dominican Republic providing banking and financial services to individuals and businesses.",
+    keyFact: "Metabank serves millions of Dominican citizens and businesses with modern banking facilities and digital services.",
+    ceoQuote: "We are committed to financial inclusion and economic growth in the Dominican Republic.",
+    timeline: [
+      { year: 1998, event: "Banco Metropolitano established in Santo Domingo" },
+      { year: 2008, event: "Becomes one of the Dominican Republic's leading banks" },
+      { year: 2015, event: "Expands digital banking services" },
+      { year: 2024, event: "Major Caribbean bank with $32B in assets" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
