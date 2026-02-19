@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#2563eb">
-    <title>Bank Size Comparison: How Big Are the World's Largest Banks? | Bank Size</title>
-    <meta name="description" content="Compare bank sizes worldwide. The top 25 banks hold $50+ trillion in assets — ICBC alone has $6.3T. See how big banks really are with interactive comparisons, rankings, and too big to fail analysis.">
-    <meta name="keywords" content="bank size, bank sizes, how big are banks, bank size comparison, too big to fail, largest banks in the world, bank assets, ICBC size, JPMorgan size, Bank of America size, HSBC total assets">
+    <title>Bank Size: See How Big Banks Really Are — Then Discover Better Alternatives | Bank Size</title>
+    <meta name="description" content="The top 100+ banks hold $75+ trillion in assets while charging you fees, earning interest on YOUR deposits, and getting bailed out with YOUR taxes. Compare bank sizes worldwide, then discover crypto, DeFi, and alternative financial systems that put you in control.">
+    <meta name="keywords" content="bank size, bank size comparison, too big to fail, largest banks in the world, crypto vs banks, DeFi alternatives, Bitcoin, decentralized finance, bank alternatives, self custody, banking waste">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png">
@@ -16,8 +16,8 @@
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Bank Size Comparison: How Big Are the World's Largest Banks?">
-    <meta property="og:description" content="Compare bank sizes worldwide. The top 25 banks hold $50+ trillion. ICBC's $6.3T could end world hunger for 140+ years.">
+    <meta property="og:title" content="Bank Size: See How Big Banks Are — Then Break Free">
+    <meta property="og:description" content="100+ banks hold $75T+ in assets. They profit from YOUR money. Compare bank sizes, then discover crypto, DeFi, and alternatives that put you in control.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.banksize.com">
     <meta property="og:image" content="https://www.banksize.com/images/og-image.jpg">
@@ -93,8 +93,13 @@
     </script>
 </head>
 <body>
+    <!-- Alert Banner -->
+    <div class="alert-banner" id="alertBanner">
+        Banks made <strong>$270+ billion</strong> in profit last year using YOUR deposits. <a href="alternatives.html">See the alternatives &rarr;</a>
+    </div>
+
     <!-- Navigation -->
-    <nav class="nav" id="navbar">
+    <nav class="nav" id="navbar" style="top: 36px;">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
                 <div class="nav-logo-icon">$</div>
@@ -106,8 +111,8 @@
                 <li><a href="rankings.html" class="nav-link">Rankings</a></li>
                 <li><a href="compare.html" class="nav-link">Compare</a></li>
                 <li><a href="statistics.html" class="nav-link">Statistics</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
-                <li><a href="compare.html" class="nav-cta">Compare Banks</a></li>
+                <li><a href="alternatives.html" class="nav-link" style="color: var(--crypto-green, #10b981);">Alternatives</a></li>
+                <li><a href="alternatives.html" class="nav-cta" style="background: linear-gradient(135deg, #f59e0b, #f97316);">Break Free</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span>
@@ -118,27 +123,28 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" style="padding-top: calc(var(--nav-height) + 36px + var(--space-16));">
         <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-label">The Trillion Dollar Reality</div>
+                <div class="hero-label">100+ Banks. $75 Trillion. Your Money.</div>
                 <h1>
-                    How Big Are the World's Banks?<br>
-                    When <span class="gradient-text">$6.3 Trillion</span> Becomes Just a Number
+                    They Profit From <span class="gradient-text">Your Money</span>.<br>
+                    It's Time to See the Scale.
                 </h1>
                 <p class="hero-subtitle">
-                    The world's largest banks control wealth that defies comprehension.
-                    Compare bank sizes and discover what these numbers really mean.
+                    The world's largest banks control wealth that defies comprehension &mdash;
+                    built on your deposits, your fees, and your taxes. Compare 100+ banks across 50+ countries,
+                    then discover the alternatives they don't want you to know about.
                 </p>
 
                 <div class="stats-grid mb-8">
                     <div class="stat-card">
                         <span class="stat-number" data-count="140">0</span>
-                        <span class="stat-label">Years of World Hunger</span>
+                        <span class="stat-label">Years of World Hunger Solvable</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-number" data-count="75">0</span>
                         <span class="stat-label">Trillion in Combined Assets</span>
                     </div>
                     <div class="stat-card">
@@ -149,13 +155,13 @@
 
                 <div class="hero-cta">
                     <a href="#story" class="btn btn-primary btn-lg">
-                        Discover the Scale
+                        See the Waste
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
-                    <a href="compare.html" class="btn btn-secondary btn-lg">
-                        Interactive Comparison
+                    <a href="alternatives.html" class="btn btn-crypto btn-lg">
+                        Discover Alternatives
                     </a>
                 </div>
             </div>
@@ -410,17 +416,83 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Break Free Section -->
+    <section class="break-free-section" id="break-free">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">There Is Another Way</span>
+                <h2>Break Free From the Banking Machine</h2>
+                <p>Banks profit from holding your money, charging you fees, and getting bailed out when they fail. But a new financial system is emerging &mdash; one where YOU control your wealth.</p>
+            </div>
+
+            <div class="alt-grid">
+                <div class="alt-card">
+                    <div class="alt-card-icon bitcoin">&#x20bf;</div>
+                    <h3>Bitcoin</h3>
+                    <p>A decentralized currency no bank can inflate, freeze, or confiscate. Fixed supply of 21 million. No middlemen. No bailouts.</p>
+                    <span class="alt-tag">Self-Sovereign Money</span>
+                </div>
+
+                <div class="alt-card">
+                    <div class="alt-card-icon defi">&#x26d3;</div>
+                    <h3>DeFi Protocols</h3>
+                    <p>Earn yield directly from lending protocols. No bank taking 95% of the interest your deposits generate. Transparent, auditable, open 24/7.</p>
+                    <span class="alt-tag">Earn Real Yield</span>
+                </div>
+
+                <div class="alt-card">
+                    <div class="alt-card-icon selfcustody">&#x1f511;</div>
+                    <h3>Self-Custody Wallets</h3>
+                    <p>Your keys, your crypto. No bank can freeze your account, block transfers, or limit withdrawals. True financial sovereignty.</p>
+                    <span class="alt-tag">You Control It</span>
+                </div>
+
+                <div class="alt-card">
+                    <div class="alt-card-icon stablecoin">&#x1f4b2;</div>
+                    <h3>Stablecoins</h3>
+                    <p>Dollar-pegged digital assets that move instantly worldwide. Send $1M across borders in minutes for pennies &mdash; not days for hundreds in fees.</p>
+                    <span class="alt-tag">Instant Global Transfer</span>
+                </div>
+
+                <div class="alt-card">
+                    <div class="alt-card-icon p2p">&#x1f91d;</div>
+                    <h3>Peer-to-Peer Lending</h3>
+                    <p>Cut out the bank entirely. Lend directly to borrowers and earn the interest banks have been keeping for themselves.</p>
+                    <span class="alt-tag">No Middleman</span>
+                </div>
+
+                <div class="alt-card">
+                    <div class="alt-card-icon ethereum">&#x2b21;</div>
+                    <h3>Smart Contracts</h3>
+                    <p>Programmable money that executes automatically. No loan officers, no credit committees, no arbitrary denials. Code is law.</p>
+                    <span class="alt-tag">Trustless Finance</span>
+                </div>
+            </div>
+
+            <div class="waste-counter">
+                <h3>While You Read This Page, Banks Earned:</h3>
+                <div class="waste-amount" id="bankProfitCounter">$0</div>
+                <div class="waste-label">Based on $270 billion annual profit across top 100 banks ($8,562 per second)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Banks CTA -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Explore Individual Banks?</h2>
-            <p>Discover each banking giant in detail. See what they could trade their assets for.</p>
-            <a href="banks.html" class="btn btn-primary btn-lg">
-                Explore All Banks
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
+            <h2>See Every Bank. Understand the Scale.</h2>
+            <p>Explore 100+ banks across 50+ countries. See their assets, compare their waste, and understand why alternatives matter.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="banks.html" class="btn btn-primary btn-lg">
+                    Explore All Banks
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="alternatives.html" class="btn btn-lg" style="background: var(--white); color: var(--primary-dark); border: 2px solid var(--white);">
+                    View Alternatives
+                </a>
+            </div>
         </div>
     </section>
 
@@ -450,6 +522,16 @@
                         <li><a href="articles/bank-of-america-size.html">Bank of America Size</a></li>
                         <li><a href="articles/icbc-bank-size.html">ICBC: World's Largest Bank</a></li>
                         <li><a href="articles/hsbc-bank-size.html">HSBC Total Assets</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Alternatives</h4>
+                    <ul>
+                        <li><a href="alternatives.html">Why Alternatives?</a></li>
+                        <li><a href="alternatives.html#bitcoin">Bitcoin</a></li>
+                        <li><a href="alternatives.html#defi">DeFi Protocols</a></li>
+                        <li><a href="alternatives.html#self-custody">Self-Custody</a></li>
                     </ul>
                 </div>
 
@@ -606,6 +688,42 @@
                 answer.style.maxHeight = isExpanded ? null : answer.scrollHeight + 'px';
             });
         });
+
+        // Bank Profit Counter - real-time counter showing how much banks earn
+        const profitCounter = document.getElementById('bankProfitCounter');
+        if (profitCounter) {
+            const profitPerSecond = 8562; // $270B / 365 / 24 / 60 / 60
+            const pageLoadTime = Date.now();
+
+            function updateProfitCounter() {
+                const elapsed = (Date.now() - pageLoadTime) / 1000;
+                const profit = Math.floor(elapsed * profitPerSecond);
+                profitCounter.textContent = '$' + profit.toLocaleString();
+                requestAnimationFrame(updateProfitCounter);
+            }
+            requestAnimationFrame(updateProfitCounter);
+        }
+
+        // Alert banner scroll behavior
+        const alertBanner = document.getElementById('alertBanner');
+        const navEl = document.getElementById('navbar');
+        if (alertBanner && navEl) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 36) {
+                    navEl.style.top = '0';
+                    alertBanner.style.transform = 'translateY(-100%)';
+                    alertBanner.style.position = 'fixed';
+                    alertBanner.style.top = '0';
+                    alertBanner.style.left = '0';
+                    alertBanner.style.right = '0';
+                    alertBanner.style.zIndex = '1002';
+                } else {
+                    navEl.style.top = '36px';
+                    alertBanner.style.transform = 'translateY(0)';
+                    alertBanner.style.position = 'relative';
+                }
+            });
+        }
 
         // Service Worker
         if ('serviceWorker' in navigator) {

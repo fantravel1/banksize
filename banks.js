@@ -109,13 +109,15 @@ function filterBanks() {
                 case 'trillion':
                     return bank.assets >= 1000;
                 case 'us':
-                    return bank.country === 'United States';
-                case 'china':
-                    return bank.country === 'China';
+                    return ['United States', 'Canada', 'Mexico', 'Brazil', 'Argentina', 'Chile', 'Colombia', 'Peru'].includes(bank.country);
                 case 'europe':
-                    return ['United Kingdom', 'France', 'Germany', 'Spain'].includes(bank.country);
+                    return ['United Kingdom', 'France', 'Germany', 'Spain', 'Italy', 'Switzerland', 'Netherlands', 'Belgium', 'Sweden', 'Norway', 'Denmark', 'Finland', 'Austria', 'Ireland', 'Portugal', 'Greece', 'Poland', 'Russia'].includes(bank.country);
                 case 'asia':
-                    return ['China', 'Japan', 'South Korea', 'Singapore'].includes(bank.country);
+                    return ['China', 'Japan', 'South Korea', 'Singapore', 'India', 'Indonesia', 'Thailand', 'Malaysia', 'Philippines', 'Vietnam', 'Pakistan', 'Bangladesh', 'Taiwan', 'Hong Kong', 'Australia', 'New Zealand'].includes(bank.country);
+                case 'middle-east':
+                    return ['Saudi Arabia', 'UAE', 'Kuwait', 'Qatar', 'Israel', 'Turkey', 'Egypt'].includes(bank.country);
+                case 'africa':
+                    return ['South Africa', 'Nigeria', 'Kenya', 'Morocco', 'Ghana', 'Egypt'].includes(bank.country);
                 default:
                     return true;
             }
