@@ -7115,6 +7115,258 @@ const banksData = {
     comparisons: null
   },
 
+  'piraeus-bank': {
+    id: 'piraeus-bank',
+    name: 'Piraeus Bank S.A.',
+    shortName: 'Piraeus',
+    country: 'Greece',
+    flag: '🇬🇷',
+    founded: 1891,
+    headquarters: 'Athens, Greece',
+    assets: 95,
+    marketCap: 6.5,
+    revenue: 3.8,
+    netIncome: 0.9,
+    employees: 15000,
+    branches: 400,
+    countries: 10,
+    globalRank: 68,
+    description: "Greece's largest bank with operations across Greece and the Balkans providing comprehensive banking services.",
+    keyFact: "Piraeus Bank serves over 2.5 million customers across 10 countries with strong presence in Southeast Europe.",
+    ceoQuote: "We are committed to financial inclusion and economic growth.",
+    timeline: [
+      { year: 1891, event: "Piraeus Bank established in Greece" },
+      { year: 1995, event: "Becomes Greece's largest bank" },
+      { year: 2010, event: "Expands into Southeast Europe" },
+      { year: 2024, event: "Major Greek bank with $95B in assets across 10 countries" }
+    ],
+    comparisons: null
+  },
+
+  'btp-bank': {
+    id: 'btp-bank',
+    name: 'Banca Intesa Sanpaolo',
+    shortName: 'Intesa',
+    country: 'Italy',
+    flag: '🇮🇹',
+    founded: 2007,
+    headquarters: 'Turin, Italy',
+    assets: 875,
+    marketCap: 68,
+    revenue: 26,
+    netIncome: 6.2,
+    employees: 140000,
+    branches: 4500,
+    countries: 25,
+    globalRank: 15,
+    description: "Europe's leading specialist bank in wealth management with significant banking operations across Europe.",
+    keyFact: "Intesa Sanpaolo serves over 10 million customers across 25 countries with strong wealth management and investment banking.",
+    ceoQuote: "We are creating value through banking and financial services.",
+    timeline: [
+      { year: 2007, event: "Banca Intesa merges with Sanpaolo IMI to form Intesa Sanpaolo" },
+      { year: 2010, event: "Becomes Europe's leading wealth management bank" },
+      { year: 2015, event: "Expands significantly across Europe" },
+      { year: 2024, event: "Major European bank with $875B in assets across 25 countries" }
+    ],
+    comparisons: null
+  },
+
+  'banco-popular': {
+    id: 'banco-popular',
+    name: 'Banco Popular, S.A.',
+    shortName: 'Popular',
+    country: 'Spain',
+    flag: '🇪🇸',
+    founded: 1926,
+    headquarters: 'Madrid, Spain',
+    assets: 165,
+    marketCap: 12,
+    revenue: 6.2,
+    netIncome: 1.3,
+    employees: 22000,
+    branches: 1300,
+    countries: 2,
+    globalRank: 50,
+    description: "Spain's fourth-largest bank providing banking services to retail and corporate customers across Spain.",
+    keyFact: "Banco Popular serves over 5 million customers with 1,300+ branches across Spain and Portugal.",
+    ceoQuote: "We are committed to supporting the Spanish financial system.",
+    timeline: [
+      { year: 1926, event: "Banco Popular established in Spain" },
+      { year: 1995, event: "Becomes one of Spain's major banks" },
+      { year: 2010, event: "Continues growth in Spanish banking" },
+      { year: 2024, event: "Major Spanish bank with $165B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'caixa-bank': {
+    id: 'caixa-bank',
+    name: 'CaixaBank, S.A.',
+    shortName: 'CaixaBank',
+    country: 'Spain',
+    flag: '🇪🇸',
+    founded: 1904,
+    headquarters: 'Valencia, Spain',
+    assets: 280,
+    marketCap: 22,
+    revenue: 9.8,
+    netIncome: 2.2,
+    employees: 32000,
+    branches: 3500,
+    countries: 2,
+    globalRank: 40,
+    description: "Spain's largest savings bank with extensive retail banking operations across Spain and Portugal.",
+    keyFact: "CaixaBank serves over 16 million customers with 3,500+ branches and strong digital banking capabilities.",
+    ceoQuote: "We are building a more inclusive financial system.",
+    timeline: [
+      { year: 1904, event: "Caja de Ahorros y Pensiones, la Caixa de Barcelona established" },
+      { year: 2011, event: "Becomes CaixaBank and major Spanish bank" },
+      { year: 2015, event: "Expands significantly across Spain" },
+      { year: 2024, event: "Major Spanish bank with $280B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'banco-bpi': {
+    id: 'banco-bpi',
+    name: 'Banco Português de Investimento',
+    shortName: 'BPI',
+    country: 'Portugal',
+    flag: '🇵🇹',
+    founded: 1981,
+    headquarters: 'Lisbon, Portugal',
+    assets: 75,
+    marketCap: 8,
+    revenue: 3.5,
+    netIncome: 0.9,
+    employees: 8000,
+    branches: 220,
+    countries: 3,
+    globalRank: 70,
+    description: "Portugal's third-largest bank providing banking and investment services across Portugal and Europe.",
+    keyFact: "Banco BPI serves over 2 million customers with 220+ branches across Portugal and selected European countries.",
+    ceoQuote: "We are committed to supporting Portuguese financial growth.",
+    timeline: [
+      { year: 1981, event: "Banco Português de Investimento established" },
+      { year: 1998, event: "Becomes one of Portugal's major banks" },
+      { year: 2010, event: "Expands investment banking services" },
+      { year: 2024, event: "Major Portuguese bank with $75B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'banco-cerolina': {
+    id: 'banco-cerolina',
+    name: 'Banco Sabadell (Portugal)',
+    shortName: 'Banc Sabadell PT',
+    country: 'Portugal',
+    flag: '🇵🇹',
+    founded: 2005,
+    headquarters: 'Lisbon, Portugal',
+    assets: 28,
+    marketCap: 2.2,
+    revenue: 1.2,
+    netIncome: 0.25,
+    employees: 3500,
+    branches: 150,
+    countries: 1,
+    globalRank: 91,
+    description: "Portugal's banking operations of Banco Sabadell providing retail and business banking services.",
+    keyFact: "Sabadell Portugal serves over 800,000 customers with 150+ branches and customer-focused services.",
+    ceoQuote: "We are supporting Portuguese economic development.",
+    timeline: [
+      { year: 2005, event: "Banco Sabadell enters Portugal market" },
+      { year: 2010, event: "Becomes established Portuguese bank" },
+      { year: 2015, event: "Continues growth in Portugal" },
+      { year: 2024, event: "Growing Portuguese bank with $28B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'kbc-bank': {
+    id: 'kbc-bank',
+    name: 'KBC Bank N.V.',
+    shortName: 'KBC',
+    country: 'Belgium',
+    flag: '🇧🇪',
+    founded: 1998,
+    headquarters: 'Brussels, Belgium',
+    assets: 350,
+    marketCap: 32,
+    revenue: 12,
+    netIncome: 2.8,
+    employees: 38000,
+    branches: 600,
+    countries: 10,
+    globalRank: 34,
+    description: "Belgium's second-largest bank with operations across Belgium and Central Europe.",
+    keyFact: "KBC Bank serves over 5 million customers across 10 countries with strong banking and insurance operations.",
+    ceoQuote: "We are building customer-centric financial services.",
+    timeline: [
+      { year: 1998, event: "KBC Bank formed through merger of Belgian banking entities" },
+      { year: 2000, event: "Becomes Belgium's major bank" },
+      { year: 2010, event: "Expands into Central European markets" },
+      { year: 2024, event: "Major European bank with $350B in assets across 10 countries" }
+    ],
+    comparisons: null
+  },
+
+  'artic-bank': {
+    id: 'artic-bank',
+    name: 'Argenta Spaarbank',
+    shortName: 'Argenta',
+    country: 'Belgium',
+    flag: '🇧🇪',
+    founded: 1988,
+    headquarters: 'Antwerp, Belgium',
+    assets: 85,
+    marketCap: 6,
+    revenue: 3.2,
+    netIncome: 0.8,
+    employees: 8000,
+    branches: 180,
+    countries: 1,
+    globalRank: 69,
+    description: "Belgium's leading specialist bank for savings and mortgages with strong focus on customer service.",
+    keyFact: "Argenta serves over 2 million customers with 180+ branches across Belgium with focus on personal banking.",
+    ceoQuote: "We are committed to transparent and fair banking.",
+    timeline: [
+      { year: 1988, event: "Argenta Spaarbank established in Belgium" },
+      { year: 1998, event: "Becomes Belgium's leading savings bank" },
+      { year: 2010, event: "Continues growth in Belgian market" },
+      { year: 2024, event: "Major Belgian bank with $85B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'bank-austria': {
+    id: 'bank-austria',
+    name: 'Erste Group Bank AG (Bank Austria)',
+    shortName: 'Bank Austria',
+    country: 'Austria',
+    flag: '🇦🇹',
+    founded: 1848,
+    headquarters: 'Vienna, Austria',
+    assets: 280,
+    marketCap: 28,
+    revenue: 10,
+    netIncome: 2.4,
+    employees: 47000,
+    branches: 1200,
+    countries: 9,
+    globalRank: 40,
+    description: "Austria's leading bank with significant presence across Central and Eastern Europe.",
+    keyFact: "Erste Group serves over 8 million customers across 9 countries with strong operations in Central Europe.",
+    ceoQuote: "We are building a leading Central European banking group.",
+    timeline: [
+      { year: 1848, event: "First Austrian Savings Bank established" },
+      { year: 1997, event: "Becomes Erste Group through consolidation" },
+      { year: 2010, event: "Expands significantly in Central and Eastern Europe" },
+      { year: 2024, event: "Major European bank with $280B in assets across 9 countries" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
