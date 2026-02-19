@@ -5995,6 +5995,258 @@ const banksData = {
     comparisons: null
   },
 
+  'absa-bank': {
+    id: 'absa-bank',
+    name: 'Absa Group Limited',
+    shortName: 'Absa',
+    country: 'South Africa',
+    flag: '🇿🇦',
+    founded: 1911,
+    headquarters: 'Johannesburg, South Africa',
+    assets: 165,
+    marketCap: 22,
+    revenue: 7.8,
+    netIncome: 1.9,
+    employees: 42000,
+    branches: 850,
+    countries: 12,
+    globalRank: 51,
+    description: "South Africa's second-largest bank, formerly Barclay's subsidiary, providing banking and financial services across sub-Saharan Africa.",
+    keyFact: "Absa serves over 10 million customers across 12 African countries with strong retail and business banking capabilities.",
+    ceoQuote: "We are committed to empowering economic growth across Africa.",
+    timeline: [
+      { year: 1911, event: "Amalgamated Banks of South Africa established" },
+      { year: 1986, event: "Becomes Absa following consolidation" },
+      { year: 2017, event: "Barclays divests stake, becomes independent" },
+      { year: 2024, event: "Major African bank with $165B in assets across 12 countries" }
+    ],
+    comparisons: null
+  },
+
+  'ecobank': {
+    id: 'ecobank',
+    name: 'Ecobank Transnational Incorporated',
+    shortName: 'Ecobank',
+    country: 'Togo',
+    flag: '🇹🇬',
+    founded: 1988,
+    headquarters: 'Lomé, Togo',
+    assets: 55,
+    marketCap: 6.5,
+    revenue: 2.8,
+    netIncome: 0.65,
+    employees: 18000,
+    branches: 1250,
+    countries: 35,
+    globalRank: 75,
+    description: "Africa's leading pan-African bank operating in 35 African countries with strong presence across West and Central Africa.",
+    keyFact: "Ecobank operates 1,250+ branches across 35 African countries and serves millions of customers with extensive mobile and digital banking services.",
+    ceoQuote: "We are building Africa's digital financial ecosystem.",
+    timeline: [
+      { year: 1988, event: "Ecobank established with pan-African vision" },
+      { year: 2005, event: "Lists on regional stock exchanges" },
+      { year: 2010, event: "Becomes Africa's most pan-African bank" },
+      { year: 2024, event: "Leading pan-African bank with $55B in assets across 35 countries" }
+    ],
+    comparisons: null
+  },
+
+  'zenith-bank': {
+    id: 'zenith-bank',
+    name: 'Zenith Bank Plc',
+    shortName: 'Zenith',
+    country: 'Nigeria',
+    flag: '🇳🇬',
+    founded: 1990,
+    headquarters: 'Lagos, Nigeria',
+    assets: 42,
+    marketCap: 8.5,
+    revenue: 2.5,
+    netIncome: 0.8,
+    employees: 14000,
+    branches: 350,
+    countries: 2,
+    globalRank: 82,
+    description: "Nigeria's leading bank providing comprehensive banking and financial services across Africa with strong corporate and retail franchises.",
+    keyFact: "Zenith Bank serves over 8 million customers with 350+ branches and operates in multiple African countries with strong digital banking capabilities.",
+    ceoQuote: "We are committed to driving Nigeria's economic transformation.",
+    timeline: [
+      { year: 1990, event: "Zenith Bank established in Nigeria" },
+      { year: 2004, event: "Becomes one of Nigeria's top banks" },
+      { year: 2010, event: "Expands internationally across Africa" },
+      { year: 2024, event: "Major Nigerian bank with $42B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'gtbank': {
+    id: 'gtbank',
+    name: 'Guaranty Trust Holding Company Plc',
+    shortName: 'GTBank',
+    country: 'Nigeria',
+    flag: '🇳🇬',
+    founded: 1990,
+    headquarters: 'Lagos, Nigeria',
+    assets: 38,
+    marketCap: 9.2,
+    revenue: 2.3,
+    netIncome: 0.75,
+    employees: 12000,
+    branches: 280,
+    countries: 6,
+    globalRank: 84,
+    description: "Nigeria's most innovative bank with significant presence across West Africa, providing banking and financial services with digital-first approach.",
+    keyFact: "GTBank serves over 7 million customers across Nigeria and 6 African countries with pioneering digital banking services.",
+    ceoQuote: "We are creating a world-class digital bank for Africa.",
+    timeline: [
+      { year: 1990, event: "Guaranty Trust Bank established in Nigeria" },
+      { year: 2005, event: "Becomes Africa's most innovative bank" },
+      { year: 2015, event: "Expands as Guaranty Trust Holding Company" },
+      { year: 2024, event: "Leading African bank with $38B in assets and digital innovation" }
+    ],
+    comparisons: null
+  },
+
+  'equity-bank-kenya': {
+    id: 'equity-bank-kenya',
+    name: 'Equity Group Holdings Plc',
+    shortName: 'Equity Bank',
+    country: 'Kenya',
+    flag: '🇰🇪',
+    founded: 1984,
+    headquarters: 'Nairobi, Kenya',
+    assets: 18,
+    marketCap: 3.8,
+    revenue: 1.2,
+    netIncome: 0.35,
+    employees: 5000,
+    branches: 350,
+    countries: 4,
+    globalRank: 95,
+    description: "Kenya's leading bank with expansion across East Africa, committed to financial inclusion and banking innovation.",
+    keyFact: "Equity Bank serves over 5 million customers across Kenya, Uganda, Tanzania, and Rwanda with strong focus on mobile banking and financial inclusion.",
+    ceoQuote: "We are democratizing banking in Africa.",
+    timeline: [
+      { year: 1984, event: "Equity Bank established in Kenya" },
+      { year: 2006, event: "Goes public and becomes East Africa's fastest-growing bank" },
+      { year: 2015, event: "Expands across East Africa" },
+      { year: 2024, event: "Leading East African bank with $18B in assets across 4 countries" }
+    ],
+    comparisons: null
+  },
+
+  'emirates-nbd': {
+    id: 'emirates-nbd',
+    name: 'Emirates NBD PJSC',
+    shortName: 'Emirates NBD',
+    country: 'United Arab Emirates',
+    flag: '🇦🇪',
+    founded: 1971,
+    headquarters: 'Dubai, United Arab Emirates',
+    assets: 295,
+    marketCap: 52,
+    revenue: 11,
+    netIncome: 3.8,
+    employees: 21000,
+    branches: 250,
+    countries: 15,
+    globalRank: 36,
+    description: "The UAE's largest bank and one of the Middle East's leading financial institutions with significant regional and global operations.",
+    keyFact: "Emirates NBD serves over 10 million customers across 15 countries with strong investment banking and wealth management capabilities.",
+    ceoQuote: "We are shaping the future of banking in the region.",
+    timeline: [
+      { year: 1971, event: "National Bank of Dubai established" },
+      { year: 2007, event: "Merges with Emirates Bank to form Emirates NBD" },
+      { year: 2015, event: "Becomes one of the world's top 50 banks" },
+      { year: 2024, event: "Leading Middle Eastern bank with $295B in assets across 15 countries" }
+    ],
+    comparisons: null
+  },
+
+  'arab-bank': {
+    id: 'arab-bank',
+    name: 'Arab Bank PLC',
+    shortName: 'Arab Bank',
+    country: 'Jordan',
+    flag: '🇯🇴',
+    founded: 1930,
+    headquarters: 'Amman, Jordan',
+    assets: 75,
+    marketCap: 11,
+    revenue: 3.8,
+    netIncome: 1.1,
+    employees: 14000,
+    branches: 450,
+    countries: 35,
+    globalRank: 70,
+    description: "The Arab region's oldest and largest bank, operating across the Middle East and North Africa with significant international presence.",
+    keyFact: "Arab Bank serves over 5 million customers across 35 countries with strong investment banking and wealth management franchises.",
+    ceoQuote: "We are the bridge between the Arab world and global markets.",
+    timeline: [
+      { year: 1930, event: "Arab Bank established in Palestine" },
+      { year: 1948, event: "Relocates to Amman following regional events" },
+      { year: 1997, event: "Lists on stock exchanges and goes global" },
+      { year: 2024, event: "Leading Arab bank with $75B in assets across 35 countries" }
+    ],
+    comparisons: null
+  },
+
+  'unicredit-italy': {
+    id: 'unicredit-italy',
+    name: 'UniCredit S.p.A.',
+    shortName: 'UniCredit',
+    country: 'Italy',
+    flag: '🇮🇹',
+    founded: 1998,
+    headquarters: 'Milan, Italy',
+    assets: 880,
+    marketCap: 75,
+    revenue: 28,
+    netIncome: 6.5,
+    employees: 145000,
+    branches: 4800,
+    countries: 14,
+    globalRank: 14,
+    description: "Europe's leading bank with strong presence in Central and Eastern Europe, providing banking and financial services across Europe and beyond.",
+    keyFact: "UniCredit serves over 90 million customers across 14 countries with 4,800+ branches and significant investment banking capabilities.",
+    ceoQuote: "We are creating value for Europe's future.",
+    timeline: [
+      { year: 1998, event: "UniCredit created through merger of Italian banking entities" },
+      { year: 2005, event: "Expands significantly into Central and Eastern Europe" },
+      { year: 2010, event: "Becomes one of Europe's largest banks" },
+      { year: 2024, event: "Leading European bank with $880B in assets across 14 countries" }
+    ],
+    comparisons: null
+  },
+
+  'bbva-bank': {
+    id: 'bbva-bank',
+    name: 'BBVA (Banco Bilbao Vizcaya Argentaria, S.A.)',
+    shortName: 'BBVA',
+    country: 'Spain',
+    flag: '🇪🇸',
+    founded: 1857,
+    headquarters: 'Bilbao, Spain',
+    assets: 750,
+    marketCap: 62,
+    revenue: 22,
+    netIncome: 5.5,
+    employees: 155000,
+    branches: 4200,
+    countries: 28,
+    globalRank: 17,
+    description: "Spain's second-largest bank with significant presence in Latin America and Europe, operating as one of the world's largest financial institutions.",
+    keyFact: "BBVA serves over 100 million customers across 28 countries with 4,200+ branches and strong investment banking and digital capabilities.",
+    ceoQuote: "We are creating opportunity for everyone.",
+    timeline: [
+      { year: 1857, event: "Banco Bilbao Vizcaya established" },
+      { year: 1988, event: "Merges with Argentaria to form BBVA" },
+      { year: 2000, event: "Expands aggressively into Latin America" },
+      { year: 2024, event: "Major global bank with $750B in assets across 28 countries" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
