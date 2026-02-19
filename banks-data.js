@@ -4401,6 +4401,229 @@ const banksData = {
     comparisons: null
   },
 
+  citigroup: {
+    id: 'citigroup',
+    name: 'Citigroup Inc.',
+    shortName: 'Citigroup',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1812,
+    headquarters: 'New York City, USA',
+    assets: 2400,
+    marketCap: 190,
+    revenue: 105,
+    netIncome: 18,
+    employees: 238000,
+    branches: 1800,
+    countries: 160,
+    globalRank: 4,
+    description: "A global financial services company operating in investment banking, wealth management, and consumer banking across more than 160 countries with roots in the First City Bank of New York founded in 1812.",
+    keyFact: "Citigroup operates in over 160 countries and territories, serving over 200 million customers worldwide, making it one of the most geographically diverse banks globally.",
+    ceoQuote: "We serve as a trusted advisor to institutional clients and individuals worldwide.",
+    timeline: [
+      { year: 1812, event: "First City Bank of New York established" },
+      { year: 1998, event: "Citicorp and Travelers Group merge to form Citigroup Inc." },
+      { year: 2008, event: "Receives $45 billion US government bailout during financial crisis" },
+      { year: 2024, event: "Operating with $2.4T in assets across 160+ countries" }
+    ],
+    comparisons: null
+  },
+
+  'morgan-stanley': {
+    id: 'morgan-stanley',
+    name: 'Morgan Stanley',
+    shortName: 'Morgan Stanley',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1935,
+    headquarters: 'New York City, USA',
+    assets: 1300,
+    marketCap: 235,
+    revenue: 55,
+    netIncome: 12,
+    employees: 75000,
+    branches: 600,
+    countries: 75,
+    globalRank: 7,
+    description: "A leading global financial services firm providing investment banking, wealth management, and asset management services to corporations, governments, and individuals.",
+    keyFact: "Morgan Stanley manages approximately $900 billion in client assets and operates in major financial centers across 75 countries with over 75,000 employees.",
+    ceoQuote: "We remain committed to being a leading global financial advisor.",
+    timeline: [
+      { year: 1935, event: "Morgan Stanley founded following separation from J.P. Morgan Bank" },
+      { year: 1997, event: "Merges with Dean Witter, Discover & Co. to form Morgan Stanley Dean Witter" },
+      { year: 2009, event: "Completes acquisition of Citigroup's Smith Barney brokerage business" },
+      { year: 2024, event: "Major investment and wealth management leader with $1.3T assets" }
+    ],
+    comparisons: null
+  },
+
+  'goldman-sachs': {
+    id: 'goldman-sachs',
+    name: 'The Goldman Sachs Group, Inc.',
+    shortName: 'Goldman Sachs',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1869,
+    headquarters: 'New York City, USA',
+    assets: 1050,
+    marketCap: 220,
+    revenue: 48,
+    netIncome: 10,
+    employees: 45000,
+    branches: 40,
+    countries: 60,
+    globalRank: 8,
+    description: "A leading global investment banking, securities, and investment management firm known for advising major corporations and institutions on significant financial transactions.",
+    keyFact: "Goldman Sachs manages over $2.5 trillion in assets under supervision and provides financial advisory services to virtually all major corporations and many governments.",
+    ceoQuote: "We serve as a trusted advisor to the world's leading corporations and institutions.",
+    timeline: [
+      { year: 1869, event: "Goldman Sachs founded by Marcus Goldman in New York" },
+      { year: 1906, event: "Samuel Sachs joins as partner, firm becomes Goldman Sachs" },
+      { year: 1999, event: "Goldman Sachs IPO, becoming a publicly-traded company" },
+      { year: 2024, event: "Premier investment bank with $1.05T in assets and global influence" }
+    ],
+    comparisons: null
+  },
+
+  westpac: {
+    id: 'westpac',
+    name: 'Westpac Banking Corporation',
+    shortName: 'Westpac',
+    country: 'Australia',
+    flag: '🇦🇺',
+    founded: 1817,
+    headquarters: 'Sydney, Australia',
+    assets: 900,
+    marketCap: 85,
+    revenue: 30,
+    netIncome: 8,
+    employees: 40000,
+    branches: 1000,
+    countries: 20,
+    globalRank: 12,
+    description: "Australia's oldest bank and one of the Big Four Australian banks, with roots tracing back to 1817, serving over 13 million customers globally.",
+    keyFact: "Westpac is the largest bank in Australia by market capitalization and serves approximately 13 million customers across multiple countries with sophisticated digital banking capabilities.",
+    ceoQuote: "We are committed to being a world-class bank delivering customer-focused services.",
+    timeline: [
+      { year: 1817, event: "Bank of New South Wales established, Australia's first bank" },
+      { year: 1850, event: "Westpac established as Western Australian Bank" },
+      { year: 1970, event: "Bank of New South Wales merges with Westpac to form Westpac Banking Corporation" },
+      { year: 2024, event: "Australia's largest bank with $900B in assets and 13 million customers" }
+    ],
+    comparisons: null
+  },
+
+  'bank-of-montreal': {
+    id: 'bank-of-montreal',
+    name: 'Bank of Montreal',
+    shortName: 'BMO',
+    country: 'Canada',
+    flag: '🇨🇦',
+    founded: 1817,
+    headquarters: 'Toronto, Canada',
+    assets: 850,
+    marketCap: 75,
+    revenue: 28,
+    netIncome: 7.5,
+    employees: 45000,
+    branches: 1100,
+    countries: 12,
+    globalRank: 13,
+    description: "Canada's oldest bank and one of the Big Five Canadian banks, providing retail banking, wealth management, and investment services across North America and globally.",
+    keyFact: "Bank of Montreal serves over 12 million customers and operates across Canada, the United States, and internationally with a rich 200+ year banking heritage.",
+    ceoQuote: "We are committed to building a better future for our customers and communities.",
+    timeline: [
+      { year: 1817, event: "Bank of Montreal established as Canada's first bank by Montreal merchants" },
+      { year: 1925, event: "Establishes US presence through acquisition of Molson Bank" },
+      { year: 2012, event: "Completes acquisition of Marshall & Ilsley Corporation, strengthening US position" },
+      { year: 2024, event: "Leading Canadian bank with $850B in assets serving North America" }
+    ],
+    comparisons: null
+  },
+
+  'citic-bank': {
+    id: 'citic-bank',
+    name: 'CITIC Bank Corporation Limited',
+    shortName: 'CITIC Bank',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1987,
+    headquarters: 'Beijing, China',
+    assets: 1400,
+    marketCap: 95,
+    revenue: 85,
+    netIncome: 22,
+    employees: 280000,
+    branches: 3200,
+    globalRank: 6,
+    description: "A major Chinese state-owned commercial bank and subsidiary of CITIC Group, operating as one of China's most important financial institutions with substantial global presence.",
+    keyFact: "CITIC Bank operates over 3,200 branches across China and maintains international operations in major financial centers, serving both corporate and retail customers.",
+    ceoQuote: "We are committed to being a leading modern financial services provider.",
+    timeline: [
+      { year: 1987, event: "CITIC Industrial Bank established" },
+      { year: 2007, event: "Lists on Shanghai and Hong Kong stock exchanges through IPO" },
+      { year: 2015, event: "Completes major expansion into wealth management and investment banking" },
+      { year: 2024, event: "One of China's major banks with $1.4T in assets and 3,200+ branches" }
+    ],
+    comparisons: null
+  },
+
+  'united-overseas-bank': {
+    id: 'united-overseas-bank',
+    name: 'United Overseas Bank Limited',
+    shortName: 'UOB',
+    country: 'Singapore',
+    flag: '🇸🇬',
+    founded: 1935,
+    headquarters: 'Singapore',
+    assets: 540,
+    marketCap: 55,
+    revenue: 18,
+    netIncome: 5.2,
+    employees: 30000,
+    branches: 500,
+    countries: 19,
+    globalRank: 16,
+    description: "Singapore's largest bank and one of Asia's leading financial institutions, operating across Southeast Asia and globally with strong corporate and wealth management franchises.",
+    keyFact: "UOB operates in 19 countries with a strong presence in ASEAN region and serves as a preferred banking partner for businesses and individuals across Asia.",
+    ceoQuote: "We are building a digital-first bank for a digital-first world.",
+    timeline: [
+      { year: 1935, event: "United Overseas Bank established in Singapore" },
+      { year: 1965, event: "Singapore gains independence; UOB becomes Singapore's largest bank" },
+      { year: 2020, event: "Launches digital banking platform digital banking services for Asian expansion" },
+      { year: 2024, event: "Asia-Pacific banking leader with $540B in assets across 19 countries" }
+    ],
+    comparisons: null
+  },
+
+  'natwest-group': {
+    id: 'natwest-group',
+    name: 'NatWest Group plc',
+    shortName: 'NatWest',
+    country: 'United Kingdom',
+    flag: '🇬🇧',
+    founded: 1968,
+    headquarters: 'Edinburgh, Scotland',
+    assets: 850,
+    marketCap: 68,
+    revenue: 27,
+    netIncome: 6.8,
+    employees: 60000,
+    branches: 1200,
+    countries: 13,
+    globalRank: 14,
+    description: "A leading UK banking group (formerly Royal Bank of Scotland Group) with strong retail and corporate banking operations across the UK and internationally.",
+    keyFact: "NatWest Group serves over 13 million customers through its main brands including NatWest, The Royal Bank of Scotland, and Ulster Bank across multiple countries.",
+    ceoQuote: "We are focused on being a leading financial services group serving customers across the UK and beyond.",
+    timeline: [
+      { year: 1968, event: "National Westminster Bank formed through merger of Westminster Bank and National Provincial Bank" },
+      { year: 2000, event: "Merges with Royal Bank of Scotland to form RBSG" },
+      { year: 2008, event: "Receives UK government bailout following financial crisis" },
+      { year: 2024, event: "Rebranded as NatWest Group with $850B in assets and strong UK market position" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
