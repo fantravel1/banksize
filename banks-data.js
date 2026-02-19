@@ -4960,6 +4960,173 @@ const banksData = {
     comparisons: null
   },
 
+  'bny-mellon': {
+    id: 'bny-mellon',
+    name: 'The Bank of New York Mellon Corporation',
+    shortName: 'BNY Mellon',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1784,
+    headquarters: 'New York City, USA',
+    assets: 2400,
+    marketCap: 65,
+    revenue: 22,
+    netIncome: 4.5,
+    employees: 52000,
+    branches: 300,
+    countries: 150,
+    globalRank: 6,
+    description: "One of the world's oldest banks founded in 1784, specializing in global custody, asset servicing, and investment management for institutional investors and financial institutions worldwide.",
+    keyFact: "BNY Mellon administers over $45 trillion in assets and serves as a critical infrastructure provider for global capital markets across 150 countries.",
+    ceoQuote: "We are a trusted provider of financial infrastructure and asset services to the world's most important institutions.",
+    timeline: [
+      { year: 1784, event: "Bank of New York founded by Alexander Hamilton" },
+      { year: 1969, event: "Becomes pioneer in computerized securities trading" },
+      { year: 2007, event: "Merger with Mellon Financial creates BNY Mellon" },
+      { year: 2024, event: "Major custody and asset services provider with $2.4T assets and $45T under administration" }
+    ],
+    comparisons: null
+  },
+
+  'china-postal-savings-bank': {
+    id: 'china-postal-savings-bank',
+    name: 'China Postal Savings Bank Co., Ltd.',
+    shortName: 'Postal Savings Bank',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 2007,
+    headquarters: 'Beijing, China',
+    assets: 1100,
+    marketCap: 58,
+    revenue: 68,
+    netIncome: 18,
+    employees: 400000,
+    branches: 40000,
+    globalRank: 11,
+    description: "China's largest postal bank operating the world's largest retail branch network with over 40,000 postal branches, providing retail banking and savings services to hundreds of millions of customers.",
+    keyFact: "China Postal Savings Bank operates through over 40,000 postal branches—the world's largest retail banking network—serving over 600 million customers, primarily in rural and underserved areas.",
+    ceoQuote: "We are committed to providing accessible banking services to all Chinese communities.",
+    timeline: [
+      { year: 1911, event: "Postal savings business established in China" },
+      { year: 2007, event: "Restructured as separate banking entity" },
+      { year: 2015, event: "Listed on Hong Kong and Shanghai stock exchanges" },
+      { year: 2024, event: "Largest postal bank with $1.1T in assets and world's largest branch network" }
+    ],
+    comparisons: null
+  },
+
+  'banco-sabadell': {
+    id: 'banco-sabadell',
+    name: 'Banco Sabadell, S.A.',
+    shortName: 'Banco Sabadell',
+    country: 'Spain',
+    flag: '🇪🇸',
+    founded: 1881,
+    headquarters: 'Barcelona, Spain',
+    assets: 190,
+    marketCap: 18,
+    revenue: 8.5,
+    netIncome: 2.1,
+    employees: 30000,
+    branches: 2000,
+    countries: 10,
+    globalRank: 38,
+    description: "Spain's second-largest bank by assets, founded in 1881, providing comprehensive banking services to retail, business, and institutional clients across Spain and internationally.",
+    keyFact: "Banco Sabadell operates over 2,000 branches and serves over 4 million customers in Spain and has expanded operations to Portugal, Mexico, and other markets.",
+    ceoQuote: "We are building a modern, efficient bank focused on customer satisfaction and innovation.",
+    timeline: [
+      { year: 1881, event: "Founded as a small bank in Sabadell, Catalonia" },
+      { year: 2004, event: "Merges with Banco Urquijo to become major Spanish bank" },
+      { year: 2015, event: "Acquires British bank TSB, expanding international presence" },
+      { year: 2024, event: "Spain's second-largest bank with $190B in assets and strong digital banking" }
+    ],
+    comparisons: null
+  },
+
+  'banco-pichincha': {
+    id: 'banco-pichincha',
+    name: 'Banco Pichincha C.A.',
+    shortName: 'Banco Pichincha',
+    country: 'Ecuador',
+    flag: '🇪🇨',
+    founded: 1906,
+    headquarters: 'Quito, Ecuador',
+    assets: 35,
+    marketCap: 6.5,
+    revenue: 3.2,
+    netIncome: 0.85,
+    employees: 20000,
+    branches: 500,
+    countries: 8,
+    globalRank: 112,
+    description: "Ecuador's largest bank and one of Latin America's most important financial institutions, providing comprehensive banking services across multiple countries in the region.",
+    keyFact: "Banco Pichincha operates across 8 Latin American countries and is the largest bank in Ecuador with a strong reputation for stability and service.",
+    ceoQuote: "We are committed to driving financial inclusion and economic development in Latin America.",
+    timeline: [
+      { year: 1906, event: "Banco Pichincha founded in Quito, Ecuador" },
+      { year: 1970, event: "Becomes largest bank in Ecuador" },
+      { year: 2010, event: "Expands significantly across Latin America with acquisitions" },
+      { year: 2024, event: "Leading Latin American bank with $35B in assets and regional presence" }
+    ],
+    comparisons: null
+  },
+
+  'banco-azteca': {
+    id: 'banco-azteca',
+    name: 'Banco Azteca, S.A.',
+    shortName: 'Banco Azteca',
+    country: 'Mexico',
+    flag: '🇲🇽',
+    founded: 2002,
+    headquarters: 'Mexico City, Mexico',
+    assets: 25,
+    marketCap: 3.8,
+    revenue: 2.1,
+    netIncome: 0.48,
+    employees: 35000,
+    branches: 900,
+    countries: 3,
+    globalRank: 125,
+    description: "Mexico's fourth-largest retail bank providing consumer banking, deposits, and credit services through a vast network of branches, with significant reach in underserved markets.",
+    keyFact: "Banco Azteca operates over 900 branches across Mexico and Central America, serving millions of retail customers with accessible banking and credit products.",
+    ceoQuote: "We are focused on providing financial inclusion and opportunity to Mexican families.",
+    timeline: [
+      { year: 2002, event: "Banco Azteca founded as retail-focused bank" },
+      { year: 2008, event: "Expands rapidly with acquisition of Banco Regional de Monterrey" },
+      { year: 2015, event: "Becomes fourth-largest retail bank in Mexico" },
+      { year: 2024, event: "Mexican retail banking leader with $25B in assets and 900+ branches" }
+    ],
+    comparisons: null
+  },
+
+  'icici-bank': {
+    id: 'icici-bank',
+    name: 'ICICI Bank Limited',
+    shortName: 'ICICI Bank',
+    country: 'India',
+    flag: '🇮🇳',
+    founded: 1994,
+    headquarters: 'Mumbai, India',
+    assets: 280,
+    marketCap: 55,
+    revenue: 18,
+    netIncome: 4.8,
+    employees: 100000,
+    branches: 2500,
+    countries: 15,
+    globalRank: 32,
+    description: "India's largest private sector bank providing comprehensive banking and financial services to retail, corporate, and institutional clients across India and internationally.",
+    keyFact: "ICICI Bank operates over 2,500 branches and serves over 100 million customers, pioneering digital banking innovation in India with extensive online and mobile services.",
+    ceoQuote: "We are committed to being the fastest growing bank in India through customer focus and innovation.",
+    timeline: [
+      { year: 1994, event: "ICICI Bank incorporated as subsidiary of ICICI Limited" },
+      { year: 2002, event: "Becomes India's largest private bank through merger with ICICI" },
+      { year: 2010, event: "Pioneers digital banking in India with extensive online services" },
+      { year: 2024, event: "Leading Indian private bank with $280B in assets and 2,500+ branches" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
