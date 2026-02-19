@@ -6247,6 +6247,230 @@ const banksData = {
     comparisons: null
   },
 
+  'bmw-bank': {
+    id: 'bmw-bank',
+    name: 'ING Groep N.V.',
+    shortName: 'ING',
+    country: 'Netherlands',
+    flag: '🇳🇱',
+    founded: 2000,
+    headquarters: 'Amsterdam, Netherlands',
+    assets: 950,
+    marketCap: 68,
+    revenue: 26,
+    netIncome: 5.8,
+    employees: 57000,
+    branches: 1300,
+    countries: 40,
+    globalRank: 11,
+    description: "Europe's leading bank by customer base with significant operations globally, providing banking and financial services across 40 countries.",
+    keyFact: "ING serves over 42 million customers across 40 countries with 1,300+ branches and strong digital banking capabilities.",
+    ceoQuote: "We are empowering people to make a better life for themselves.",
+    timeline: [
+      { year: 2000, event: "ING Groep formed through merger of Dutch banking entities" },
+      { year: 2008, event: "Becomes Europe's largest bank by customer base" },
+      { year: 2015, event: "Focuses on digital transformation and innovation" },
+      { year: 2024, event: "Leading global bank with $950B in assets across 40 countries" }
+    ],
+    comparisons: null
+  },
+
+  'banco-sabadell': {
+    id: 'banco-sabadell',
+    name: 'Banco Sabadell, S.A.',
+    shortName: 'Sabadell',
+    country: 'Spain',
+    flag: '🇪🇸',
+    founded: 1881,
+    headquarters: 'Barcelona, Spain',
+    assets: 205,
+    marketCap: 18,
+    revenue: 7.8,
+    netIncome: 1.5,
+    employees: 22000,
+    branches: 1500,
+    countries: 2,
+    globalRank: 45,
+    description: "Spain's third-largest bank providing comprehensive banking services across Spain with digital innovation focus.",
+    keyFact: "Banco Sabadell serves over 4 million customers with 1,500+ branches and strong digital banking and customer experience.",
+    ceoQuote: "We are transforming banking through customer-centric innovation.",
+    timeline: [
+      { year: 1881, event: "Banco Sabadell founded in Sabadell, Spain" },
+      { year: 1999, event: "Becomes Spain's third-largest bank" },
+      { year: 2015, event: "Acquires TSB Bank UK to expand internationally" },
+      { year: 2024, event: "Major Spanish bank with $205B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'skandinaviska-enskilda': {
+    id: 'skandinaviska-enskilda',
+    name: 'Skandinaviska Enskilda Banken AB',
+    shortName: 'SEB',
+    country: 'Sweden',
+    flag: '🇸🇪',
+    founded: 1856,
+    headquarters: 'Stockholm, Sweden',
+    assets: 380,
+    marketCap: 28,
+    revenue: 11,
+    netIncome: 2.8,
+    employees: 22000,
+    branches: 300,
+    countries: 20,
+    globalRank: 34,
+    description: "One of Northern Europe's leading banks providing banking and financial services across Scandinavia and globally.",
+    keyFact: "SEB serves over 6 million customers across 20 countries with strong investment banking and wealth management capabilities.",
+    ceoQuote: "We are building the bank of the future.",
+    timeline: [
+      { year: 1856, event: "Skandinaviska Enskilda Banken established in Sweden" },
+      { year: 1972, event: "Becomes one of Europe's leading banks" },
+      { year: 2000, event: "Expands significantly into investment banking" },
+      { year: 2024, event: "Leading Northern European bank with $380B in assets across 20 countries" }
+    ],
+    comparisons: null
+  },
+
+  'danske-bank': {
+    id: 'danske-bank',
+    name: 'Danske Bank A/S',
+    shortName: 'Danske',
+    country: 'Denmark',
+    flag: '🇩🇰',
+    founded: 1871,
+    headquarters: 'Copenhagen, Denmark',
+    assets: 300,
+    marketCap: 22,
+    revenue: 9,
+    netIncome: 2.2,
+    employees: 19000,
+    branches: 200,
+    countries: 15,
+    globalRank: 37,
+    description: "The Nordic region's largest bank with significant banking operations across Northern Europe and Baltic states.",
+    keyFact: "Danske Bank serves over 4 million customers across 15 countries with strong digital banking capabilities.",
+    ceoQuote: "We are making a difference with strong financial advice.",
+    timeline: [
+      { year: 1871, event: "Danske Bank established in Denmark" },
+      { year: 1997, event: "Becomes the Nordic region's largest bank" },
+      { year: 2010, event: "Expands significantly into Baltic states" },
+      { year: 2024, event: "Leading Nordic bank with $300B in assets across 15 countries" }
+    ],
+    comparisons: null
+  },
+
+  'norges-bank': {
+    id: 'norges-bank',
+    name: 'DNB ASA',
+    shortName: 'DNB',
+    country: 'Norway',
+    flag: '🇳🇴',
+    founded: 1822,
+    headquarters: 'Oslo, Norway',
+    assets: 280,
+    marketCap: 38,
+    revenue: 10,
+    netIncome: 3.2,
+    employees: 12500,
+    branches: 120,
+    countries: 8,
+    globalRank: 40,
+    description: "Norway's largest bank and one of Northern Europe's leading financial institutions with strong investment banking presence.",
+    keyFact: "DNB serves over 3 million customers across Norway and 8 countries with significant investment banking and asset management capabilities.",
+    ceoQuote: "We are creating value for our customers through innovation.",
+    timeline: [
+      { year: 1822, event: "Den Norske Creditbank established in Norway" },
+      { year: 2000, event: "Merges with Den Norske Bank to form DNB ASA" },
+      { year: 2010, event: "Becomes Scandinavia's leading investment bank" },
+      { year: 2024, event: "Major Norwegian bank with $280B in assets across 8 countries" }
+    ],
+    comparisons: null
+  },
+
+  'rabobank-netherlands': {
+    id: 'rabobank-netherlands',
+    name: 'Rabobank (Rabobank Group)',
+    shortName: 'Rabobank',
+    country: 'Netherlands',
+    flag: '🇳🇱',
+    founded: 1898,
+    headquarters: 'Utrecht, Netherlands',
+    assets: 280,
+    marketCap: 15,
+    revenue: 8.5,
+    netIncome: 1.8,
+    employees: 40000,
+    branches: 300,
+    countries: 14,
+    globalRank: 41,
+    description: "One of Europe's leading agricultural and rural banks with significant presence in the Netherlands and internationally.",
+    keyFact: "Rabobank serves over 9 million customers with 300 branches across 14 countries and strong agricultural lending capabilities.",
+    ceoQuote: "We are committed to sustainable banking for agriculture and food.",
+    timeline: [
+      { year: 1898, event: "Coöperatieve Centrale Raiffeisen-Boerenleenbank established" },
+      { year: 2016, event: "Becomes Rabobank Group with new identity" },
+      { year: 2010, event: "Expands significantly into investment banking" },
+      { year: 2024, event: "Leading Dutch bank with $280B in assets across 14 countries" }
+    ],
+    comparisons: null
+  },
+
+  'banco-bradesco': {
+    id: 'banco-bradesco',
+    name: 'Banco Bradesco S.A.',
+    shortName: 'Bradesco',
+    country: 'Brazil',
+    flag: '🇧🇷',
+    founded: 1943,
+    headquarters: 'Osasco, Brazil',
+    assets: 400,
+    marketCap: 55,
+    revenue: 18,
+    netIncome: 5.2,
+    employees: 120000,
+    branches: 5400,
+    countries: 22,
+    globalRank: 28,
+    description: "Brazil's second-largest bank providing comprehensive banking and insurance services across Brazil and Latin America.",
+    keyFact: "Bradesco serves over 90 million customers across 22 countries with 5,400+ branches and integrated insurance operations.",
+    ceoQuote: "We are building a more inclusive financial ecosystem.",
+    timeline: [
+      { year: 1943, event: "Banco Bradesco established in São Paulo" },
+      { year: 1979, event: "Becomes Brazil's second-largest bank" },
+      { year: 2010, event: "Expands significantly across Latin America" },
+      { year: 2024, event: "Major Brazilian bank with $400B in assets across 22 countries" }
+    ],
+    comparisons: null
+  },
+
+  'banco-santander-mexico': {
+    id: 'banco-santander-mexico',
+    name: 'Banco Santander (México), S.A.',
+    shortName: 'Santander México',
+    country: 'Mexico',
+    flag: '🇲🇽',
+    founded: 1994,
+    headquarters: 'Mexico City, Mexico',
+    assets: 145,
+    marketCap: 18,
+    revenue: 6.5,
+    netIncome: 1.6,
+    employees: 36000,
+    branches: 1600,
+    countries: 1,
+    globalRank: 52,
+    description: "Mexico's second-largest bank providing comprehensive banking services to retail and corporate customers across Mexico.",
+    keyFact: "Banco Santander México serves over 10 million customers with 1,600+ branches and strong digital banking capabilities.",
+    ceoQuote: "We are committed to responsible and inclusive banking.",
+    timeline: [
+      { year: 1994, event: "Banco Santander México established" },
+      { year: 2010, event: "Becomes Mexico's second-largest bank" },
+      { year: 2015, event: "Expands digital banking services significantly" },
+      { year: 2024, event: "Major Mexican bank with $145B in assets" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
