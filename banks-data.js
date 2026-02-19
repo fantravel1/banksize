@@ -7367,6 +7367,258 @@ const banksData = {
     comparisons: null
   },
 
+  'pko-bank': {
+    id: 'pko-bank',
+    name: 'Bank Powszechny Kasy Oszczędności (PKO Bank Polski)',
+    shortName: 'PKO',
+    country: 'Poland',
+    flag: '🇵🇱',
+    founded: 1919,
+    headquarters: 'Warsaw, Poland',
+    assets: 180,
+    marketCap: 20,
+    revenue: 6.8,
+    netIncome: 1.6,
+    employees: 32000,
+    branches: 1100,
+    countries: 5,
+    globalRank: 48,
+    description: "Poland's largest bank providing comprehensive banking services across Poland and Central Europe.",
+    keyFact: "PKO Bank Polski serves over 8 million customers with 1,100+ branches across Poland and 5 countries.",
+    ceoQuote: "We are committed to supporting Poland's economic development.",
+    timeline: [
+      { year: 1919, event: "Bank Powszechny Kasy Oszczędności established in Poland" },
+      { year: 2000, event: "Privatization and becomes Poland's largest bank" },
+      { year: 2010, event: "Expands into Central European markets" },
+      { year: 2024, event: "Major Central European bank with $180B in assets across 5 countries" }
+    ],
+    comparisons: null
+  },
+
+  'bank-pekao': {
+    id: 'bank-pekao',
+    name: 'Bank Polska S.A. (Bank Pekao)',
+    shortName: 'Pekao',
+    country: 'Poland',
+    flag: '🇵🇱',
+    founded: 1929,
+    headquarters: 'Warsaw, Poland',
+    assets: 155,
+    marketCap: 18,
+    revenue: 5.8,
+    netIncome: 1.4,
+    employees: 28000,
+    branches: 900,
+    countries: 4,
+    globalRank: 52,
+    description: "Poland's second-largest bank providing banking services to retail and corporate customers across Poland.",
+    keyFact: "Bank Pekao serves over 6 million customers with 900+ branches across Poland and selected markets.",
+    ceoQuote: "We are building stronger financial services for Polish customers.",
+    timeline: [
+      { year: 1929, event: "Polska Akcyjna Spółka Tytoniowa established" },
+      { year: 1988, event: "Becomes Bank Pekao" },
+      { year: 2010, event: "Expands in Central European markets" },
+      { year: 2024, event: "Major Polish bank with $155B in assets across 4 countries" }
+    ],
+    comparisons: null
+  },
+
+  'ceska-sporitelna': {
+    id: 'ceska-sporitelna',
+    name: 'Česká spořitelna (Erste Group - Czech Republic)',
+    shortName: 'Česká spořitelna',
+    country: 'Czech Republic',
+    flag: '🇨🇿',
+    founded: 1825,
+    headquarters: 'Prague, Czech Republic',
+    assets: 85,
+    marketCap: 10,
+    revenue: 3.5,
+    netIncome: 0.85,
+    employees: 14000,
+    branches: 320,
+    countries: 1,
+    globalRank: 69,
+    description: "Czech Republic's leading bank providing savings and banking services to millions of Czech customers.",
+    keyFact: "Česká spořitelna serves over 4 million customers with 320+ branches across Czech Republic.",
+    ceoQuote: "We are building financial security for Czech families.",
+    timeline: [
+      { year: 1825, event: "Česká spořitelna established as Savings Bank" },
+      { year: 2000, event: "Becomes Czech Republic's leading bank" },
+      { year: 2010, event: "Part of Erste Group expansion" },
+      { year: 2024, event: "Major Czech bank with $85B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'csob-bank': {
+    id: 'csob-bank',
+    name: 'ČSOB (Československá obchodní banka)',
+    shortName: 'ČSOB',
+    country: 'Czech Republic',
+    flag: '🇨🇿',
+    founded: 1964,
+    headquarters: 'Prague, Czech Republic',
+    assets: 95,
+    marketCap: 12,
+    revenue: 3.8,
+    netIncome: 0.95,
+    employees: 15000,
+    branches: 280,
+    countries: 2,
+    globalRank: 68,
+    description: "Czech Republic's second-largest bank providing comprehensive banking services across Czech Republic.",
+    keyFact: "ČSOB serves over 3 million customers with 280+ branches and operations in Czech Republic and Slovakia.",
+    ceoQuote: "We are supporting Czech economic growth.",
+    timeline: [
+      { year: 1964, event: "Československá obchodní banka established" },
+      { year: 2000, event: "Becomes one of Czech Republic's major banks" },
+      { year: 2010, event: "Continues as leading Czech bank" },
+      { year: 2024, event: "Major Czech bank with $95B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'bank-of-baroda': {
+    id: 'bank-of-baroda',
+    name: 'Bank of Baroda',
+    shortName: 'BoB',
+    country: 'India',
+    flag: '🇮🇳',
+    founded: 1908,
+    headquarters: 'Vadodara, India',
+    assets: 165,
+    marketCap: 28,
+    revenue: 7.8,
+    netIncome: 1.9,
+    employees: 40000,
+    branches: 1250,
+    countries: 12,
+    globalRank: 50,
+    description: "India's fourth-largest bank providing comprehensive banking services to retail and corporate customers across India.",
+    keyFact: "Bank of Baroda serves over 50 million customers with 1,250+ branches across India and 12 countries.",
+    ceoQuote: "We are committed to banking transformation in India.",
+    timeline: [
+      { year: 1908, event: "Bank of Baroda established in India" },
+      { year: 1969, event: "Becomes major Indian bank through nationalization" },
+      { year: 2010, event: "Expands internationally" },
+      { year: 2024, event: "Major Indian bank with $165B in assets across 12 countries" }
+    ],
+    comparisons: null
+  },
+
+  'federal-bank-india': {
+    id: 'federal-bank-india',
+    name: 'Federal Bank Limited',
+    shortName: 'Federal Bank',
+    country: 'India',
+    flag: '🇮🇳',
+    founded: 1950,
+    headquarters: 'Kochi, India',
+    assets: 72,
+    marketCap: 15,
+    revenue: 3.8,
+    netIncome: 1.1,
+    employees: 18000,
+    branches: 1400,
+    countries: 6,
+    globalRank: 73,
+    description: "India's private sector bank providing banking services to retail and corporate customers across India.",
+    keyFact: "Federal Bank serves over 18 million customers with 1,400+ branches across India and 6 countries.",
+    ceoQuote: "We are committed to financial inclusion and banking innovation.",
+    timeline: [
+      { year: 1950, event: "Federal Bank established in India" },
+      { year: 1985, event: "Becomes major Indian private bank" },
+      { year: 2010, event: "Expands digital banking services" },
+      { year: 2024, event: "Major Indian bank with $72B in assets across 6 countries" }
+    ],
+    comparisons: null
+  },
+
+  'kotak-bank-india': {
+    id: 'kotak-bank-india',
+    name: 'Kotak Mahindra Bank Limited',
+    shortName: 'Kotak',
+    country: 'India',
+    flag: '🇮🇳',
+    founded: 1985,
+    headquarters: 'Mumbai, India',
+    assets: 160,
+    marketCap: 42,
+    revenue: 8.2,
+    netIncome: 2.4,
+    employees: 38000,
+    branches: 1600,
+    countries: 12,
+    globalRank: 51,
+    description: "India's fifth-largest private bank providing banking and financial services to retail and corporate customers.",
+    keyFact: "Kotak Mahindra Bank serves over 30 million customers with 1,600+ branches across India and 12 countries.",
+    ceoQuote: "We are enabling growth and prosperity for our customers.",
+    timeline: [
+      { year: 1985, event: "Kotak Mahindra Finance established" },
+      { year: 2003, event: "Becomes Kotak Mahindra Bank" },
+      { year: 2010, event: "Rapidly becomes one of India's major banks" },
+      { year: 2024, event: "Major Indian bank with $160B in assets across 12 countries" }
+    ],
+    comparisons: null
+  },
+
+  'southeast-bank-bangladesh': {
+    id: 'southeast-bank-bangladesh',
+    name: 'Southeast Bank Limited',
+    shortName: 'Southeast Bank',
+    country: 'Bangladesh',
+    flag: '🇧🇩',
+    founded: 1991,
+    headquarters: 'Dhaka, Bangladesh',
+    assets: 18,
+    marketCap: 2.5,
+    revenue: 1.1,
+    netIncome: 0.32,
+    employees: 4000,
+    branches: 280,
+    countries: 2,
+    globalRank: 93,
+    description: "Bangladesh's leading private bank providing banking services to retail and corporate customers.",
+    keyFact: "Southeast Bank serves over 3 million customers with 280+ branches across Bangladesh and South Asia.",
+    ceoQuote: "We are committed to financial inclusion in Bangladesh.",
+    timeline: [
+      { year: 1991, event: "Southeast Bank Limited established in Bangladesh" },
+      { year: 2005, event: "Becomes one of Bangladesh's major private banks" },
+      { year: 2015, event: "Expands digital banking services" },
+      { year: 2024, event: "Major Bangladeshi bank with $18B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'faysal-bank': {
+    id: 'faysal-bank',
+    name: 'Faysal Bank Limited',
+    shortName: 'Faysal Bank',
+    country: 'Pakistan',
+    flag: '🇵🇰',
+    founded: 1994,
+    headquarters: 'Karachi, Pakistan',
+    assets: 22,
+    marketCap: 3.2,
+    revenue: 1.2,
+    netIncome: 0.35,
+    employees: 5000,
+    branches: 350,
+    countries: 3,
+    globalRank: 92,
+    description: "Pakistan's leading private bank providing Islamic and conventional banking services.",
+    keyFact: "Faysal Bank serves over 4 million customers with 350+ branches across Pakistan and regional countries.",
+    ceoQuote: "We are driving Islamic banking innovation in Pakistan.",
+    timeline: [
+      { year: 1994, event: "Faysal Bank established in Pakistan" },
+      { year: 2005, event: "Becomes Pakistan's leading private bank" },
+      { year: 2015, event: "Expands digital banking capabilities" },
+      { year: 2024, event: "Major Pakistani bank with $22B in assets" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
