@@ -1,12 +1,14 @@
 {
-  "name": "Bank Size - Visualizing Global Banking Scale",
+  "name": "Bank Size - Compare the World's Largest Banks",
   "short_name": "Bank Size",
-  "description": "Interactive visualization of the incomprehensible scale of global banking",
+  "description": "Compare 200+ bank sizes worldwide. Interactive visualizations showing how big the world's largest banks really are, then discover alternatives.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#050714",
   "theme_color": "#0066FF",
   "orientation": "portrait-primary",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/favicon.png",
@@ -25,10 +27,24 @@
       "icons": []
     },
     {
-      "name": "Quiz",
+      "name": "Bank Rankings",
+      "short_name": "Rankings",
+      "description": "See the world's largest banks ranked",
+      "url": "/rankings.html",
+      "icons": []
+    },
+    {
+      "name": "Banking Quiz",
       "short_name": "Quiz",
       "description": "Test your banking knowledge",
       "url": "/quiz.html",
+      "icons": []
+    },
+    {
+      "name": "Alternatives",
+      "short_name": "Alternatives",
+      "description": "Discover alternatives to traditional banking",
+      "url": "/alternatives.html",
       "icons": []
     }
   ]

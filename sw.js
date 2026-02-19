@@ -1,20 +1,29 @@
 // Bank Size Service Worker - PWA Support
-const CACHE_NAME = 'banksize-v1';
+const CACHE_NAME = 'banksize-v2';
 const urlsToCache = [
   '/',
   '/index.html',
   '/banks.html',
+  '/bank.html',
   '/compare.html',
+  '/rankings.html',
+  '/statistics.html',
+  '/visualize.html',
+  '/alternatives.html',
   '/research.html',
-  '/about.html',
   '/faq.html',
   '/glossary.html',
   '/timeline.html',
   '/quiz.html',
   '/methodology.html',
+  '/about.html',
+  '/404.html',
   '/css/main.css',
   '/css/banks.css',
-  '/favicon.png'
+  '/banks-data.js',
+  '/banks.js',
+  '/favicon.png',
+  '/manifest.json'
 ];
 
 // Install service worker and cache resources
@@ -48,12 +57,49 @@ self.addEventListener('activate', event => {
   return self.clients.claim();
 });
 
-// Fetch strategy: Network first, fall back to cache
+// Fetch strategy: Cache-first for static assets, Network-first for HTML
 self.addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+
+  // Only handle same-origin requests
+  if (url.origin !== location.origin) {
+    return;
+  }
+
+  // Cache-first for static assets (CSS, JS, images, fonts)
+  if (url.pathname.match(/\.(css|js|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/)) {
+    event.respondWith(
+      caches.match(event.request)
+        .then(response => {
+          if (response) {
+            // Update cache in background
+            fetch(event.request).then(freshResponse => {
+              if (freshResponse && freshResponse.status === 200) {
+                caches.open(CACHE_NAME).then(cache => {
+                  cache.put(event.request, freshResponse);
+                });
+              }
+            }).catch(() => {});
+            return response;
+          }
+          return fetch(event.request).then(freshResponse => {
+            if (freshResponse && freshResponse.status === 200) {
+              const responseToCache = freshResponse.clone();
+              caches.open(CACHE_NAME).then(cache => {
+                cache.put(event.request, responseToCache);
+              });
+            }
+            return freshResponse;
+          });
+        })
+    );
+    return;
+  }
+
+  // Network-first for HTML pages
   event.respondWith(
     fetch(event.request)
       .then(response => {
-        // If we got a valid response, clone it and update cache
         if (response && response.status === 200) {
           const responseToCache = response.clone();
           caches.open(CACHE_NAME).then(cache => {
@@ -63,13 +109,11 @@ self.addEventListener('fetch', event => {
         return response;
       })
       .catch(() => {
-        // Network failed, try cache
         return caches.match(event.request)
           .then(response => {
             if (response) {
               return response;
             }
-            // Return 404 page if available
             if (event.request.mode === 'navigate') {
               return caches.match('/404.html');
             }

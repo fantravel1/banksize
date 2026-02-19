@@ -14,6 +14,15 @@
     <meta property="og:description" content="In 1984, America had 14,000 banks. Today, just 4,200 remain. Here's how banking became so concentrated.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.banksize.com/articles/bank-consolidation-history.html">
+    <meta property="og:image" content="https://www.banksize.com/images/bank-consolidation-history-og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="History of Bank Consolidation: How 10,000 Banks Disappeared">
+    <meta name="twitter:description" content="In 1984, America had 14,000 banks. Today, just 4,200 remain. Here's how banking became so concentrated.">
+    <meta name="twitter:image" content="https://www.banksize.com/images/bank-consolidation-history-og.jpg">
 
     <!-- Article Schema -->
     <script type="application/ld+json">
@@ -79,6 +88,35 @@
     }
     </script>
 
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.banksize.com"},
+            {"@type": "ListItem", "position": 2, "name": "Articles", "item": "https://www.banksize.com/articles/"},
+            {"@type": "ListItem", "position": 3, "name": "History of Bank Consolidation", "item": "https://www.banksize.com/articles/bank-consolidation-history.html"}
+        ]
+    }
+    </script>
+
+    <!-- Speakable Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "The History of Bank Consolidation: How 10,000 Banks Disappeared",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["h1", ".article-intro", ".faq-answer"]
+        },
+        "url": "https://www.banksize.com/articles/bank-consolidation-history.html"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
     <style>
@@ -202,6 +240,9 @@
                 <li><a href="../compare.html" class="nav-link">Compare</a></li>
                 <li><a href="../statistics.html" class="nav-link">Statistics</a></li>
                 <li><a href="../research.html" class="nav-link">Research</a></li>
+                <li><a href="../faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="../alternatives.html" class="nav-link">Alternatives</a></li>
+                <li><a href="../break-free.html" class="nav-link">Break Free</a></li>
             </ul>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span>
@@ -422,8 +463,8 @@
                     is more concentrated than at any point in American history.
                 </p>
                 <ul>
-                    <li>JPMorgan Chase: $4.0 trillion in assets</li>
-                    <li>Bank of America: $3.3 trillion in assets</li>
+                    <li><a href="jpmorgan-size.html">JPMorgan Chase</a>: $4.0 trillion in assets</li>
+                    <li><a href="bank-of-america-size.html">Bank of America</a>: $3.3 trillion in assets</li>
                     <li>Wells Fargo: $1.9 trillion in assets</li>
                     <li>Citigroup: $2.4 trillion in assets</li>
                 </ul>
@@ -474,6 +515,8 @@
 
             <h2>The Consequences of Consolidation</h2>
 
+            <p>The scale of today's megabanks is staggering. To understand <a href="how-big-are-banks.html">how big banks have truly become</a>, see our detailed overview comparing bank assets to entire country GDPs. You can also explore our <a href="../statistics.html">global banking statistics</a> and <a href="../rankings.html">bank rankings</a> for a complete picture.</p>
+
             <h3>For Consumers</h3>
             <ul>
                 <li>Fewer choices in banking services</li>
@@ -491,7 +534,7 @@
 
             <h3>For the Economy</h3>
             <ul>
-                <li>Increased systemic risk ("too big to fail")</li>
+                <li>Increased systemic risk ("<a href="too-big-to-fail.html">too big to fail</a>")</li>
                 <li>Political influence concentrated in few institutions</li>
                 <li>Less geographic diversity in lending decisions</li>
                 <li>More vulnerable to coordinated failures</li>
@@ -560,9 +603,21 @@
                         <h3>How Big Are Banks?</h3>
                         <p>Understanding the true scale of today's banking giants.</p>
                     </a>
-                    <a href="../timeline.html" class="related-card">
-                        <h3>Banking Timeline</h3>
-                        <p>Interactive timeline of key moments in banking history.</p>
+                    <a href="jpmorgan-size.html" class="related-card">
+                        <h3>How Big Is JPMorgan Chase?</h3>
+                        <p>Deep dive into America's largest bank and its $4 trillion empire.</p>
+                    </a>
+                    <a href="hsbc-bank-size.html" class="related-card">
+                        <h3>HSBC Bank Size Guide</h3>
+                        <p>Europe's largest bank with $3 trillion in assets across 63 countries.</p>
+                    </a>
+                    <a href="icbc-bank-size.html" class="related-card">
+                        <h3>ICBC: The World's Largest Bank</h3>
+                        <p>How China's ICBC became the biggest bank on Earth with $6.3 trillion.</p>
+                    </a>
+                    <a href="understanding-bank-scale.html" class="related-card">
+                        <h3>Understanding Bank Scale</h3>
+                        <p>What does it mean when a bank holds trillions in assets?</p>
                     </a>
                 </div>
             </section>
@@ -580,36 +635,37 @@
                 <div class="footer-column">
                     <h4>Explore</h4>
                     <ul>
-                        <li><a href="../banks.html">All Banks</a></li>
-                        <li><a href="../rankings.html">Bank Rankings</a></li>
-                        <li><a href="../statistics.html">Global Statistics</a></li>
-                        <li><a href="../compare.html">Compare Banks</a></li>
+                        <li><a href="../banks.html">Banks</a></li>
+                        <li><a href="../rankings.html">Rankings</a></li>
+                        <li><a href="../statistics.html">Statistics</a></li>
+                        <li><a href="../compare.html">Compare</a></li>
+                        <li><a href="../visualize.html">Visualize</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
                     <h4>Learn</h4>
                     <ul>
-                        <li><a href="jpmorgan-size.html">JPMorgan Size Guide</a></li>
-                        <li><a href="hsbc-bank-size.html">HSBC Size Guide</a></li>
                         <li><a href="../methodology.html">Methodology</a></li>
                         <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../glossary.html">Glossary</a></li>
+                        <li><a href="../about.html">About Us</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
                     <h4>More</h4>
                     <ul>
-                        <li><a href="../about.html">About Us</a></li>
-                        <li><a href="../glossary.html">Glossary</a></li>
                         <li><a href="../timeline.html">Timeline</a></li>
                         <li><a href="../research.html">Research</a></li>
+                        <li><a href="../quiz.html">Quiz</a></li>
+                        <li><a href="how-big-are-banks.html">Articles</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Bank Size. All data sourced from public financial reports.</p>
+                <p>&copy; 2025 Bank Size. All data sourced from public financial reports.</p>
                 <div class="footer-legal">
                     <a href="../privacy-policy.html">Privacy Policy</a>
                     <a href="../terms-of-service.html">Terms of Service</a>
