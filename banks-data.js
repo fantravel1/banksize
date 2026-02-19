@@ -5547,6 +5547,230 @@ const banksData = {
     comparisons: null
   },
 
+  'bdo-unibank': {
+    id: 'bdo-unibank',
+    name: 'BDO Unibank, Inc.',
+    shortName: 'BDO',
+    country: 'Philippines',
+    flag: '🇵🇭',
+    founded: 1962,
+    headquarters: 'Manila, Philippines',
+    assets: 145,
+    marketCap: 32,
+    revenue: 7.8,
+    netIncome: 2.2,
+    employees: 28000,
+    branches: 1400,
+    countries: 8,
+    globalRank: 52,
+    description: "The Philippines' largest bank by assets, providing comprehensive retail, commercial, and investment banking services across Asia and internationally.",
+    keyFact: "BDO Unibank operates over 1,400 branches and serves millions of customers with extensive digital banking and microfinance capabilities.",
+    ceoQuote: "We are committed to financial inclusion and economic development in the Philippines.",
+    timeline: [
+      { year: 1962, event: "Banco de Oro established as premier Filipino bank" },
+      { year: 1992, event: "Unibank merged with Banco de Oro to form BDO Unibank" },
+      { year: 2010, event: "Becomes the Philippines' largest bank by assets" },
+      { year: 2024, event: "Leading Southeast Asian bank with $145B in assets and 1,400+ branches" }
+    ],
+    comparisons: null
+  },
+
+  'bangkok-bank': {
+    id: 'bangkok-bank',
+    name: 'Bangkok Bank Public Company Limited',
+    shortName: 'Bangkok Bank',
+    country: 'Thailand',
+    flag: '🇹🇭',
+    founded: 1944,
+    headquarters: 'Bangkok, Thailand',
+    assets: 195,
+    marketCap: 25,
+    revenue: 8.5,
+    netIncome: 2.1,
+    employees: 36000,
+    branches: 1200,
+    countries: 22,
+    globalRank: 47,
+    description: "Thailand's largest bank providing banking and financial services across Southeast Asia and internationally with strong corporate and retail franchises.",
+    keyFact: "Bangkok Bank operates over 1,200 branches in Thailand and 22 countries, serving millions of customers with comprehensive financial solutions.",
+    ceoQuote: "We are dedicated to advancing banking in Thailand and Southeast Asia.",
+    timeline: [
+      { year: 1944, event: "Bangkok Bank established during World War II" },
+      { year: 1960, event: "Becomes Thailand's largest bank" },
+      { year: 1990, event: "Expands significantly across Southeast Asia" },
+      { year: 2024, event: "Leading Thai bank with $195B in assets across 22 countries" }
+    ],
+    comparisons: null
+  },
+
+  'kasikornbank': {
+    id: 'kasikornbank',
+    name: 'Kasikornbank Public Company Limited',
+    shortName: 'Kasikornbank',
+    country: 'Thailand',
+    flag: '🇹🇭',
+    founded: 1945,
+    headquarters: 'Bangkok, Thailand',
+    assets: 165,
+    marketCap: 22,
+    revenue: 7.2,
+    netIncome: 1.8,
+    employees: 32000,
+    branches: 1050,
+    countries: 15,
+    globalRank: 50,
+    description: "Thailand's second-largest bank with strong presence in Southeast Asia, providing comprehensive retail, commercial, and investment banking services.",
+    keyFact: "Kasikornbank operates over 1,050 branches and serves millions of customers with innovative digital banking and financial services.",
+    ceoQuote: "We are committed to being the most trusted financial institution in Thailand.",
+    timeline: [
+      { year: 1945, event: "Kasikornbank (formerly Thai Bank) established" },
+      { year: 1993, event: "Becomes one of Thailand's leading banks" },
+      { year: 2005, event: "Expands into investment banking and wealth management" },
+      { year: 2024, event: "Major Thai bank with $165B in assets and regional presence" }
+    ],
+    comparisons: null
+  },
+
+  'bank-of-philippines': {
+    id: 'bank-of-philippines',
+    name: 'Bank of the Philippine Islands',
+    shortName: 'BPI',
+    country: 'Philippines',
+    flag: '🇵🇭',
+    founded: 1851,
+    headquarters: 'Manila, Philippines',
+    assets: 120,
+    marketCap: 28,
+    revenue: 6.8,
+    netIncome: 1.9,
+    employees: 25000,
+    branches: 1100,
+    countries: 7,
+    globalRank: 55,
+    description: "One of the Philippines' oldest and largest banks, providing comprehensive banking and investment services across Asia and internationally.",
+    keyFact: "BPI operates over 1,100 branches and serves over 10 million customers with strong retail and corporate banking capabilities.",
+    ceoQuote: "We are building a stronger, more inclusive financial system for the Philippines.",
+    timeline: [
+      { year: 1851, event: "Bank of the Philippine Islands established" },
+      { year: 1992, event: "Becomes one of the largest private banks in Philippines" },
+      { year: 2010, event: "Continues expansion in investment banking" },
+      { year: 2024, event: "Major Philippine bank with $120B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'ocbc-bank': {
+    id: 'ocbc-bank',
+    name: 'Oversea-Chinese Banking Corporation Limited',
+    shortName: 'OCBC',
+    country: 'Singapore',
+    flag: '🇸🇬',
+    founded: 1932,
+    headquarters: 'Singapore',
+    assets: 385,
+    marketCap: 52,
+    revenue: 12,
+    netIncome: 4.2,
+    employees: 28000,
+    branches: 380,
+    countries: 25,
+    globalRank: 33,
+    description: "Singapore's second-largest bank and one of Asia's leading financial institutions with strong regional and global banking operations.",
+    keyFact: "OCBC operates in 25 countries and serves millions of customers with comprehensive retail, commercial, and investment banking services.",
+    ceoQuote: "We are building an integrated financial services platform for Asia.",
+    timeline: [
+      { year: 1932, event: "Oversea-Chinese Banking Corporation established in Singapore" },
+      { year: 2001, event: "Acquires Keppel TatLee Bank to expand presence" },
+      { year: 2010, event: "Becomes one of Asia's strongest banks" },
+      { year: 2024, event: "Leading Asian bank with $385B in assets across 25 countries" }
+    ],
+    comparisons: null
+  },
+
+  'nationwide-uk': {
+    id: 'nationwide-uk',
+    name: 'Nationwide Building Society',
+    shortName: 'Nationwide',
+    country: 'United Kingdom',
+    flag: '🇬🇧',
+    founded: 1987,
+    headquarters: 'Swindon, United Kingdom',
+    assets: 250,
+    marketCap: 18,
+    revenue: 6.5,
+    netIncome: 1.6,
+    employees: 18000,
+    branches: 500,
+    countries: 1,
+    globalRank: 43,
+    description: "The UK's largest building society and one of the largest savings and loans institutions, providing mortgages and banking services to millions of British families.",
+    keyFact: "Nationwide serves over 16 million members and customers with strong mortgage origination capabilities and customer-focused banking services.",
+    ceoQuote: "We are committed to supporting the financial wellbeing of our members.",
+    timeline: [
+      { year: 1987, event: "Nationwide Building Society established through merger" },
+      { year: 2001, event: "Becomes the UK's largest building society by assets" },
+      { year: 2015, event: "Expands digital banking and customer experience" },
+      { year: 2024, event: "Major UK bank with $250B in assets and 16 million members" }
+    ],
+    comparisons: null
+  },
+
+  'china-merchants-bank': {
+    id: 'china-merchants-bank',
+    name: 'China Merchants Bank Co., Ltd.',
+    shortName: 'CMB',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1987,
+    headquarters: 'Shenzhen, China',
+    assets: 850,
+    marketCap: 95,
+    revenue: 68,
+    netIncome: 18,
+    employees: 200000,
+    branches: 2800,
+    countries: 35,
+    globalRank: 13,
+    description: "One of China's leading commercial banks with significant international presence, providing comprehensive banking and financial services globally.",
+    keyFact: "China Merchants Bank serves over 150 million customers with 2,800+ branches and operates in 35 countries with strong digital banking capabilities.",
+    ceoQuote: "We are committed to innovation and customer-centric banking services.",
+    timeline: [
+      { year: 1987, event: "China Merchants Bank established in Shenzhen" },
+      { year: 2002, event: "Lists on Shanghai Stock Exchange" },
+      { year: 2015, event: "Becomes one of China's leading banks by market cap" },
+      { year: 2024, event: "Major global bank with $850B in assets and 2,800+ branches" }
+    ],
+    comparisons: null
+  },
+
+  'banco-itau': {
+    id: 'banco-itau',
+    name: 'Itaú Unibanco Holding S.A.',
+    shortName: 'Itaú',
+    country: 'Brazil',
+    flag: '🇧🇷',
+    founded: 1980,
+    headquarters: 'São Paulo, Brazil',
+    assets: 480,
+    marketCap: 65,
+    revenue: 24,
+    netIncome: 6.5,
+    employees: 105000,
+    branches: 4800,
+    countries: 45,
+    globalRank: 25,
+    description: "Brazil's largest bank and one of Latin America's major financial institutions with extensive operations across the Americas and globally.",
+    keyFact: "Itaú serves over 100 million customers across 45 countries with 4,800+ branches and significant investment banking and wealth management capabilities.",
+    ceoQuote: "We are building a more inclusive and sustainable financial future.",
+    timeline: [
+      { year: 1980, event: "Itaú Bank established through merger in São Paulo" },
+      { year: 2008, event: "Merges with Unibanco to become Itaú Unibanco" },
+      { year: 2015, event: "Becomes one of the world's largest banks by assets" },
+      { year: 2024, event: "Major Latin American bank with $480B in assets and 4,800+ branches" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
