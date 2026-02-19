@@ -5127,6 +5127,230 @@ const banksData = {
     comparisons: null
   },
 
+  'pnc-financial': {
+    id: 'pnc-financial',
+    name: 'PNC Financial Services Group, Inc.',
+    shortName: 'PNC',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1852,
+    headquarters: 'Pittsburgh, Pennsylvania',
+    assets: 650,
+    marketCap: 72,
+    revenue: 25,
+    netIncome: 6.2,
+    employees: 83000,
+    branches: 2100,
+    countries: 3,
+    globalRank: 20,
+    description: "One of the largest diversified financial services companies in the United States, headquartered in Pittsburgh with regional presence across the eastern US.",
+    keyFact: "PNC serves over 8 million customers through its comprehensive retail and commercial banking networks with more than 2,100 branches.",
+    ceoQuote: "We are focused on delivering the highest quality financial services to our customers.",
+    timeline: [
+      { year: 1852, event: "Pittsburgh Trust and Savings Company established" },
+      { year: 1983, event: "Merges with CoreStates Financial Corporation to expand presence" },
+      { year: 2010, event: "Acquires RBS Citizens Bank, significantly expanding footprint" },
+      { year: 2024, event: "Major US regional bank with $650B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'us-bancorp': {
+    id: 'us-bancorp',
+    name: 'U.S. Bancorp',
+    shortName: 'USB',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1863,
+    headquarters: 'Minneapolis, Minnesota',
+    assets: 600,
+    marketCap: 68,
+    revenue: 23,
+    netIncome: 5.8,
+    employees: 75000,
+    branches: 3000,
+    countries: 2,
+    globalRank: 22,
+    description: "One of the largest financial services holding companies in the United States, providing banking, investment, and financial services across multiple business segments.",
+    keyFact: "U.S. Bancorp operates more than 3,000 branches and serves millions of customers with investments in real estate, capital markets, and wealth management.",
+    ceoQuote: "We are committed to building long-term relationships with our customers.",
+    timeline: [
+      { year: 1863, event: "First National Bank of Minneapolis established" },
+      { year: 1929, event: "Becomes U.S. National Bank of Minneapolis" },
+      { year: 2000, event: "Creates U.S. Bancorp as holding company for multiple banks" },
+      { year: 2024, event: "Leading Midwest bank with $600B in assets and 3,000+ branches" }
+    ],
+    comparisons: null
+  },
+
+  'keycorp': {
+    id: 'keycorp',
+    name: 'KeyCorp',
+    shortName: 'Key',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1849,
+    headquarters: 'Cleveland, Ohio',
+    assets: 200,
+    marketCap: 22,
+    revenue: 8.5,
+    netIncome: 2.1,
+    employees: 20000,
+    branches: 1000,
+    countries: 1,
+    globalRank: 45,
+    description: "A major regional bank serving the eastern and midwest United States with strong commercial and retail banking operations.",
+    keyFact: "KeyCorp operates over 1,000 branches and ATMs across the eastern United States with significant investment banking and wealth management capabilities.",
+    ceoQuote: "Our mission is to provide the highest quality financial services.",
+    timeline: [
+      { year: 1849, event: "Commercial Bank of the State of Ohio established" },
+      { year: 1983, event: "Merges with Society Corporation to form KeyCorp" },
+      { year: 2010, event: "Exits investment banking to focus on regional banking" },
+      { year: 2024, event: "Major regional bank with $200B in assets across the eastern US" }
+    ],
+    comparisons: null
+  },
+
+  'fifth-third-bancorp': {
+    id: 'fifth-third-bancorp',
+    name: 'Fifth Third Bancorp',
+    shortName: 'Fifth Third',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1858,
+    headquarters: 'Cincinnati, Ohio',
+    assets: 210,
+    marketCap: 24,
+    revenue: 8.8,
+    netIncome: 2.3,
+    employees: 18000,
+    branches: 1100,
+    countries: 1,
+    globalRank: 44,
+    description: "One of the largest regional bank holding companies in the United States, providing retail and commercial banking across the Midwest and South.",
+    keyFact: "Fifth Third Bank operates more than 1,100 branches and serves millions of customers with comprehensive financial services.",
+    ceoQuote: "We are committed to being the customers' first choice for financial services.",
+    timeline: [
+      { year: 1858, event: "Fifth Third Bank established in Cincinnati" },
+      { year: 1969, event: "Merges with other regional banks to expand presence" },
+      { year: 2015, event: "Acquires MB Financial to strengthen position" },
+      { year: 2024, event: "Midwest regional powerhouse with $210B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'truist-financial': {
+    id: 'truist-financial',
+    name: 'Truist Financial Corporation',
+    shortName: 'Truist',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1872,
+    headquarters: 'Charlotte, North Carolina',
+    assets: 535,
+    marketCap: 62,
+    revenue: 22,
+    netIncome: 5.5,
+    employees: 67000,
+    branches: 2700,
+    countries: 2,
+    globalRank: 24,
+    description: "One of the largest bank holding companies in the United States, created through merger of BB&T and SunTrust Banks, serving customers across the southeast and beyond.",
+    keyFact: "Truist operates nearly 2,700 branches and serves millions of customers across the Southeast and Mid-Atlantic regions with comprehensive financial services.",
+    ceoQuote: "We are committed to inspire and build better lives and communities.",
+    timeline: [
+      { year: 1872, event: "Branch Banking and Trust Company (BB&T) established" },
+      { year: 1891, event: "SunTrust Bank established in Atlanta" },
+      { year: 2019, event: "BB&T and SunTrust merge to form Truist Financial Corporation" },
+      { year: 2024, event: "Major Southeast bank with $535B in assets and 2,700+ branches" }
+    ],
+    comparisons: null
+  },
+
+  'huntington-bancshares': {
+    id: 'huntington-bancshares',
+    name: 'Huntington Bancshares Incorporated',
+    shortName: 'Huntington',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1866,
+    headquarters: 'Columbus, Ohio',
+    assets: 180,
+    marketCap: 20,
+    revenue: 7.8,
+    netIncome: 1.9,
+    employees: 16000,
+    branches: 900,
+    countries: 1,
+    globalRank: 48,
+    description: "A regional bank holding company operating in the Midwest and Southeast United States with strong community banking tradition.",
+    keyFact: "Huntington operates approximately 900 branches and serves customers with retail and commercial banking services across 11 states.",
+    ceoQuote: "We are focused on delivering customers a superior banking experience.",
+    timeline: [
+      { year: 1866, event: "Huntington National Bank founded in Columbus, Ohio" },
+      { year: 1968, event: "Becomes Huntington Bancshares through formation of holding company" },
+      { year: 2006, event: "Acquires TCF Bank to expand presence" },
+      { year: 2024, event: "Strong regional bank with $180B in assets across Midwest and Southeast" }
+    ],
+    comparisons: null
+  },
+
+  'td-bank-us': {
+    id: 'td-bank-us',
+    name: 'TD Bank, N.A.',
+    shortName: 'TD Bank',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1855,
+    headquarters: 'Wilmington, Delaware',
+    assets: 380,
+    marketCap: 42,
+    revenue: 14,
+    netIncome: 3.2,
+    employees: 42000,
+    branches: 1200,
+    countries: 1,
+    globalRank: 35,
+    description: "A major regional bank and subsidiary of Toronto-Dominion Bank, operating extensively in the Northeast and Mid-Atlantic United States.",
+    keyFact: "TD Bank operates over 1,200 branches in the US Northeast and Mid-Atlantic regions, serving retail and commercial customers with convenience banking.",
+    ceoQuote: "We aim to be the most customer-convenient bank in America.",
+    timeline: [
+      { year: 1855, event: "Farmers Bank of Delaware established" },
+      { year: 1969, event: "Becomes Delaware Bank & Trust" },
+      { year: 2010, event: "Toronto-Dominion Bank acquires control and rebrands as TD Bank" },
+      { year: 2024, event: "Major Northeast regional bank with $380B in assets" }
+    ],
+    comparisons: null
+  },
+
+  'nomura-group': {
+    id: 'nomura-group',
+    name: 'Nomura Holdings, Inc.',
+    shortName: 'Nomura',
+    country: 'Japan',
+    flag: '🇯🇵',
+    founded: 1925,
+    headquarters: 'Tokyo, Japan',
+    assets: 580,
+    marketCap: 48,
+    revenue: 18,
+    netIncome: 2.5,
+    employees: 75000,
+    branches: 200,
+    countries: 45,
+    globalRank: 23,
+    description: "Japan's largest investment bank and a global financial services firm providing investment banking, trading, wealth management, and research services worldwide.",
+    keyFact: "Nomura operates in 45 countries with one of Asia's largest and most comprehensive investment banking franchises, generating substantial revenue from global capital markets.",
+    ceoQuote: "We are committed to providing innovative financial solutions globally.",
+    timeline: [
+      { year: 1925, event: "Nomura Securities established in Osaka" },
+      { year: 1965, event: "Establishes first international office in New York" },
+      { year: 2008, event: "Acquires Lehman Brothers' operations, expanding global presence" },
+      { year: 2024, event: "Leading Japanese investment bank with $580B in assets and global reach" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
