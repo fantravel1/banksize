@@ -4624,6 +4624,174 @@ const banksData = {
     comparisons: null
   },
 
+  'china-development-bank': {
+    id: 'china-development-bank',
+    name: 'China Development Bank',
+    shortName: 'CDB',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1994,
+    headquarters: 'Beijing, China',
+    assets: 2200,
+    marketCap: 120,
+    revenue: 95,
+    netIncome: 28,
+    employees: 25000,
+    branches: 350,
+    countries: 50,
+    globalRank: 3,
+    description: "One of the largest policy banks in the world, providing long-term financing and advisory services for Chinese economic and social development projects, particularly supporting infrastructure and Belt and Road Initiative.",
+    keyFact: "CDB is the world's largest development bank by total assets and plays a crucial role in financing infrastructure projects across Asia, Africa, and Latin America through the Belt and Road Initiative.",
+    ceoQuote: "We serve as a strategic financial instrument for national development and international cooperation.",
+    timeline: [
+      { year: 1994, event: "Founded by the Chinese government to support large-scale infrastructure development" },
+      { year: 2000, event: "Becomes primary financier of China's infrastructure boom and urbanization projects" },
+      { year: 2013, event: "Emerges as key financial backer of Belt and Road Initiative projects" },
+      { year: 2024, event: "With $2.2T in assets, the world's largest development bank with global influence" }
+    ],
+    comparisons: null
+  },
+
+  'bank-of-communications': {
+    id: 'bank-of-communications',
+    name: 'Bank of Communications',
+    shortName: 'BoCom',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1908,
+    headquarters: 'Shanghai, China',
+    assets: 1500,
+    marketCap: 85,
+    revenue: 92,
+    netIncome: 24,
+    employees: 160000,
+    branches: 2500,
+    countries: 25,
+    globalRank: 5,
+    description: "China's oldest bank still in operation, founded in 1908, and one of the country's largest commercial banks with extensive domestic and international presence.",
+    keyFact: "BoCom operates over 2,500 branches across China and maintains a significant international presence with subsidiaries in major financial centers worldwide.",
+    ceoQuote: "We are committed to becoming a world-class commercial bank.",
+    timeline: [
+      { year: 1908, event: "Founded as China's first national bank during the Qing Dynasty" },
+      { year: 1949, event: "Continues operations after founding of People's Republic of China" },
+      { year: 2006, event: "IPO on Hong Kong and Shanghai stock exchanges" },
+      { year: 2024, event: "Major commercial bank with $1.5T in assets and global expansion" }
+    ],
+    comparisons: null
+  },
+
+  'shanghai-pudong-development-bank': {
+    id: 'shanghai-pudong-development-bank',
+    name: 'Shanghai Pudong Development Bank',
+    shortName: 'SPDB',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1993,
+    headquarters: 'Shanghai, China',
+    assets: 800,
+    marketCap: 48,
+    revenue: 60,
+    netIncome: 16,
+    employees: 120000,
+    branches: 1800,
+    countries: 18,
+    globalRank: 15,
+    description: "A major Chinese commercial bank headquartered in Shanghai's Pudong financial district, known for innovation in digital banking and strong presence in the Yangtze River Delta region.",
+    keyFact: "SPDB pioneered digital banking services in China and operates over 1,800 branches with a reputation for technological innovation and customer service excellence.",
+    ceoQuote: "We strive to be a leading modern bank with innovation at its core.",
+    timeline: [
+      { year: 1993, event: "Established to support economic development of Pudong area" },
+      { year: 1999, event: "Listed on Shanghai Stock Exchange" },
+      { year: 2010, event: "Becomes one of China's most innovative digital banks" },
+      { year: 2024, event: "Leading Chinese bank with $800B in assets and 1,800+ branches" }
+    ],
+    comparisons: null
+  },
+
+  'lloyds-bank': {
+    id: 'lloyds-bank',
+    name: 'Lloyds Bank Group plc',
+    shortName: 'Lloyds',
+    country: 'United Kingdom',
+    flag: '🇬🇧',
+    founded: 1767,
+    headquarters: 'London, United Kingdom',
+    assets: 1100,
+    marketCap: 75,
+    revenue: 30,
+    netIncome: 6.5,
+    employees: 65000,
+    branches: 2000,
+    countries: 8,
+    globalRank: 9,
+    description: "One of the UK's oldest and largest retail banks, founded in 1767, with a market-leading position in UK retail and commercial banking through brands including Lloyds, MBNA, and other subsidiaries.",
+    keyFact: "Lloyds holds over 13 million customer accounts in the UK and represents approximately one-third of the UK retail banking market through its various brands.",
+    ceoQuote: "We are focused on delivering value to customers, colleagues, and communities we serve.",
+    timeline: [
+      { year: 1767, event: "Lloyds Bank founded in Birmingham, England" },
+      { year: 1918, event: "Acquires Capital and Counties Bank, expanding UK presence" },
+      { year: 2008, event: "Acquires HBOS during financial crisis with government support" },
+      { year: 2024, event: "Leading UK bank with $1.1T in assets and dominant market share" }
+    ],
+    comparisons: null
+  },
+
+  'national-australia-bank': {
+    id: 'national-australia-bank',
+    name: 'National Australia Bank Limited',
+    shortName: 'NAB',
+    country: 'Australia',
+    flag: '🇦🇺',
+    founded: 1858,
+    headquarters: 'Melbourne, Australia',
+    assets: 950,
+    marketCap: 95,
+    revenue: 32,
+    netIncome: 9,
+    employees: 35000,
+    branches: 1500,
+    countries: 15,
+    globalRank: 11,
+    description: "Australia's second-largest bank and one of the Big Four, providing comprehensive financial services to millions of retail, business, and institutional customers across Australia and internationally.",
+    keyFact: "NAB is Australia's largest bank by market capitalization and holds approximately 20% of the Australian banking market with operations across 15 countries.",
+    ceoQuote: "We are committed to being the leading financial services company in Australia.",
+    timeline: [
+      { year: 1858, event: "National Bank of Australasia established in Melbourne" },
+      { year: 1982, event: "Merges with Commercial Banking Company to form National Australia Bank" },
+      { year: 2000, event: "Expands internationally through acquisition of UK-based mortgage lender" },
+      { year: 2024, event: "Australia's leading bank with $950B in assets and global presence" }
+    ],
+    comparisons: null
+  },
+
+  'bank-of-nova-scotia': {
+    id: 'bank-of-nova-scotia',
+    name: 'Bank of Nova Scotia',
+    shortName: 'Scotiabank',
+    country: 'Canada',
+    flag: '🇨🇦',
+    founded: 1832,
+    headquarters: 'Toronto, Canada',
+    assets: 380,
+    marketCap: 42,
+    revenue: 15,
+    netIncome: 3.8,
+    employees: 90000,
+    branches: 1200,
+    countries: 17,
+    globalRank: 22,
+    description: "Canada's third-largest bank and one of the Big Five, with significant presence in the Caribbean, Latin America, and Pacific regions through Scotiabank brand.",
+    keyFact: "Scotiabank operates in 17 countries with a strong presence in the Caribbean and Latin America, serving over 9 million customers globally.",
+    ceoQuote: "We are building a better banking experience for our customers across the Americas.",
+    timeline: [
+      { year: 1832, event: "Bank of Nova Scotia established in Halifax, Nova Scotia" },
+      { year: 1900, event: "Opens first international branch in Jamaica" },
+      { year: 1999, event: "Acquires Inverlat, entering Mexico market" },
+      { year: 2024, event: "Major Canadian bank with $380B in assets and Caribbean-Latin America focus" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
