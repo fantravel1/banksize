@@ -6695,6 +6695,202 @@ const banksData = {
     comparisons: null
   },
 
+  'mandiri-bank': {
+    id: 'mandiri-bank',
+    name: 'Bank Mandiri (Persero) Tbk.',
+    shortName: 'Mandiri',
+    country: 'Indonesia',
+    flag: '🇮🇩',
+    founded: 1998,
+    headquarters: 'Jakarta, Indonesia',
+    assets: 215,
+    marketCap: 45,
+    revenue: 11,
+    netIncome: 3.2,
+    employees: 40000,
+    branches: 1300,
+    countries: 28,
+    globalRank: 42,
+    description: "Indonesia's largest bank with significant presence across Southeast Asia providing comprehensive banking and financial services.",
+    keyFact: "Bank Mandiri serves over 40 million customers with 1,300+ branches across 28 countries with strong digital banking capabilities.",
+    ceoQuote: "We are driving Indonesia's economic growth through banking innovation.",
+    timeline: [
+      { year: 1998, event: "Bank Mandiri established through government merger of state banks" },
+      { year: 2001, event: "Becomes Indonesia's largest bank" },
+      { year: 2010, event: "Expands significantly across Southeast Asia" },
+      { year: 2024, event: "Major Southeast Asian bank with $215B in assets across 28 countries" }
+    ],
+    comparisons: null
+  },
+
+  'viet-nam-bank': {
+    id: 'viet-nam-bank',
+    name: 'Vietcombank (Vietnam Joint Stock Commercial Bank for Foreign Trade)',
+    shortName: 'Vietcombank',
+    country: 'Vietnam',
+    flag: '🇻🇳',
+    founded: 1957,
+    headquarters: 'Hanoi, Vietnam',
+    assets: 75,
+    marketCap: 18,
+    revenue: 4.2,
+    netIncome: 1.3,
+    employees: 20000,
+    branches: 450,
+    countries: 15,
+    globalRank: 70,
+    description: "Vietnam's largest bank with significant international presence providing banking services across Vietnam and Southeast Asia.",
+    keyFact: "Vietcombank serves over 15 million customers with 450+ branches across 15 countries and strong focus on foreign trade financing.",
+    ceoQuote: "We are supporting Vietnam's integration into the global economy.",
+    timeline: [
+      { year: 1957, event: "Joint Stock Commercial Bank for Foreign Trade established" },
+      { year: 1992, event: "Becomes known as Vietcombank" },
+      { year: 2010, event: "Expands internationally across Southeast Asia" },
+      { year: 2024, event: "Leading Vietnamese bank with $75B in assets across 15 countries" }
+    ],
+    comparisons: null
+  },
+
+  'techcombank': {
+    id: 'techcombank',
+    name: 'Techcombank (Joint Stock Commercial Bank for Technology and Commerce)',
+    shortName: 'Techcombank',
+    country: 'Vietnam',
+    flag: '🇻🇳',
+    founded: 1993,
+    headquarters: 'Ho Chi Minh City, Vietnam',
+    assets: 68,
+    marketCap: 16,
+    revenue: 3.8,
+    netIncome: 1.1,
+    employees: 18000,
+    branches: 380,
+    countries: 8,
+    globalRank: 72,
+    description: "Vietnam's second-largest bank with innovative digital banking focus and presence across Southeast Asia.",
+    keyFact: "Techcombank serves over 10 million customers with 380+ branches across 8 countries and pioneering digital banking services.",
+    ceoQuote: "We are transforming banking through technology and innovation.",
+    timeline: [
+      { year: 1993, event: "Techcombank established in Vietnam" },
+      { year: 2005, event: "Becomes Vietnam's second-largest bank" },
+      { year: 2015, event: "Pioneers digital banking innovation in Vietnam" },
+      { year: 2024, event: "Leading Vietnamese bank with $68B in assets across 8 countries" }
+    ],
+    comparisons: null
+  },
+
+  'hong-kong-bank': {
+    id: 'hong-kong-bank',
+    name: 'The Hongkong and Shanghai Banking Corporation Limited',
+    shortName: 'HSBC',
+    country: 'Hong Kong',
+    flag: '🇭🇰',
+    founded: 1865,
+    headquarters: 'Hong Kong',
+    assets: 2180,
+    marketCap: 195,
+    revenue: 72,
+    netIncome: 16,
+    employees: 245000,
+    branches: 2000,
+    countries: 62,
+    globalRank: 3,
+    description: "One of the world's largest banking and financial services organizations with extensive operations across Europe, Asia, and the Americas.",
+    keyFact: "HSBC is the world's third-largest bank by assets and serves over 40 million customers across 62 countries with significant global presence.",
+    ceoQuote: "We are enabling commerce and prosperity for millions of people.",
+    timeline: [
+      { year: 1865, event: "The Hongkong and Shanghai Banking Corporation established" },
+      { year: 1992, event: "Becomes one of the world's largest banks" },
+      { year: 2010, event: "Maintains position as global financial powerhouse" },
+      { year: 2024, event: "World's third-largest bank with $2.18T in assets across 62 countries" }
+    ],
+    comparisons: null
+  },
+
+  'bank-of-east-asia': {
+    id: 'bank-of-east-asia',
+    name: 'Bank of East Asia, Limited',
+    shortName: 'BEA',
+    country: 'Hong Kong',
+    flag: '🇭🇰',
+    founded: 1918,
+    headquarters: 'Hong Kong',
+    assets: 155,
+    marketCap: 22,
+    revenue: 6.5,
+    netIncome: 1.8,
+    employees: 18000,
+    branches: 300,
+    countries: 12,
+    globalRank: 54,
+    description: "One of Hong Kong's leading independent banks with significant presence across Asia and international operations.",
+    keyFact: "Bank of East Asia serves over 5 million customers across 12 countries with strong presence in Hong Kong and Asia.",
+    ceoQuote: "We are building trust and delivering value across Asia.",
+    timeline: [
+      { year: 1918, event: "Bank of East Asia established in Hong Kong" },
+      { year: 1985, event: "Becomes one of Hong Kong's leading banks" },
+      { year: 2010, event: "Expands significantly across Asia" },
+      { year: 2024, event: "Leading Asian bank with $155B in assets across 12 countries" }
+    ],
+    comparisons: null
+  },
+
+  'industrial-bank-thailand': {
+    id: 'industrial-bank-thailand',
+    name: 'Industrial and Commercial Bank of Thailand Public Company Limited',
+    shortName: 'ICBTH',
+    country: 'Thailand',
+    flag: '🇹🇭',
+    founded: 1947,
+    headquarters: 'Bangkok, Thailand',
+    assets: 92,
+    marketCap: 13,
+    revenue: 4.5,
+    netIncome: 1.2,
+    employees: 12000,
+    branches: 280,
+    countries: 5,
+    globalRank: 67,
+    description: "Thailand's fourth-largest bank providing banking and financial services across Thailand and Southeast Asia.",
+    keyFact: "ICBTH serves over 2 million customers with 280+ branches and operations across 5 countries.",
+    ceoQuote: "We are committed to supporting Thai economic development.",
+    timeline: [
+      { year: 1947, event: "Industrial and Commercial Bank of Thailand established" },
+      { year: 1998, event: "Becomes one of Thailand's major banks" },
+      { year: 2010, event: "Continues strong presence in Thai banking" },
+      { year: 2024, event: "Major Thai bank with $92B in assets across 5 countries" }
+    ],
+    comparisons: null
+  },
+
+  'banco-credicorp': {
+    id: 'banco-credicorp',
+    name: 'Banco Credicorp Ltd.',
+    shortName: 'Credicorp',
+    country: 'Peru',
+    flag: '🇵🇪',
+    founded: 1951,
+    headquarters: 'Lima, Peru',
+    assets: 85,
+    marketCap: 12,
+    revenue: 4.2,
+    netIncome: 1.1,
+    employees: 18000,
+    branches: 380,
+    countries: 6,
+    globalRank: 69,
+    description: "Peru's largest financial services holding company with significant operations across Latin America.",
+    keyFact: "Credicorp serves over 5 million customers across 6 countries with diversified financial services including banking and insurance.",
+    ceoQuote: "We are building prosperity and financial inclusion in Latin America.",
+    timeline: [
+      { year: 1951, event: "Banco Credicorp established in Peru" },
+      { year: 1995, event: "Becomes Peru's largest financial institution" },
+      { year: 2010, event: "Expands across Latin America" },
+      { year: 2024, event: "Leading Latin American bank with $85B in assets across 6 countries" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
