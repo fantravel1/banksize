@@ -4792,6 +4792,174 @@ const banksData = {
     comparisons: null
   },
 
+  'industrial-bank-china': {
+    id: 'industrial-bank-china',
+    name: 'Industrial Bank Co., Ltd.',
+    shortName: 'Industrial Bank',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1988,
+    headquarters: 'Fuzhou, China',
+    assets: 1200,
+    marketCap: 65,
+    revenue: 78,
+    netIncome: 20,
+    employees: 140000,
+    branches: 2200,
+    countries: 20,
+    globalRank: 10,
+    description: "A major Chinese commercial bank headquartered in Fuzhou, serving as an important player in China's banking sector with strong presence in corporate banking, investment banking, and wealth management.",
+    keyFact: "Industrial Bank is the first bank in China to implement a modern corporate governance structure and operates 2,200+ branches with significant international expansion.",
+    ceoQuote: "We are committed to building an international, innovative, and secure modern bank.",
+    timeline: [
+      { year: 1988, event: "Industrial Bank established in Fuzhou by the Fujian Provincial Government" },
+      { year: 2007, event: "Listed on Shanghai and Hong Kong Stock Exchanges" },
+      { year: 2013, event: "Becomes top performer among Chinese banks in digital innovation" },
+      { year: 2024, event: "Major Chinese bank with $1.2T in assets and 2,200+ branches" }
+    ],
+    comparisons: null
+  },
+
+  'china-exim-bank': {
+    id: 'china-exim-bank',
+    name: 'China Export-Import Bank',
+    shortName: 'China Exim Bank',
+    country: 'China',
+    flag: '🇨🇳',
+    founded: 1994,
+    headquarters: 'Beijing, China',
+    assets: 800,
+    marketCap: 55,
+    revenue: 65,
+    netIncome: 18,
+    employees: 18000,
+    branches: 200,
+    countries: 100,
+    globalRank: 18,
+    description: "A policy bank specializing in export-import financing and foreign direct investment, providing financial support for Chinese companies expanding internationally and foreign companies investing in China.",
+    keyFact: "China Exim Bank operates in over 100 countries and is a key institution financing Belt and Road Initiative projects, with $800B in assets supporting global trade and infrastructure development.",
+    ceoQuote: "We serve as the financial backbone of China's international cooperation and development.",
+    timeline: [
+      { year: 1994, event: "Founded to support China's export and import financing" },
+      { year: 2006, event: "Becomes key financier of China's Belt and Road Initiative" },
+      { year: 2015, event: "Expands operations to support Chinese companies' global expansion" },
+      { year: 2024, event: "Operating in 100+ countries with $800B in assets supporting international projects" }
+    ],
+    comparisons: null
+  },
+
+  'macquarie-group': {
+    id: 'macquarie-group',
+    name: 'Macquarie Group Limited',
+    shortName: 'Macquarie',
+    country: 'Australia',
+    flag: '🇦🇺',
+    founded: 1969,
+    headquarters: 'Sydney, Australia',
+    assets: 410,
+    marketCap: 85,
+    revenue: 25,
+    netIncome: 6.2,
+    employees: 17500,
+    branches: 50,
+    countries: 38,
+    globalRank: 25,
+    description: "A leading investment bank headquartered in Australia, renowned for its investment banking, wealth management, and infrastructure advisory services across multiple asset classes globally.",
+    keyFact: "Macquarie operates in 38 countries and has become a major player in infrastructure investment and project finance, managing over $500 billion in assets under management.",
+    ceoQuote: "We are focused on delivering superior investment returns and advisory expertise.",
+    timeline: [
+      { year: 1969, event: "Founded as Macquarie Industries Limited in Sydney" },
+      { year: 1985, event: "Becomes major player in Australian investment banking" },
+      { year: 2000, event: "Expands globally with significant infrastructure and project finance focus" },
+      { year: 2024, event: "Leading investment bank with $410B in assets operating in 38 countries" }
+    ],
+    comparisons: null
+  },
+
+  'state-street': {
+    id: 'state-street',
+    name: 'State Street Corporation',
+    shortName: 'State Street',
+    country: 'United States',
+    flag: '🇺🇸',
+    founded: 1792,
+    headquarters: 'Boston, Massachusetts, USA',
+    assets: 3900,
+    marketCap: 110,
+    revenue: 28,
+    netIncome: 6,
+    employees: 40000,
+    branches: 200,
+    countries: 102,
+    globalRank: 2,
+    description: "A leading provider of financial services to institutional investors, founded in 1792, specializing in asset servicing, custody, and administration for the world's largest institutional investors and asset managers.",
+    keyFact: "State Street is a custody and administrative powerhouse serving institutional investors worldwide, holding over $45 trillion in assets under administration across 102 countries.",
+    ceoQuote: "We are committed to being the leading provider of services to institutional investors globally.",
+    timeline: [
+      { year: 1792, event: "Massachusetts Bank founded, later becomes State Street Bank" },
+      { year: 1956, event: "Pioneers computerized securities processing" },
+      { year: 2000, event: "Becomes global leader in institutional asset services" },
+      { year: 2024, event: "Major custody bank with $3.9T in assets and $45T under administration globally" }
+    ],
+    comparisons: null
+  },
+
+  'asian-development-bank': {
+    id: 'asian-development-bank',
+    name: 'Asian Development Bank',
+    shortName: 'ADB',
+    country: 'Multilateral',
+    flag: '🌏',
+    founded: 1966,
+    headquarters: 'Manila, Philippines',
+    assets: 190,
+    marketCap: 0,
+    revenue: 18,
+    netIncome: 4,
+    employees: 3500,
+    branches: 35,
+    countries: 68,
+    globalRank: 35,
+    description: "A multilateral development bank established to promote social and economic development in Asia, owned by 68 member states and providing loans, technical assistance, and grants to developing countries.",
+    keyFact: "ADB serves 68 member countries across Asia, the Pacific, and beyond, having approved over $300 billion in loans and grants since its establishment.",
+    ceoQuote: "We are committed to reducing poverty and promoting prosperity in the Asia-Pacific region.",
+    timeline: [
+      { year: 1966, event: "Established by 31 Asian and Western member countries to promote development" },
+      { year: 1990, event: "Membership expands as the Asian economy grows rapidly" },
+      { year: 2010, event: "Becomes key player in financing green and infrastructure projects" },
+      { year: 2024, event: "Serving 68 member countries with $190B in assets supporting development" }
+    ],
+    comparisons: null
+  },
+
+  'european-investment-bank': {
+    id: 'european-investment-bank',
+    name: 'European Investment Bank',
+    shortName: 'EIB',
+    country: 'Multilateral',
+    flag: '🇪🇺',
+    founded: 1958,
+    headquarters: 'Luxembourg',
+    assets: 650,
+    marketCap: 0,
+    revenue: 32,
+    netIncome: 8,
+    employees: 2400,
+    branches: 45,
+    countries: 170,
+    globalRank: 19,
+    description: "The world's largest multilateral lending institution founded by European Union member states, providing financing for projects in EU member states and partner countries globally.",
+    keyFact: "EIB has financed thousands of projects across 170 countries in support of sustainable development, renewable energy, and infrastructure, with a focus on climate action.",
+    ceoQuote: "We are the bank of the European Union, supporting sustainable development worldwide.",
+    timeline: [
+      { year: 1958, event: "Established by the Treaty of Rome to support EU development" },
+      { year: 1990, event: "Expands operations to Eastern Europe and emerging markets" },
+      { year: 2015, event: "Becomes leader in green and sustainable project financing" },
+      { year: 2024, event: "Operating globally with $650B in assets supporting sustainable development" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
