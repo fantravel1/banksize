@@ -5351,6 +5351,202 @@ const banksData = {
     comparisons: null
   },
 
+  'dbs-bank': {
+    id: 'dbs-bank',
+    name: 'Development Bank of Singapore Limited',
+    shortName: 'DBS',
+    country: 'Singapore',
+    flag: '🇸🇬',
+    founded: 1968,
+    headquarters: 'Singapore',
+    assets: 650,
+    marketCap: 78,
+    revenue: 20,
+    netIncome: 6.8,
+    employees: 38000,
+    branches: 320,
+    countries: 28,
+    globalRank: 19,
+    description: "Singapore's largest bank and one of Asia's leading financial institutions, providing banking and financial services across Asia and globally with digital innovation focus.",
+    keyFact: "DBS is ranked as one of the world's strongest banks by Moody's and serves millions of customers with extensive digital banking capabilities across 28 countries.",
+    ceoQuote: "We are transforming banking and finance for a better, more connected future.",
+    timeline: [
+      { year: 1968, event: "Development Bank of Singapore established to support economic development" },
+      { year: 1998, event: "Acquires prominent regional banks to expand presence" },
+      { year: 2009, event: "Completes major transformation to become Asia's leading bank" },
+      { year: 2024, event: "Top Asian bank with $650B in assets and digital-first approach" }
+    ],
+    comparisons: null
+  },
+
+  'banco-galicia': {
+    id: 'banco-galicia',
+    name: 'Banco Galicia S.A.',
+    shortName: 'Banco Galicia',
+    country: 'Argentina',
+    flag: '🇦🇷',
+    founded: 1905,
+    headquarters: 'Buenos Aires, Argentina',
+    assets: 85,
+    marketCap: 8.5,
+    revenue: 4.2,
+    netIncome: 1.1,
+    employees: 24000,
+    branches: 280,
+    countries: 1,
+    globalRank: 62,
+    description: "Argentina's leading private bank providing comprehensive financial services including retail, commercial, and investment banking across the country.",
+    keyFact: "Banco Galicia serves over 2.5 million customers with one of Argentina's largest branch networks and strong digital banking capabilities.",
+    ceoQuote: "We are committed to being the bank of choice for Argentinian families and businesses.",
+    timeline: [
+      { year: 1905, event: "Banco Galicia founded in Buenos Aires" },
+      { year: 1990, event: "Begins major expansion and modernization" },
+      { year: 2010, event: "Becomes Argentina's leading private bank by market share" },
+      { year: 2024, event: "Major Latin American bank with significant regional presence" }
+    ],
+    comparisons: null
+  },
+
+  'natixis': {
+    id: 'natixis',
+    name: 'Natixis SA',
+    shortName: 'Natixis',
+    country: 'France',
+    flag: '🇫🇷',
+    founded: 2006,
+    headquarters: 'Paris, France',
+    assets: 920,
+    marketCap: 35,
+    revenue: 16,
+    netIncome: 2.8,
+    employees: 80000,
+    branches: 400,
+    countries: 42,
+    globalRank: 15,
+    description: "A major French bank specializing in investment banking, asset management, and insurance with significant international operations across Europe and globally.",
+    keyFact: "Natixis operates as a major player in global capital markets, investment banking, and wealth management with presence in 42 countries worldwide.",
+    ceoQuote: "We are focused on building a global financial services leader.",
+    timeline: [
+      { year: 2006, event: "Natixis created through merger of Banques Populaires and Caisse d'Épargne subsidiaries" },
+      { year: 2009, event: "Becomes independent financial services provider" },
+      { year: 2015, event: "Acquires major asset management and insurance operations" },
+      { year: 2024, event: "Leading French investment bank with $920B in assets globally" }
+    ],
+    comparisons: null
+  },
+
+  'sber-bank': {
+    id: 'sber-bank',
+    name: 'Sberbank of Russia',
+    shortName: 'Sber',
+    country: 'Russia',
+    flag: '🇷🇺',
+    founded: 1841,
+    headquarters: 'Moscow, Russia',
+    assets: 480,
+    marketCap: 65,
+    revenue: 18,
+    netIncome: 5.2,
+    employees: 310000,
+    branches: 18000,
+    countries: 23,
+    globalRank: 26,
+    description: "Russia's largest bank providing comprehensive banking and financial services to millions of customers across Russia and internationally.",
+    keyFact: "Sberbank operates approximately 18,000 branches and serves over 200 million customers with significant insurance and investment operations.",
+    ceoQuote: "We are building an ecosystem of digital financial services.",
+    timeline: [
+      { year: 1841, event: "First State Savings Bank of Russia established" },
+      { year: 1992, event: "Becomes Sberbank and privatization begins" },
+      { year: 2012, event: "Completes digital transformation initiatives" },
+      { year: 2024, event: "Russian banking leader with $480B in assets and 18,000+ branches" }
+    ],
+    comparisons: null
+  },
+
+  'standard-bank': {
+    id: 'standard-bank',
+    name: 'Standard Bank Group Limited',
+    shortName: 'Standard Bank',
+    country: 'South Africa',
+    flag: '🇿🇦',
+    founded: 1862,
+    headquarters: 'Johannesburg, South Africa',
+    assets: 195,
+    marketCap: 28,
+    revenue: 9.5,
+    netIncome: 2.4,
+    employees: 55000,
+    branches: 1100,
+    countries: 25,
+    globalRank: 46,
+    description: "Africa's largest bank operating across 25 African countries and globally with strong corporate, retail, and investment banking franchises.",
+    keyFact: "Standard Bank serves over 50 million customers across Africa and has extensive investment banking capabilities with significant regional market leadership.",
+    ceoQuote: "We are committed to leading Africa's financial services transformation.",
+    timeline: [
+      { year: 1862, event: "Standard Bank established in South Africa" },
+      { year: 1998, event: "Begins major expansion across Africa" },
+      { year: 2010, event: "Becomes Africa's largest bank by assets" },
+      { year: 2024, event: "Africa's banking leader with $195B in assets across 25 countries" }
+    ],
+    comparisons: null
+  },
+
+  'cbank-mexico': {
+    id: 'cbank-mexico',
+    name: 'Citibanamex (Grupo Citibanamex)',
+    shortName: 'Citibanamex',
+    country: 'Mexico',
+    flag: '🇲🇽',
+    founded: 1866,
+    headquarters: 'Mexico City, Mexico',
+    assets: 190,
+    marketCap: 18,
+    revenue: 8.2,
+    netIncome: 1.8,
+    employees: 42000,
+    branches: 1900,
+    countries: 1,
+    globalRank: 47,
+    description: "Mexico's largest bank and one of Latin America's leading financial institutions, providing comprehensive banking and financial services across Mexico.",
+    keyFact: "Citibanamex operates nearly 1,900 branches across Mexico and serves over 18 million customers with extensive retail and corporate banking services.",
+    ceoQuote: "We are focused on financial inclusion and innovation in Mexico.",
+    timeline: [
+      { year: 1866, event: "Banco Nacional de México (Banamex) established" },
+      { year: 2002, event: "Becomes subsidiary of Citigroup as Citibanamex" },
+      { year: 2015, event: "Continues as Mexico's largest bank" },
+      { year: 2024, event: "Mexico's leading bank with $190B in assets and 1,900+ branches" }
+    ],
+    comparisons: null
+  },
+
+  'mizuho-bank': {
+    id: 'mizuho-bank',
+    name: 'Mizuho Financial Group',
+    shortName: 'Mizuho',
+    country: 'Japan',
+    flag: '🇯🇵',
+    founded: 2000,
+    headquarters: 'Tokyo, Japan',
+    assets: 2100,
+    marketCap: 120,
+    revenue: 95,
+    netIncome: 18,
+    employees: 280000,
+    branches: 3500,
+    countries: 40,
+    globalRank: 5,
+    description: "Japan's second-largest banking group providing comprehensive financial services including corporate banking, retail banking, and investment banking globally.",
+    keyFact: "Mizuho operates over 3,500 branches and serves millions of customers across Japan and 40 countries with significant global capital markets presence.",
+    ceoQuote: "We are creating value through financial innovation and customer focus.",
+    timeline: [
+      { year: 2000, event: "Mizuho Financial Group formed through merger of Japanese banking giants" },
+      { year: 2008, event: "Becomes one of the world's largest banks by assets" },
+      { year: 2014, event: "Completes major IT system modernization" },
+      { year: 2024, event: "Major global bank with $2.1T in assets and 3,500+ branches" }
+    ],
+    comparisons: null
+  },
+
 };
 
 // Auto-generate comparisons for banks that don't have hand-crafted ones
